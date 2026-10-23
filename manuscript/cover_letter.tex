@@ -2,36 +2,31 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[margin=20mm]{geometry}
-\usepackage{textcomp}
-\usepackage{xurl}
+\usepackage{textcomp,xurl,microtype}
 \usepackage[hidelinks]{hyperref}
-\usepackage{microtype}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{4pt}
+\setlength{\parskip}{5pt}
 \setlength{\emergencystretch}{2em}
-\pagestyle{plain}
 \begin{document}
 23 October 2026\par
 The Editors, \textit{Briefings in Bioinformatics}\par
 Article type: Problem solving protocol\par
-Manuscript: \textit{Reconstruction gains in antimicrobial peptide generation do not establish generative superiority}\par
+Manuscript: \textit{Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design}\par
 Authors: Hongsheng Wang, Fei Wu and Feng Lin
 
 Dear Editors,
 
-We submit this manuscript for consideration as a Problem solving protocol. It examines whether a reconstruction improvement establishes generative superiority within a fixed antimicrobial peptide (AMP) development protocol, and uses a separate historical laboratory case study to clarify the evidence needed to connect computational design with measured activity.
+We submit this manuscript as a Problem solving protocol for evaluating antimicrobial peptide design. It addresses a practical interpretation problem: sequence reconstruction, de novo generation and experimental antibacterial activity provide distinct evidence, and an improvement in one endpoint does not automatically establish improvement in another.
 
-The computational comparison holds CE21 and MSE21 architecture, initialization, batches, decoder and training schedule fixed while changing reconstruction loss. Development residue micro accuracy rises from 12.55\% to 70.90\%. CE21 improves six specified distributional distances over MSE21 in both terminal conditions and against both reference sets, but remains behind a terminal-conditioned LSTM on all 24 comparisons. These are descriptive results from one training seed and development data used during model development. The seven exploratory routes have distinct diagnostic and gate outcomes; they do not establish improved generation under the tested configurations.
+A matched reconstruction-objective comparison increases development residue accuracy from 12.55\% to 70.90\% with categorical rather than squared-error training. The categorical model also improves six sampled-sequence distances across terminal conditions and reference groups. Direct generation evaluation adds an informative control: a locally trained terminal-conditioned LSTM is closest on all 24 distance comparisons. The protocol therefore makes the contribution of the objective change clear while showing why sampled outputs need their own evaluation.
 
-The historical case study contains 30 ordered and 27 assayed peptides. A retrospective MIC algorithm agrees with 105 of 108 original summary cells. At the strict \textit{S. aureus} threshold below 200 \textmu{}g/mL, the original summary gives six active peptides (6/30 ordered; 6/27 assayed), and the algorithm gives seven (7/30; 7/27). Both representations and the three differing endpoints are retained. These calculations do not adjudicate true MICs, establish prospective endpoint selection or attribute these samples to an evaluated model. The disclosure framework separates these scientific questions.
+In a separate panel of 27 experimentally tested peptides, six inhibit \textit{S. aureus} ATCC 29213 at MICs $\leq$31.25 \textmu{}g/mL, and seven have MICs below 200 \textmu{}g/mL against at least one of four reference strains. These counts are stable across the original MIC summary and a replicate-based sensitivity analysis. Complete peptide-level MICs and optical-density measurements accompany the manuscript.
 
-Hongsheng Wang and Feng Lin are also authors of AMPGen (\textit{Communications Biology}, 2025;8:839). AMPGen reports 31/38 peptides active at $\leq$75 \textmu{}M against either of two initial targets; nine selected peptides subsequently underwent a four-strain extension. The present comparison explicitly distinguishes those stages, strain identities, thresholds and denominators, and does not treat the success fractions as a direct model comparison.
+The study complements evaluation-focused work in \textit{Briefings in Bioinformatics} by providing an explicit mapping from the scientific question to its input, comparator and measured endpoint. AMPGen is discussed as a published example of staged generation, selection and biological assessment. Hongsheng Wang and Feng Lin are also authors of AMPGen; the present computational comparison and experimental panel are separate from that publication.
 
-Supplementary Methods and Tables S1--S6, sample-level assay data, frozen computational outputs and offline calculation scripts accompany the manuscript. Public materials: \href{https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v3.1-2026-10-23}{GitHub release \texttt{v3.1-2026-10-23}}; materials DOI: \url{https://doi.org/10.5281/zenodo.23586233}. The scripts recalculate summary results without model training or access to the reserved evaluation partition.
+Supplementary Methods, complete tables, model code, checkpoints and executable analysis scripts are available at \href{https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v4-2026-10-23}{the versioned GitHub repository}. The model comparison is descriptive, using one fitted seed and a development partition used during model development; these conditions are specified in the manuscript.
 
-The authors wrote the manuscript. OpenAI Codex assisted with source and reference checking, code inspection, independent recalculation of saved outputs, deterministic plotting code, factual corrections and language editing. The supplementary disclosure records this assistance. No generative images or new laboratory measurements were created, and the human authors retain responsibility for the scientific content.
-
-The author-supplied contribution and competing-interest declarations identify Hongsheng Wang's Loctek affiliation and the institutional collaborations. Fei Wu is named as guarantor. The study involves no human or animal subjects.
+The authors wrote the manuscript. OpenAI Codex assisted with source and reference checking, code inspection, recalculation of saved outputs, deterministic plotting, factual correction and language editing. The manuscript and supplement disclose this assistance. The author contributions, institutional affiliations and competing-interest statement are included. Fei Wu is named as guarantor. The work involves no human or animal subjects.
 
 Sincerely,\par
 \textbf{Hongsheng Wang}\par

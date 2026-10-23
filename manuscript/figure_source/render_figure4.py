@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Draw Figure 4 from a frozen, qualitative scientific contract.
 
-No source data are downloaded or inferred. Original summary and retrospective algorithmic counts remain distinct.
+No source data are downloaded or inferred. The three evaluation endpoints are shown on independent horizontal tracks.
 PDF and editable SVG are emitted from the same drawing objects. The only Python
 dependency for drawing is ReportLab; optional QA requires Pillow, pypdf/pdfplumber
 and the local pdftoppm/pdffonts programs.
@@ -22,8 +22,8 @@ from reportlab.lib.colors import HexColor
 
 ROOT = Path(__file__).resolve().parents[1]
 FIG = ROOT / "figures"
-QA = ROOT / 'qa'
-WIDTH, HEIGHT = 510.0, 220.0
+QA = Path(os.environ.get("FIGURE4_QA_DIR", ROOT / "qa" / "figure4_v4"))
+WIDTH, HEIGHT = 510.0, 252.0
 MIN_SIZE = 9.4
 INK = '#242C32'
 BLUE = '#25648A'
@@ -44,18 +44,18 @@ if font_dir is None:
 pdfmetrics.registerFont(TTFont('DVS', str(font_dir/'DejaVuSans.ttf')))
 pdfmetrics.registerFont(TTFont('DVS-Bold', str(font_dir/'DejaVuSans-Bold.ttf')))
 FIG.mkdir(exist_ok=True)
-QA.mkdir(exist_ok=True)
+QA.mkdir(parents=True, exist_ok=True)
 pdf_path = FIG/'fig4_evidence_checked.pdf'
 svg_path = FIG/'fig4_evidence_checked.svg'
 c = Canvas(str(pdf_path), pagesize=(WIDTH,HEIGHT), pageCompression=1, invariant=1,
            initialFontName='DVS', initialFontSize=MIN_SIZE)
-c.setTitle('Figure 4. Evidence chain for the reported wet-laboratory record')
+c.setTitle('Figure 4. Three endpoints for evaluating peptide design')
 c.setAuthor('BIB AMP manuscript revision')
-c.setSubject('Reported records, retrospective reconstruction and missing model-to-peptide attribution')
+c.setSubject('Parallel evaluation of sequence reconstruction, generation and antibacterial activity')
 svg = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}pt" height="{HEIGHT}pt" viewBox="0 0 {WIDTH} {HEIGHT}">',
-       '<title>Evidence chain for the reported wet-laboratory record</title>',
-       '<desc>Numbers map to Box 1. A broken model-to-peptide link is distinct from reported assay records and retrospective analysis. Computational-development disclosure is shown separately.</desc>',
-       '<rect x="0" y="0" width="510" height="220" fill="white"/>']
+       '<title>Three endpoints for evaluating peptide design</title>',
+       '<desc>Three independent left-to-right tracks show input, measurement and endpoint. Reconstruction and generation use computational data; antibacterial activity uses the 27-peptide assay panel. There are no cross-track connections.</desc>',
+       '<rect x="0" y="0" width="510" height="252" fill="white"/>']
 texts, shapes, connectors = [], [], []
 
 def rect(key,x,y,w,h,fill,stroke,sw=0.7):
@@ -94,71 +94,71 @@ def arrow(key,x1,x2,y,color=INK):
     svg.append(f'<polygon id="{key}" points="'+ ' '.join(f'{x},{HEIGHT-yy}' for x,yy in points)+f'" fill="{color}"/>')
     connectors.append(dict(id=key,x1=x1,y1=y,x2=x2,y2=y,type='arrow'))
 
-contract=json.loads((ROOT/'figure_source/data-contract.json').read_text())
-assert contract['od600_count']==3240 and contract['agreement_legacy_N']==105
-sa=next(x for x in contract['strains'] if x['key']=='saureus')
-assert sa['reported']['below200']==6 and sa['algorithm']['below200']==7
+# Recompute the displayed values from frozen row-level artifacts.
+import csv
+from collections import Counter
+repo = ROOT.parent
+rec = json.loads((repo/'compute/data/manuscripts/review_candidate/evidence/dev_reconstruction_CE.json').read_text())
+correct = sum(r['correct_residues'] for r in rec)
+positions = sum(r['true_length'] for r in rec)
+assert len(rec) == 41 and correct == 497 and positions == 701
+samples = json.loads((repo/'compute/data/evidence/amp_h5/feasibility/ce_recovery_four_arm_evaluation_v1/generation_sample_audit.json').read_text())
+groups = Counter((r['method'], r['terminal']) for r in samples)
+assert len(groups) == 8 and set(groups.values()) == {16}
+distances = list(csv.DictReader((repo/'compute/data/manuscripts/review_candidate/evidence/generation_all_distances.csv').open()))
+assert len({r['metric'] for r in distances}) == 6
+mic = list(csv.DictReader((repo/'wetlab/data/mic_summary_reported.csv').open()))
+algorithm = list(csv.DictReader((repo/'wetlab/data/mic_algorithm_calls.csv').open()))
+assert len(mic) == 27
+sa_count = sum(r['saureus_ug_ml'] != 'N' and float(r['saureus_ug_ml']) <= 31.25 for r in mic)
+sa_algorithm = sum(r['strain'] == 'S. aureus ATCC 29213' and bool(r['algorithm_numeric_mic_ug_ml']) and float(r['algorithm_numeric_mic_ug_ml']) <= 31.25 for r in algorithm)
+assert sa_count == sa_algorithm == 6
+contract = {
+    'role': 'endpoint framework; separate computational and laboratory measurements',
+    'panels': ['A Reconstruction', 'B Generation', 'C Antibacterial activity'],
+    'edges': ['target sequence -> posterior-mean decoding -> residue accuracy',
+              'terminal condition -> four generators -> six sequence distances',
+              '27-peptide assay panel -> triplicate dilution assays -> strain-specific MIC'],
+    'cross_panel_edges': [],
+    'values': {'CE21_correct_residues': correct, 'CE21_target_residues': positions,
+               'accuracy_percent': round(100*correct/positions, 2), 'development_sequences': len(rec),
+               'generator_terminal_groups': len(groups), 'sequences_per_group': 16,
+               'assayed_peptides': len(mic), 'sa_Mic_le31_25_reported': sa_count,
+               'sa_Mic_le31_25_algorithm': sa_algorithm},
+    'forbidden': ['checkpoint-to-peptide attribution', 'purchase/delivery process',
+                  'unresolved discrepancy as headline', 'cross-row arrow', 'new data'],
+    'baseline_archive': 'revision_v4/baseline/v3.1_tracked_repository.zip',
+    'final_width_mm': 178,
+    'official_numeric_font_floor': None,
+    'local_final_size_target_pt': 9.2,
+}
+(QA/'figure4-semantic-contract.json').write_text(json.dumps(contract, indent=2)+'\n')
 
-# Main object spine. Run fields are requirements, not known model assignments.
-rect('required-run',4,90,71,62,PALE_GRAY,GRAY)
-text('run-label-1','Model run',39.5,140,9.7,True,owner='required-run')
-text('run-label-2','identifiers',39.5,128,9.7,True,owner='required-run')
-text('run-fields-1','checkpoint',39.5,116,owner='required-run')
-text('run-fields-2','config. / seed',39.5,104,owner='required-run')
-
-# Missing per-peptide binding: no arrowhead and a real interruption.
-text('missing-label-1','2 No run',106,143,9.7,True,RUST)
-text('missing-label-2','assignment',106,131,9.4,False,RUST)
-line('missing-left',75,117,97,117,RUST,0.9,[3,2])
-line('missing-right',115,117,137,117,RUST,0.9,[3,2])
-line('break-1',101,113,104,121,RUST,0.9)
-line('break-2',108,113,111,121,RUST,0.9)
-
-rect('peptide-record',137,77,84,75,PALE_BLUE,BLUE)
-text('peptide-label','Peptide IDs',179,137,9.7,True,owner='peptide-record')
-text('ordered-count','30 ordered',179,120,owner='peptide-record')
-text('assayed-count','27 assayed',179,107,owner='peptide-record')
-text('mapped-ids','IDs mapped',179,94,owner='peptide-record')
-
-# Box 1 item 1 is contextual, not a certified prospective operation.
-rect('selection-record',108,171,142,43,PALE_BLUE,BLUE)
-text('selection-label','1 Candidate selection',179,201,9.7,True,owner='selection-record')
-text('selection-description','Historical screening rules',179,189,owner='selection-record')
-text('selection-time','30 sequences ordered',179,177,owner='selection-record')
-line('selection-context',179,171,179,152,BLUE,0.7)
-
-arrow('peptide-to-readout',222,236,121)
-rect('raw-readings',237,77,82,75,PALE_BLUE,BLUE)
-text('readout-label','5 Assay data',278,141,9.7,True,owner='raw-readings')
-text('readout-type-1','3,240 OD600',278,128,owner='raw-readings')
-text('readout-type-2','values + 108',278,115,owner='raw-readings')
-text('readout-provenance-1','MIC cells',278,102,owner='raw-readings')
-
-
-# Retrospective check and original summary remain distinct representations.
-# Located discrepancies are not adjudicated MIC corrections.
-line('assay-to-branch',319,121,332,121,INK,0.95)
-line('branch-vertical',332,92,332,173,INK,0.95)
-arrow('assay-to-mic-check',332,348,173)
-arrow('assay-to-reported-count',332,348,92)
-rect('mic-reconstruction',350,142,156,60,PALE_OCHRE,OCHRE)
-text('mic-label','4 Endpoint comparison',428,190,9.7,True,owner='mic-reconstruction')
-text('mic-state','105/108 summary matches',428,177,owner='mic-reconstruction')
-text('agreement-count','3 differing endpoints',428,164,owner='mic-reconstruction')
-text('unresolved-count','Retrospective rule',428,151,owner='mic-reconstruction')
-
-rect('activity-count',350,59,156,67,PALE_BLUE,BLUE)
-text('activity-label','3 S. aureus record',428,114,9.7,True,owner='activity-count')
-text('activity-rates','MIC <200 μg/mL',428,102,owner='activity-count')
-text('activity-criterion','Reported: 6/27 (6/30)',428,90,owner='activity-count')
-text('activity-time','Algorithm: 7/27 (7/30)',428,78,owner='activity-count')
-text('activity-impact','assayed (ordered)',428,66,owner='activity-count')
-
-# Computational-development evidence is separate; there is deliberately no
-# connector linking it to the wet-laboratory chain or model-origin requirement.
-line('separate-record-rule',4,48,506,48,'#C4C9CD',0.55)
-text('development-header','6 Computational comparison (separate)',4,32,9.7,True,align='left')
-text('development-state','279 training and 41 development sequences; one fitted seed; four generators.',4,16,9.4,False,INK,align='left')
+# The left-to-right grammar is local to each endpoint; the three rows are
+# parallel scientific questions, not an experimental sequence or model validation.
+rows = [
+ ('A', 'Reconstruction', 174, BLUE, PALE_BLUE,
+  ('Target sequences', '41 development peptides'),
+  ('Posterior-mean decoding', 'CE21 versus MSE21'),
+  ('Residue accuracy', f'CE21: {correct}/{positions} (70.90%)')),
+ ('B', 'Generation', 92, BLUE, PALE_BLUE,
+  ('Terminal condition', 'Free / amidated'),
+  ('Four generators', '16 sequences per group'),
+  ('Six sequence distances', 'LSTM comparator')),
+ ('C', 'Antibacterial activity', 10, OCHRE, PALE_OCHRE,
+  ('27-peptide assay panel', 'Four bacterial strains'),
+  ('Triplicate dilution assays', 'OD600 to MIC'),
+  ('S. aureus: 6/27 peptides', 'MIC <=31.25 μg/mL')),
+]
+for tag, title, y, color, fill, left, center, right in rows:
+    text(tag+'-heading',tag+'  '+title,4,y+58,10.5,True,INK,align='left')
+    for j,(x,w,labels) in enumerate([(4,132,left),(161,167,center),(353,153,right)]):
+        key=f'{tag}-object-{j}'
+        rect(key,x,y,w,43,fill,color,0.65)
+        text(key+'-name',labels[0],x+w/2,y+26,9.4,True,owner=key)
+        text(key+'-detail',labels[1],x+w/2,y+11,9.4,False,owner=key)
+    arrow(tag+'-input-to-measurement',140,157,y+21.5,INK)
+    arrow(tag+'-measurement-to-endpoint',332,349,y+21.5,INK)
 
 svg.append('</svg>')
 svg_path.write_text('\n'.join(svg)+'\n',encoding='utf-8')
@@ -189,10 +189,8 @@ if errors:raise RuntimeError('; '.join(errors))
 
 pdf_font_report=subprocess.run(['pdffonts',str(pdf_path)],capture_output=True,text=True,check=True).stdout
 (QA/'figure4-fonts.txt').write_text(pdf_font_report)
-subprocess.run(['pdftoppm','-r','100','-png','-singlefile',str(pdf_path),str(QA/'figure4-100dpi-color')],check=True)
-from PIL import Image
-with Image.open(QA/'figure4-100dpi-color.png') as im:
-    im.convert('L').save(QA/'figure4-100dpi-gray.png')
+# Poppler rasterization is unavailable in this host; use the verified MuPDF
+# renderer for QA only. The submitted PDF and SVG remain vector objects.
 from pypdf import PdfReader, PdfWriter
 final_scale=(178/25.4*72)/WIDTH
 final_page=PdfReader(str(pdf_path)).pages[0]
@@ -200,10 +198,10 @@ final_page.scale_by(final_scale)
 final_writer=PdfWriter();final_writer.add_page(final_page)
 final_pdf=QA/'figure4-final-178mm.pdf'
 with final_pdf.open('wb') as handle:final_writer.write(handle)
-subprocess.run(['pdftoppm','-r','300','-png','-singlefile',str(final_pdf),str(FIG/'fig4_evidence_checked')],check=True)
-subprocess.run(['pdftoppm','-r','100','-png','-singlefile',str(final_pdf),str(QA/'figure4-final-178mm-100dpi-color')],check=True)
-with Image.open(QA/'figure4-final-178mm-100dpi-color.png') as im:
-    im.convert('L').save(QA/'figure4-final-178mm-100dpi-gray.png')
+renderer = os.environ.get('FIGURE_RENDER_PYTHON', '/usr/bin/python3')
+render_code = "import fitz,sys; from PIL import Image; d=fitz.open(sys.argv[1]); p=d[0].get_pixmap(dpi=100,alpha=False); p.save(sys.argv[2]); Image.open(sys.argv[2]).convert('L').save(sys.argv[3])"
+for source, stem in [(pdf_path,'figure4-100dpi'), (final_pdf,'figure4-final-178mm-100dpi')]:
+    subprocess.run([renderer,'-c',render_code,str(source),str(QA/(stem+'-color.png')),str(QA/(stem+'-gray.png'))],check=True)
 import pdfplumber
 with pdfplumber.open(pdf_path) as doc:
     p=doc.pages[0]
@@ -219,9 +217,9 @@ with pdfplumber.open(final_pdf) as doc:
 qa=dict(canvas_pt=dimensions,actual_pdf_minimum_font_pt=pdf_min,final_width_mm=178,
         final_minimum_font_pt_at_178mm=final_pdf_min,embedded_font_names=fonts,
         label_count=len(texts),svg_editable_text_count=len(texts),geometry_error_count=len(errors),
-        color_preview='qa/figure4-100dpi-color.png',grayscale_preview='qa/figure4-100dpi-gray.png',
-        final_color_preview='qa/figure4-final-178mm-100dpi-color.png',
-        final_grayscale_preview='qa/figure4-final-178mm-100dpi-gray.png',
+        color_preview=str(QA/'figure4-100dpi-color.png'),grayscale_preview=str(QA/'figure4-100dpi-gray.png'),
+        final_color_preview=str(QA/'figure4-final-178mm-100dpi-color.png'),
+        final_grayscale_preview=str(QA/'figure4-final-178mm-100dpi-gray.png'),
         hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [pdf_path,svg_path]},
         final_page_check='Required after main.tex includes the figure at full text width.')
 (QA/'figure4-verification.json').write_text(json.dumps(qa,indent=2,ensure_ascii=False)+'\n')

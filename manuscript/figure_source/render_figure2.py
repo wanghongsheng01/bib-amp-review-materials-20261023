@@ -125,7 +125,7 @@ def save(fig, ax, stem):
 
 def figure2():
     fig, ax = canvas(268)
-    text(ax,8,251,"Follow-up route",10.3,"bold")
+    text(ax,8,251,"Exploratory analysis",10.3,"bold")
     text(ax,195,251,"Assessment",10.3,"bold")
     text(ax,365,251,"Observed outcome",10.3,"bold")
     line(ax,8,239,502,239,INK,.8)
@@ -133,10 +133,10 @@ def figure2():
       ("Training-posterior draws", "Source diagnostic", "MMD not improved"),
       ("Coordinate permutation", "Source diagnostic", "MMD worsened"),
       ("Reference-template prior", "Source diagnostic", "Mixed; extra information"),
-      ("KL warmup", "Reconstruction / resource", "4 guards fail"),
-      ("Latent-conditioned AR", "Information / generation", "PASS / FAIL"),
-      ("Direct-latent diffusion", "Mechanism / value", "FAIL / not interpreted"),
-      ("Conditioning context", "Multistage screen", "Not supported"),
+      ("KL warmup", "Reconstruction", "Accuracy decreased"),
+      ("Latent-conditioned AR", "Latent use / generation", "Detected / criterion unmet"),
+      ("Direct-latent diffusion", "MMD / dipeptide JS", "Criterion unmet"),
+      ("Conditioning context", "Conditioning variants", "Criteria unmet"),
     ]
     for i,(name,assessment,outcome) in enumerate(rows):
       y=223-27*i
@@ -145,8 +145,8 @@ def figure2():
       text(ax,195,y,assessment,size=9.2)
       text(ax,365,y,outcome,size=9.2)
     line(ax,8,46,502,46,INK,.8)
-    text(ax,8,31,"First three routes: no applicable generation winner gate.")
-    text(ax,8,15,"KL warmup: its separate investment criterion passes.")
+    text(ax,8,31,"Each analysis addresses a distinct representation or sampling question.")
+    text(ax,8,15,"Full criteria and numerical results are provided in Supplementary Table S4.")
     save(fig,ax,"fig2_route_gates")
 
 if __name__ == "__main__":

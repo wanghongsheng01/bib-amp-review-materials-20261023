@@ -1,8 +1,8 @@
 # AMP study materials
 
-Release: **v3.1-2026-10-23**. Article: **Reconstruction gains in antimicrobial peptide generation do not establish generative superiority**.
+Release: **v4-2026-10-23**. Article: **Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design**.
 
-Public version: [v3.1-2026-10-23](https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v3.1-2026-10-23). Materials DOI: [10.5281/zenodo.23586233](https://doi.org/10.5281/zenodo.23586233). This DOI identifies the research-materials release, not a journal article. Version v3.1 updates public access and archive identification; the scientific results and the original v3 tag are unchanged.
+Public version: [v4-2026-10-23](https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v4-2026-10-23). This version reorganizes the manuscript around reconstruction, generation and antibacterial activity, with matched scientific data and code. Earlier version tags remain available.
 
 [Article PDF](manuscript/main.pdf) · [Supplement PDF](supplement/supplement.pdf) · [Editable Table 1](manuscript/Table_1_editable.docx) · [Complete supplementary CSV tables](supplement/tables/)
 
@@ -23,7 +23,7 @@ The command checks file integrity, reruns the offline computational verification
 | Directory | Contents |
 |---|---|
 | `compute/` | Saved computational observations, independent calculation code, source bindings and derived tables |
-| `wetlab/` | Original order workbook, scientific certificate facts, OD600 observations, reported MIC values and separately labelled algorithmic endpoints |
+| `wetlab/` | Peptide source records, characterization data, OD600 observations, original MIC values and separately labelled algorithmic endpoints |
 | `data/train_dev/` | Four original CSV inputs: 279 training and 41 development peptides, with descriptor and cohort representations |
 | `model/` | H5 implementations, corrected source dependencies, frozen numerical configurations, scalers and source-change provenance |
 | `weights/` | Three final VAE states, three final DDPM EMA states and the terminal LSTM final checkpoint |
@@ -34,7 +34,7 @@ The command checks file integrity, reruns the offline computational verification
 
 ## Scientific scope
 
-The four-arm computational analysis uses one fitted configuration/seed and training/development data. The paired 21-class CE/MSE comparison and the scalar and terminal-LSTM comparators have the different scopes described in the manuscript. Development reuse and a single fitted run do not establish independent-replicate inference. Activity regressions concern recorded activity observations. The laboratory series characterizes 27 assayed peptides from a 30-peptide order across four strains; its provenance is documented separately from the model comparison.
+The four-arm computational analysis uses one fitted configuration/seed and training/development data. The paired 21-class CE/MSE comparison and the scalar and terminal-LSTM comparators have the different scopes described in the manuscript. Development reuse and a single fitted run do not establish independent-replicate inference. Activity regressions concern recorded activity observations. The experimental panel characterizes all 27 tested peptides across four strains, separately from the model comparison.
 
 Reported MIC values and retrospective OD600-based endpoint calls remain separate datasets. The original `N` code is preserved and is not imputed as zero, a numeric MIC or a verified negative. Certificate data and solubility observations retain their supplier-reported status.
 
@@ -46,4 +46,4 @@ The early implementation is pinned to [3DHumanRehab/AMP, e7486fb](https://github
 
 ## Editable documents and figures
 
-The article uses the included OUP LaTeX class. Compile `manuscript/main.tex` and `manuscript/cover_letter.tex` with pdfLaTeX from the `manuscript/` directory, twice for cross-references. Compile the supplement as described in [supplement/README.md](supplement/README.md). Figure data inputs, dependencies and deterministic plotting commands are described in [manuscript/figure_source/README.md](manuscript/figure_source/README.md). All four PDF/SVG pairs were regenerated and matched the released assets byte for byte.
+The article uses the included OUP LaTeX class. Compile `manuscript/main.tex` and `manuscript/cover_letter.tex` with pdfLaTeX from the `manuscript/` directory, twice for cross-references. Compile the supplement as described in [supplement/README.md](supplement/README.md). Figure data inputs, dependencies and deterministic plotting commands are described in [manuscript/figure_source/README.md](manuscript/figure_source/README.md). Figures 2 and 4 were revised for the endpoint-specific presentation; Figures 1 and 3 retain their verified numerical content. All figures have editable sources and final-size previews were checked after compilation.

@@ -71,7 +71,7 @@ L 502 222
 " clip-path="url(#pf7eced9ed9)" style="fill: none; stroke: #222222; stroke-width: 0.8"/>
    </g>
    <g id="text_1">
-    <text style="fill: #222222; font: 700 10.3px 'DejaVu Sans'; text-anchor: start" x="8" y="19.842156" transform="rotate(-0 8 19.842156)">Follow-up route</text>
+    <text style="fill: #222222; font: 700 10.3px 'DejaVu Sans'; text-anchor: start" x="8" y="19.801922" transform="rotate(-0 8 19.801922)">Exploratory analysis</text>
    </g>
    <g id="text_2">
     <text style="fill: #222222; font: 700 10.3px 'DejaVu Sans'; text-anchor: start" x="195" y="19.842156" transform="rotate(-0 195 19.842156)">Assessment</text>
@@ -110,43 +110,43 @@ L 502 222
     <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="12" y="128.593813" transform="rotate(-0 12 128.593813)">KL warmup</text>
    </g>
    <g id="text_14">
-    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="195" y="128.538625" transform="rotate(-0 195 128.538625)">Reconstruction / resource</text>
+    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="195" y="128.538625" transform="rotate(-0 195 128.538625)">Reconstruction</text>
    </g>
    <g id="text_15">
-    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="365" y="128.538625" transform="rotate(-0 365 128.538625)">4 guards fail</text>
+    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="365" y="128.538625" transform="rotate(-0 365 128.538625)">Accuracy decreased</text>
    </g>
    <g id="text_16">
     <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="12" y="155.593813" transform="rotate(-0 12 155.593813)">Latent-conditioned AR</text>
    </g>
    <g id="text_17">
-    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="195" y="155.538625" transform="rotate(-0 195 155.538625)">Information / generation</text>
+    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="195" y="155.538625" transform="rotate(-0 195 155.538625)">Latent use / generation</text>
    </g>
    <g id="text_18">
-    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="365" y="155.538625" transform="rotate(-0 365 155.538625)">PASS / FAIL</text>
+    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="365" y="155.538625" transform="rotate(-0 365 155.538625)">Detected / criterion unmet</text>
    </g>
    <g id="text_19">
     <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="12" y="182.593813" transform="rotate(-0 12 182.593813)">Direct-latent diffusion</text>
    </g>
    <g id="text_20">
-    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="195" y="182.538625" transform="rotate(-0 195 182.538625)">Mechanism / value</text>
+    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="195" y="182.538625" transform="rotate(-0 195 182.538625)">MMD / dipeptide JS</text>
    </g>
    <g id="text_21">
-    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="365" y="182.538625" transform="rotate(-0 365 182.538625)">FAIL / not interpreted</text>
+    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="365" y="182.538625" transform="rotate(-0 365 182.538625)">Criterion unmet</text>
    </g>
    <g id="text_22">
     <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="12" y="209.593813" transform="rotate(-0 12 209.593813)">Conditioning context</text>
    </g>
    <g id="text_23">
-    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="195" y="209.538625" transform="rotate(-0 195 209.538625)">Multistage screen</text>
+    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="195" y="209.538625" transform="rotate(-0 195 209.538625)">Conditioning variants</text>
    </g>
    <g id="text_24">
-    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="365" y="209.538625" transform="rotate(-0 365 209.538625)">Not supported</text>
+    <text style="fill: #222222; font: 9.2px 'DejaVu Sans'; text-anchor: start" x="365" y="209.538625" transform="rotate(-0 365 209.538625)">Criteria unmet</text>
    </g>
    <g id="text_25">
-    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="8" y="239.593813" transform="rotate(-0 8 239.593813)">First three routes: no applicable generation winner gate.</text>
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="8" y="239.593813" transform="rotate(-0 8 239.593813)">Each analysis addresses a distinct representation or sampling question.</text>
    </g>
    <g id="text_26">
-    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="8" y="255.593813" transform="rotate(-0 8 255.593813)">KL warmup: its separate investment criterion passes.</text>
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="8" y="255.593813" transform="rotate(-0 8 255.593813)">Full criteria and numerical results are provided in Supplementary Table S4.</text>
    </g>
   </g>
  </g>

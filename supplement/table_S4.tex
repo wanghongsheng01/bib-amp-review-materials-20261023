@@ -1,32 +1,31 @@
 \begingroup\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
-\begin{longtable}{>{\raggedright\arraybackslash}p{.19\linewidth}>{\raggedright\arraybackslash}p{.13\linewidth}>{\raggedright\arraybackslash}p{.20\linewidth}>{\raggedright\arraybackslash}p{.38\linewidth}}
-\caption*{\textbf{Table S4a.} Route-specific evidence categories. A diagnostic comparison or unperformed generation gate is not labelled a failed generation experiment.}\\
+\begin{longtable}{>{\raggedright\arraybackslash}p{.21\linewidth}>{\raggedright\arraybackslash}p{.23\linewidth}>{\raggedright\arraybackslash}p{.47\linewidth}}
+\caption*{\textbf{Table S4a.} Scientific endpoints of seven follow-up analyses. Source diagnostics, reconstruction analyses and generation comparisons have distinct evaluation criteria.}\\
 \toprule
-Route & Information & Screen classification & Recorded outcome \\
+Route & Evaluated component & Observed result \\
 \midrule\endfirsthead
-Route & Information & Screen classification & Recorded outcome \\
+Route & Evaluated component & Observed result \\
 \midrule\endhead
-Latent substitution & Not applicable & Source diagnostic & Development MMD rises in both terminal groups relative to reused CE. \\
-Coordinate permutation & Not applicable & Source diagnostic & Development MMD rises in both groups relative to posterior-source B. \\
-Reference-template prior & Not applicable & Source diagnostic & MMD is mixed relative to CE; extra reference information excludes a terminal-only ranking. \\
-KL warmup & Not applicable & Generation not evaluated & Four reconstruction/resource guards fail; a separate investment threshold passes. \\
-Latent-conditioned AR & Pass & Generation fail & Matched S8 0.690802; evaluation mismatch 0.097533; permuted-training control 0.091958. \\
-Direct-latent diffusion & Not applicable & Mechanism screen fail & Sequential value screen not interpreted; checkpoint audit incomplete after safe-loader rejection. \\
-Conditioning-context variants & Not applicable & Overall not supported & Some generation guards and selected NLL criteria fail; 384 attempts include three empty outputs. \\
+Latent substitution & Posterior source & Development MMD increases in both terminal groups relative to CE diffusion outputs. \\
+Coordinate permutation & Latent coordinates & Development MMD increases in both groups relative to training-posterior draws. \\
+Reference-template prior & Reference-conditioned prior & MMD effects are mixed relative to CE; this route receives additional template information. \\
+KL warmup & Reconstruction & Posterior-mean score decreases from 0.722796 to 0.657852; eight-draw score decreases from 0.661116 to 0.589099. \\
+Latent-conditioned AR & Information and generation & Matched score 0.690802; mismatch 0.097533; permuted-training control 0.091958. The six generation-distance criteria are not met. \\
+Direct-latent diffusion & Diffusion target & Development MMD and dipeptide JS increase in both terminal conditions relative to posterior-parameter diffusion. \\
+Conditioning-context variants & Conditioning structure & Variants do not meet the combined sequence-NLL and generation criteria; 384 attempts include three empty outputs. \\
 \bottomrule\end{longtable}\endgroup
 \begingroup\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
-\begin{longtable}{>{\raggedright\arraybackslash}p{.51\linewidth}l>{\raggedright\arraybackslash}p{.32\linewidth}}
-\caption*{\textbf{Table S4c.} All warmup guards and the separate investment screen.}\\
+\begin{longtable}{>{\raggedright\arraybackslash}p{.76\linewidth}l}
+\caption*{\textbf{Table S4c.} Four reconstruction criteria for the KL-warmup analysis.}\\
 \toprule
-Guard & Outcome & Type \\
+Criterion & Outcome \\
 \midrule\endfirsthead
-Guard & Outcome & Type \\
+Criterion & Outcome \\
 \midrule\endhead
-M length MAE no greater than baseline zero & Fail & paired reconstruction/resource guard \\
-M sequence equal nondecrease & Fail & paired reconstruction/resource guard \\
-S8 sequence equal gain at least 1 over 20 & Fail & paired reconstruction/resource guard \\
-S8 supported AA macro nondecrease & Fail & paired reconstruction/resource guard \\
-M minus S8 gt 0.05 & Pass & separate investment screen; not generation success \\
+Posterior-mean length MAE no greater than baseline & Not met \\
+Posterior-mean exact-match fraction does not decrease & Not met \\
+Eight-draw exact-match fraction improves by at least 0.05 & Not met \\
+Eight-draw supported-residue macro recall does not decrease & Not met \\
 \bottomrule\end{longtable}\endgroup
 \begingroup\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
 \begin{longtable}{lrrrrrr}

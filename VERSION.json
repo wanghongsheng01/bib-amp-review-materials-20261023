@@ -1,22 +1,20 @@
 {
-  "version": "v3.1-2026-10-23",
-  "article_title": "Reconstruction gains in antimicrobial peptide generation do not establish generative superiority",
+  "version": "v4-2026-10-23",
+  "article_title": "Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design",
   "article_type": "Problem solving protocol",
   "source_commits": {
     "early": "e7486fb714cbf5c663cc01052e42fb63d4ba3a40",
     "handoff": "f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b"
   },
   "document_sha256": {
-    "manuscript/main.tex": "1b22b1007438fae777272ec2120da1a7f165d853b04689b0b05e80cb1eeaaab2",
-    "manuscript/main.pdf": "4267b86ca16d2ea874f1227a209ef654583abee830bae24563a831a8376e42a7",
-    "manuscript/cover_letter.pdf": "9a429910176c3e2abae0d1bd78c15ac784739d7d33bb6eac157c240f881b8e69",
-    "supplement/main.tex": "55e5268da4e71614b8ae5cd3529d204b56ea713dd2cea290f947704f77a0acb1",
-    "supplement/supplement.pdf": "4dfc265b81bd5d3730129706891271cc0b44a8cedd13cf211f35ef93db251a63",
-    "manuscript/cover_letter.tex": "596f1907e12cc45cb6fc4f8939ccd6f633dabc1744eadb9d43e1d1f898708975"
+    "manuscript/main.tex": "947b5d00304b44465f61c69736388d1935e1c54776a44365fe1f736c462f0aa4",
+    "manuscript/main.pdf": "73a7f7916c9345f80dfa0d266e061e038888438b7d1222fc19399460d1f62c33",
+    "manuscript/cover_letter.pdf": "680f6f27375f2075ceaabe359f64f1fcac1f79b1eb93194803b64963f0644d68",
+    "supplement/main.tex": "b5751f12d6b45a8fe0ce551475d54a84674eb708551a03e191fb8741d4e55b72",
+    "supplement/supplement.pdf": "9bc625e6dee1cb28fcaa2184911f247edffc09c813e4d7834bbcda469f15e223",
+    "manuscript/cover_letter.tex": "ac4518960fe1423df1d53799599df8a5db3ed9e915768c89ec0e15fabb4f3e74"
   },
   "verification_scope": "Offline recomputation from saved outputs; training and checkpoint deserialization were not rerun. Original reported MIC and retrospective algorithmic endpoints are retained in parallel.",
-  "public_version_url": "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v3.1-2026-10-23",
-  "materials_doi": "10.5281/zenodo.23586233",
-  "materials_doi_scope": "Research-materials release; not the journal article DOI.",
-  "release_change_scope": "Public access and archive identification only; scientific results unchanged."
+  "public_version_url": "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v4-2026-10-23",
+  "release_change_scope": "Scientific editorial revision, S4-S6 display tables and Figures 2 and 4; source numerical data and model weights unchanged."
 }
