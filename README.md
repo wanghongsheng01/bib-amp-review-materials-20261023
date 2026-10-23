@@ -1,8 +1,8 @@
 # AMP study materials
 
-Release: **v4-2026-10-23**. Article: **Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design**.
+Release: **v5-2026-10-23**. Article: **Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design**.
 
-Public version: [v4-2026-10-23](https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v4-2026-10-23). This version reorganizes the manuscript around reconstruction, generation and antibacterial activity, with matched scientific data and code. Earlier version tags remain available.
+Public version: [v5-2026-10-23](https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v5-2026-10-23). This version refines the evaluation questions and metric scope, displays the four latent reconstruction controls, and expands the verified bibliography to 48 references. Scientific data, model code and checkpoints are unchanged from v4. Earlier version tags remain available.
 
 [Article PDF](manuscript/main.pdf) · [Supplement PDF](supplement/supplement.pdf) · [Editable Table 1](manuscript/Table_1_editable.docx) · [Complete supplementary CSV tables](supplement/tables/)
 
@@ -46,4 +46,6 @@ The early implementation is pinned to [3DHumanRehab/AMP, e7486fb](https://github
 
 ## Editable documents and figures
 
-The article uses the included OUP LaTeX class. Compile `manuscript/main.tex` and `manuscript/cover_letter.tex` with pdfLaTeX from the `manuscript/` directory, twice for cross-references. Compile the supplement as described in [supplement/README.md](supplement/README.md). Figure data inputs, dependencies and deterministic plotting commands are described in [manuscript/figure_source/README.md](manuscript/figure_source/README.md). Figures 2 and 4 were revised for the endpoint-specific presentation; Figures 1 and 3 retain their verified numerical content. All figures have editable sources and final-size previews were checked after compilation.
+The article uses the included OUP LaTeX class. Compile `manuscript/main.tex` and `manuscript/cover_letter.tex` with pdfLaTeX from the `manuscript/` directory, twice for cross-references. Compile the supplement as described in [supplement/README.md](supplement/README.md). Figure data inputs, dependencies and deterministic plotting commands are described in [manuscript/figure_source/README.md](manuscript/figure_source/README.md). Figure 2 displays all four latent reconstruction conditions, with the capacity-unmatched comparator labelled. Figure 4 uses the mathematical MIC inequality; Figures 1 and 3 retain their verified numerical content. All figures have editable sources and final-size previews were checked after compilation.
+
+The [reference-source ledger](manuscript/references_verified.csv) lists all 48 cited works, their primary records and their citation locations.

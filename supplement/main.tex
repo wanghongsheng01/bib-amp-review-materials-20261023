@@ -69,7 +69,7 @@ Operational sequence families connected uppercased backbones when their unit-cos
 \subsection*{Native point-value baselines}
 The first experiment used 46 mass-unit points from 33 peptide IDs, 17 operational families and 10 source groups, and 39 molar-unit points from 13 IDs, eight families and seven groups. A training-weighted mean, a composition ridge and a convolutional network were evaluated in 17 group-held-out folds. Ridge uses 20 amino-acid fractions and log length, training-only standardization, an unpenalized intercept and penalty coefficient one.
 
-The CNN is a PyTorch architecture adaptation from the locally cached QMAP implementation associated with the Witten regression approach. It is not a reproduction of the original author's training protocol or published performance. The fixed configuration has 183,069 parameters, dropout 0.5, Glorot initialization and 100 full-batch weighted updates per fold. Training labels are centered using the training fold only. The Keras-style Adam adaptation uses learning rate 0.001, coefficients 0.9 and 0.999, and epsilon $10^{-7}$. Each fold resets seed 1729. No tuning, early stopping or validation-selected endpoint was used. There were 1,700 CNN updates in total.
+The CNN is a PyTorch architecture adaptation from the locally cached QMAP implementation associated with the Witten regression approach \cite{ref13,ref12}. It is not a reproduction of the original author's training protocol or published performance. The fixed configuration has 183,069 parameters, dropout 0.5, Glorot initialization and 100 full-batch weighted updates per fold. Training labels are centered using the training fold only. The Keras-style Adam adaptation uses learning rate 0.001, coefficients 0.9 and 0.999, and epsilon $10^{-7}$. Each fold resets seed 1729. No tuning, early stopping or validation-selected endpoint was used. There were 1,700 CNN updates in total.
 
 The mass-unit ridge advantage reverses under peptide and record weighting. Its peptide-weighted MAE is 0.630031 versus 0.605203 for the mean, and record-weighted MAE is 0.602473 versus 0.574316. The CNN is worse under the primary MAE in both units; this statement does not claim it is worse under every reported weighting or that the architecture cannot learn on adequate data.
 
@@ -99,7 +99,7 @@ The latent-conditioned autoregressive experiment trained three arms for 1,000 up
 We trained posterior-parameter and direct-latent denoisers for 1,000 updates each and generated 64 new outputs, giving 96 comparison slots when combined with reused outputs. Direct-latent diffusion produced larger development MMD and dipeptide Jensen--Shannon distances than posterior-parameter diffusion in both terminal conditions. The mechanism criterion was therefore not met, and the sequential evaluation stopped at that stage. 
 
 \subsection*{Conditioning-context variants}
-Conditioning-context variants were not supported by the multistage screen. Equal-terminal development sequence negative log-likelihoods were 49.16431 (partial), 48.58710 (pooled), 48.91772 (separate) and 48.04302 (fresh autoregressive comparator); 384 attempts produced 381 nonempty and three empty outputs. The historical autoregressive value 57.96692 used a different protocol. Full outcomes and definitions are in Table S4. None of these exploratory results establishes improved generation under the tested protocol (main-text Figure 2).
+Conditioning-context variants were not supported by the multistage screen. Equal-terminal development sequence negative log-likelihoods were 49.16431 (partial), 48.58710 (pooled), 48.91772 (separate) and 48.04302 (fresh autoregressive comparator); 384 attempts produced 381 nonempty and three empty outputs. The historical autoregressive value 57.96692 used a different protocol. Full outcomes and definitions are in Table S4. None of these exploratory results establishes improved generation under the tested protocol (Table S4).
 \input{table_S4.tex}
 
 \section{Peptide characterization and antibacterial measurements (Table S5)}
@@ -135,6 +135,10 @@ The authors wrote the manuscript. AI coding assistants supported code inspection
 \section*{Data-file index}
 S1a--S1c contain aggregate, per-peptide and per-amino-acid reconstruction; S2a--S2e contain generation distances and complementary diagnostics; S3a--S3e contain activity-regression results; S4a--S4g contain the seven follow-up routes and detailed metrics. Table S5a displays all 27 assayed peptides; S5b--S5g provide paired MIC endpoints, replicate calls, raw readings, peptide characterization, threshold analyses and N semantics. Table S6 summarizes the published AMPGen workflow. The repository README identifies retained source inventories and contextual calculations from earlier revisions. Full-precision CSV files and their provenance hashes are preserved in the accompanying materials.
 
-\begingroup\raggedright\begin{thebibliography}{1}
+\begingroup\raggedright\begin{thebibliography}{9}
+\bibitem{ref13} Lavertu A, Corbeil J, Germain P. QMAP: a benchmark for standardized evaluation of antimicrobial peptide MIC and hemolytic activity regression. \textit{Sci Rep} 2026;16:25387. doi:10.1038/s41598-026-56004-8.
+\bibitem{ref12} Witten J, Witten Z. Deep learning regression model for antimicrobial peptide design. \textit{bioRxiv} 2019;692681. doi:10.1101/692681. Preprint.
 \bibitem{ref9} Jin S, Zeng Z, Xiong X, et al. AMPGen: an evolutionary information-reserved and diffusion-driven generative model for de novo design of antimicrobial peptides. \textit{Commun Biol} 2025;8:839. doi:10.1038/s42003-025-08282-7. PMID: 40447738. PMCID: PMC12125351.
-\end{thebibliography}\endgroup\end{document}
+\end{thebibliography}\endgroup
+
+\end{document}

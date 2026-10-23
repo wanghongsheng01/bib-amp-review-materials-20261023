@@ -1,5 +1,5 @@
 {
-  "version": "v4-2026-10-23",
+  "version": "v5-2026-10-23",
   "article_title": "Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design",
   "article_type": "Problem solving protocol",
   "source_commits": {
@@ -7,14 +7,16 @@
     "handoff": "f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b"
   },
   "document_sha256": {
-    "manuscript/main.tex": "947b5d00304b44465f61c69736388d1935e1c54776a44365fe1f736c462f0aa4",
-    "manuscript/main.pdf": "73a7f7916c9345f80dfa0d266e061e038888438b7d1222fc19399460d1f62c33",
-    "manuscript/cover_letter.pdf": "680f6f27375f2075ceaabe359f64f1fcac1f79b1eb93194803b64963f0644d68",
-    "supplement/main.tex": "b5751f12d6b45a8fe0ce551475d54a84674eb708551a03e191fb8741d4e55b72",
-    "supplement/supplement.pdf": "9bc625e6dee1cb28fcaa2184911f247edffc09c813e4d7834bbcda469f15e223",
-    "manuscript/cover_letter.tex": "ac4518960fe1423df1d53799599df8a5db3ed9e915768c89ec0e15fabb4f3e74"
+    "manuscript/main.tex": "87418c68f87a40233ea02296eef30fdc4e44d50acf81e781c874bee51f793595",
+    "manuscript/main.pdf": "65e336bcf0921953d1494ed00c07ba542304074c5a6d4c9fa04690356afa0168",
+    "manuscript/cover_letter.pdf": "c40c7a1605b1afff413eac51ee16123b35831a1f6985acb05562e9ff2ab7942d",
+    "supplement/main.tex": "7ecd8ec489d96a51f02fd2449e9002b117350afc6842651fb8b8d103f8cf506e",
+    "supplement/supplement.pdf": "d05f3ebca0922d0a7483751d29968855f4fe9534eb82965ac68b5755ca3634b5",
+    "manuscript/cover_letter.tex": "e933403c275a9fe63ae094c89154f0966a729a9d44a339f028956841b16d30ab"
   },
   "verification_scope": "Offline recomputation from saved outputs; training and checkpoint deserialization were not rerun. Original reported MIC and retrospective algorithmic endpoints are retained in parallel.",
-  "public_version_url": "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v4-2026-10-23",
-  "release_change_scope": "Scientific editorial revision, S4-S6 display tables and Figures 2 and 4; source numerical data and model weights unchanged."
+  "public_version_url": "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v5-2026-10-23",
+  "release_change_scope": "Scientific editorial revision following independent review, 48 verified main references, numerical latent-control Figure 2, Figure 4 inequality and float placement; computational/assay data and model weights unchanged.",
+  "main_references": 48,
+  "supplement_references": 3
 }

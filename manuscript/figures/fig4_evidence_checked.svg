@@ -35,7 +35,7 @@
 <text id="C-object-1-detail" x="244.5" y="231.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">OD600 to MIC</text>
 <rect id="C-object-2" x="353" y="199.0" width="153" height="43" fill="#FCF7ED" stroke="#B88426" stroke-width="0.65"/>
 <text id="C-object-2-name" x="429.5" y="216.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="700" fill="#242C32">S. aureus: 6/27 peptides</text>
-<text id="C-object-2-detail" x="429.5" y="231.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">MIC &lt;=31.25 μg/mL</text>
+<text id="C-object-2-detail" x="429.5" y="231.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">MIC ≤31.25 μg/mL</text>
 <polygon id="C-input-to-measurement" points="140,220.98 153.6,220.98 153.6,222.8 157,220.5 153.6,218.2 153.6,220.02 140,220.02" fill="#242C32"/>
 <polygon id="C-measurement-to-endpoint" points="332,220.98 345.6,220.98 345.6,222.8 349,220.5 345.6,218.2 345.6,220.02 332,220.02" fill="#242C32"/>
 </svg>

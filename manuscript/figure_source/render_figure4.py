@@ -148,7 +148,7 @@ rows = [
  ('C', 'Antibacterial activity', 10, OCHRE, PALE_OCHRE,
   ('27-peptide assay panel', 'Four bacterial strains'),
   ('Triplicate dilution assays', 'OD600 to MIC'),
-  ('S. aureus: 6/27 peptides', 'MIC <=31.25 μg/mL')),
+  ('S. aureus: 6/27 peptides', 'MIC ≤31.25 μg/mL')),
 ]
 for tag, title, y, color, fill, left, center, right in rows:
     text(tag+'-heading',tag+'  '+title,4,y+58,10.5,True,INK,align='left')

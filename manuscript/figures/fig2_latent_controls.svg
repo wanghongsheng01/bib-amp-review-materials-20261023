@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="510pt" height="236pt" viewBox="0 0 510 236" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 236 
+L 510 236 
+L 510 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 250 61.5 
+L 434.789633 61.5 
+L 434.789633 44.5 
+L 250 44.5 
+z
+" clip-path="url(#p8ed6b46838)" style="fill: #25648a; stroke: #25648a; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 250 96.5 
+L 276.089988 96.5 
+L 276.089988 79.5 
+L 250 79.5 
+z
+" clip-path="url(#p8ed6b46838)" style="fill: #b88426; stroke: #b88426; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 250 131.5 
+L 274.598712 131.5 
+L 274.598712 114.5 
+L 250 114.5 
+z
+" clip-path="url(#p8ed6b46838)" style="fill: #ad5c47; stroke: #ad5c47; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 250 180.5 
+L 282.216631 180.5 
+L 282.216631 163.5 
+L 250 163.5 
+z
+" clip-path="url(#p8ed6b46838)" style="fill: #777777; stroke: #777777; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 8 31 
+L 502 31 
+" clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #222222; stroke-width: 0.8"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 8 148 
+L 502 148 
+" clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #c7cbcf; stroke-width: 0.65"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 250 204 
+L 464 204 
+" clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #222222; stroke-width: 0.65"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 250 204 
+L 250 207 
+" clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #222222; stroke-width: 0.65"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 303.5 204 
+L 303.5 207 
+" clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #222222; stroke-width: 0.65"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 357 204 
+L 357 207 
+" clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #222222; stroke-width: 0.65"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 410.5 204 
+L 410.5 207 
+" clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #222222; stroke-width: 0.65"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 464 204 
+L 464 207 
+" clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #222222; stroke-width: 0.65"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #222222; font: 700 10.3px 'DejaVu Sans'; text-anchor: start" x="8" y="19.842156" transform="rotate(-0 8 19.842156)">Latent condition</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #222222; font: 700 10.3px 'DejaVu Sans'; text-anchor: end" x="500" y="19.842156" transform="rotate(-0 500 19.842156)">Score</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="8" y="55.593813" transform="rotate(-0 8 55.593813)">Matched latents (A)</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: end" x="500" y="55.593813" transform="rotate(-0 500 55.593813)">0.6908</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="8" y="90.463094" transform="rotate(-0 8 90.463094)">Mismatched latents (A_mismatch)</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: end" x="500" y="90.593813" transform="rotate(-0 500 90.593813)">0.0975</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="8" y="125.593812" transform="rotate(-0 8 125.593812)">Permuted-pair control (B)</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: end" x="500" y="125.593812" transform="rotate(-0 500 125.593812)">0.0920</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="8" y="168.593813" transform="rotate(-0 8 168.593813)">Additional comparator (C)</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #777777; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="8" y="183.593813" transform="rotate(-0 8 183.593813)">Capacity unmatched</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: end" x="500" y="174.593813" transform="rotate(-0 500 174.593813)">0.1204</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: middle" x="250" y="217.593813" transform="rotate(-0 250 217.593813)">0</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: middle" x="303.5" y="217.593813" transform="rotate(-0 303.5 217.593813)">0.2</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: middle" x="357" y="217.593813" transform="rotate(-0 357 217.593813)">0.4</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: middle" x="410.5" y="217.593813" transform="rotate(-0 410.5 217.593813)">0.6</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: middle" x="464" y="217.593813" transform="rotate(-0 464 217.593813)">0.8</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: middle" x="357" y="230.593813" transform="rotate(-0 357 230.593813)">Reconstruction score (higher is better)</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8ed6b46838">
+   <rect x="0" y="0" width="510" height="236"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -8,6 +8,7 @@ import os
 os.environ.setdefault("MPLBACKEND", "Agg")
 os.environ.setdefault("SOURCE_DATE_EPOCH", "0")
 from pathlib import Path
+import csv
 import hashlib
 import json
 import shutil
@@ -20,9 +21,9 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 FIG = ROOT / "figures"
-QA = ROOT / "qa"
+QA = Path(os.environ.get("FIGURE2_QA_DIR", ROOT / "qa"))
 for folder in (FIG, QA):
-    folder.mkdir(exist_ok=True)
+    folder.mkdir(parents=True, exist_ok=True)
 
 BLUE = "#25648A"
 RUST = "#AD5C47"
@@ -96,7 +97,7 @@ def save(fig, ax, stem):
     fig.savefig(FIG / f"{stem}.pdf", metadata={
         "Title": stem, "Author": "BIB AMP manuscript revision",
         "Subject": "Reported aggregate evidence, not a new experiment",
-        "Creator": "scripts/render_figures1_3.py", "CreationDate": None,
+        "Creator": "figure_source/render_figure2.py", "CreationDate": None,
         "ModDate": None})
     fig.savefig(FIG / f"{stem}.svg", metadata={"Date": None})
     fig.savefig(QA / f"{stem}-100dpi.png", dpi=100)
@@ -124,30 +125,40 @@ def save(fig, ax, stem):
 
 
 def figure2():
-    fig, ax = canvas(268)
-    text(ax,8,251,"Exploratory analysis",10.3,"bold")
-    text(ax,195,251,"Assessment",10.3,"bold")
-    text(ax,365,251,"Observed outcome",10.3,"bold")
-    line(ax,8,239,502,239,INK,.8)
-    rows=[
-      ("Training-posterior draws", "Source diagnostic", "MMD not improved"),
-      ("Coordinate permutation", "Source diagnostic", "MMD worsened"),
-      ("Reference-template prior", "Source diagnostic", "Mixed; extra information"),
-      ("KL warmup", "Reconstruction", "Accuracy decreased"),
-      ("Latent-conditioned AR", "Latent use / generation", "Detected / criterion unmet"),
-      ("Direct-latent diffusion", "MMD / dipeptide JS", "Criterion unmet"),
-      ("Conditioning context", "Conditioning variants", "Criteria unmet"),
-    ]
-    for i,(name,assessment,outcome) in enumerate(rows):
-      y=223-27*i
-      if i%2==0:ax.add_patch(Rectangle((8,y-12),494,24,facecolor=PALE,edgecolor="none"))
-      text(ax,12,y,name)
-      text(ax,195,y,assessment,size=9.2)
-      text(ax,365,y,outcome,size=9.2)
-    line(ax,8,46,502,46,INK,.8)
-    text(ax,8,31,"Each analysis addresses a distinct representation or sampling question.")
-    text(ax,8,15,"Full criteria and numerical results are provided in Supplementary Table S4.")
-    save(fig,ax,"fig2_route_gates")
+    source = ROOT.parent / "supplement/tables/Table_S4e_AR_information.csv"
+    with source.open(newline="") as fh:
+        values = {r["metric"]: r["value"] for r in csv.DictReader(fh)}
+    evidence = json.loads((ROOT.parent / "compute/data/evidence/amp_h5/ar_latent_v3/runs/natural_v1/SUMMARY.json").read_text())["information_gate"]
+    keys = ["A_S8", "A_mismatch_S8", "B_S8", "C"]
+    scores = [float(values[k]) for k in keys]
+    for k,v in zip(keys,scores):
+        assert abs(v-evidence[k]) < 1e-14
+    for k,r in [("A_S8","A"),("A_mismatch_S8","A_mismatch"),("B_S8","B")]:
+        fraction = evidence["exact_rational"][r]
+        assert abs(float(values[k])-fraction["numerator"]/fraction["denominator"]) < 1e-14
+    fig, ax = canvas(236)
+    text(ax,8,219,"Latent condition",10.3,"bold")
+    text(ax,500,219,"Score",10.3,"bold",ha="right")
+    line(ax,8,205,502,205,INK,.8)
+    labels = ["Matched latents (A)", "Mismatched latents (A_mismatch)",
+              "Permuted-pair control (B)", "Additional comparator (C)"]
+    positions = [183,148,113,64]
+    colors = [BLUE, OCHRE, RUST, GRAY]
+    for i,(label,y,v,color) in enumerate(zip(labels,positions,scores,colors)):
+        text(ax,8,y+(6 if i==3 else 0),label)
+        if i==3:
+            text(ax,8,y-9,"Capacity unmatched",color=GRAY)
+        bar(ax,250,y,214*v/0.8,17,color)
+        text(ax,500,y,f"{v:.4f}",ha="right")
+    line(ax,8,88,502,88)
+    axis(ax,250,32,214,.8,[0,.2,.4,.6,.8],["0","0.2","0.4","0.6","0.8"])
+    text(ax,357,8,"Reconstruction score (higher is better)",ha="center")
+    save(fig,ax,"fig2_latent_controls")
+    (QA / "figure2-data-receipt.json").write_text(json.dumps({
+        "source_sha256":hashlib.sha256(source.read_bytes()).hexdigest(),
+        "plotted_values":dict(zip(keys,scores)),
+        "exact_rational_check":"PASS for A, mismatch and B; C copied from supplied summary",
+        "error_bars":"not inferred from single fitted runs"},indent=2)+"\n")
 
 if __name__ == "__main__":
     figure2()
