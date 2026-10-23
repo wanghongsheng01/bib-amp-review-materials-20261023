@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite these versioned research materials when using the accompanying data and code."
+type: dataset
+title: "Research materials for Reconstruction gains in antimicrobial peptide generation do not establish generative superiority"
+version: "v3.1-2026-10-23"
+doi: "10.5281/zenodo.23586233"
+date-released: 2026-10-23
+url: "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v3.1-2026-10-23"
+repository-code: "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023"
+authors:
+  - family-names: "Wang"
+    given-names: "Hongsheng"
+    orcid: "https://orcid.org/0009-0009-8214-5150"
+    affiliation: "Zhejiang University; Loctek Ergonomic Technology Corp."
+  - family-names: "Wu"
+    given-names: "Fei"
+    orcid: "https://orcid.org/0000-0003-2139-8807"
+    affiliation: "Zhejiang University"
+  - family-names: "Lin"
+    given-names: "Feng"
+    orcid: "https://orcid.org/0000-0002-1199-5870"
+    affiliation: "Fuyao University of Science and Technology"

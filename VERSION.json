@@ -1,5 +1,5 @@
 {
-  "version": "v3-2026-10-23",
+  "version": "v3.1-2026-10-23",
   "article_title": "Reconstruction gains in antimicrobial peptide generation do not establish generative superiority",
   "article_type": "Problem solving protocol",
   "source_commits": {
@@ -7,11 +7,16 @@
     "handoff": "f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b"
   },
   "document_sha256": {
-    "manuscript/main.tex": "028d28e6bfb2891b80deadb913a9c1e1faaa7f0e595e9e9227e1b1c5761317ae",
-    "manuscript/main.pdf": "cbabe9b1d0af62f3bd92038e2e99e2f182946579ed7b709115b60241e2f5b20e",
-    "manuscript/cover_letter.pdf": "c7d23196293dfaec983b54d88eb05d5d0ab31327252fd914ba11d8292e4febec",
+    "manuscript/main.tex": "1b22b1007438fae777272ec2120da1a7f165d853b04689b0b05e80cb1eeaaab2",
+    "manuscript/main.pdf": "4267b86ca16d2ea874f1227a209ef654583abee830bae24563a831a8376e42a7",
+    "manuscript/cover_letter.pdf": "9a429910176c3e2abae0d1bd78c15ac784739d7d33bb6eac157c240f881b8e69",
     "supplement/main.tex": "55e5268da4e71614b8ae5cd3529d204b56ea713dd2cea290f947704f77a0acb1",
-    "supplement/supplement.pdf": "4dfc265b81bd5d3730129706891271cc0b44a8cedd13cf211f35ef93db251a63"
+    "supplement/supplement.pdf": "4dfc265b81bd5d3730129706891271cc0b44a8cedd13cf211f35ef93db251a63",
+    "manuscript/cover_letter.tex": "596f1907e12cc45cb6fc4f8939ccd6f633dabc1744eadb9d43e1d1f898708975"
   },
-  "verification_scope": "Offline recomputation from saved outputs; training and checkpoint deserialization were not rerun. Original reported MIC and retrospective algorithmic endpoints are retained in parallel."
+  "verification_scope": "Offline recomputation from saved outputs; training and checkpoint deserialization were not rerun. Original reported MIC and retrospective algorithmic endpoints are retained in parallel.",
+  "public_version_url": "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v3.1-2026-10-23",
+  "materials_doi": "10.5281/zenodo.23586233",
+  "materials_doi_scope": "Research-materials release; not the journal article DOI.",
+  "release_change_scope": "Public access and archive identification only; scientific results unchanged."
 }

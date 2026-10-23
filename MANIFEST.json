@@ -9,19 +9,24 @@
       "sha256": "e9f9cffa9258380810b94d3240cf2b2ce73b90f86bd330b9706b40f431b4a13c"
     },
     {
+      "path": "CITATION.cff",
+      "bytes": 1017,
+      "sha256": "87481ceb1cd70eb2120ed6a8daa8a62f21c9595a60062f992280a8127b09e0d7"
+    },
+    {
       "path": "COPYRIGHT_AND_USE.md",
-      "bytes": 1083,
-      "sha256": "9bdba00f2dfca99586b75f6dd8c55cb24857fb4eff322219e93d0af804cc5aa5"
+      "bytes": 1092,
+      "sha256": "4a5117aa59dc6b45c31a4a5de9ea306a357faf6332f15db05fed0cd5094c8d67"
     },
     {
       "path": "README.md",
-      "bytes": 5251,
-      "sha256": "60c451cc16375a7fe3c308e77db024fdd73e26cd160b4751d4c2a5c01cfd108e"
+      "bytes": 5668,
+      "sha256": "a8a7769add5463665107cc64bff017b3774e2a383d6b9d9e92aa34332645a81c"
     },
     {
       "path": "VERSION.json",
-      "bytes": 1069,
-      "sha256": "802da785c82512a8538c3403c406a3f8ca6baeb3776c302a1c560e2c788c203d"
+      "bytes": 1528,
+      "sha256": "2a62cc39f2f03f0c910fdd4862e1de753c4f46605da5225130d29e1746166171"
     },
     {
       "path": "compute/README.md",
@@ -490,13 +495,13 @@
     },
     {
       "path": "manuscript/cover_letter.pdf",
-      "bytes": 112790,
-      "sha256": "c7d23196293dfaec983b54d88eb05d5d0ab31327252fd914ba11d8292e4febec"
+      "bytes": 111895,
+      "sha256": "9a429910176c3e2abae0d1bd78c15ac784739d7d33bb6eac157c240f881b8e69"
     },
     {
       "path": "manuscript/cover_letter.tex",
-      "bytes": 4113,
-      "sha256": "5aae87436ebea4b924c4de2462bdd18e934c969a015f2fe7b65a140cadbf7a96"
+      "bytes": 4172,
+      "sha256": "596f1907e12cc45cb6fc4f8939ccd6f633dabc1744eadb9d43e1d1f898708975"
     },
     {
       "path": "manuscript/figure_source/README.md",
@@ -570,13 +575,13 @@
     },
     {
       "path": "manuscript/main.pdf",
-      "bytes": 535881,
-      "sha256": "cbabe9b1d0af62f3bd92038e2e99e2f182946579ed7b709115b60241e2f5b20e"
+      "bytes": 536366,
+      "sha256": "4267b86ca16d2ea874f1227a209ef654583abee830bae24563a831a8376e42a7"
     },
     {
       "path": "manuscript/main.tex",
-      "bytes": 60604,
-      "sha256": "028d28e6bfb2891b80deadb913a9c1e1faaa7f0e595e9e9227e1b1c5761317ae"
+      "bytes": 60650,
+      "sha256": "1b22b1007438fae777272ec2120da1a7f165d853b04689b0b05e80cb1eeaaab2"
     },
     {
       "path": "manuscript/oup-authoring-template.cls",

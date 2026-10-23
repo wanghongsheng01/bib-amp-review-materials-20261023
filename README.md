@@ -1,6 +1,8 @@
 # AMP study materials
 
-Release: **v3-2026-10-23**. Article: **Reconstruction gains in antimicrobial peptide generation do not establish generative superiority**.
+Release: **v3.1-2026-10-23**. Article: **Reconstruction gains in antimicrobial peptide generation do not establish generative superiority**.
+
+Public version: [v3.1-2026-10-23](https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v3.1-2026-10-23). Materials DOI: [10.5281/zenodo.23586233](https://doi.org/10.5281/zenodo.23586233). This DOI identifies the research-materials release, not a journal article. Version v3.1 updates public access and archive identification; the scientific results and the original v3 tag are unchanged.
 
 [Article PDF](manuscript/main.pdf) · [Supplement PDF](supplement/supplement.pdf) · [Editable Table 1](manuscript/Table_1_editable.docx) · [Complete supplementary CSV tables](supplement/tables/)
 
@@ -40,7 +42,7 @@ The verified commands reproduce calculations from saved outputs. They do not ret
 
 ## Provenance and use
 
-The early implementation is pinned to [3DHumanRehab/AMP, e7486fb](https://github.com/3DHumanRehab/AMP/tree/e7486fb714cbf5c663cc01052e42fb63d4ba3a40). The subsequent computational source is pinned to [the author-provided H5 snapshot, f1b748d](https://github.com/wanghongsheng01/amp-claude-handoff-20261013/tree/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b). See [COPYRIGHT_AND_USE.md](COPYRIGHT_AND_USE.md) for retained source rights and confidential review use.
+The early implementation is pinned to [3DHumanRehab/AMP, e7486fb](https://github.com/3DHumanRehab/AMP/tree/e7486fb714cbf5c663cc01052e42fb63d4ba3a40). The subsequent computational source is pinned to [the author-provided H5 snapshot, f1b748d](https://github.com/wanghongsheng01/amp-claude-handoff-20261013/tree/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b). See [COPYRIGHT_AND_USE.md](COPYRIGHT_AND_USE.md) for retained source rights and applicable conditions of use.
 
 ## Editable documents and figures
 
