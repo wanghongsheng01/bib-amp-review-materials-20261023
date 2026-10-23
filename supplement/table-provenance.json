@@ -1,0 +1,256 @@
+{
+  "tables": [
+    {
+      "output": "tables/Table_S1a_reconstruction_summary.csv",
+      "rows": 6,
+      "sha256": "93e5aeb327b2a4b525be8e7df87f22915e72182efda4d5325dec9c71241c9395",
+      "source": "computational/reviewer_candidate/results/S1_reconstruction_train_dev.csv",
+      "source_sha256": "93e5aeb327b2a4b525be8e7df87f22915e72182efda4d5325dec9c71241c9395",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S1c_reconstruction_by_amino_acid.csv",
+      "rows": 120,
+      "sha256": "db3c6b9eb24b1003cb454c637e90e113f97c408858eaf6e631684e1b3a2fe9dd",
+      "source": "computational/reviewer_candidate/results/S1_reconstruction_per_amino_acid.csv",
+      "source_sha256": "db3c6b9eb24b1003cb454c637e90e113f97c408858eaf6e631684e1b3a2fe9dd",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S2a_generation_96_distances.csv",
+      "rows": 96,
+      "sha256": "359e4e0e0066c1050737494020c7f59a2f7e445f47bfbb27c4cec42999875f88",
+      "source": "computational/reviewer_candidate/results/S2_generation_all_96_distances.csv",
+      "source_sha256": "359e4e0e0066c1050737494020c7f59a2f7e445f47bfbb27c4cec42999875f88",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S2b_generation_24_comparisons.csv",
+      "rows": 24,
+      "sha256": "6a23cf5ab44c7047a8d105d4056747f495ad23914731acbadfae5e2f0f8d4559",
+      "source": "computational/reviewer_candidate/results/S2_generation_24_comparisons.csv",
+      "source_sha256": "6a23cf5ab44c7047a8d105d4056747f495ad23914731acbadfae5e2f0f8d4559",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S2c_generation_recomputed.csv",
+      "rows": 96,
+      "sha256": "83758a74d19b29b20ddfe41ea2bc1437a5096f1de09b0116fd885574d062e251",
+      "source": "computational/reviewer_candidate/results/independent_generation_96_distances.csv",
+      "source_sha256": "83758a74d19b29b20ddfe41ea2bc1437a5096f1de09b0116fd885574d062e251",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S2d_generation_eligibility_entropy.csv",
+      "rows": 8,
+      "sha256": "511e132f0cdd3f552a7b0193d7b57df83ced3387de039d554e0431bca382c42b",
+      "source": "computational/reviewer_candidate/results/S3_generation_complementary.csv",
+      "source_sha256": "511e132f0cdd3f552a7b0193d7b57df83ced3387de039d554e0431bca382c42b",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S2e_generation_validity_copying.csv",
+      "rows": 8,
+      "sha256": "c614bb85e8c5465152d094ce8eb1f5db0c704bd7616f9a0533482657fb415ab6",
+      "source": "computational/reviewer_candidate/results/independent_generation_complementary.csv",
+      "source_sha256": "c614bb85e8c5465152d094ce8eb1f5db0c704bd7616f9a0533482657fb415ab6",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S3a_native_activity.csv",
+      "rows": 6,
+      "sha256": "74f52158c0e6c3b1517ffd9fe52790c31fa5d74c376fabcd70e04565b19c5427",
+      "source": "computational/reviewer_candidate/results/S7_native_activity_baselines.csv",
+      "source_sha256": "74f52158c0e6c3b1517ffd9fe52790c31fa5d74c376fabcd70e04565b19c5427",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S3b_censored_activity.csv",
+      "rows": 8,
+      "sha256": "ec53bcd45b4de773552348ccef45f260e1bda1341169bddce0b55892ffe50409",
+      "source": "computational/reviewer_candidate/results/S8_censored_activity_baselines.csv",
+      "source_sha256": "ec53bcd45b4de773552348ccef45f260e1bda1341169bddce0b55892ffe50409",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S3c_tail_endpoint_contrasts.csv",
+      "rows": 12,
+      "sha256": "8f1d93b057a54ee0c72a7e324289fe7933986a1f8aa1540b685495ffd0b65a7f",
+      "source": "computational/reviewer_candidate/results/S8_censored_contrasts.csv",
+      "source_sha256": "8f1d93b057a54ee0c72a7e324289fe7933986a1f8aa1540b685495ffd0b65a7f",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S3d_variance_decomposition.csv",
+      "rows": 2,
+      "sha256": "f9968245ed791af6018658de51f84ee2cf44c0d2bb4db9bb08050761b9763d20",
+      "source": "computational/reviewer_candidate/results/S9_activity_variance_decomposition.csv",
+      "source_sha256": "f9968245ed791af6018658de51f84ee2cf44c0d2bb4db9bb08050761b9763d20",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S3e_activity_recomputed.csv",
+      "rows": 14,
+      "sha256": "731838e63fedca8a2984a0397c1c17a9b5475cb95087124d8b99358ae890b374",
+      "source": "computational/reviewer_candidate/results/independent_activity_predictions_aggregated.csv",
+      "source_sha256": "731838e63fedca8a2984a0397c1c17a9b5475cb95087124d8b99358ae890b374",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S4a_route_classification.csv",
+      "rows": 7,
+      "sha256": "e57371d394c6b47893cd69e88fe64ee7900c1ead5f9308fc6a9c2544b2dfdbea",
+      "source": "computational/reviewer_candidate/results/S4_seven_routes.csv",
+      "source_sha256": "e57371d394c6b47893cd69e88fe64ee7900c1ead5f9308fc6a9c2544b2dfdbea",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S4b_source_substitution_96_distances.csv",
+      "rows": 96,
+      "sha256": "c8890cc716b3621a69771fd31ea3578726d4fe45010133a26cd3a70d9cd48c92",
+      "source": "computational/reviewer_candidate/results/S4_source_substitution_distances.csv",
+      "source_sha256": "c8890cc716b3621a69771fd31ea3578726d4fe45010133a26cd3a70d9cd48c92",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S4c_warmup_guards.csv",
+      "rows": 5,
+      "sha256": "d368ba8d1193b940633a294e30e048e95b5e0e762416c0e365eabde34376789c",
+      "source": "computational/reviewer_candidate/results/S4_warmup_guards.csv",
+      "source_sha256": "d368ba8d1193b940633a294e30e048e95b5e0e762416c0e365eabde34376789c",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S4d_warmup_paired_metrics.csv",
+      "rows": 10,
+      "sha256": "4e47a61f1777fbb84e4e75f820e536cd13f43ede659a92675d763afa5fdbe542",
+      "source": "computational/reviewer_candidate/results/S4_warmup_paired_metrics.csv",
+      "source_sha256": "4e47a61f1777fbb84e4e75f820e536cd13f43ede659a92675d763afa5fdbe542",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S4e_AR_information.csv",
+      "rows": 8,
+      "sha256": "28ed69da4e22fc8c8debd412143c26d21a93d20e9b61a0eedfc729101da472b3",
+      "source": "computational/reviewer_candidate/results/S4_AR_latent_information_gate.csv",
+      "source_sha256": "28ed69da4e22fc8c8debd412143c26d21a93d20e9b61a0eedfc729101da472b3",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S4f_direct_latent_training.csv",
+      "rows": 2,
+      "sha256": "3bd8452ab51904a8e421d97edbf5df17b7a303a8f45809dee152a613c3cedee7",
+      "source": "computational/reviewer_candidate/results/S4_direct_z_training.csv",
+      "source_sha256": "3bd8452ab51904a8e421d97edbf5df17b7a303a8f45809dee152a613c3cedee7",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S4g_conditioning_context.csv",
+      "rows": 12,
+      "sha256": "7cb949fac1b814dd308c5b13ccb4c5040abea066f9da5f3e20cf71b408a33c40",
+      "source": "computational/reviewer_candidate/results/S4_EB_context_complete_metrics.csv",
+      "source_sha256": "7cb949fac1b814dd308c5b13ccb4c5040abea066f9da5f3e20cf71b408a33c40",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S1b_reconstruction_per_peptide.csv",
+      "rows": 960,
+      "sha256": "8251719ed36c64a9392d2c16a46881f18db6e2ed5f30c6a3851065167a750edc",
+      "source": "computational/reviewer_candidate/data/evidence/amp_h5/feasibility/ce_recovery_four_arm_evaluation_v1/reconstruction_row_audit.json",
+      "source_sha256": "9c609572b2f8f213ee1e70b0fcc508c899960b9a7084043f9a808966cb5ccf95",
+      "transformation": "JSON to CSV, plus independently calculated lengths, aligned accuracy and exact-match flag"
+    },
+    {
+      "output": "tables/Table_S5a_order_delivery_manifest.csv",
+      "rows": 30,
+      "sha256": "d0306bc3f4b26c221c7a20c76e7528dc65ecd2ad9324d6e7151dc9b56b783661",
+      "source": "wetlab/public_candidate/data/sample_manifest_30.csv",
+      "source_sha256": "d0306bc3f4b26c221c7a20c76e7528dc65ecd2ad9324d6e7151dc9b56b783661",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S5b_MIC_reported_algorithm.csv",
+      "rows": 108,
+      "sha256": "fd3274e8ac9c600b62ba8a05838b81f1aeadcbdc90ba3112733076349bb27c84",
+      "source": "wetlab/public_candidate/data/mic_algorithm_calls.csv",
+      "source_sha256": "fd3274e8ac9c600b62ba8a05838b81f1aeadcbdc90ba3112733076349bb27c84",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S5d_OD600_readings.csv",
+      "rows": 3240,
+      "sha256": "8687c1849ec822c10c584931f1e4132c31e8844a6c0e648e753300d115a885d7",
+      "source": "wetlab/public_candidate/data/od600_raw.csv",
+      "source_sha256": "8687c1849ec822c10c584931f1e4132c31e8844a6c0e648e753300d115a885d7",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S5e_supplier_facts.csv",
+      "rows": 27,
+      "sha256": "21dac26799bd49badf2aa6107fc04a50b08416fe5d6a288c87f3c33db361532c",
+      "source": "wetlab/public_candidate/data/coa_27_facts.csv",
+      "source_sha256": "21dac26799bd49badf2aa6107fc04a50b08416fe5d6a288c87f3c33db361532c",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S5f_all_threshold_counts.csv",
+      "rows": 320,
+      "sha256": "12af9062e65f2f9df8bb9ec16ccbbbc81572aa387b08327e67cde622b988225d",
+      "source": "wetlab/public_candidate/data/threshold_counts_all.csv",
+      "source_sha256": "12af9062e65f2f9df8bb9ec16ccbbbc81572aa387b08327e67cde622b988225d",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S5g_N_semantics.csv",
+      "rows": 108,
+      "sha256": "fa0ed29aae7b6448a6d88dd55bfd7ff20693dc2a42dddee149504e82dedb0567",
+      "source": "wetlab/public_candidate/data/N_semantics_cells.csv",
+      "source_sha256": "fa0ed29aae7b6448a6d88dd55bfd7ff20693dc2a42dddee149504e82dedb0567",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S5h_design_group_counts.csv",
+      "rows": 6,
+      "sha256": "96d1105153612b943d07f42692a31a7b61eb3272bd566f71b285aa25bc67d57b",
+      "source": "wetlab/public_candidate/data/group_counts.csv",
+      "source_sha256": "96d1105153612b943d07f42692a31a7b61eb3272bd566f71b285aa25bc67d57b",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S6b_molar_mass_equivalents.csv",
+      "rows": 27,
+      "sha256": "9445788e1ad54b073412be14ea947ed755c6c6e070b4fd4d8b750d82458cbe2d",
+      "source": "wetlab/public_candidate/data/molar_threshold_equivalents.csv",
+      "source_sha256": "9445788e1ad54b073412be14ea947ed755c6c6e070b4fd4d8b750d82458cbe2d",
+      "transformation": "unchanged values"
+    },
+    {
+      "output": "tables/Table_S5c_MIC_discrepancies.csv",
+      "rows": 3,
+      "sha256": "3edae133f0d5f7f9c5c4baac1965894dd258a6ca2241df6e1f09b4c43952dcb4",
+      "source": "wetlab/public_candidate/data/mic_algorithm_calls.csv",
+      "source_sha256": "fd3274e8ac9c600b62ba8a05838b81f1aeadcbdc90ba3112733076349bb27c84",
+      "transformation": "Filter to the three reported-versus-algorithm differences; retain every original field"
+    },
+    {
+      "output": "tables/Table_S6a_AMPGen_comparison.csv",
+      "rows": 8,
+      "sha256": "0e69be771ae4f16c13d25863a0400fd94adc8f15d8f5b672f2375e49ee9d8a33",
+      "source": "supplement/source/AMPGen_publisher_facts.json",
+      "source_sha256": "5aed8b344b9603746da9fc8ec1dd13dc654855178197041e07b49c9eabc5e3a9",
+      "transformation": "Targeted publisher facts plus Table S5 counts; initial and follow-up AMPGen populations kept separate",
+      "additional_sources": [
+        {
+          "path": "wetlab/public_candidate/data/threshold_counts_all.csv",
+          "sha256": "12af9062e65f2f9df8bb9ec16ccbbbc81572aa387b08327e67cde622b988225d"
+        },
+        {
+          "path": "wetlab/public_candidate/data/group_counts.csv",
+          "sha256": "96d1105153612b943d07f42692a31a7b61eb3272bd566f71b285aa25bc67d57b"
+        }
+      ]
+    }
+  ],
+  "computational_source_commit": "f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b",
+  "boundary": "Saved-output arithmetic, recovered assay records and factual editing only; no new experiments or MIC adjudication"
+}

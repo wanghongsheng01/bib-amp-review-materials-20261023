@@ -1,0 +1,44 @@
+\begingroup\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{lrrrrrrrr}
+\caption*{\textbf{Table S3e (native points).} All six independently recomputed error statistics. G, P and R denote source-group/peptide, peptide-only and record weighting; units are log10 native concentration.}\\
+\toprule
+Unit & Model & Rows & MAE G & MAE P & MAE R & RMSE G & RMSE P & RMSE R \\
+\midrule\endfirsthead
+Unit & Model & Rows & MAE G & MAE P & MAE R & RMSE G & RMSE P & RMSE R \\
+\midrule\endhead
+\ug & Mean & 46 & 0.8110 & 0.6052 & 0.5743 & 1.0086 & 0.7629 & 0.7156 \\
+\ug & Ridge & 46 & 0.7754 & 0.6300 & 0.6025 & 0.9475 & 0.7849 & 0.7598 \\
+\ug & CNN & 46 & 0.8198 & 0.6272 & 0.5730 & 1.0109 & 0.7823 & 0.7204 \\
+$\mu$M & Mean & 39 & 0.5170 & 0.4127 & 0.4409 & 0.6128 & 0.5203 & 0.5125 \\
+$\mu$M & Ridge & 39 & 0.5822 & 0.4436 & 0.4529 & 0.6924 & 0.5730 & 0.5846 \\
+$\mu$M & CNN & 39 & 0.5763 & 0.4636 & 0.5072 & 0.7115 & 0.6119 & 0.5920 \\
+\bottomrule\end{longtable}\endgroup
+\begingroup\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{lrrrrrrrr}
+\caption*{\textbf{Table S3e (censoring screen).} All six independently recomputed error statistics. G, P and R denote source-group/peptide, peptide-only and record weighting; units are log10 native concentration.}\\
+\toprule
+Unit & Model & Rows & MAE G & MAE P & MAE R & RMSE G & RMSE P & RMSE R \\
+\midrule\endfirsthead
+Unit & Model & Rows & MAE G & MAE P & MAE R & RMSE G & RMSE P & RMSE R \\
+\midrule\endhead
+\ug & Point mean & 79 & 0.6609 & 0.5614 & 0.5241 & 0.8122 & 0.6909 & 0.6466 \\
+\ug & Point ridge & 79 & 0.7877 & 0.6207 & 0.5811 & 0.9604 & 0.7643 & 0.7142 \\
+\ug & Endpoint & 79 & 0.8210 & 0.6265 & 0.6089 & 1.0098 & 0.7807 & 0.7657 \\
+\ug & Tail & 79 & 0.8441 & 0.6311 & 0.6256 & 1.0554 & 0.7963 & 0.8024 \\
+$\mu$M & Point mean & 68 & 0.5496 & 0.5334 & 0.4661 & 0.6510 & 0.6329 & 0.5974 \\
+$\mu$M & Point ridge & 68 & 0.5963 & 0.5300 & 0.4724 & 0.6893 & 0.6219 & 0.6054 \\
+$\mu$M & Endpoint & 68 & 0.5895 & 0.4780 & 0.4763 & 0.7237 & 0.6109 & 0.5959 \\
+$\mu$M & Tail & 68 & 0.7269 & 0.6384 & 0.6716 & 0.9022 & 0.7830 & 0.8084 \\
+\bottomrule\end{longtable}\endgroup
+\begingroup\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{lrrrr}
+\caption*{\textbf{Table S3d.} Variance decomposition retained from the source diagnostic.}\\
+\toprule
+Unit & Between fraction & Between variance & Within variance & Total variance \\
+\midrule\endfirsthead
+Unit & Between fraction & Between variance & Within variance & Total variance \\
+\midrule\endhead
+$\mu$M & 0.713730 & 0.269155 & 0.107955 & 0.377110 \\
+\ug & 0.908309 & 0.548142 & 0.055333 & 0.603476 \\
+\bottomrule\end{longtable}\endgroup
+\noindent Tables S3a and S3b retain the original complete model/unit summaries and cohort counts; Table S3c contains all 12 tail-minus-endpoint MAE/RMSE contrasts across the three weighting schemes.

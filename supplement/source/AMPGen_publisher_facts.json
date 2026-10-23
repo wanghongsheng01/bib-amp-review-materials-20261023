@@ -1,0 +1,31 @@
+{
+  "checked_date": "2026-10-23",
+  "checks": [
+    {
+      "reference": "ref9",
+      "url": "https://www.nature.com/articles/s42003-025-08282-7",
+      "locator": "Results > A Wet-lab validation protocol; Figure3c legend; Methods > Measurement of minimum inhibitory concentration",
+      "short_quote": "31 exhibited antibacterial effects (MIC \u2264 75 \u00b5M against S. aureus or E. coli)",
+      "verified_facts": {
+        "initial_candidates": 40,
+        "initial_synthesized": 38,
+        "initial_active": 31,
+        "initial_success_percent": 81.58,
+        "initial_endpoints": [
+          "E. coli K88",
+          "S. aureus ATCC29213"
+        ],
+        "initial_success_rule": "MIC \u226475\u00b5M against either initial endpoint",
+        "followup_selected_peptides": 9,
+        "followup_selection": "MIC<5\u00b5M against both initial targets",
+        "followup_panel": [
+          "E. coli ATCC25922",
+          "P. aeruginosa ATCC27853",
+          "S. aureus ATCC25923",
+          "E. faecalis ATCC29212"
+        ]
+      },
+      "scope_limit": "This inspection confirms the publication's reported methods/results only; no external raw assay data reanalysis. No conclusion about nonoverlap of this user's own peptides, datasets or checkpoints follows from metadata."
+    }
+  ]
+}

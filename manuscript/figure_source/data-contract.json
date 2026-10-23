@@ -1,0 +1,198 @@
+{
+  "kind": "factual_corrections_of_existing_author_figures",
+  "submission_approval": false,
+  "policy_boundary": "Factual corrections and code assistance on existing researcher-authored figures; no new scientific argument or caption, and no automatic BIB AI-policy compliance claim.",
+  "source_files": {
+    "outputs/BIB_AMP_revised_2026-10-22_v2/main.tex": "e560aadf9bb02dcbcbe92a3bb7779ce3aa9076dd6b24a7fb9884c7dfc1ad4cd8",
+    "outputs/BIB_AMP_revised_2026-10-22_v2/cover_letter.tex": "c8ca90f27a9973dc2ddb1a7a94d975456caeb5b7434ba89919db92e7816076e5",
+    "outputs/BIB_AMP_revised_2026-10-22_v2/figures/fig3_mic_ladders.pdf": "5ec258355a5b82889afd2b6f3d755502c3fd644b6dd74771c29058f4ab394945",
+    "outputs/BIB_AMP_revised_2026-10-22_v2/figures/fig3_mic_ladders.svg": "bfa5947cce7aa056345ba385960c7b7e09d597bfe0acb5c227839feb911a2182",
+    "outputs/BIB_AMP_revised_2026-10-22_v2/figures/fig4_disclosure_decision.pdf": "7f9ee67e86107cb7fc3b6632bcd5819d365a202ff97440f32d509f346abd7823",
+    "outputs/BIB_AMP_revised_2026-10-22_v2/figures/fig4_disclosure_decision.svg": "9da4632de801a58e535ffeefa7d51356dd50931586f1ff687faeb22040737a6f",
+    "work/submission_2026-10-23/wetlab/public_candidate/data/od600_raw.csv": "8687c1849ec822c10c584931f1e4132c31e8844a6c0e648e753300d115a885d7",
+    "work/submission_2026-10-23/wetlab/public_candidate/data/mic_summary_reported.csv": "40a708b3b39fdf50d87c237bf94db3fd97933264ee2a6c00d437e4259313d1ae",
+    "work/submission_2026-10-23/wetlab/public_candidate/data/sample_manifest_30.csv": "d0306bc3f4b26c221c7a20c76e7528dc65ecd2ad9324d6e7151dc9b56b783661"
+  },
+  "representations": {
+    "R": "Original reported MIC summary, unchanged",
+    "A": "Retrospective algorithm from recovered OD600 values; not an adjudication of true MIC"
+  },
+  "algorithm": {
+    "replicate": "minimum tested concentration with OD600 < 0.10; no qualifying point -> N",
+    "cell": "at least 2 identical calls among 3 replicates; otherwise no_consensus",
+    "legacy_N_comparison": "no_endpoint_majority and no_consensus both mapped to N only for historical agreement"
+  },
+  "strains": [
+    {
+      "strain": "E. coli",
+      "key": "ecoli",
+      "reported": {
+        "numeric": 10,
+        "below32": 2,
+        "below200": 5
+      },
+      "algorithm": {
+        "numeric": 10,
+        "below32": 2,
+        "below200": 5
+      }
+    },
+    {
+      "strain": "P. aeruginosa",
+      "key": "paeruginosa",
+      "reported": {
+        "numeric": 2,
+        "below32": 0,
+        "below200": 1
+      },
+      "algorithm": {
+        "numeric": 3,
+        "below32": 1,
+        "below200": 2
+      }
+    },
+    {
+      "strain": "S. aureus",
+      "key": "saureus",
+      "reported": {
+        "numeric": 11,
+        "below32": 6,
+        "below200": 6
+      },
+      "algorithm": {
+        "numeric": 11,
+        "below32": 6,
+        "below200": 7
+      }
+    },
+    {
+      "strain": "E. faecalis",
+      "key": "efaecalis",
+      "reported": {
+        "numeric": 7,
+        "below32": 1,
+        "below200": 6
+      },
+      "algorithm": {
+        "numeric": 6,
+        "below32": 1,
+        "below200": 5
+      }
+    }
+  ],
+  "saureus_bins_ug_ml": [
+    {
+      "label": "≤31.25",
+      "reported": 6,
+      "algorithm": 6
+    },
+    {
+      "label": "125",
+      "reported": 0,
+      "algorithm": 1
+    },
+    {
+      "label": "≥250",
+      "reported": 5,
+      "algorithm": 4
+    },
+    {
+      "label": "N",
+      "reported": 16,
+      "algorithm": 16
+    }
+  ],
+  "od600_count": 3240,
+  "replicate_series": 324,
+  "assay_cells": 108,
+  "agreement_legacy_N": 105,
+  "differences": [
+    {
+      "sample_id": "pp1-1",
+      "strain": "S. aureus",
+      "reported": 250.0,
+      "algorithm": 125.0,
+      "replicates": [
+        250.0,
+        125.0,
+        125.0
+      ],
+      "algorithm_status": "numeric_consensus"
+    },
+    {
+      "sample_id": "pp1-1",
+      "strain": "E. faecalis",
+      "reported": 125.0,
+      "algorithm": "N",
+      "replicates": [
+        "N",
+        "N",
+        "N"
+      ],
+      "algorithm_status": "no_endpoint_majority"
+    },
+    {
+      "sample_id": "pp3-14",
+      "strain": "P. aeruginosa",
+      "reported": "N",
+      "algorithm": 15.625,
+      "replicates": [
+        15.625,
+        15.625,
+        15.625
+      ],
+      "algorithm_status": "numeric_consensus"
+    }
+  ],
+  "samples": {
+    "ordered": 30,
+    "assayed": 27,
+    "not_assayed": [
+      "pp1-6",
+      "pp3-10",
+      "pp3-8"
+    ],
+    "reason_for_absence": "not established",
+    "checkpoint_to_sample_mapping": "not recovered"
+  },
+  "N_semantics": {
+    "reported_N_cells": 78,
+    "algorithm_statuses": {
+      "numeric_consensus": 30,
+      "no_endpoint_majority": 77,
+      "no_consensus": 1
+    }
+  },
+  "required_labels": [
+    "Original figure; red boxes identify correction locations",
+    "R: original reported summary",
+    "A: retrospective algorithm",
+    "Not an adjudication of true MIC"
+  ],
+  "forbidden_inventions": [
+    "true MIC adjudication",
+    "prospective endpoint rule",
+    "checkpoint/sample assignment",
+    "new assay",
+    "new scientific argument",
+    "no inhibition inferred from N",
+    "submission-ready or policy-cleared status"
+  ],
+  "final_width_mm": 178,
+  "source_width_pt": 510,
+  "minimum_new_label_pt": 9.4,
+  "official_venue_font_floor": "BIB cached guidelines specify high quality but no numeric illustration font floor; 9.2 pt final minimum is a local readability target, not a BIB rule",
+  "unmodified_manuscript_caption_lines": [
+    269,
+    330
+  ],
+  "review_scope": "Checked figure edits and preserved-original redline review plates; main manuscript not edited by this agent; final page integration must be checked by parent.",
+  "author_basis": "User clarification supplied to parent: current and historical manuscript versions were authored by the researcher.",
+  "checked_assets": {
+    "figure3": "fig3_mic_checked",
+    "figure4": "fig4_evidence_checked",
+    "redline3": "fig3_factcheck_redline",
+    "redline4": "fig4_factcheck_redline",
+    "status": "technical fact-correction candidates; no automatic BIB policy approval"
+  }
+}

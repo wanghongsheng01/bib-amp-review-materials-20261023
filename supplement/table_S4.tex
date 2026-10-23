@@ -1,0 +1,52 @@
+\begingroup\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\raggedright\arraybackslash}p{.19\linewidth}>{\raggedright\arraybackslash}p{.13\linewidth}>{\raggedright\arraybackslash}p{.20\linewidth}>{\raggedright\arraybackslash}p{.38\linewidth}}
+\caption*{\textbf{Table S4a.} Route-specific evidence categories. A diagnostic comparison or unperformed generation gate is not labelled a failed generation experiment.}\\
+\toprule
+Route & Information & Screen classification & Recorded outcome \\
+\midrule\endfirsthead
+Route & Information & Screen classification & Recorded outcome \\
+\midrule\endhead
+Latent substitution & Not applicable & Source diagnostic & Development MMD rises in both terminal groups relative to reused CE. \\
+Coordinate permutation & Not applicable & Source diagnostic & Development MMD rises in both groups relative to posterior-source B. \\
+Reference-template prior & Not applicable & Source diagnostic & MMD is mixed relative to CE; extra reference information excludes a terminal-only ranking. \\
+KL warmup & Not applicable & Generation not evaluated & Four reconstruction/resource guards fail; a separate investment threshold passes. \\
+Latent-conditioned AR & Pass & Generation fail & Matched S8 0.690802; evaluation mismatch 0.097533; permuted-training control 0.091958. \\
+Direct-latent diffusion & Not applicable & Mechanism screen fail & Sequential value screen not interpreted; checkpoint audit incomplete after safe-loader rejection. \\
+Conditioning-context variants & Not applicable & Overall not supported & Some generation guards and selected NLL criteria fail; 384 attempts include three empty outputs. \\
+\bottomrule\end{longtable}\endgroup
+\begingroup\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{>{\raggedright\arraybackslash}p{.51\linewidth}l>{\raggedright\arraybackslash}p{.32\linewidth}}
+\caption*{\textbf{Table S4c.} All warmup guards and the separate investment screen.}\\
+\toprule
+Guard & Outcome & Type \\
+\midrule\endfirsthead
+Guard & Outcome & Type \\
+\midrule\endhead
+M length MAE no greater than baseline zero & Fail & paired reconstruction/resource guard \\
+M sequence equal nondecrease & Fail & paired reconstruction/resource guard \\
+S8 sequence equal gain at least 1 over 20 & Fail & paired reconstruction/resource guard \\
+S8 supported AA macro nondecrease & Fail & paired reconstruction/resource guard \\
+M minus S8 gt 0.05 & Pass & separate investment screen; not generation success \\
+\bottomrule\end{longtable}\endgroup
+\begingroup\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{lrrrrrr}
+\caption*{\textbf{Table S4g.} Conditioning-context attempt counts and development sequence NLL. Full CV, train/development distances and all recorded guards remain in the editable CSV.}\\
+\toprule
+Method & Terminal & Attempts & 1--48 & 5--48 & Empty & Dev NLL \\
+\midrule\endfirsthead
+Method & Terminal & Attempts & 1--48 & 5--48 & Empty & Dev NLL \\
+\midrule\endhead
+ar\_cv & Amide & 32 & 32 & 31 & 0 & 44.3340 \\
+ar\_cv & Free & 32 & 30 & 30 & 2 & 51.7520 \\
+ar\_historical & Amide & 32 & 32 & 32 & 0 & 53.0354 \\
+ar\_historical & Free & 32 & 32 & 32 & 0 & 62.8984 \\
+ngram & Amide & 32 & 31 & 20 & 1 & 45.4873 \\
+ngram & Free & 32 & 32 & 27 & 0 & 53.4606 \\
+partial & Amide & 32 & 32 & 21 & 0 & 45.3266 \\
+partial & Free & 32 & 32 & 29 & 0 & 53.0020 \\
+pooled & Amide & 32 & 32 & 25 & 0 & 44.1151 \\
+pooled & Free & 32 & 32 & 23 & 0 & 53.0591 \\
+separate & Amide & 32 & 32 & 19 & 0 & 44.8967 \\
+separate & Free & 32 & 32 & 27 & 0 & 52.9387 \\
+\bottomrule\end{longtable}\endgroup
+\noindent Tables S4b--S4g retain all 96 source-substitution distances, ten paired warmup statistics, eight information-gate entries, both direct-latent training rows and all 12 model and terminal combinations for the conditioning-context analysis.

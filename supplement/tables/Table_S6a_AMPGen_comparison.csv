@@ -1,0 +1,9 @@
+cohort,ordered_or_designed,assayed_or_synthesized,numerator,denominator,criterion,targets,fraction,source,scope
+AMPGen initial validation,40,38,31,38,MIC <=75 uM against either initial target,E. coli K88; S. aureus ATCC29213,31/38 (81.58%),https://www.nature.com/articles/s42003-025-08282-7,Published result; no external raw-data reanalysis
+AMPGen selected follow-up,not applicable,9,not reported here,9,Selected for MIC <5 uM against both initial targets; four-strain follow-up is a separate cohort,E. coli ATCC25922; P. aeruginosa ATCC27853; S. aureus ATCC25923; E. faecalis ATCC29212,Not the denominator of 31/38,https://www.nature.com/articles/s42003-025-08282-7,Published follow-up panel includes S. aureus ATCC 25923
+"Present record: original summary, ordered denominator",30,27,6,30,S. aureus MIC <200 ug/mL,S. aureus ATCC 29213,6/30 (20.00%),Table S5,Original summary
+"Present record: original summary, assayed denominator",30,27,6,27,S. aureus MIC <200 ug/mL,S. aureus ATCC 29213,6/27 (22.22%),Table S5,Original summary
+"Present record: algorithm, ordered denominator",30,27,7,30,Retrospective S. aureus endpoint <200 ug/mL,S. aureus ATCC 29213,7/30 (23.33%),Table S5,Retrospective calculation; not true-MIC adjudication
+"Present record: algorithm, assayed denominator",30,27,7,27,Retrospective S. aureus endpoint <200 ug/mL,S. aureus ATCC 29213,7/27 (25.93%),Table S5,Retrospective calculation; not true-MIC adjudication
+"Present record: operational spectrum-label match, ordered",30,27,3,30,Original design-group operational pattern at <200 ug/mL; N treated as nonqualifying,Four measured strains,3/30 (10.00%),Table S5h,Same count under both representations; not proof of specificity
+"Present record: operational spectrum-label match, assayed",30,27,3,27,Original design-group operational pattern at <200 ug/mL; N treated as nonqualifying,Four measured strains,3/27 (11.11%),Table S5h,Same count under both representations; not proof of specificity

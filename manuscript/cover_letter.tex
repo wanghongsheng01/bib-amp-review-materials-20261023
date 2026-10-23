@@ -1,0 +1,42 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=20mm]{geometry}
+\usepackage{textcomp}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\begin{document}
+23 October 2026\par
+The Editors, \textit{Briefings in Bioinformatics}\par
+Article type: Problem solving protocol\par
+Manuscript: \textit{Reconstruction gains in antimicrobial peptide generation do not establish generative superiority}\par
+Authors: Hongsheng Wang, Fei Wu and Feng Lin
+
+Dear Editors,
+
+We submit this manuscript for consideration as a Problem solving protocol. It examines whether a reconstruction improvement establishes generative superiority within a fixed antimicrobial peptide (AMP) development protocol, and uses a separate historical laboratory case study to clarify the evidence needed to connect computational design with measured activity.
+
+The computational comparison holds CE21 and MSE21 architecture, initialization, batches, decoder and training schedule fixed while changing reconstruction loss. Development residue micro accuracy rises from 12.55\% to 70.90\%. CE21 improves six specified distributional distances over MSE21 in both terminal conditions and against both reference sets, but remains behind a terminal-conditioned LSTM on all 24 comparisons. These are descriptive results from one training seed and development data used during model development. The seven exploratory routes have distinct diagnostic and gate outcomes; they do not establish improved generation under the tested configurations.
+
+The historical case study contains 30 ordered and 27 assayed peptides. A retrospective MIC algorithm agrees with 105 of 108 original summary cells. At the strict \textit{S. aureus} threshold below 200 \textmu{}g/mL, the original summary gives six active peptides (6/30 ordered; 6/27 assayed), and the algorithm gives seven (7/30; 7/27). Both representations and the three differing endpoints are retained. These calculations do not adjudicate true MICs, establish prospective endpoint selection or attribute these samples to an evaluated model. The disclosure framework separates these scientific questions.
+
+Hongsheng Wang and Feng Lin are also authors of AMPGen (\textit{Communications Biology}, 2025;8:839). AMPGen reports 31/38 peptides active at $\leq$75 \textmu{}M against either of two initial targets; nine selected peptides subsequently underwent a four-strain extension. The present comparison explicitly distinguishes those stages, strain identities, thresholds and denominators, and does not treat the success fractions as a direct model comparison.
+
+Supplementary Methods and Tables S1--S6, sample-level assay data, frozen computational outputs and offline calculation scripts accompany the manuscript. Versioned reviewer materials are held at \url{https://github.com/wanghongsheng01/bib-amp-review-materials-20261023}, currently an access-restricted repository. The scripts recalculate summary results without model training or access to the reserved evaluation partition.
+
+The authors wrote the manuscript. OpenAI Codex assisted with source and reference checking, code inspection, independent recalculation of saved outputs, deterministic plotting code, factual corrections and language editing. The supplementary disclosure records this assistance. No generative images or new laboratory measurements were created, and the human authors retain responsibility for the scientific content.
+
+The author-supplied contribution and competing-interest declarations identify Hongsheng Wang's Loctek affiliation and the institutional collaborations. Fei Wu is named as guarantor. The study involves no human or animal subjects.
+
+Sincerely,\par
+\textbf{Hongsheng Wang}\par
+Corresponding author\par
+College of Computer Science and Technology, Zhejiang University\par
+Artificial Intelligence Department, Loctek Ergonomic Technology Corp.\par
+\href{mailto:wanghongsheng@zju.edu.cn}{wanghongsheng@zju.edu.cn}
+\end{document}

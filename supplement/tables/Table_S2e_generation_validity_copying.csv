@@ -1,0 +1,9 @@
+method,terminal,requests,valid_1_48_count,valid_5_48_count,exact_sequence_copy_any_train_terminal_count,unique_valid_count
+CE21_DDPM,AMD,16,16,15,0,16
+CE21_DDPM,FREE,16,16,14,0,16
+MSE21_DDPM,AMD,16,16,10,0,16
+MSE21_DDPM,FREE,16,16,16,0,16
+scalar_DDPM,AMD,16,16,16,0,16
+scalar_DDPM,FREE,16,16,16,0,16
+terminal_LSTM,AMD,16,16,16,0,16
+terminal_LSTM,FREE,16,16,16,0,16

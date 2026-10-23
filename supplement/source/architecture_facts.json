@@ -1,0 +1,348 @@
+{
+  "method": "Static inspection only of the exact packaged historical source and executed fixed configs; no imports, model execution, tensor loading or checkpoint deserialization.",
+  "checked_utc": "2026-10-23T03:50:18.407904+00:00",
+  "configuration": {
+    "out_dim": {
+      "CE21": 21,
+      "MSE21": 21,
+      "scalar_legacy": 1
+    },
+    "con_dim": 3,
+    "latent_channels": 16,
+    "sqz_prior": false,
+    "cond_drop": false,
+    "use_prior_flow": true,
+    "device": "cpu",
+    "references": [
+      {
+        "repository_relative_path": "model/implementation/vae_pipeline_formal_v2.py",
+        "line_start": 189,
+        "line_end": 192,
+        "sha256": "e97d2a766774461793cba1860455e4cb4c8d689656b60becc326a9f11297ca9b"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/vae.py",
+        "line_start": 332,
+        "line_end": 347,
+        "sha256": "161f9766330119e10ea75d5ceccd54bb1c7a671c8b77f4ad313e76df2a993e09"
+      }
+    ]
+  },
+  "inputs": {
+    "sequence_tokens": {
+      "vocabulary": 21,
+      "amino_acids": 20,
+      "padding_index": 20,
+      "positions": 48,
+      "embedding_dimension": 100
+    },
+    "residue_descriptors": {
+      "shape": "B x 3 x 48",
+      "projection": "Conv1d(3,100,kernel=3,padding=1)"
+    },
+    "global_descriptors": {
+      "dimension": 9,
+      "scaling": "Train-only population z-score, followed by abs for global descriptors; residue descriptors use signed z-scores."
+    },
+    "terminal_condition": "FREE=0, AMD=1 is supplied to DDPM, not to the VAE encoder as a separate embedding.",
+    "references": [
+      {
+        "repository_relative_path": "model/implementation/vae_pipeline_formal_v2.py",
+        "line_start": 154,
+        "line_end": 186,
+        "sha256": "e97d2a766774461793cba1860455e4cb4c8d689656b60becc326a9f11297ca9b"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/vae.py",
+        "line_start": 151,
+        "line_end": 177,
+        "sha256": "161f9766330119e10ea75d5ceccd54bb1c7a671c8b77f4ad313e76df2a993e09"
+      }
+    ]
+  },
+  "encoder": {
+    "type": "Gated, weight-normalized convolutional WN stack plus global-descriptor attention fusion",
+    "actual_hidden_channels": 100,
+    "WN_layers": 8,
+    "kernel_size": 5,
+    "dilation_rate": 1,
+    "dilation_each_layer": 1,
+    "dropout": 0,
+    "residual_skip": "Weight-normalized 1x1 residual/skip convolutions; final layer contributes skip output only. Gating is tanh times sigmoid.",
+    "residue_condition_channels_after_projection": 100,
+    "global_fusion": {
+      "query": "Linear(100,100)",
+      "key": "Linear(9,100)",
+      "value": "Linear(9,100)",
+      "feature_repetition": "Global nine-vector repeated at all 48 positions before key/value projection.",
+      "attention": "Scaled dot product divided by sqrt(100), softmax, residual addition; single attention calculation rather than a multihead module."
+    },
+    "posterior_projection": "Conv1d(100,32,kernel=1), split into mu and log_sigma with 16 channels each.",
+    "posterior_shape": "B x 16 x 48 for each of mu/log_sigma; 768 coordinates per peptide, not a single 16-dimensional vector.",
+    "sampling": "z = mu + epsilon * exp(log_sigma)",
+    "references": [
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/vae.py",
+        "line_start": 101,
+        "line_end": 127,
+        "sha256": "161f9766330119e10ea75d5ceccd54bb1c7a671c8b77f4ad313e76df2a993e09"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/vae.py",
+        "line_start": 166,
+        "line_end": 177,
+        "sha256": "161f9766330119e10ea75d5ceccd54bb1c7a671c8b77f4ad313e76df2a993e09"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/vae.py",
+        "line_start": 344,
+        "line_end": 347,
+        "sha256": "161f9766330119e10ea75d5ceccd54bb1c7a671c8b77f4ad313e76df2a993e09"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/flow_base.py",
+        "line_start": 70,
+        "line_end": 140,
+        "sha256": "eee115d640d9b172d661e09a19ab28308263c65d900e4eeab501d23b68687f45"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/attention_model.py",
+        "line_start": 5,
+        "line_end": 25,
+        "sha256": "87b160a350037bf5bbf0bb4daff50ec5b57cd8f1eab39911ee7352d961a42382"
+      }
+    ]
+  },
+  "decoder": {
+    "actual_WN_hidden_channels": 16,
+    "WN_layers": 4,
+    "kernel_size": 5,
+    "dilation_each_layer": 1,
+    "dropout": 0,
+    "output_projection": "Conv1d(16,21,kernel=1) for CE21/MSE21; Conv1d(16,1,kernel=1) for scalar.",
+    "external_condition_at_decoder": "None; FVAEDecoder.forward sets g=None. Its constructed condition layer is not used by this forward path.",
+    "spatial_length": 48,
+    "position_embeddings_used": false,
+    "squeezed_prior_path_used": false,
+    "important_nominal_parameter_note": "VAEModel passes hidden_channels=256, but the active nonsqueezed encoder uses emb_dim=100 and the decoder WN uses latent_channels=16. Do not describe the executed encoder/decoder as width-256 hidden networks.",
+    "references": [
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/vae.py",
+        "line_start": 131,
+        "line_end": 146,
+        "sha256": "161f9766330119e10ea75d5ceccd54bb1c7a671c8b77f4ad313e76df2a993e09"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/vae.py",
+        "line_start": 151,
+        "line_end": 155,
+        "sha256": "161f9766330119e10ea75d5ceccd54bb1c7a671c8b77f4ad313e76df2a993e09"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/vae.py",
+        "line_start": 180,
+        "line_end": 193,
+        "sha256": "161f9766330119e10ea75d5ceccd54bb1c7a671c8b77f4ad313e76df2a993e09"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/vae.py",
+        "line_start": 344,
+        "line_end": 347,
+        "sha256": "161f9766330119e10ea75d5ceccd54bb1c7a671c8b77f4ad313e76df2a993e09"
+      },
+      {
+        "repository_relative_path": "model/implementation/vae_pipeline_formal_v2.py",
+        "line_start": 195,
+        "line_end": 200,
+        "sha256": "e97d2a766774461793cba1860455e4cb4c8d689656b60becc326a9f11297ca9b"
+      }
+    ]
+  },
+  "prior_flow": {
+    "type": "Mean-only residual coupling (additive volume-preserving coupling) alternated with channel reversal",
+    "coupling_layers": 4,
+    "flips": 4,
+    "latent_channel_split": "16 -> 8 + 8",
+    "each_coupling": {
+      "pre": "Conv1d(8,64,kernel=1)",
+      "WN_hidden_channels": 64,
+      "WN_layers": 4,
+      "kernel_size": 3,
+      "dilation_each_layer": 1,
+      "conditioning_channels": 3,
+      "post": "Conv1d(64,8,kernel=1), initialized to zero"
+    },
+    "mean_only": true,
+    "transform": "x1 -> x1 + m(x0,g); logs are zero and log determinant is zero.",
+    "training_condition": "Scaled per-residue descriptor tensor g, B x 3 x 48.",
+    "usage": "KL density uses prior_flow(z,g) with standard-normal base; reconstruction decodes z directly.",
+    "terminology": "Do not label this as a full Glow architecture or affine-scale coupling merely because the constructor uses glow_* variable names.",
+    "references": [
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/vae.py",
+        "line_start": 174,
+        "line_end": 177,
+        "sha256": "161f9766330119e10ea75d5ceccd54bb1c7a671c8b77f4ad313e76df2a993e09"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/vae.py",
+        "line_start": 344,
+        "line_end": 347,
+        "sha256": "161f9766330119e10ea75d5ceccd54bb1c7a671c8b77f4ad313e76df2a993e09"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/flow_base.py",
+        "line_start": 202,
+        "line_end": 254,
+        "sha256": "eee115d640d9b172d661e09a19ab28308263c65d900e4eeab501d23b68687f45"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/flow_base.py",
+        "line_start": 257,
+        "line_end": 291,
+        "sha256": "eee115d640d9b172d661e09a19ab28308263c65d900e4eeab501d23b68687f45"
+      },
+      {
+        "repository_relative_path": "model/implementation/vae_pipeline_formal_v2.py",
+        "line_start": 195,
+        "line_end": 203,
+        "sha256": "e97d2a766774461793cba1860455e4cb4c8d689656b60becc326a9f11297ca9b"
+      }
+    ]
+  },
+  "ddpm": {
+    "target": "Stacked posterior mu/log_sigma; shape B x 2 x 16 x 48.",
+    "construction": "UNet_conditional(c_in=2,c_out=2,time_dim=256,num_class1=2,num_class2=2)",
+    "denoiser": {
+      "type": "2-D U-Net with three downsampling and three upsampling stages",
+      "input_doubleconv": "2 -> 64; spatial16x48",
+      "down_stages": [
+        {
+          "channels": "64 -> 128",
+          "spatial": "8 x 24"
+        },
+        {
+          "channels": "128 -> 256",
+          "spatial": "4 x 12"
+        },
+        {
+          "channels": "256 -> 256",
+          "spatial": "2 x 6"
+        }
+      ],
+      "bottleneck": "DoubleConv(256,512), then DoubleConv(512,256)",
+      "up_stages": [
+        {
+          "concatenated_channels": 512,
+          "output_channels": 128,
+          "spatial": "4 x 12"
+        },
+        {
+          "concatenated_channels": 256,
+          "output_channels": 64,
+          "spatial": "8 x 24"
+        },
+        {
+          "concatenated_channels": 128,
+          "output_channels": 64,
+          "spatial": "16 x 48"
+        }
+      ],
+      "output": "Conv2d(64,2,kernel=1)",
+      "DoubleConv": "Two bias-free 3x3 convolutions, GroupNorm(1,channels) after each, GELU between. Residual DoubleConv additionally uses GELU(x+block(x)).",
+      "Down": "MaxPool2d(2), residual DoubleConv and channel-changing DoubleConv.",
+      "Up": "Bilinear x2 upsampling with align_corners=True, skip concatenation, residual DoubleConv and channel-changing DoubleConv.",
+      "self_attention": {
+        "count": 6,
+        "locations": "after each down and each up stage",
+        "heads_each": 4,
+        "channels": [
+          128,
+          256,
+          256,
+          128,
+          64,
+          64
+        ],
+        "internals": "Spatial flattening, LayerNorm, MultiheadAttention, residual, LayerNorm/Linear/GELU/Linear feedforward residual."
+      },
+      "Conv2d_layer_count_static": 31,
+      "layer_count_note": "31 counts Conv2d modules only: input2 + down12 + bottleneck4 + up12 + output1; excludes attention linears, time linears, embeddings and normalizations."
+    },
+    "conditioning": {
+      "time_embedding_dimension": 256,
+      "time_embedding_type": "Sin/cos embedding, base10000",
+      "terminal_embedding": "Embedding(2,256) added to timestep representation",
+      "injection": "SiLU then Linear(256,out_channels), broadcast spatially and added in each of six Down/Up modules",
+      "unused_tables": "embed_level_1(2,256) and embed_level_2(2,256) are constructed but not used by UNet_conditional.forward; get_label_emb is not called. Do not claim two hierarchical conditions.",
+      "label_dropout_training": 0.1,
+      "generation": "Only conditional prediction is used; no conditional/unconditional guidance interpolation is present in generate()."
+    },
+    "schedule": {
+      "noise_steps_array_length": 999,
+      "beta": "linear 1e-4 to0.02",
+      "training_t_values": "1 through998",
+      "reverse_t_values": "998 down to1"
+    },
+    "generation_bridge": "Generate mu/log_sigma from terminal-conditioned DDPM, draw z = mu+epsilon*exp(log_sigma), decode z; no inversion of prior_flow in this generation path.",
+    "references": [
+      {
+        "repository_relative_path": "model/implementation/vae_pipeline_formal_v2.py",
+        "line_start": 347,
+        "line_end": 363,
+        "sha256": "e97d2a766774461793cba1860455e4cb4c8d689656b60becc326a9f11297ca9b"
+      },
+      {
+        "repository_relative_path": "model/implementation/vae_pipeline_formal_v2.py",
+        "line_start": 366,
+        "line_end": 409,
+        "sha256": "e97d2a766774461793cba1860455e4cb4c8d689656b60becc326a9f11297ca9b"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/diff.py",
+        "line_start": 39,
+        "line_end": 60,
+        "sha256": "b3712fc77b4800b8d9391a46bdb23299d0a6a7dbcb1bd8a9fad15757c0d90c13"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/diff.py",
+        "line_start": 63,
+        "line_end": 130,
+        "sha256": "b3712fc77b4800b8d9391a46bdb23299d0a6a7dbcb1bd8a9fad15757c0d90c13"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/diff.py",
+        "line_start": 133,
+        "line_end": 200,
+        "sha256": "b3712fc77b4800b8d9391a46bdb23299d0a6a7dbcb1bd8a9fad15757c0d90c13"
+      },
+      {
+        "repository_relative_path": "model/source/corrected_code/AMP_VAEflow/modules/diff.py",
+        "line_start": 208,
+        "line_end": 221,
+        "sha256": "b3712fc77b4800b8d9391a46bdb23299d0a6a7dbcb1bd8a9fad15757c0d90c13"
+      },
+      {
+        "repository_relative_path": "model/implementation/vae_pipeline_formal_v2.py",
+        "line_start": 469,
+        "line_end": 518,
+        "sha256": "e97d2a766774461793cba1860455e4cb4c8d689656b60becc326a9f11297ca9b"
+      }
+    ]
+  },
+  "recorded_parameter_totals": {
+    "CE21_or_MSE21_VAE": 1681549,
+    "decoder_head": 357,
+    "DDPM": 18612994,
+    "VAE_plus_DDPM": 20294543,
+    "scope": "Recorded registered parameter totals, not a new model instantiation. Includes registered parameters even if unused in the selected forward path.",
+    "references": [
+      {
+        "repository_relative_path": "compute/results/model_parameter_scope.csv",
+        "line_start": 1,
+        "line_end": 3,
+        "sha256": "04ea640b1f1bc8160b98d96294a989a3071a7d387ffed612063406c68aa24b51"
+      }
+    ]
+  }
+}

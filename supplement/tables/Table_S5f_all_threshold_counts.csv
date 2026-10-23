@@ -1,0 +1,321 @@
+source,strain,comparison,threshold_ug_ml,numeric_hits,denominator_assayed,denominator_ordered,assayed_fraction,ordered_fraction,sample_ids
+reported_summary,E. coli ATCC 25922,<,1.953125,0,27,30,0.0,0.0,
+reported_summary,P. aeruginosa ATCC 27853,<,1.953125,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<,1.953125,0,27,30,0.0,0.0,
+reported_summary,E. faecalis ATCC 29212,<,1.953125,0,27,30,0.0,0.0,
+reported_summary,any_of_four,<,1.953125,0,27,30,0.0,0.0,
+reported_summary,E. coli ATCC 25922,<=,1.953125,0,27,30,0.0,0.0,
+reported_summary,P. aeruginosa ATCC 27853,<=,1.953125,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<=,1.953125,0,27,30,0.0,0.0,
+reported_summary,E. faecalis ATCC 29212,<=,1.953125,0,27,30,0.0,0.0,
+reported_summary,any_of_four,<=,1.953125,0,27,30,0.0,0.0,
+reported_summary,E. coli ATCC 25922,<,3.90625,0,27,30,0.0,0.0,
+reported_summary,P. aeruginosa ATCC 27853,<,3.90625,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<,3.90625,0,27,30,0.0,0.0,
+reported_summary,E. faecalis ATCC 29212,<,3.90625,0,27,30,0.0,0.0,
+reported_summary,any_of_four,<,3.90625,0,27,30,0.0,0.0,
+reported_summary,E. coli ATCC 25922,<=,3.90625,0,27,30,0.0,0.0,
+reported_summary,P. aeruginosa ATCC 27853,<=,3.90625,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<=,3.90625,0,27,30,0.0,0.0,
+reported_summary,E. faecalis ATCC 29212,<=,3.90625,0,27,30,0.0,0.0,
+reported_summary,any_of_four,<=,3.90625,0,27,30,0.0,0.0,
+reported_summary,E. coli ATCC 25922,<,7.8125,0,27,30,0.0,0.0,
+reported_summary,P. aeruginosa ATCC 27853,<,7.8125,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<,7.8125,0,27,30,0.0,0.0,
+reported_summary,E. faecalis ATCC 29212,<,7.8125,0,27,30,0.0,0.0,
+reported_summary,any_of_four,<,7.8125,0,27,30,0.0,0.0,
+reported_summary,E. coli ATCC 25922,<=,7.8125,0,27,30,0.0,0.0,
+reported_summary,P. aeruginosa ATCC 27853,<=,7.8125,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<=,7.8125,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+reported_summary,E. faecalis ATCC 29212,<=,7.8125,0,27,30,0.0,0.0,
+reported_summary,any_of_four,<=,7.8125,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+reported_summary,E. coli ATCC 25922,<,15.625,0,27,30,0.0,0.0,
+reported_summary,P. aeruginosa ATCC 27853,<,15.625,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<,15.625,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+reported_summary,E. faecalis ATCC 29212,<,15.625,0,27,30,0.0,0.0,
+reported_summary,any_of_four,<,15.625,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+reported_summary,E. coli ATCC 25922,<=,15.625,0,27,30,0.0,0.0,
+reported_summary,P. aeruginosa ATCC 27853,<=,15.625,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<=,15.625,4,27,30,0.14814814814814814,0.13333333333333333,pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,E. faecalis ATCC 29212,<=,15.625,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+reported_summary,any_of_four,<=,15.625,4,27,30,0.14814814814814814,0.13333333333333333,pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,E. coli ATCC 25922,<,16,0,27,30,0.0,0.0,
+reported_summary,P. aeruginosa ATCC 27853,<,16,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<,16,4,27,30,0.14814814814814814,0.13333333333333333,pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,E. faecalis ATCC 29212,<,16,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+reported_summary,any_of_four,<,16,4,27,30,0.14814814814814814,0.13333333333333333,pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,E. coli ATCC 25922,<=,16,0,27,30,0.0,0.0,
+reported_summary,P. aeruginosa ATCC 27853,<=,16,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<=,16,4,27,30,0.14814814814814814,0.13333333333333333,pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,E. faecalis ATCC 29212,<=,16,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+reported_summary,any_of_four,<=,16,4,27,30,0.14814814814814814,0.13333333333333333,pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,E. coli ATCC 25922,<,31.25,0,27,30,0.0,0.0,
+reported_summary,P. aeruginosa ATCC 27853,<,31.25,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<,31.25,4,27,30,0.14814814814814814,0.13333333333333333,pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,E. faecalis ATCC 29212,<,31.25,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+reported_summary,any_of_four,<,31.25,4,27,30,0.14814814814814814,0.13333333333333333,pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,E. coli ATCC 25922,<=,31.25,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+reported_summary,P. aeruginosa ATCC 27853,<=,31.25,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<=,31.25,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. faecalis ATCC 29212,<=,31.25,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+reported_summary,any_of_four,<=,31.25,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. coli ATCC 25922,<,32,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+reported_summary,P. aeruginosa ATCC 27853,<,32,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<,32,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. faecalis ATCC 29212,<,32,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+reported_summary,any_of_four,<,32,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. coli ATCC 25922,<=,32,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+reported_summary,P. aeruginosa ATCC 27853,<=,32,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<=,32,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. faecalis ATCC 29212,<=,32,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+reported_summary,any_of_four,<=,32,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. coli ATCC 25922,<,62.5,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+reported_summary,P. aeruginosa ATCC 27853,<,62.5,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<,62.5,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. faecalis ATCC 29212,<,62.5,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+reported_summary,any_of_four,<,62.5,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. coli ATCC 25922,<=,62.5,4,27,30,0.14814814814814814,0.13333333333333333,pp1-3;pp1-5;pp3-11;pp3-13
+reported_summary,P. aeruginosa ATCC 27853,<=,62.5,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<=,62.5,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. faecalis ATCC 29212,<=,62.5,3,27,30,0.1111111111111111,0.1,pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<=,62.5,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. coli ATCC 25922,<,64,4,27,30,0.14814814814814814,0.13333333333333333,pp1-3;pp1-5;pp3-11;pp3-13
+reported_summary,P. aeruginosa ATCC 27853,<,64,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<,64,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. faecalis ATCC 29212,<,64,3,27,30,0.1111111111111111,0.1,pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<,64,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. coli ATCC 25922,<=,64,4,27,30,0.14814814814814814,0.13333333333333333,pp1-3;pp1-5;pp3-11;pp3-13
+reported_summary,P. aeruginosa ATCC 27853,<=,64,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<=,64,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. faecalis ATCC 29212,<=,64,3,27,30,0.1111111111111111,0.1,pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<=,64,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. coli ATCC 25922,<,125.0,4,27,30,0.14814814814814814,0.13333333333333333,pp1-3;pp1-5;pp3-11;pp3-13
+reported_summary,P. aeruginosa ATCC 27853,<,125.0,0,27,30,0.0,0.0,
+reported_summary,S. aureus ATCC 29213,<,125.0,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. faecalis ATCC 29212,<,125.0,3,27,30,0.1111111111111111,0.1,pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<,125.0,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. coli ATCC 25922,<=,125.0,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp3-11;pp3-13;pp3-14
+reported_summary,P. aeruginosa ATCC 27853,<=,125.0,1,27,30,0.037037037037037035,0.03333333333333333,pp1-5
+reported_summary,S. aureus ATCC 29213,<=,125.0,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. faecalis ATCC 29212,<=,125.0,6,27,30,0.2222222222222222,0.2,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<=,125.0,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. coli ATCC 25922,<,128,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp3-11;pp3-13;pp3-14
+reported_summary,P. aeruginosa ATCC 27853,<,128,1,27,30,0.037037037037037035,0.03333333333333333,pp1-5
+reported_summary,S. aureus ATCC 29213,<,128,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. faecalis ATCC 29212,<,128,6,27,30,0.2222222222222222,0.2,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<,128,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. coli ATCC 25922,<=,128,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp3-11;pp3-13;pp3-14
+reported_summary,P. aeruginosa ATCC 27853,<=,128,1,27,30,0.037037037037037035,0.03333333333333333,pp1-5
+reported_summary,S. aureus ATCC 29213,<=,128,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. faecalis ATCC 29212,<=,128,6,27,30,0.2222222222222222,0.2,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<=,128,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. coli ATCC 25922,<,200,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp3-11;pp3-13;pp3-14
+reported_summary,P. aeruginosa ATCC 27853,<,200,1,27,30,0.037037037037037035,0.03333333333333333,pp1-5
+reported_summary,S. aureus ATCC 29213,<,200,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. faecalis ATCC 29212,<,200,6,27,30,0.2222222222222222,0.2,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<,200,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. coli ATCC 25922,<=,200,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp3-11;pp3-13;pp3-14
+reported_summary,P. aeruginosa ATCC 27853,<=,200,1,27,30,0.037037037037037035,0.03333333333333333,pp1-5
+reported_summary,S. aureus ATCC 29213,<=,200,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. faecalis ATCC 29212,<=,200,6,27,30,0.2222222222222222,0.2,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<=,200,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. coli ATCC 25922,<,250.0,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp3-11;pp3-13;pp3-14
+reported_summary,P. aeruginosa ATCC 27853,<,250.0,1,27,30,0.037037037037037035,0.03333333333333333,pp1-5
+reported_summary,S. aureus ATCC 29213,<,250.0,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. faecalis ATCC 29212,<,250.0,6,27,30,0.2222222222222222,0.2,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<,250.0,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+reported_summary,E. coli ATCC 25922,<=,250.0,7,27,30,0.25925925925925924,0.23333333333333334,pp1-3;pp1-5;pp2-3;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,P. aeruginosa ATCC 27853,<=,250.0,1,27,30,0.037037037037037035,0.03333333333333333,pp1-5
+reported_summary,S. aureus ATCC 29213,<=,250.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,E. faecalis ATCC 29212,<=,250.0,6,27,30,0.2222222222222222,0.2,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<=,250.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,E. coli ATCC 25922,<,256,7,27,30,0.25925925925925924,0.23333333333333334,pp1-3;pp1-5;pp2-3;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,P. aeruginosa ATCC 27853,<,256,1,27,30,0.037037037037037035,0.03333333333333333,pp1-5
+reported_summary,S. aureus ATCC 29213,<,256,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,E. faecalis ATCC 29212,<,256,6,27,30,0.2222222222222222,0.2,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<,256,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,E. coli ATCC 25922,<=,256,7,27,30,0.25925925925925924,0.23333333333333334,pp1-3;pp1-5;pp2-3;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,P. aeruginosa ATCC 27853,<=,256,1,27,30,0.037037037037037035,0.03333333333333333,pp1-5
+reported_summary,S. aureus ATCC 29213,<=,256,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,E. faecalis ATCC 29212,<=,256,6,27,30,0.2222222222222222,0.2,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<=,256,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,E. coli ATCC 25922,<,500.0,7,27,30,0.25925925925925924,0.23333333333333334,pp1-3;pp1-5;pp2-3;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,P. aeruginosa ATCC 27853,<,500.0,1,27,30,0.037037037037037035,0.03333333333333333,pp1-5
+reported_summary,S. aureus ATCC 29213,<,500.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,E. faecalis ATCC 29212,<,500.0,6,27,30,0.2222222222222222,0.2,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<,500.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,E. coli ATCC 25922,<=,500.0,8,27,30,0.2962962962962963,0.26666666666666666,pp1-1;pp1-3;pp1-5;pp2-3;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,P. aeruginosa ATCC 27853,<=,500.0,1,27,30,0.037037037037037035,0.03333333333333333,pp1-5
+reported_summary,S. aureus ATCC 29213,<=,500.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,E. faecalis ATCC 29212,<=,500.0,6,27,30,0.2222222222222222,0.2,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<=,500.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,E. coli ATCC 25922,<,1000.0,8,27,30,0.2962962962962963,0.26666666666666666,pp1-1;pp1-3;pp1-5;pp2-3;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,P. aeruginosa ATCC 27853,<,1000.0,1,27,30,0.037037037037037035,0.03333333333333333,pp1-5
+reported_summary,S. aureus ATCC 29213,<,1000.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,E. faecalis ATCC 29212,<,1000.0,6,27,30,0.2222222222222222,0.2,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<,1000.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,E. coli ATCC 25922,<=,1000.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-7;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,P. aeruginosa ATCC 27853,<=,1000.0,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-11
+reported_summary,S. aureus ATCC 29213,<=,1000.0,11,27,30,0.4074074074074074,0.36666666666666664,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-7;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+reported_summary,E. faecalis ATCC 29212,<=,1000.0,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-3;pp2-8;pp3-11;pp3-13
+reported_summary,any_of_four,<=,1000.0,11,27,30,0.4074074074074074,0.36666666666666664,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-7;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,E. coli ATCC 25922,<,1.953125,0,27,30,0.0,0.0,
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,1.953125,0,27,30,0.0,0.0,
+retrospective_algorithm,S. aureus ATCC 29213,<,1.953125,0,27,30,0.0,0.0,
+retrospective_algorithm,E. faecalis ATCC 29212,<,1.953125,0,27,30,0.0,0.0,
+retrospective_algorithm,any_of_four,<,1.953125,0,27,30,0.0,0.0,
+retrospective_algorithm,E. coli ATCC 25922,<=,1.953125,0,27,30,0.0,0.0,
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,1.953125,0,27,30,0.0,0.0,
+retrospective_algorithm,S. aureus ATCC 29213,<=,1.953125,0,27,30,0.0,0.0,
+retrospective_algorithm,E. faecalis ATCC 29212,<=,1.953125,0,27,30,0.0,0.0,
+retrospective_algorithm,any_of_four,<=,1.953125,0,27,30,0.0,0.0,
+retrospective_algorithm,E. coli ATCC 25922,<,3.90625,0,27,30,0.0,0.0,
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,3.90625,0,27,30,0.0,0.0,
+retrospective_algorithm,S. aureus ATCC 29213,<,3.90625,0,27,30,0.0,0.0,
+retrospective_algorithm,E. faecalis ATCC 29212,<,3.90625,0,27,30,0.0,0.0,
+retrospective_algorithm,any_of_four,<,3.90625,0,27,30,0.0,0.0,
+retrospective_algorithm,E. coli ATCC 25922,<=,3.90625,0,27,30,0.0,0.0,
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,3.90625,0,27,30,0.0,0.0,
+retrospective_algorithm,S. aureus ATCC 29213,<=,3.90625,0,27,30,0.0,0.0,
+retrospective_algorithm,E. faecalis ATCC 29212,<=,3.90625,0,27,30,0.0,0.0,
+retrospective_algorithm,any_of_four,<=,3.90625,0,27,30,0.0,0.0,
+retrospective_algorithm,E. coli ATCC 25922,<,7.8125,0,27,30,0.0,0.0,
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,7.8125,0,27,30,0.0,0.0,
+retrospective_algorithm,S. aureus ATCC 29213,<,7.8125,0,27,30,0.0,0.0,
+retrospective_algorithm,E. faecalis ATCC 29212,<,7.8125,0,27,30,0.0,0.0,
+retrospective_algorithm,any_of_four,<,7.8125,0,27,30,0.0,0.0,
+retrospective_algorithm,E. coli ATCC 25922,<=,7.8125,0,27,30,0.0,0.0,
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,7.8125,0,27,30,0.0,0.0,
+retrospective_algorithm,S. aureus ATCC 29213,<=,7.8125,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+retrospective_algorithm,E. faecalis ATCC 29212,<=,7.8125,0,27,30,0.0,0.0,
+retrospective_algorithm,any_of_four,<=,7.8125,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+retrospective_algorithm,E. coli ATCC 25922,<,15.625,0,27,30,0.0,0.0,
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,15.625,0,27,30,0.0,0.0,
+retrospective_algorithm,S. aureus ATCC 29213,<,15.625,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+retrospective_algorithm,E. faecalis ATCC 29212,<,15.625,0,27,30,0.0,0.0,
+retrospective_algorithm,any_of_four,<,15.625,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+retrospective_algorithm,E. coli ATCC 25922,<=,15.625,0,27,30,0.0,0.0,
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,15.625,1,27,30,0.037037037037037035,0.03333333333333333,pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<=,15.625,4,27,30,0.14814814814814814,0.13333333333333333,pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,E. faecalis ATCC 29212,<=,15.625,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+retrospective_algorithm,any_of_four,<=,15.625,5,27,30,0.18518518518518517,0.16666666666666666,pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<,16,0,27,30,0.0,0.0,
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,16,1,27,30,0.037037037037037035,0.03333333333333333,pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<,16,4,27,30,0.14814814814814814,0.13333333333333333,pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,E. faecalis ATCC 29212,<,16,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+retrospective_algorithm,any_of_four,<,16,5,27,30,0.18518518518518517,0.16666666666666666,pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<=,16,0,27,30,0.0,0.0,
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,16,1,27,30,0.037037037037037035,0.03333333333333333,pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<=,16,4,27,30,0.14814814814814814,0.13333333333333333,pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,E. faecalis ATCC 29212,<=,16,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+retrospective_algorithm,any_of_four,<=,16,5,27,30,0.18518518518518517,0.16666666666666666,pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<,31.25,0,27,30,0.0,0.0,
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,31.25,1,27,30,0.037037037037037035,0.03333333333333333,pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<,31.25,4,27,30,0.14814814814814814,0.13333333333333333,pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,E. faecalis ATCC 29212,<,31.25,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+retrospective_algorithm,any_of_four,<,31.25,5,27,30,0.18518518518518517,0.16666666666666666,pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<=,31.25,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,31.25,1,27,30,0.037037037037037035,0.03333333333333333,pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<=,31.25,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. faecalis ATCC 29212,<=,31.25,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+retrospective_algorithm,any_of_four,<=,31.25,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<,32,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,32,1,27,30,0.037037037037037035,0.03333333333333333,pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<,32,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. faecalis ATCC 29212,<,32,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+retrospective_algorithm,any_of_four,<,32,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<=,32,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,32,1,27,30,0.037037037037037035,0.03333333333333333,pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<=,32,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. faecalis ATCC 29212,<=,32,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+retrospective_algorithm,any_of_four,<=,32,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<,62.5,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-13
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,62.5,1,27,30,0.037037037037037035,0.03333333333333333,pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<,62.5,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. faecalis ATCC 29212,<,62.5,1,27,30,0.037037037037037035,0.03333333333333333,pp3-13
+retrospective_algorithm,any_of_four,<,62.5,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<=,62.5,4,27,30,0.14814814814814814,0.13333333333333333,pp1-3;pp1-5;pp3-11;pp3-13
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,62.5,1,27,30,0.037037037037037035,0.03333333333333333,pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<=,62.5,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. faecalis ATCC 29212,<=,62.5,3,27,30,0.1111111111111111,0.1,pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<=,62.5,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<,64,4,27,30,0.14814814814814814,0.13333333333333333,pp1-3;pp1-5;pp3-11;pp3-13
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,64,1,27,30,0.037037037037037035,0.03333333333333333,pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<,64,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. faecalis ATCC 29212,<,64,3,27,30,0.1111111111111111,0.1,pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<,64,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<=,64,4,27,30,0.14814814814814814,0.13333333333333333,pp1-3;pp1-5;pp3-11;pp3-13
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,64,1,27,30,0.037037037037037035,0.03333333333333333,pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<=,64,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. faecalis ATCC 29212,<=,64,3,27,30,0.1111111111111111,0.1,pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<=,64,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<,125.0,4,27,30,0.14814814814814814,0.13333333333333333,pp1-3;pp1-5;pp3-11;pp3-13
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,125.0,1,27,30,0.037037037037037035,0.03333333333333333,pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<,125.0,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. faecalis ATCC 29212,<,125.0,3,27,30,0.1111111111111111,0.1,pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<,125.0,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<=,125.0,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,125.0,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<=,125.0,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. faecalis ATCC 29212,<=,125.0,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<=,125.0,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<,128,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,128,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<,128,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. faecalis ATCC 29212,<,128,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<,128,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<=,128,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,128,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<=,128,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. faecalis ATCC 29212,<=,128,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<=,128,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<,200,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,200,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<,200,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. faecalis ATCC 29212,<,200,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<,200,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<=,200,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,200,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<=,200,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. faecalis ATCC 29212,<=,200,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<=,200,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<,250.0,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,250.0,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<,250.0,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. faecalis ATCC 29212,<,250.0,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<,250.0,7,27,30,0.25925925925925924,0.23333333333333334,pp1-1;pp1-3;pp1-5;pp2-8;pp3-11;pp3-13;pp3-14
+retrospective_algorithm,E. coli ATCC 25922,<=,250.0,7,27,30,0.25925925925925924,0.23333333333333334,pp1-3;pp1-5;pp2-3;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,250.0,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<=,250.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,E. faecalis ATCC 29212,<=,250.0,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<=,250.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,E. coli ATCC 25922,<,256,7,27,30,0.25925925925925924,0.23333333333333334,pp1-3;pp1-5;pp2-3;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,256,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<,256,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,E. faecalis ATCC 29212,<,256,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<,256,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,E. coli ATCC 25922,<=,256,7,27,30,0.25925925925925924,0.23333333333333334,pp1-3;pp1-5;pp2-3;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,256,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<=,256,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,E. faecalis ATCC 29212,<=,256,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<=,256,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,E. coli ATCC 25922,<,500.0,7,27,30,0.25925925925925924,0.23333333333333334,pp1-3;pp1-5;pp2-3;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,500.0,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<,500.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,E. faecalis ATCC 29212,<,500.0,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<,500.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,E. coli ATCC 25922,<=,500.0,8,27,30,0.2962962962962963,0.26666666666666666,pp1-1;pp1-3;pp1-5;pp2-3;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,500.0,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<=,500.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,E. faecalis ATCC 29212,<=,500.0,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<=,500.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,E. coli ATCC 25922,<,1000.0,8,27,30,0.2962962962962963,0.26666666666666666,pp1-1;pp1-3;pp1-5;pp2-3;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,P. aeruginosa ATCC 27853,<,1000.0,2,27,30,0.07407407407407407,0.06666666666666667,pp1-5;pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<,1000.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,E. faecalis ATCC 29212,<,1000.0,5,27,30,0.18518518518518517,0.16666666666666666,pp1-3;pp1-5;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<,1000.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,E. coli ATCC 25922,<=,1000.0,10,27,30,0.37037037037037035,0.3333333333333333,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-7;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,P. aeruginosa ATCC 27853,<=,1000.0,3,27,30,0.1111111111111111,0.1,pp1-5;pp3-11;pp3-14
+retrospective_algorithm,S. aureus ATCC 29213,<=,1000.0,11,27,30,0.4074074074074074,0.36666666666666664,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-7;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5
+retrospective_algorithm,E. faecalis ATCC 29212,<=,1000.0,6,27,30,0.2222222222222222,0.2,pp1-3;pp1-5;pp2-3;pp2-8;pp3-11;pp3-13
+retrospective_algorithm,any_of_four,<=,1000.0,11,27,30,0.4074074074074074,0.36666666666666664,pp1-1;pp1-3;pp1-5;pp2-3;pp2-5;pp2-7;pp2-8;pp3-11;pp3-13;pp3-14;pp3-5

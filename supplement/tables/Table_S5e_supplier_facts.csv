@@ -1,0 +1,28 @@
+sample_id,sequence,modification,molecular_weight,hplc_purity,recommended_solvent,coa_date
+pp1-1,LNLPKILFCSAPRTRLPGNWI,N/A,2409.93,95.3%,Ultrapure water,08/08/2024
+pp1-2,KAFFLLYFAVPFGPWS,N/A,1890.26,97.3%,Dimethyl sulfoxide(Analytical grade),08/08/2024
+pp1-3,CVVSLFKSKKGGLRKHGVPFKL,N/A,2429.02,95.6%,Ultrapure water,08/11/2024
+pp1-4,LLWIMLAYRLAFHRNWNAGGWKLFAVV,N/A,3246.93,95.1%,Dimethyl sulfoxide(Analytical grade),08/11/2024
+pp1-5,LKFTFIKGKFGKSSYY,N/A,1914.28,96.1%,Ultrapure water,08/13/2024
+pp1-7,AVCLILGLFNWGK,N/A,1433.78,80.3%,Dimethyl sulfoxide(Analytical grade),08/23/2024
+pp1-8,CGHLFPYWLYLGPKTPW,N/A,2078.47,97.5%,Ultrapure water,08/08/2024
+pp2-1,CPRTRVGSKT,N/A,1104.30,95.6%,Ultrapure water,08/02/2024
+pp2-2,LKLLWLIKCSG,N/A,1273.65,99.1%,Dimethyl sulfoxide(Analytical grade),08/03/2024
+pp2-3,AKLSFGKPFANKSKYW,N/A,1872.21,97.4%,Ultrapure water,08/02/2024
+pp2-4,CNNLKLHICVKKFARYYLYGPTPYY,N/A,3068.66,97.5%,Ultrapure water,08/06/2024
+pp2-5,RETGRGKRDKGNIGTALGCFRMI,N/A,2536.97,95.2%,Ultrapure water,08/02/2024
+pp2-6,VGPGKKFLPK,N/A,1070.35,98.6%,Ultrapure water,08/03/2024
+pp2-7,FTGGKGRDWGGHSSRKKKSLGFA,N/A,2464.78,97.0%,Ultrapure water,08/02/2024
+pp2-8,FMPVVLTKLFGVLHFRKIY,N/A,2308.91,97.8%,Dimethyl sulfoxide(Analytical grade),08/02/2024
+pp3-11,FKGVAKARHRLWFL,N/A,1729.12,95.1%,Ultrapure water,08/15/2024
+pp3-12,GFPGDVFKAKAAKA,N/A,1406.65,97.7%,Ultrapure water,08/01/2024
+pp3-13,KTFKKKLFLKLFYILHTPTY,N/A,2530.15,95.4%,Dimethyl sulfoxide(Analytical grade),08/06/2024
+pp3-14,CFANFQSKLHREARKLMGGAKKWPY,N/A,2967.52,95.9%,Ultrapure water,08/06/2024
+pp3-1,CHLKLAILFNFLKFLKQFLGNLTYV,N/A,2984.69,97.2%,Ultrapure water,08/12/2024
+pp3-2,HGKFFKYFNLQVCLGLARALKDGG,N/A,2683.18,96.0%,Dimethyl sulfoxide(Analytical grade),08/02/2024
+pp3-3,RPKQIYFFAHLRLIFGLKI,N/A,2360.93,95.8%,Ultrapure water,08/22/2024
+pp3-4,CLGPKLYNNWQGLGGL,N/A,1733.02,97.0%,Dimethyl sulfoxide(Analytical grade),08/08/2024
+pp3-5,NWQPRHFLADTFCPKLKGQILR,N/A,2669.16,98.4%,Ultrapure water,08/08/2024
+pp3-6,MPKGIFFALKLLWKNFEKAI,N/A,2395.00,96.3%,Dimethyl sulfoxide(Analytical grade),08/01/2024
+pp3-7,PKPFLWAKSDLFVKL,N/A,1789.20,95.0%,Ultrapure water,08/12/2024
+pp3-9,GFFPGFIVLGCKTGFTPTY,N/A,2052.42,96.2%,Dimethyl sulfoxide(Analytical grade),08/11/2024

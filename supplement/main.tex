@@ -1,0 +1,220 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,booktabs,array,longtable,graphicx,textcomp}
+\usepackage[margin=22mm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem,fancyhdr}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}\fussy
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{Supplementary material}\fancyhead[R]{Wang et al.}\fancyfoot[C]{S\thepage}
+\setlength{\headheight}{14pt}
+\renewcommand{\thesection}{S\arabic{section}}
+\newcommand{\ug}{\ensuremath{\mu\mathrm{g}/\mathrm{mL}}}
+\title{Supplementary material\\[5pt]\large Reconstruction gains in antimicrobial peptide generation do not establish generative superiority}
+\author{Hongsheng Wang, Fei Wu and Feng Lin}
+\date{23 October 2026}
+\begin{document}
+\maketitle\thispagestyle{fancy}
+This supplement reports completed analyses and their saved records. Tables S1--S6 are supplied as editable CSV files; the PDF displays the complete compact comparisons and identifies the full row-level tables. Reported MIC summaries and retrospective algorithmic endpoints remain separate representations.
+
+\section*{Supplementary Methods}
+\subsection*{Saved-output recomputation and entry point}
+From the repository root, run \texttt{python3 verify\_all.py}. The command checks packaged file hashes and runs \texttt{compute/verify.py} and \texttt{wetlab/analysis/recompute.py}. The computational verification uses saved outputs; it does not train a model or repeat inference. The checks cover 960 reconstruction records, 128 generated sequences, 96 distribution distances, 24 aligned comparisons, 255 native-unit activity predictions and 588 censoring-screen predictions. The assay check uses 3,240 peptide OD600 values and 108 original MIC summary cells. The separate command \texttt{python3 supplement/verify\_supplement.py} checks the S1--S6 table bindings and row-level reconstruction arithmetic.
+
+\subsection*{Executed network architecture}
+The encoder embeds 21 input symbols (20 residues and padding) into 100 channels over 48 positions. Three residue-aligned descriptors are projected from 3 to 100 channels by a width-3 convolution and condition an eight-layer gated, weight-normalized convolutional encoder (100 channels, kernel width 5, dilation 1). A nine-dimensional global descriptor is fused by scaled dot-product attention, followed by a width-1 projection to 32 channels, split into 16-channel posterior means and log standard deviations. Each posterior parameter therefore has shape $16\times48$. The nonsqueezed decoder has four gated convolutional layers with 16 channels, kernel width 5 and dilation 1, followed by a width-1 projection to 21 raw scores per position (or one scalar score for the scalar comparator). This path uses no positional embedding or temporal downsampling.
+
+The prior transform comprises four mean-only additive residual-coupling layers alternating with four channel flips. Each coupling splits the 16 latent channels into two groups of eight and uses a 64-channel, four-layer gated convolutional conditioner (kernel width 3, dilation 1), conditioned on the three residue descriptors. The transform contributes to the KL density term; reconstruction and generation decode posterior samples directly, without inversion of the prior transform.
+
+The diffusion denoiser receives the stacked posterior mean and log standard deviation as a two-channel $16\times48$ array. Its two-dimensional U-Net has three downsampling stages (channel widths $64\rightarrow128\rightarrow256\rightarrow256$), a $256\rightarrow512\rightarrow256$ bottleneck, three upsampling stages with skip connections (128, 64 and 64 output channels), and a final $1\times1$ convolution to two channels. Four-head self-attention follows each downsampling and upsampling stage. A 256-dimensional sinusoidal timestep embedding is added to a 256-dimensional embedding of the two terminal states and projected into each downsampling and upsampling stage. The additional hierarchical embedding tables defined in the inherited class are not used in this forward path. Training drops the terminal label with probability 0.1; the recorded generation path uses conditional predictions without classifier-free guidance interpolation.
+
+These architecture details follow the executed configuration and active forward path. \path{source/architecture_facts.json} binds each component to packaged source files, line ranges and SHA-256 hashes. Registered parameter totals include parameters unused in this forward path.
+
+\subsection*{Execution configuration}
+The VAE optimizer was Adam with base learning rate $5\times10^{-4}$, a 1,000-step warmup, floor $10^{-7}$, coefficients $(0.9,0.999)$, epsilon $10^{-8}$ and zero weight decay. The schedule uses the retrieved step-offset convention recorded in the configuration. Gradient norm was clipped at one. Diffusion used AdamW with maximum learning rate 0.005, epsilon $10^{-5}$, coefficients $(0.9,0.999)$, weight decay 0.01 and a 1,000-step OneCycleLR schedule. The EMA coefficient was 0.995, with the implementation copying parameters during these first 1,000 updates. The 999-element linear beta schedule ranged from $10^{-4}$ to 0.02; training and reverse timesteps ran from 1 through 998. These details describe this implementation, not a canonical diffusion specification.
+
+The VAE and diffusion phase ceilings were 1,920 and 1,020 seconds within the common 2,940-second training ceiling. Monitoring occurred every 100 updates without selecting a checkpoint. Configuration and dataset hashes are supplied in the machine-readable evidence directory. Single-seed variation and optimization sufficiency were not assessed.
+
+\subsection*{Comparator monitoring}
+Equal ceilings and update counts do not imply equal realized computation, capacity or optimization quality. The LSTM required much less computation than the diffusion pipelines. Its development negative log-likelihood rose from 2.6153 at update 200 to 3.1698 at the final update, and only the final checkpoint was used. This leaves the adequacy of comparator optimization unresolved. Further tuning could change the observed distributional ranking; its direction cannot be inferred from the negative log-likelihood trajectory alone.
+
+\subsection*{Distribution statistics}
+For a sequence \texttt{x}, let \texttt{f(x)} concatenate length/48, the 20 residue fractions and the 400 dipeptide fractions, each block multiplied by $1/\sqrt{3}$. The reported biased linear-kernel statistic is
+
+\begin{equation*}
+\mathrm{MMD}^{2} = \Bigl\lVert \frac{1}{n}\sum_{i} f(x_{i}) - \frac{1}{m}\sum_{j} f(r_{j}) \Bigr\rVert_{2}^{2}
+\end{equation*}
+
+For a one-residue sequence the dipeptide block is zero. This measures a fixed collection of low-order features, not complete distributional agreement. Additional distances are residue and dipeptide Jensen--Shannon divergence in bits, their respective L$_{1}$ distances, and the length Kolmogorov--Smirnov statistic. Residue and dipeptide JS, L$_{1}$ and entropy use pooled counts, unlike the per-sequence normalization followed by averaging used for MMD. References use the corresponding terminal group in training or development, and entropy discrepancies and exact training-copy counts are retained as complementary diagnostics.
+
+\subsection*{Retrospective assay computation}
+For each sample, strain and replicate, the endpoint is the lowest tested concentration with OD$_{600}<0.10$. The ten two-fold concentrations are 1.953125, 3.90625, 7.8125, 15.625, 31.25, 62.5, 125, 250, 500 and 1,000 \ug. A series with no qualifying concentration has no numeric endpoint. The algorithm takes a numeric value when at least two of three replicate calls agree. It retains \texttt{no\_endpoint\_majority} when at least two replicates have no endpoint and \texttt{no\_consensus} when the three calls have no majority. Only for historical-summary comparison are both nonnumeric states mapped to the legacy code N. This calculation is retrospective; it does not adjudicate the experimental MIC or establish a prospective aggregation rule.
+
+The original summary contains 30 numeric and 78 N cells. The algorithm produces 30 numeric-consensus cells, 77 no-endpoint-majority cells and one no-consensus cell. Under legacy N coding, 105/108 cells agree. All three differences are listed in Table S5c. Strict-threshold counts use numeric values below the threshold and retain the stated 27-sample or 30-order denominator. N is not converted into a verified negative assay. The complete threshold sweep is Table S5f.
+
+\section{Reconstruction records (Table S1)}
+Reconstruction uses the posterior mean. Residue micro accuracy divides aligned correct target positions by all nonpadding target residues. Per-amino-acid recall divides aligned correct positions for that residue by its target support. Whole-sequence equality and length error remain separate measures. The three models use the same 279 training and 41 development targets, yielding 960 saved reconstruction records.
+\input{table_S1.tex}
+
+\section{Generation comparisons (Table S2)}
+All values below use canonical outputs of length 1--48 and the corresponding terminal reference group. Each generated group contains 16 requests. The six statistics are fixed-feature biased linear MMD squared, residue Jensen--Shannon divergence, residue $L_1$ distance, dipeptide Jensen--Shannon divergence, dipeptide $L_1$ distance and the length Kolmogorov--Smirnov statistic. Divergences use base-two logarithms; no significance test is attached. Lower means closer under that statistic, not more biologically active.
+
+
+
+
+
+The length cap has different semantics: LSTM generation can reach the cap without sampling EOS; CE21 and MSE21 select a prefix length without sampling EOS; scalar decoding uses the first padding category. An execution status of ``ok'' does not imply natural termination for every model.
+\input{table_S2.tex}
+
+\section{Activity-regression experiments (Table S3)}
+\subsection*{Data semantics and group construction}
+These experiments used a separate, already exposed DBAASP cache. They neither augment the generative training partition nor supply activity labels for generated H5 sequences. Reported concentrations in \ug{} and $\mu$M were analyzed separately without molecular-weight conversion. Missing purity, counterion and assay covariates were not fabricated. Point values, explicit bounds, ambiguous ranges and plus/minus formats retained distinct meanings.
+
+Operational sequence families connected uppercased backbones when their unit-cost Levenshtein distance was at most 20\% of the longer sequence length; transitive components define the family. Source groups further joined families sharing a PubMed ID, or a normalized title plus publication year when a PubMed ID was absent. Uppercasing serves only this conservative grouping operation, not a claim of identical stereochemistry or a label conversion. Operational sequence families and source--family connected components were used to keep related peptide and source records together in validation. Entire groups were left out, with no split of repeated records for the same peptide between training and validation. These components are a leakage-control rule, not verified biological independence. Within a training set, each source group has equal weight, each peptide within a group equal weight, and each record within a peptide equal weight. The primary MAE averages absolute log10 errors in that order. The corresponding RMSE is the square root of the identically weighted mean squared error, not the average of fold RMSEs.
+
+\subsection*{Native point-value baselines}
+The first experiment used 46 mass-unit points from 33 peptide IDs, 17 operational families and 10 source groups, and 39 molar-unit points from 13 IDs, eight families and seven groups. A training-weighted mean, a composition ridge and a convolutional network were evaluated in 17 group-held-out folds. Ridge uses 20 amino-acid fractions and log length, training-only standardization, an unpenalized intercept and penalty coefficient one.
+
+The CNN is a PyTorch architecture adaptation from the locally cached QMAP implementation associated with the Witten regression approach. It is not a reproduction of the original author's training protocol or published performance. The fixed configuration has 183,069 parameters, dropout 0.5, Glorot initialization and 100 full-batch weighted updates per fold. Training labels are centered using the training fold only. The Keras-style Adam adaptation uses learning rate 0.001, coefficients 0.9 and 0.999, and epsilon $10^{-7}$. Each fold resets seed 1729. No tuning, early stopping or validation-selected endpoint was used. There were 1,700 CNN updates in total.
+
+
+The mass-unit ridge advantage reverses under peptide and record weighting. Its peptide-weighted MAE is 0.630031 versus 0.605203 for the mean, and record-weighted MAE is 0.602473 versus 0.574316. The CNN is worse under the primary MAE in both units; this statement does not claim it is worse under every reported weighting or that the architecture cannot learn on adequate data.
+
+\subsection*{Right-censoring working likelihood}
+A later 136-ID cache supported 79 mass-unit points and 14 right bounds, and 68 molar-unit points and 12 right bounds. It admitted 173 of 232 available \textit{E. coli} records, excluding unresolved ranges, plus/minus formats and other incompatible records. ID 12605 was withheld because its bound explicitly referred to two isolates with an unresolved observation identity. A separate retained point with ambiguous strain wording was not assumed to share identical assay conditions with another record. There were no natural left-censored observations.
+
+The four arms were a point-only mean, point-only ridge, endpoint ridge and a Gaussian tail-likelihood ridge. They used the same composition features, training-only scaling and coefficient penalty. Endpoint and tail arms have identical rows and weights; for a right bound $b$ and mean prediction $\mu$, their losses are respectively $\tfrac12(\mu-b)^2$ and $-\log\Phi(\mu-b)$. The Gaussian working standard deviation is fixed at one log10 unit; it is not an estimated biological noise scale. Only the point-valued observations are evaluated. Point-only controls renormalize their subset's weights and share the full training-feature scaler in this experiment, so they are not exact reruns of the earlier baseline.
+
+There were 21 mass-unit and 13 molar-unit validation groups. Three additional molar groups contain only censored records and supply training information but no point-valued validation fold. The serial L-BFGS-B fits used the same 22-parameter initialization and ceilings of 500 iterations, 10,000 function evaluations and 40 line-search steps. All 102 fits met the fixed convergence requirement, including maximum absolute gradient at most $10^{-5}$, and produced 588 point predictions.
+
+
+Tail likelihood was worse than endpoint encoding under all three reported weighting schemes for both MAE and RMSE. This negative finding concerns a misspecifiable working model and a selected point-observation subset; it does not refute censoring likelihood theory or estimate risk on latent censored outcomes. Threshold reporting may be informative, and assay covariates are incomplete. Between-group variance diagnostics cannot establish the cause of poor prediction.
+\input{table_S3.tex}
+
+\section{Follow-up routes (Table S4)}
+\subsection*{Readout bridge and source replacement}
+Before H5, a fixed 96-attempt replay applied two readouts to the same upstream hidden states. The categorical readout gave 95/96 canonical sequences of length 1--48 and 91/96 of length 5--48, compared with 96/96 for both criteria under the scalar readout. Development MMD squared worsened in five of six source--terminal comparisons and improved in one, while dipeptide divergence improved in all six. Those 192 readouts are paired outputs of 96 requests, not 192 independent samples. The readout intervention also changes head size and boundary decoding, preventing single-component attribution. H5 retraining was motivated by this mixed outcome; it does not retrospectively change it.
+
+After the main H5 comparison, source replacement reused the 32 CE diffusion outputs (A) and added 32 requests each for training-posterior draws (B), coordinate-permuted B latents (C), and the model's prior flow with a training-derived residue/length template (D). B and D use information from the training pool; D has additional reference content unavailable under terminal-only generation. C preserves each coordinate's finite marginal values but has no single donor. All use the fixed CE decoder and legal-prefix rule.
+
+All new requests were retained. B produced one exact training copy in the amidated group. Neither the posterior substitution nor the additional-information prior provides a fair general-generation superiority claim.
+
+\subsection*{Warmup, latent-conditioned autoregression and direct latent diffusion}
+The warmup follow-up failed its fixed protective comparisons. Posterior-mean mean-per-sequence reconstruction declined from 0.722796 to 0.657852, and the average of eight posterior draws declined from 0.661116 to 0.589099. These statistics are not the micro-residue accuracy in the main table.
+
+The latent-conditioned autoregressive experiment trained three arms for 1,000 updates each using cached representations, without a new encoder or diffusion pass. The matched-latent eight-draw reconstruction score was 0.690802, compared with 0.091958 for the control trained with permuted latent--sequence pairing and 0.097533 for mismatched latents. The information screen passed, while the six generation-distance comparisons failed. An additional capacity-unmatched comparison scored 0.120436 and is descriptive only. This experiment made 96 new generation requests; it is distinct from the main 128-request experiment.
+
+The direct-latent screen trained posterior-parameter and direct-latent denoisers for 1,000 updates each, made 64 new requests and retained a total of 96 comparison slots including reused outputs. Training completed, but the mechanism screen failed; downstream sequential value was not interpreted as a successful result. The later checkpoint audit remained incomplete after a safe-loader rejection. A restricted saved-sequence and scalar-metric audit succeeded, which does not constitute a fresh end-to-end reproduction. 
+
+\subsection*{Conditioning-context variants}
+Conditioning-context variants were not supported by the multistage screen. Equal-terminal development sequence negative log-likelihoods were 49.16431 (partial), 48.58710 (pooled), 48.91772 (separate) and 48.04302 (fresh autoregressive comparator); 384 attempts produced 381 nonempty and three empty outputs. The historical autoregressive value 57.96692 used a different protocol. Full outcomes and definitions are in Table S4. None of these exploratory results establishes improved generation under the tested protocol (main-text Figure 2).
+\input{table_S4.tex}
+
+\section{Order, supplier and assay records (Table S5)}
+\subsection*{Candidate and sample records}
+The design record describes a five-stage screen applied to 1,000 generated candidates: retain sequences with a net positive charge at pH 7.4 computed with RDKit; retain those scoring above 0.9 under an external AMP predictor; retain those with an instability score between 10 and 40; exclude sequences sharing more than 70\% similarity with the training set; and submit survivors for synthesis. Thirty peptides were ordered and 27 delivered. This describes the selection rule, but the available records do not establish its prospective timing or bind selected candidates to a checkpoint, seed and sampling run.
+
+The source materials contain four supplier report types for each of 27 listed peptides: certificate of analysis, HPLC, mass spectrometry and qualitative solubility. Those 108 documents are not 108 biological replicates. Twenty-six certificates report HPLC purity of 95.0--99.1\%; pp1-7 reports 80.3\%, meeting its historical order specification of at least 80\%. HPLC area percentage is not independently established peptide content by mass. Supplier documentation does not establish the material lot used in a specific MIC well.
+
+The order has 30 candidates in groups of 8, 8 and 14; the assayed and supplier-documented subset has 27 candidates in groups of 7, 8 and 12. The three IDs without assay records are pp1-6, pp3-8 and pp3-10. The reason for their absence is not established by the manifest. The 27 supplier sequences exactly match their corresponding order sequences. The supplier modification field N/A does not independently establish terminal chemistry or the lot used in a particular assay well.
+
+The measured strains are \textit{E. coli} ATCC 25922, \textit{P. aeruginosa} ATCC 27853, \textit{S. aureus} ATCC 29213 and \textit{E. faecalis} ATCC 29212. The 27 samples, four strains, three recorded replicate dilution series and ten concentrations give 3,240 peptide OD values. This count excludes the separately recorded blank and negative-control values. Replication type is not inferred from a row label.
+
+\subsection*{Reported and algorithmic endpoints}
+The original \textit{S. aureus} summary yields six numeric results at strict thresholds below 32, 64, 128 and 200 \ug. The algorithm yields six, six, seven and seven, respectively. At $<200$ \ug, the four strain-specific counts in the original summary are 5, 1, 6 and 6; the algorithmic counts are 5, 2, 7 and 5, in the strain order above. Both representations yield seven peptides qualifying against any measured strain. These are counts of different representations; neither overwrites the other.
+
+Among the 78 original N cells, 73 have no numeric replicate endpoints, three have one numeric endpoint, one has two differing numeric endpoints, and one (pp3-14 against \textit{P. aeruginosa}) has three concordant numeric endpoints. The no-consensus cell is pp3-3 against \textit{S. aureus}, with N/250/62.5. Complete cell-level meanings and replicate calls are retained in Tables S5b and S5g.
+
+Two peptides serve as structural representatives: \texttt{LKFTFIKGKFGKSSYY} is pp1-5 (\textit{S. aureus} MIC 7.8125 \textmu{}g/mL), and \texttt{FMPVVLTKLFGVLHFRKIY} is pp2-8 (15.625 \textmu{}g/mL). Other peptides share those values (Table S5).
+
+Sample identities, order and supplier records are traceable, but no complete checkpoint, configuration, seed and candidate-screening ledger links these physical samples to the computational comparison. Attribution remains separate from recovery of assay readings. No haemolysis or cytotoxicity assay is inferred from the antibacterial measurements.
+\input{table_S5.tex}
+
+\section{AMPGen comparison (Table S6)}
+AMPGen reports 31 of 38 synthesized peptides (81.58\%) with MIC at or below 75 $\mu$M against either initial target, \textit{E. coli} K88 or \textit{S. aureus} ATCC 29213 \cite{ref9}. Nine peptides selected for MIC below 5 $\mu$M against both targets were evaluated on a separate four-strain panel, whose \textit{S. aureus} strain was ATCC 25923. The 31/38 fraction and four-strain follow-up do not describe the same assessment population. The present \textit{S. aureus} assay uses ATCC 29213.
+
+The studies evaluate different selected peptides and use different concentration units. Converting a molar threshold to a mass concentration requires each peptide's molecular weight. Selection rules, threshold inequalities, assay conditions and denominators remain relevant to comparison. Table S6 is descriptive and does not isolate a model effect. Operational spectrum-label agreement (3/30 or 3/27) differs from activity against \textit{S. aureus}; treating N as nonqualifying does not prove spectrum specificity.
+\input{table_S6.tex}
+
+\section*{Extended discussion}
+\subsection*{Evaluation context}
+This distinction is not hypothetical. The AMP prediction literature has already been reshaped by evaluation work making precisely this kind of argument. A large family of AMP classifiers and activity predictors now exists \cite{ref30,ref31,ref32,ref33,ref34,ref35,ref36,ref37}, and their comparative assessment has been repeatedly revisited. García-Jacas and colleagues asked whether deep models actually outperform shallow ones for AMP \textit{classification} and found, under fair conditions across state-of-the-art datasets, that they do not; predictions were highly similar across the two families, implying that both encode largely the same chemical information \cite{ref4}. Sidorczuk and colleagues separately showed that AMP prediction benchmarks are biased by negative-data selection \cite{ref5}, a distinct hazard from homology leakage in biological sequence prediction \cite{ref38}; homology-aware partitioning addresses the latter \cite{ref39}. Both papers were published in this journal, and both advanced the field by establishing what a comparison must control rather than by introducing a new architecture. The same skeptical mode of argument has since been applied to GPCR--peptide binding prediction, where a head-to-head benchmark of eight methods produced a public independent benchmark set and an explicit model-selection guide \cite{ref6}. The broader methodological literature has converged on the same lesson: leakage and over-optimism are endemic to machine-learning-based science \cite{ref40,ref41,ref42}, and reporting, validation and benchmarking standards have been proposed in response \cite{ref43,ref44,ref45,ref46}.
+
+\subsection*{Training objectives and generation}
+The separation is not specific to any one model family, nor to peptides. Variational autoencoders optimise a reconstruction term and then sample from a prior \cite{ref47}; adversarial training provides a learned comparison between generated and reference samples rather than directly measuring antibacterial activity; denoising diffusion models optimise a per-step denoising objective whose accumulated sampling behaviour is not what that objective measures \cite{ref48,ref49}. The same structural gap applies to the protein representation and structure-prediction models, alongside diffusion-based protein design methods \cite{ref52,ref53,ref54,ref55,ref56,ref57,ref58,ref59}. In each case the training objective and the quantity a user cares about --- the quality of the sampled molecule --- are different functions of the same parameters, and a gain in the first is evidence for the second only if the two are linked.
+
+\subsection*{Experiments that could revise the observed ranking}
+Further experiments could change the empirical ranking observed in this protocol. A comparison with predeclared tuning budgets, multiple training seeds and an independent evaluation set could show that CE21 exceeds the recurrent comparator, or that the present ordering is sensitive to optimization. Such results would revise the conclusion about this operating point. They would not make reconstruction accuracy alone sufficient evidence of generative superiority; that claim would still require direct generation evaluation.
+
+\section*{Use of generative AI tools}
+The authors wrote the manuscript. AI coding assistants were used for code inspection and debugging, code and documentation assistance, retrieval of sources, statistical and provenance checks, identification of inconsistencies, factual editing and deterministic figure-rendering code. For this version, OpenAI Codex assisted with extraction of saved records, independently written arithmetic checks, source binding, technical correction of existing figures, supplementary-table assembly and compilation checks. Historical records also describe Claude-assisted coding and computational checks; complete model-version metadata were not retained uniformly. These uses do not create new laboratory measurements, a new trained model or new inference outputs. No generative image synthesis was used in corrected Figures 3 and 4. The authors retain responsibility for the scientific content and final submission.
+
+\section*{Data-file index}
+S1a--S1c contain aggregate, per-peptide and per-amino-acid reconstruction; S2a--S2e contain generation distances, comparisons, recomputation and complementary diagnostics; S3a--S3e contain native, censored, contrast, variance and recomputed activity results; S4a--S4g contain the seven route classifications and detailed metrics; S5a--S5h contain the order, MIC comparisons, differences, OD readings, supplier facts, threshold sweep, N semantics and design groups; S6a--S6b contain the AMPGen cohort comparison and molecular-weight conversions. CSV files retain full numerical precision. \texttt{table-provenance.json} records source paths, transformations, row counts and SHA-256.
+
+\begingroup\raggedright\begin{thebibliography}{99}
+\bibitem{ref4} García-Jacas CR, Pinacho-Castellanos SA, García-González LA, Brizuela CA. Do deep learning models make a difference in the identification of antimicrobial peptides? \textit{Brief Bioinform} 2022;23:bbac094. doi:10.1093/bib/bbac094. PMID: 35380616.
+
+\bibitem{ref5} Sidorczuk K, Gagat P, Pietluch F, et al. Benchmarks in antimicrobial peptide prediction are biased due to the selection of negative data. \textit{Brief Bioinform} 2022;23:bbac343. doi:10.1093/bib/bbac343. PMID: 35988923. PMCID: PMC9487607.
+
+\bibitem{ref6} Hoegen Dijkhof LR, Rönkkö TKE, von Vegesack HC, Lenzing J, Hauser AS. Deep learning in GPCR drug discovery: benchmarking the path to accurate peptide binding. \textit{Brief Bioinform} 2025;26:bbaf186. doi:10.1093/bib/bbaf186. PMID: 40285358. PMCID: PMC12031724.
+
+\bibitem{ref9} Jin S, Zeng Z, Xiong X, et al. AMPGen: an evolutionary information-reserved and diffusion-driven generative model for de novo design of antimicrobial peptides. \textit{Commun Biol} 2025;8:839. doi:10.1038/s42003-025-08282-7. PMID: 40447738. PMCID: PMC12125351.
+
+\bibitem{ref30} Veltri D, Kamath U, Shehu A. Deep learning improves antimicrobial peptide recognition. \textit{Bioinformatics} 2018;34:2740--7. doi:10.1093/bioinformatics/bty179. PMID: 29590297. PMCID: PMC6084614.
+
+\bibitem{ref31} Li C, Sutherland D, Hammond SA, et al. AMPlify: attentive deep learning model for discovery of novel antimicrobial peptides effective against WHO priority pathogens. \textit{BMC Genomics} 2022;23:77. doi:10.1186/s12864-022-08310-4. PMID: 35078402. PMCID: PMC8788131.
+
+\bibitem{ref32} Santos-Júnior CD, Pan S, Zhao XM, et al. Macrel: antimicrobial peptide screening in genomes and metagenomes. \textit{PeerJ} 2020;8:e10555. doi:10.7717/peerj.10555. PMID: 33384902. PMCID: PMC7751412.
+
+\bibitem{ref33} Lawrence TJ, Carper DL, Spangler MK, et al. amPEPpy 1.0: a portable and accurate antimicrobial peptide prediction tool. \textit{Bioinformatics} 2021;37:2058--60. doi:10.1093/bioinformatics/btaa917. PMID: 33135060.
+
+\bibitem{ref34} Lee H, Lee S, Lee I, et al. AMP-BERT: prediction of antimicrobial peptide function based on a BERT model. \textit{Protein Sci} 2023;32:e4529. doi:10.1002/pro.4529. PMID: 36461699. PMCID: PMC9793967.
+
+\bibitem{ref35} Yan K, Lv H, Guo Y, et al. sAMPpred-GAT: prediction of antimicrobial peptide by graph attention network and predicted peptide structure. \textit{Bioinformatics} 2023;39:btac715. doi:10.1093/bioinformatics/btac715. PMID: 36342186. PMCID: PMC9805557.
+
+\bibitem{ref36} Ma Y, Guo Z, Xia B, et al. Identification of antimicrobial peptides from the human gut microbiome using deep learning. \textit{Nat Biotechnol} 2022;40:921--31. doi:10.1038/s41587-022-01226-0. PMID: 35241840.
+
+\bibitem{ref37} Santos-Júnior CD, Torres MDT, Duan Y, et al. Discovery of antimicrobial peptides in the global microbiome with machine learning. \textit{Cell} 2024;187:3761--78.e16. doi:10.1016/j.cell.2024.05.013. PMID: 38843834. PMCID: PMC11666328.
+
+\bibitem{ref38} Rentzsch R, Deneke C, Nitsche A, et al. Predicting bacterial virulence factors --- evaluation of machine learning and negative data strategies. \textit{Brief Bioinform} 2020;21:1596--608. doi:10.1093/bib/bbz076. PMID: 32978619.
+
+\bibitem{ref39} Teufel F, Gíslason MH, Almagro Armenteros JJ, et al. GraphPart: homology partitioning for biological sequence analysis. \textit{NAR Genom Bioinform} 2023;5:lqad088. doi:10.1093/nargab/lqad088. PMID: 37850036. PMCID: PMC10578201.
+
+\bibitem{ref40} Kapoor S, Narayanan A. Leakage and the reproducibility crisis in machine-learning-based science. \textit{Patterns} 2023;4:100804. doi:10.1016/j.patter.2023.100804. PMID: 37720327. PMCID: PMC10499856.
+
+\bibitem{ref41} Boulesteix AL. Over-optimism in bioinformatics research. \textit{Bioinformatics} 2010;26:437--9. doi:10.1093/bioinformatics/btp648. PMID: 19942585.
+
+\bibitem{ref42} Whalen S, Schreiber J, Noble WS, et al. Navigating the pitfalls of applying machine learning in genomics. \textit{Nat Rev Genet} 2022;23:169--81. doi:10.1038/s41576-021-00434-9. PMID: 34837041.
+
+\bibitem{ref43} Walsh I, Fishman D, Garcia-Gasulla D, et al. DOME: recommendations for supervised machine learning validation in biology. \textit{Nat Methods} 2021;18:1122--7. doi:10.1038/s41592-021-01205-4. PMID: 34316068.
+
+\bibitem{ref44} Heil BJ, Hoffman MM, Markowetz F, et al. Reproducibility standards for machine learning in the life sciences. \textit{Nat Methods} 2021;18:1132--5. doi:10.1038/s41592-021-01256-7. PMID: 34462593. PMCID: PMC9131851.
+
+\bibitem{ref45} Weber LM, Saelens W, Cannoodt R, et al. Essential guidelines for computational method benchmarking. \textit{Genome Biol} 2019;20:125. doi:10.1186/s13059-019-1738-8. PMID: 31221194. PMCID: PMC6584985.
+
+\bibitem{ref46} Haibe-Kains B, Adam GA, Hosny A, et al. Transparency and reproducibility in artificial intelligence. \textit{Nature} 2020;586:E14--16. doi:10.1038/s41586-020-2766-y. PMID: 33057217. PMCID: PMC8144864.
+
+\bibitem{ref47} Gómez-Bombarelli R, Wei JN, Duvenaud D, et al. Automatic chemical design using a data-driven continuous representation of molecules. \textit{ACS Cent Sci} 2018;4:268--76. doi:10.1021/acscentsci.7b00572. PMID: 29532027. PMCID: PMC5833007.
+
+\bibitem{ref48} Guo Z, Liu J, Wang Y, et al. Diffusion models in bioinformatics and computational biology. \textit{Nat Rev Bioeng} 2024;2:136--54. doi:10.1038/s44222-023-00114-9. PMID: 38576453. PMCID: PMC10994218.
+
+\bibitem{ref49} Schneuing A, Harris C, Du Y, et al. Structure-based drug design with equivariant diffusion models. \textit{Nat Comput Sci} 2024;4:899--909. doi:10.1038/s43588-024-00737-x. PMID: 39653846. PMCID: PMC11659159.
+
+\bibitem{ref52} Rives A, Meier J, Sercu T, et al. Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences. \textit{Proc Natl Acad Sci USA} 2021;118:e2016239118. doi:10.1073/pnas.2016239118. PMID: 33876751. PMCID: PMC8053943.
+
+\bibitem{ref53} Lin Z, Akin H, Rao R, et al. Evolutionary-scale prediction of atomic-level protein structure with a language model. \textit{Science} 2023;379:1123--30. doi:10.1126/science.ade2574. PMID: 36927031.
+
+\bibitem{ref54} Madani A, Krause B, Greene ER, et al. Large language models generate functional protein sequences across diverse families. \textit{Nat Biotechnol} 2023;41:1099--106. doi:10.1038/s41587-022-01618-2. PMID: 36702895. PMCID: PMC10400306.
+
+\bibitem{ref55} Ferruz N, Schmidt S, Höcker B. ProtGPT2 is a deep unsupervised language model for protein design. \textit{Nat Commun} 2022;13:4348. doi:10.1038/s41467-022-32007-7. PMID: 35896542. PMCID: PMC9329459.
+
+\bibitem{ref56} Watson JL, Juergens D, Bennett NR, et al. De novo design of protein structure and function with RFdiffusion. \textit{Nature} 2023;620:1089--100. doi:10.1038/s41586-023-06415-8. PMID: 37433327. PMCID: PMC10468394.
+
+\bibitem{ref57} Dauparas J, Anishchenko I, Bennett N, et al. Robust deep learning-based protein sequence design using ProteinMPNN. \textit{Science} 2022;378:49--56. doi:10.1126/science.add2187. PMID: 36108050. PMCID: PMC9997061.
+
+\bibitem{ref58} Ingraham JB, Baranov M, Costello Z, et al. Illuminating protein space with a programmable generative model. \textit{Nature} 2023;623:1070--8. doi:10.1038/s41586-023-06728-8. PMID: 37968394. PMCID: PMC10686827.
+
+\bibitem{ref59} Cheng Y, Gong Y, Liu Y, et al. Molecular design in drug discovery: a comprehensive review of deep generative models. \textit{Brief Bioinform} 2021;22:bbab344. doi:10.1093/bib/bbab344. PMID: 34415297.
+\end{thebibliography}\endgroup\end{document}

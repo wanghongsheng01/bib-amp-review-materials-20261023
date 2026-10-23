@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="510.0pt" height="220.0pt" viewBox="0 0 510.0 220.0">
+<title>Evidence chain for the reported wet-laboratory record</title>
+<desc>Numbers map to Box 1. A broken model-to-peptide link is distinct from reported assay records and retrospective analysis. Computational-development disclosure is shown separately.</desc>
+<rect x="0" y="0" width="510" height="220" fill="white"/>
+<rect id="required-run" x="4" y="68.0" width="71" height="62" fill="#F7F7F7" stroke="#777777" stroke-width="0.7"/>
+<text id="run-label-1" x="39.5" y="80.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.7" font-weight="700" fill="#242C32">Model run</text>
+<text id="run-label-2" x="39.5" y="92.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.7" font-weight="700" fill="#242C32">identifiers</text>
+<text id="run-fields-1" x="39.5" y="104.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">checkpoint</text>
+<text id="run-fields-2" x="39.5" y="116.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">config. / seed</text>
+<text id="missing-label-1" x="106" y="77.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.7" font-weight="700" fill="#AD5C47">2 No run</text>
+<text id="missing-label-2" x="106" y="89.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#AD5C47">assignment</text>
+<path id="missing-left" d="M 75,103.0 L 97,103.0" fill="none" stroke="#AD5C47" stroke-width="0.9" stroke-dasharray="3,2"/>
+<path id="missing-right" d="M 115,103.0 L 137,103.0" fill="none" stroke="#AD5C47" stroke-width="0.9" stroke-dasharray="3,2"/>
+<path id="break-1" d="M 101,107.0 L 104,99.0" fill="none" stroke="#AD5C47" stroke-width="0.9"/>
+<path id="break-2" d="M 108,107.0 L 111,99.0" fill="none" stroke="#AD5C47" stroke-width="0.9"/>
+<rect id="peptide-record" x="137" y="68.0" width="84" height="75" fill="#F0F5F8" stroke="#25648A" stroke-width="0.7"/>
+<text id="peptide-label" x="179" y="83.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.7" font-weight="700" fill="#242C32">Peptide IDs</text>
+<text id="ordered-count" x="179" y="100.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">30 ordered</text>
+<text id="assayed-count" x="179" y="113.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">27 assayed</text>
+<text id="mapped-ids" x="179" y="126.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">IDs mapped</text>
+<rect id="selection-record" x="108" y="6.0" width="142" height="43" fill="#F0F5F8" stroke="#25648A" stroke-width="0.7"/>
+<text id="selection-label" x="179" y="19.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.7" font-weight="700" fill="#242C32">1 Candidate selection</text>
+<text id="selection-description" x="179" y="31.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">Historical screening rules</text>
+<text id="selection-time" x="179" y="43.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">30 sequences ordered</text>
+<path id="selection-context" d="M 179,49.0 L 179,68.0" fill="none" stroke="#25648A" stroke-width="0.7"/>
+<polygon id="peptide-to-readout" points="222,99.48 232.6,99.48 232.6,101.3 236,99.0 232.6,96.7 232.6,98.52 222,98.52" fill="#242C32"/>
+<rect id="raw-readings" x="237" y="68.0" width="82" height="75" fill="#F0F5F8" stroke="#25648A" stroke-width="0.7"/>
+<text id="readout-label" x="278" y="79.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.7" font-weight="700" fill="#242C32">5 Assay data</text>
+<text id="readout-type-1" x="278" y="92.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">3,240 OD600</text>
+<text id="readout-type-2" x="278" y="105.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">values + 108</text>
+<text id="readout-provenance-1" x="278" y="118.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">MIC cells</text>
+<path id="assay-to-branch" d="M 319,99.0 L 332,99.0" fill="none" stroke="#242C32" stroke-width="0.95"/>
+<path id="branch-vertical" d="M 332,128.0 L 332,47.0" fill="none" stroke="#242C32" stroke-width="0.95"/>
+<polygon id="assay-to-mic-check" points="332,47.47999999999999 344.6,47.47999999999999 344.6,49.30000000000001 348,47.0 344.6,44.69999999999999 344.6,46.52000000000001 332,46.52000000000001" fill="#242C32"/>
+<polygon id="assay-to-reported-count" points="332,128.48000000000002 344.6,128.48000000000002 344.6,130.3 348,128.0 344.6,125.7 344.6,127.52 332,127.52" fill="#242C32"/>
+<rect id="mic-reconstruction" x="350" y="18.0" width="156" height="60" fill="#FCF7ED" stroke="#B88426" stroke-width="0.7"/>
+<text id="mic-label" x="428" y="30.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.7" font-weight="700" fill="#242C32">4 Endpoint comparison</text>
+<text id="mic-state" x="428" y="43.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">105/108 summary matches</text>
+<text id="agreement-count" x="428" y="56.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">3 differing endpoints</text>
+<text id="unresolved-count" x="428" y="69.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">Retrospective rule</text>
+<rect id="activity-count" x="350" y="94.0" width="156" height="67" fill="#F0F5F8" stroke="#25648A" stroke-width="0.7"/>
+<text id="activity-label" x="428" y="106.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.7" font-weight="700" fill="#242C32">3 S. aureus record</text>
+<text id="activity-rates" x="428" y="118.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">MIC &lt;200 μg/mL</text>
+<text id="activity-criterion" x="428" y="130.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">Reported: 6/27 (6/30)</text>
+<text id="activity-time" x="428" y="142.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">Algorithm: 7/27 (7/30)</text>
+<text id="activity-impact" x="428" y="154.0" text-anchor="middle" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">assayed (ordered)</text>
+<path id="separate-record-rule" d="M 4,172.0 L 506,172.0" fill="none" stroke="#C4C9CD" stroke-width="0.55"/>
+<text id="development-header" x="4" y="188.0" text-anchor="start" font-family="DejaVu Sans" font-size="9.7" font-weight="700" fill="#242C32">6 Computational comparison (separate)</text>
+<text id="development-state" x="4" y="204.0" text-anchor="start" font-family="DejaVu Sans" font-size="9.4" font-weight="400" fill="#242C32">279 training and 41 development sequences; one fitted seed; four generators.</text>
+</svg>

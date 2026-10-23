@@ -1,0 +1,31 @@
+sample_id,sequence,ordered_group_id,group_label_from_manuscript,group_label_evidence,ordered,coa_present,assayed,missing_assay_reason,hplc_purity_percent,theoretical_molecular_weight,supplier_modification,water_solubility,DPBS_solubility,DMSO_solubility
+pp1-1,LNLPKILFCSAPRTRLPGNWI,1,broad_spectrum,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,95.3,2409.93,N/A,Soluble,Soluble,Soluble
+pp1-2,KAFFLLYFAVPFGPWS,1,broad_spectrum,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,97.3,1890.26,N/A,Insoluble,Insoluble,Soluble
+pp1-3,CVVSLFKSKKGGLRKHGVPFKL,1,broad_spectrum,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,95.6,2429.02,N/A,Soluble,Soluble,Soluble
+pp1-4,LLWIMLAYRLAFHRNWNAGGWKLFAVV,1,broad_spectrum,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,95.1,3246.93,N/A,Insoluble,Insoluble,Soluble
+pp1-5,LKFTFIKGKFGKSSYY,1,broad_spectrum,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,96.1,1914.28,N/A,Soluble,Insoluble,Soluble
+pp1-6,CGKILTSFWNGFLFSYY,1,broad_spectrum,manuscript assignment; order source explicitly encodes group ID only,True,False,False,not established,,,,,,
+pp1-7,AVCLILGLFNWGK,1,broad_spectrum,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,80.3,1433.78,N/A,Insoluble,Insoluble,Soluble
+pp1-8,CGHLFPYWLYLGPKTPW,1,broad_spectrum,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,97.5,2078.47,N/A,Soluble,Insoluble,Soluble
+pp2-1,CPRTRVGSKT,2,Gram_positive_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,95.6,1104.30,N/A,Soluble,Soluble,Soluble
+pp2-2,LKLLWLIKCSG,2,Gram_positive_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,99.1,1273.65,N/A,Insoluble,Insoluble,Soluble
+pp2-3,AKLSFGKPFANKSKYW,2,Gram_positive_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,97.4,1872.21,N/A,Soluble,Insoluble,Soluble
+pp2-4,CNNLKLHICVKKFARYYLYGPTPYY,2,Gram_positive_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,97.5,3068.66,N/A,Soluble,Insoluble,Insoluble
+pp2-5,RETGRGKRDKGNIGTALGCFRMI,2,Gram_positive_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,95.2,2536.97,N/A,Soluble,Soluble,Soluble
+pp2-6,VGPGKKFLPK,2,Gram_positive_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,98.6,1070.35,N/A,Soluble,Soluble,Soluble
+pp2-7,FTGGKGRDWGGHSSRKKKSLGFA,2,Gram_positive_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,97.0,2464.78,N/A,Soluble,Soluble,Soluble
+pp2-8,FMPVVLTKLFGVLHFRKIY,2,Gram_positive_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,97.8,2308.91,N/A,Insoluble,Insoluble,Soluble
+pp3-1,CHLKLAILFNFLKFLKQFLGNLTYV,3,Gram_negative_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,97.2,2984.69,N/A,Soluble,Insoluble,Soluble
+pp3-2,HGKFFKYFNLQVCLGLARALKDGG,3,Gram_negative_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,96.0,2683.18,N/A,Insoluble,Insoluble,Soluble
+pp3-3,RPKQIYFFAHLRLIFGLKI,3,Gram_negative_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,95.8,2360.93,N/A,Soluble,Insoluble,Insoluble
+pp3-4,CLGPKLYNNWQGLGGL,3,Gram_negative_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,97.0,1733.02,N/A,Insoluble,Insoluble,Soluble
+pp3-5,NWQPRHFLADTFCPKLKGQILR,3,Gram_negative_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,98.4,2669.16,N/A,Soluble,Soluble,Soluble
+pp3-6,MPKGIFFALKLLWKNFEKAI,3,Gram_negative_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,96.3,2395.00,N/A,Insoluble,Insoluble,Soluble
+pp3-7,PKPFLWAKSDLFVKL,3,Gram_negative_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,95.0,1789.20,N/A,Soluble,Insoluble,Insoluble
+pp3-8,MFLLRLNFGGLICKPL,3,Gram_negative_specific,manuscript assignment; order source explicitly encodes group ID only,True,False,False,not established,,,,,,
+pp3-9,GFFPGFIVLGCKTGFTPTY,3,Gram_negative_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,96.2,2052.42,N/A,Insoluble,Insoluble,Soluble
+pp3-10,MAGLLLFYGYLLSGLKIWSW,3,Gram_negative_specific,manuscript assignment; order source explicitly encodes group ID only,True,False,False,not established,,,,,,
+pp3-11,FKGVAKARHRLWFL,3,Gram_negative_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,95.1,1729.12,N/A,Soluble,Soluble,Soluble
+pp3-12,GFPGDVFKAKAAKA,3,Gram_negative_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,97.7,1406.65,N/A,Soluble,Soluble,Soluble
+pp3-13,KTFKKKLFLKLFYILHTPTY,3,Gram_negative_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,95.4,2530.15,N/A,Insoluble,Insoluble,Soluble
+pp3-14,CFANFQSKLHREARKLMGGAKKWPY,3,Gram_negative_specific,manuscript assignment; order source explicitly encodes group ID only,True,True,True,,95.9,2967.52,N/A,Soluble,Insoluble,Soluble
