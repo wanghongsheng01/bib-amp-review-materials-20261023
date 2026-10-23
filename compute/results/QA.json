@@ -1,0 +1,7 @@
+{
+  "input_files": 37,
+  "checks": 2630,
+  "passed": 2630,
+  "failed": 0,
+  "scope": "Saved-output arithmetic and reported metadata only; no model training, inference, checkpoints, network or reserved evaluation partition."
+}

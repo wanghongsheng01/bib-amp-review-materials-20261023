@@ -1,0 +1,83 @@
+{
+  "created": "2026-10-23",
+  "status": "Versioned laboratory evidence",
+  "study_data": "30 ordered peptide sequences, 27 assayed peptides, four strains, ten concentrations and three replicate series",
+  "source_handling": "Reported MIC and retrospective algorithmic calls are separate; no source measurement changed; no true-MIC adjudication",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1921,
+      "sha256": "0a1e60812f8eb01e7d751d049e844fc2b23aaa728fe63a988a2331c565d2c2ca"
+    },
+    {
+      "path": "analysis/recompute.py",
+      "bytes": 3507,
+      "sha256": "73ac0d0c5178dc600b80e177624b78a0b6e3e8aa929c49e449ae16657ea73d13"
+    },
+    {
+      "path": "data/N_semantics_cells.csv",
+      "bytes": 6532,
+      "sha256": "fa0ed29aae7b6448a6d88dd55bfd7ff20693dc2a42dddee149504e82dedb0567"
+    },
+    {
+      "path": "data/N_semantics_summary.json",
+      "bytes": 747,
+      "sha256": "eb2fca2136035ee7bb812ef916c3ddb0376f7aea6c2cb0e666ffe7377c97e1c6"
+    },
+    {
+      "path": "data/coa_27_facts.csv",
+      "bytes": 2238,
+      "sha256": "21dac26799bd49badf2aa6107fc04a50b08416fe5d6a288c87f3c33db361532c"
+    },
+    {
+      "path": "data/group_counts.csv",
+      "bytes": 410,
+      "sha256": "96d1105153612b943d07f42692a31a7b61eb3272bd566f71b285aa25bc67d57b"
+    },
+    {
+      "path": "data/mic_algorithm_calls.csv",
+      "bytes": 16771,
+      "sha256": "fd3274e8ac9c600b62ba8a05838b81f1aeadcbdc90ba3112733076349bb27c84"
+    },
+    {
+      "path": "data/mic_summary_reported.csv",
+      "bytes": 572,
+      "sha256": "40a708b3b39fdf50d87c237bf94db3fd97933264ee2a6c00d437e4259313d1ae"
+    },
+    {
+      "path": "data/molar_threshold_equivalents.csv",
+      "bytes": 3336,
+      "sha256": "9445788e1ad54b073412be14ea947ed755c6c6e070b4fd4d8b750d82458cbe2d"
+    },
+    {
+      "path": "data/od600_raw.csv",
+      "bytes": 258040,
+      "sha256": "8687c1849ec822c10c584931f1e4132c31e8844a6c0e648e753300d115a885d7"
+    },
+    {
+      "path": "data/sample_manifest_30.csv",
+      "bytes": 5529,
+      "sha256": "d0306bc3f4b26c221c7a20c76e7528dc65ecd2ad9324d6e7151dc9b56b783661"
+    },
+    {
+      "path": "data/solubility_27_facts.csv",
+      "bytes": 940,
+      "sha256": "d331b37c1d302a197cca1ae3413e72415a2d6dbe658a1571624f66a12bb737e8"
+    },
+    {
+      "path": "data/spectrum_label_membership.csv",
+      "bytes": 10934,
+      "sha256": "08e335b92484be44acadd17c60c2869ed322697d70a5adb60d8743a7136903a6"
+    },
+    {
+      "path": "data/threshold_counts_all.csv",
+      "bytes": 35379,
+      "sha256": "12af9062e65f2f9df8bb9ec16ccbbbc81572aa387b08327e67cde622b988225d"
+    },
+    {
+      "path": "source/ordered_30_sequences.xlsx",
+      "bytes": 9735,
+      "sha256": "d65f08d75dac82925aceb93d1fccccc2f24cdb89f66a00ed0b0410349c4c5eb9"
+    }
+  ]
+}

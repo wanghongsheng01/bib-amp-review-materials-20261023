@@ -1,0 +1,18 @@
+{
+  "uM_native": {
+    "variance_decomposition": {
+      "between_fraction": 0.7137300517542348,
+      "between_source_group_mean_variance": 0.2691547992247815,
+      "total_label_variance": 0.37711008323559014,
+      "within_source_group_variance": 0.10795528401080826
+    }
+  },
+  "ug_ml_native": {
+    "variance_decomposition": {
+      "between_fraction": 0.9083087578294765,
+      "between_source_group_mean_variance": 0.548142319415673,
+      "total_label_variance": 0.6034757616182534,
+      "within_source_group_variance": 0.05533344220257993
+    }
+  }
+}

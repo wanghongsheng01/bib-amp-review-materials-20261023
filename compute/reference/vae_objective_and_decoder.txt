@@ -1,0 +1,73 @@
+Source: evidence/amp_h5/implementation/vae_pipeline_formal_v2.py
+Source commit: f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b
+Static excerpt only; not executed by this package.
+
+189: def make_model(arm, seed):
+190:     torch.manual_seed(seed)
+191:     return VAEModel(out_dim=1 if arm == "scalar_legacy" else 21, con_dim=3, latent_size=16,
+192:                     sqz_prior=False, cond_drop=False, use_prior_flow=True, device="cpu")
+193: 
+194: 
+195: def objective(model, target, g, h, arm):
+196:     """Retain the encoder/flow/sample rule; normalize CE21/MSE21 by B*48."""
+197:     v = model.vae
+198:     z, mu, logsigma = v.encoder(v.word_emb(target.T).permute(1, 2, 0), v.g_pre_net(g), h)
+199:     raw = v.decoder(z)
+200:     zp = v.prior_flow(z, g)
+201:     logq = torch.distributions.Normal(mu, logsigma.exp()).log_prob(z)
+202:     logp = v.prior_dist.log_prob(zp)
+203:     density = (logq-logp).sum()
+204:     denom = target.numel()
+205:     if arm == "scalar_legacy":
+206:         reconstruction = (raw-target).square().sum() / (target != 20).sum()
+207:         kl = density / 16
+208:     else:
+209:         if raw.shape != (len(target), 21, 48):
+210:             raise ValueError("21-head output shape")
+211:         if arm == "categorical_ce":
+212:             reconstruction = torch.nn.functional.cross_entropy(raw, target, reduction="sum") / denom
+213:         elif arm == "raw_onehot_mse":
+214:             onehot = torch.nn.functional.one_hot(target, num_classes=21).permute(0, 2, 1).to(raw)
+215:             reconstruction = 0.5 * (raw-onehot).square().sum() / denom
+216:         else:
+217:             raise ValueError("unknown arm")
+218:         kl = density / denom
+219:     for name, value in (("raw", raw), ("mu", mu), ("logsigma", logsigma),
+220:                         ("density", density), ("reconstruction", reconstruction)):
+221:         finite(value, name)
+222:     return {"loss": reconstruction+kl, "reconstruction": reconstruction, "kl": kl,
+223:             "density_sum": density, "mu": mu, "logsigma": logsigma, "raw": raw}
+224: 
+225: 
+226: def joint_decode(score_bkt):
+227:     """Same legal-prefix J for both heads; empty/full48 retained, earliest tie."""
+228:     scores = score_bkt.transpose(1, 2)
+229:     body, aa = scores[:, :, :20].max(-1)
+230:     pad = scores[:, :, 20]
+231:     base = pad.sum(1, keepdim=True)
+232:     length_scores = base + torch.cat((torch.zeros_like(base), (body-pad).cumsum(1)), dim=1)
+233:     length = length_scores.argmax(1)
+234:     tokens = torch.where(torch.arange(48)[None, :] < length[:, None], aa, torch.full_like(aa, 20))
+235:     return tokens, length, length_scores
+236: 
+237: 
+238: def decode(model, z, arm, observations=None):
+239:     if observations is not None:
+240:         observations["sampled_z"] = z
+241:     finite(z, "decoder input")
+242:     raw = model.vae.decoder(z)
+243:     if observations is not None:
+244:         observations["decoder_raw"] = raw
+245:     finite(raw, "decoder output")
+246:     if arm == "scalar_legacy":
+247:         tokens = raw.clamp(0, 20).round().long()
+248:         lengths = []
+249:         for row in tokens.tolist():
+250:             lengths.append(row.index(20) if 20 in row else 48)
+251:         lengths = torch.tensor(lengths)
+252:         length_scores = None
+253:     else:
+254:         tokens, lengths, length_scores = joint_decode(raw)
+255:     if observations is not None:
+256:         observations.update(tokens=tokens, lengths=lengths)
+257:         if length_scores is not None:

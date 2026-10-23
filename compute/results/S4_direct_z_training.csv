@@ -1,0 +1,3 @@
+arm,checkpoint_selection,completed_updates,elapsed_seconds,failure,final_state_sha256,logged_complete_steps,no_retry,parameters,status
+R,final1000_only,1000,550.6503029158339,,a14731fccec0668039505820e3c6a7eb47c3604b19a5b05e5a08661fc05e57aa,1000,True,18611970,COMPLETE
+Z,final1000_only,1000,546.4136138749309,,60a977ace1d24efc3d9d58fd84535566d1765c41f74af7800d92f2c5b4fad5b0,1000,True,18611329,COMPLETE

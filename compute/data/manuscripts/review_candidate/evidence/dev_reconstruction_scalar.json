@@ -1,0 +1,371 @@
+[
+  {
+    "correct_residues": 3,
+    "exact": false,
+    "prediction_length": 13,
+    "row_key": "cef3c88cc190a21fcc98",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 11
+  },
+  {
+    "correct_residues": 2,
+    "exact": false,
+    "prediction_length": 19,
+    "row_key": "65556a317a1070db8a0b",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 17
+  },
+  {
+    "correct_residues": 3,
+    "exact": false,
+    "prediction_length": 26,
+    "row_key": "0a822c2329a35c1561c9",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 25
+  },
+  {
+    "correct_residues": 1,
+    "exact": false,
+    "prediction_length": 16,
+    "row_key": "eded7eaa9de423f4898a",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 15
+  },
+  {
+    "correct_residues": 1,
+    "exact": false,
+    "prediction_length": 19,
+    "row_key": "de0bc71b0dd2f4d43f3e",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 17
+  },
+  {
+    "correct_residues": 3,
+    "exact": false,
+    "prediction_length": 15,
+    "row_key": "b43859a3fb5b62d50282",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 14
+  },
+  {
+    "correct_residues": 1,
+    "exact": false,
+    "prediction_length": 16,
+    "row_key": "528bf7dd936e4f0d2c01",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 15
+  },
+  {
+    "correct_residues": 2,
+    "exact": false,
+    "prediction_length": 13,
+    "row_key": "2efe767253c2eb3d0d33",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 12
+  },
+  {
+    "correct_residues": 5,
+    "exact": false,
+    "prediction_length": 20,
+    "row_key": "40a163760f541afb4b54",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 18
+  },
+  {
+    "correct_residues": 1,
+    "exact": false,
+    "prediction_length": 20,
+    "row_key": "226f0b299b5474a407cd",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 19
+  },
+  {
+    "correct_residues": 0,
+    "exact": false,
+    "prediction_length": 14,
+    "row_key": "6e4ae87aba1d5cde9342",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 12
+  },
+  {
+    "correct_residues": 2,
+    "exact": false,
+    "prediction_length": 10,
+    "row_key": "4a9f6664bd65c71a64ec",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 9
+  },
+  {
+    "correct_residues": 8,
+    "exact": false,
+    "prediction_length": 20,
+    "row_key": "c93a1912f34696efed36",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 19
+  },
+  {
+    "correct_residues": 4,
+    "exact": false,
+    "prediction_length": 18,
+    "row_key": "9a12d8429a8a09f243d1",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 16
+  },
+  {
+    "correct_residues": 6,
+    "exact": false,
+    "prediction_length": 26,
+    "row_key": "01b6cafe868fc98b09b4",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 24
+  },
+  {
+    "correct_residues": 2,
+    "exact": false,
+    "prediction_length": 14,
+    "row_key": "aaa47d84546892ad1634",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 13
+  },
+  {
+    "correct_residues": 0,
+    "exact": false,
+    "prediction_length": 7,
+    "row_key": "b4612254317c9810d754",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 5
+  },
+  {
+    "correct_residues": 2,
+    "exact": false,
+    "prediction_length": 16,
+    "row_key": "717a967a56dd6db01c25",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 15
+  },
+  {
+    "correct_residues": 1,
+    "exact": false,
+    "prediction_length": 19,
+    "row_key": "824d64e254d5c8ba7a4b",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 17
+  },
+  {
+    "correct_residues": 2,
+    "exact": false,
+    "prediction_length": 19,
+    "row_key": "09383f4f5b10d5a4de0c",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 17
+  },
+  {
+    "correct_residues": 5,
+    "exact": false,
+    "prediction_length": 38,
+    "row_key": "84487be9dd3f334a1c5f",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 37
+  },
+  {
+    "correct_residues": 2,
+    "exact": false,
+    "prediction_length": 19,
+    "row_key": "2803127565c2303e0fa5",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 18
+  },
+  {
+    "correct_residues": 1,
+    "exact": false,
+    "prediction_length": 16,
+    "row_key": "4cdac97103717e62cf5c",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 15
+  },
+  {
+    "correct_residues": 3,
+    "exact": false,
+    "prediction_length": 16,
+    "row_key": "51462d315192c00e6958",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 15
+  },
+  {
+    "correct_residues": 0,
+    "exact": false,
+    "prediction_length": 14,
+    "row_key": "6bb13888173e135e61e4",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 13
+  },
+  {
+    "correct_residues": 2,
+    "exact": false,
+    "prediction_length": 14,
+    "row_key": "3f0eb91bffff55d269ec",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 13
+  },
+  {
+    "correct_residues": 3,
+    "exact": false,
+    "prediction_length": 15,
+    "row_key": "04088c8807d2e06ce671",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 13
+  },
+  {
+    "correct_residues": 10,
+    "exact": false,
+    "prediction_length": 34,
+    "row_key": "f6c0b511a55f143bdf0c",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 33
+  },
+  {
+    "correct_residues": 0,
+    "exact": false,
+    "prediction_length": 8,
+    "row_key": "9490ad77bf6e9c6d31b5",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 7
+  },
+  {
+    "correct_residues": 4,
+    "exact": false,
+    "prediction_length": 37,
+    "row_key": "0d307d40890b2fc4091d",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 36
+  },
+  {
+    "correct_residues": 13,
+    "exact": false,
+    "prediction_length": 27,
+    "row_key": "4f651b720101af8e4a11",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 26
+  },
+  {
+    "correct_residues": 2,
+    "exact": false,
+    "prediction_length": 14,
+    "row_key": "47e32814c41ca6325d4f",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 13
+  },
+  {
+    "correct_residues": 1,
+    "exact": false,
+    "prediction_length": 14,
+    "row_key": "6658842a464b92ca625c",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 13
+  },
+  {
+    "correct_residues": 1,
+    "exact": false,
+    "prediction_length": 16,
+    "row_key": "e2408d987829ac4fce96",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 15
+  },
+  {
+    "correct_residues": 1,
+    "exact": false,
+    "prediction_length": 14,
+    "row_key": "d6eabfdf7a4598b99392",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 13
+  },
+  {
+    "correct_residues": 2,
+    "exact": false,
+    "prediction_length": 27,
+    "row_key": "b184e009e0efc3ae7756",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 26
+  },
+  {
+    "correct_residues": 3,
+    "exact": false,
+    "prediction_length": 16,
+    "row_key": "a3c0d32b00bb30a6e33d",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 14
+  },
+  {
+    "correct_residues": 2,
+    "exact": false,
+    "prediction_length": 19,
+    "row_key": "f2f372a01eab050d3d78",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 17
+  },
+  {
+    "correct_residues": 3,
+    "exact": false,
+    "prediction_length": 15,
+    "row_key": "5cafbd2862e238f1f56d",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 14
+  },
+  {
+    "correct_residues": 3,
+    "exact": false,
+    "prediction_length": 22,
+    "row_key": "c8cbcb252563eb5270ff",
+    "status": "ok",
+    "terminal": "AMD",
+    "true_length": 20
+  },
+  {
+    "correct_residues": 1,
+    "exact": false,
+    "prediction_length": 21,
+    "row_key": "0714f9f366bd0dcf45d8",
+    "status": "ok",
+    "terminal": "FREE",
+    "true_length": 20
+  }
+]

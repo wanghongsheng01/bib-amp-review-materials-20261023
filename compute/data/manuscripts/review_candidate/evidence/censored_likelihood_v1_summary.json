@@ -1,0 +1,140 @@
+{
+  "completed_folds": [
+    "ug_ml_native__G102",
+    "ug_ml_native__G12453",
+    "ug_ml_native__G12529",
+    "ug_ml_native__G13726",
+    "ug_ml_native__G13735",
+    "ug_ml_native__G17268",
+    "ug_ml_native__G1737",
+    "ug_ml_native__G2425",
+    "ug_ml_native__G3086",
+    "ug_ml_native__G3198",
+    "ug_ml_native__G3224",
+    "ug_ml_native__G37",
+    "ug_ml_native__G4013",
+    "ug_ml_native__G5545",
+    "ug_ml_native__G5556",
+    "ug_ml_native__G6669",
+    "ug_ml_native__G6742",
+    "ug_ml_native__G6785",
+    "ug_ml_native__G8110",
+    "ug_ml_native__G8157",
+    "ug_ml_native__G873",
+    "uM_native__G102",
+    "uM_native__G103",
+    "uM_native__G12531",
+    "uM_native__G12533",
+    "uM_native__G13692",
+    "uM_native__G13726",
+    "uM_native__G2396",
+    "uM_native__G3232",
+    "uM_native__G3301",
+    "uM_native__G37",
+    "uM_native__G6669",
+    "uM_native__G8110",
+    "uM_native__G873"
+  ],
+  "units": {
+    "uM_native": {
+      "endpoint_ridge": {
+        "families": 18,
+        "group_peptide_MAE": 0.5895160709857723,
+        "group_peptide_RMSE": 0.7236610177046156,
+        "peptide_IDs": 27,
+        "peptide_MAE": 0.47803296497906406,
+        "peptide_RMSE": 0.6109498393427727,
+        "row_MAE": 0.4763205942929208,
+        "row_RMSE": 0.5958814944827013,
+        "rows": 68,
+        "source_groups": 13
+      },
+      "point_mean": {
+        "families": 18,
+        "group_peptide_MAE": 0.5495844097732039,
+        "group_peptide_RMSE": 0.6510286836921182,
+        "peptide_IDs": 27,
+        "peptide_MAE": 0.533393573353254,
+        "peptide_RMSE": 0.632909607325048,
+        "row_MAE": 0.46606018720212256,
+        "row_RMSE": 0.5974101836320761,
+        "rows": 68,
+        "source_groups": 13
+      },
+      "point_ridge": {
+        "families": 18,
+        "group_peptide_MAE": 0.5963027394105805,
+        "group_peptide_RMSE": 0.6892558731935622,
+        "peptide_IDs": 27,
+        "peptide_MAE": 0.5299542019950132,
+        "peptide_RMSE": 0.6219402768998155,
+        "row_MAE": 0.4724452696885808,
+        "row_RMSE": 0.605405005726861,
+        "rows": 68,
+        "source_groups": 13
+      },
+      "tail_ridge": {
+        "families": 18,
+        "group_peptide_MAE": 0.7268968826504572,
+        "group_peptide_RMSE": 0.9022068950658721,
+        "peptide_IDs": 27,
+        "peptide_MAE": 0.6383682394976757,
+        "peptide_RMSE": 0.7830398470511198,
+        "row_MAE": 0.671639399725048,
+        "row_RMSE": 0.8084302407298998,
+        "rows": 68,
+        "source_groups": 13
+      }
+    },
+    "ug_ml_native": {
+      "endpoint_ridge": {
+        "families": 32,
+        "group_peptide_MAE": 0.8210338249537426,
+        "group_peptide_RMSE": 1.0097735129902092,
+        "peptide_IDs": 54,
+        "peptide_MAE": 0.6264825825309108,
+        "peptide_RMSE": 0.7806655722812601,
+        "row_MAE": 0.6089393117816762,
+        "row_RMSE": 0.7656969671769454,
+        "rows": 79,
+        "source_groups": 21
+      },
+      "point_mean": {
+        "families": 32,
+        "group_peptide_MAE": 0.6608711830510042,
+        "group_peptide_RMSE": 0.8121947730429933,
+        "peptide_IDs": 54,
+        "peptide_MAE": 0.5613845068180058,
+        "peptide_RMSE": 0.6909187374441688,
+        "row_MAE": 0.5241163669800866,
+        "row_RMSE": 0.6466360838774079,
+        "rows": 79,
+        "source_groups": 21
+      },
+      "point_ridge": {
+        "families": 32,
+        "group_peptide_MAE": 0.7876524867735214,
+        "group_peptide_RMSE": 0.9604008572010014,
+        "peptide_IDs": 54,
+        "peptide_MAE": 0.6207163658820603,
+        "peptide_RMSE": 0.7642875068530143,
+        "row_MAE": 0.5811253762639387,
+        "row_RMSE": 0.7141538608308288,
+        "rows": 79,
+        "source_groups": 21
+      },
+      "tail_ridge": {
+        "families": 32,
+        "group_peptide_MAE": 0.8441279627974684,
+        "group_peptide_RMSE": 1.055449936037222,
+        "peptide_IDs": 54,
+        "peptide_MAE": 0.6310931858380979,
+        "peptide_RMSE": 0.7962836283410127,
+        "row_MAE": 0.6256080254144093,
+        "row_RMSE": 0.8023666897562529,
+        "rows": 79,
+        "source_groups": 21
+      }
+    }
+  }
+}

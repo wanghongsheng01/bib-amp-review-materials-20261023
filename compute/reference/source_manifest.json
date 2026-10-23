@@ -1,0 +1,32 @@
+{
+  "vae_objective_and_decoder.txt": {
+    "source": "evidence/amp_h5/implementation/vae_pipeline_formal_v2.py",
+    "source_sha256": "e97d2a766774461793cba1860455e4cb4c8d689656b60becc326a9f11297ca9b",
+    "lines": [
+      [
+        189,
+        257
+      ]
+    ]
+  },
+  "lstm_architecture.txt": {
+    "source": "evidence/amp_h5/implementation/ar_pipeline.py",
+    "source_sha256": "1d86971866f40ade1b59d1eb7652be94eb0934d15651136e4edb933dc90831ee",
+    "lines": [
+      [
+        65,
+        106
+      ]
+    ]
+  },
+  "latent_pairing.txt": {
+    "source": "evidence/amp_h5/ar_latent_v3/runner.py",
+    "source_sha256": "bb4de35f06976d63530ad7304cf9200aee4896535d9eb6287204ea6551c64fe0",
+    "lines": [
+      [
+        60,
+        86
+      ]
+    ]
+  }
+}

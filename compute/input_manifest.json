@@ -1,0 +1,302 @@
+{
+  "repository": "wanghongsheng01/amp-claude-handoff-20261013",
+  "commit": "f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b",
+  "files": {
+    "evidence/amp_h5/ar_latent_v3/runs/natural_v1/SUMMARY.json": {
+      "sha256": "607f197a2f36f9a634dbb34aeab1689bc2a6584d9f43a812b1a7947bd441f797",
+      "bytes": 978,
+      "original_sha256": "5292afb125c31c85c5734f1bc5bd6cd528b0f535a6bb4916cdfa40157394300a",
+      "original_git_blob_sha1": "0c1e40252ae11e46bc85b985b4a46aa788833e66",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/ar_latent_v3/runs/natural_v1/SUMMARY.json"
+    },
+    "evidence/amp_h5/censored_likelihood_v1/run/PREDICTIONS.jsonl": {
+      "sha256": "195abc05c1f667d8b2c26153e342bd0130aa9ecb4eebd4745a1f3a07f22e1d01",
+      "bytes": 109916,
+      "original_sha256": "610a6dac44804d8231950a65e3c8c7263ba78f2b4e2720cd37c718c136e035c8",
+      "original_git_blob_sha1": "596df30fe09fe6088d6485d0d03719632cc963e3",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/censored_likelihood_v1/run/PREDICTIONS.jsonl"
+    },
+    "evidence/amp_h5/censored_likelihood_v1/run/RESULT.json": {
+      "sha256": "927b3cab75eb9a495be26c8be418ee469ff8528494560f4c04c7b859227a7e49",
+      "bytes": 4146,
+      "original_sha256": "d38f2ceef44b5c80f066bb8fa703a0e29362f96e438251a6914adec9f63472b9",
+      "original_git_blob_sha1": "36e42fde242c66f4fa5b0f96cfcc2698972c3526",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/censored_likelihood_v1/run/RESULT.json"
+    },
+    "evidence/amp_h5/direct_z_impl_v1/DELIVERY_DIRECT_Z_v3.json": {
+      "sha256": "07c2bf310ac3a3af56074dad0e7e89c3e502b3b02f90e306789d0825492fec7f",
+      "bytes": 4671,
+      "original_sha256": "4ac7ae95a6e4ba276a87ef41d568ccda924ac5c39b40a13cd8aebd555166325e",
+      "original_git_blob_sha1": "4eba232ce5e3d23e197a54ba247081b2b3d02a2e",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/direct_z_impl_v1/DELIVERY_DIRECT_Z_v3.json"
+    },
+    "evidence/amp_h5/eb_context_v1/natural_run/GENERATIONS.json": {
+      "sha256": "e9fa175c382ec2658fb36463da6f9fc0e39f8ad2326de3c9ea2378a029afef7c",
+      "bytes": 63707,
+      "original_sha256": "fe6c29cef3edce7e88c98afbfb3dfe2b00b4080036717f0fdf5bdd633b6d23a2",
+      "original_git_blob_sha1": "d3403353abc5fb3e44473ada8d7a370a2846c64e",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/eb_context_v1/natural_run/GENERATIONS.json"
+    },
+    "evidence/amp_h5/eb_context_v1/natural_run/RESULT.json": {
+      "sha256": "3368187a52b9046a8aa2ec0071305ef2aed6f99fbd6f10b9aed37c204fa3da6c",
+      "bytes": 1605,
+      "original_sha256": "2365d92ff7bec6e23b1b413a0f1250c3dbe27c54a267a16e94202b896ebea7c7",
+      "original_git_blob_sha1": "28856d87b9cbdcd280e5c10a9e5ba64ad9690c76",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/eb_context_v1/natural_run/RESULT.json"
+    },
+    "evidence/amp_h5/feasibility/ce_recovery_four_arm_evaluation_v1/exploratory_gates.json": {
+      "sha256": "d7ebb411ecb89f2f3eaa101779a94f7758d935c415c0a536e08cb7a5863102fc",
+      "bytes": 3974,
+      "original_sha256": "e0487fc4e88c675fda30e66d4a9dc711985491342c21ffb66807b677793b76b8",
+      "original_git_blob_sha1": "45d9b94e064928b2164e5520e7036430da48710b",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/feasibility/ce_recovery_four_arm_evaluation_v1/exploratory_gates.json"
+    },
+    "evidence/amp_h5/feasibility/ce_recovery_four_arm_evaluation_v1/generation_metrics.json": {
+      "sha256": "3129e287c11993e7267f32ec9ac832dc4fc30d86ea77d7f360481fd8dedfd701",
+      "bytes": 9539,
+      "original_sha256": "7cd655ed623cd2d4d0751e1f06ab2e534361704e4c3fc755c7586ce9ee9eeac1",
+      "original_git_blob_sha1": "f2bfa834eb10fce868514edaddfd28e999856fe7",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/feasibility/ce_recovery_four_arm_evaluation_v1/generation_metrics.json"
+    },
+    "evidence/amp_h5/feasibility/ce_recovery_four_arm_evaluation_v1/generation_sample_audit.json": {
+      "sha256": "0c22a482fa2835472d164875028485421965f375ec5934146815ef1771218354",
+      "bytes": 17678,
+      "original_sha256": "576e9a9ebdb118a81e9616d2536a6b79b659502dceb4cad5c85b784bfa5dea22",
+      "original_git_blob_sha1": "8bae459c4b40cdaf86f6c62fba8e63031a86fc66",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/feasibility/ce_recovery_four_arm_evaluation_v1/generation_sample_audit.json"
+    },
+    "evidence/amp_h5/feasibility/ce_recovery_four_arm_evaluation_v1/reconstruction_row_audit.json": {
+      "sha256": "9c609572b2f8f213ee1e70b0fcc508c899960b9a7084043f9a808966cb5ccf95",
+      "bytes": 250252,
+      "original_sha256": "2b9a9610689a6c0746d1f08305bdff78d65cc06a16f38951e764d03985d8c3cc",
+      "original_git_blob_sha1": "23563b6f0c4cc9f783a8106b0d80c5b61a9869dd",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/feasibility/ce_recovery_four_arm_evaluation_v1/reconstruction_row_audit.json"
+    },
+    "evidence/amp_h5/feasibility/ce_source_replacement_author_readout_v2/GATE_AND_SCOPE_INTERPRETATION.json": {
+      "sha256": "58297e7d05349f641f39ca79ca29e074e70aef7bd009775a28fd306fa46c924a",
+      "bytes": 390,
+      "original_sha256": "c6240092a19a537ee8f529989092a8f93b5e6fad36f433885ba1d2c049c1bfbd",
+      "original_git_blob_sha1": "2980e9065e0d212ad1f1c41eaaa72d1b9ccfbc93",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/feasibility/ce_source_replacement_author_readout_v2/GATE_AND_SCOPE_INTERPRETATION.json"
+    },
+    "evidence/amp_h5/feasibility/ce_source_replacement_evaluation_v2/generation_metrics.json": {
+      "sha256": "25bc7002cdd9ab2ca5c0e3fa2f95edc5b8a3d64a77987af4efa27296f4e05c76",
+      "bytes": 9611,
+      "original_sha256": "528db036952eac8cf89b9326e3ca0b9ca210316a7b1f5622331098a82917bda6",
+      "original_git_blob_sha1": "9bce193f52eb707894e5e8f1e45ea7fe9888d5bc",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/feasibility/ce_source_replacement_evaluation_v2/generation_metrics.json"
+    },
+    "evidence/amp_h5/native_baseline_v1/run/PREDICTIONS.jsonl": {
+      "sha256": "3b43a345fb5e232deb04a29f87b3ee20b74bd37044be0d5aa6869095d244c5ff",
+      "bytes": 48729,
+      "original_sha256": "2f375ce444e5465eab28a1a15823f9dda1c1b800fe0c61b680dfb6d8eb378556",
+      "original_git_blob_sha1": "b9f986c6c1859f91efe580b7d9d6ffbce8d242ff",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/native_baseline_v1/run/PREDICTIONS.jsonl"
+    },
+    "evidence/amp_h5/native_baseline_v1/run/RESULT.json": {
+      "sha256": "d004b7b6e5b740cb9364d092b122c552939a15160fd1b0ed978ffd89017a1828",
+      "bytes": 3269,
+      "original_sha256": "f11a098bd47067464866dd8a6a9ffe54ec6c08d1ecf8fbe1d96cb693ed352657",
+      "original_git_blob_sha1": "25ac738bafe4ed718ff88b32f61b081af141c0c1",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/native_baseline_v1/run/RESULT.json"
+    },
+    "evidence/amp_h5/night_followup_v1/warmup_paired_guard_run_v1/PAIRED_RESOURCE_GUARD.json": {
+      "sha256": "cbb041e60b0f22436c71dd813145f469433a3b0ec4909946340eddbd20ffa0ec",
+      "bytes": 1689,
+      "original_sha256": "a879cf42952903758c814e7b1a001099f31f65978a0576d8a8f4a77ab6b2aea2",
+      "original_git_blob_sha1": "5d30f683aad4d094b53d82d304f7613972f3e008",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/night_followup_v1/warmup_paired_guard_run_v1/PAIRED_RESOURCE_GUARD.json"
+    },
+    "evidence/amp_h5/night_followup_v1/warmup_scoring_run_v1/INVESTMENT_SCREEN.json": {
+      "sha256": "696da9391e36ca0aa20f1a0e678315a972f9ff998fb3cb22f1d64f61858f5af0",
+      "bytes": 204,
+      "original_sha256": "98f7de74e391bfe7a7cdc45cbc06f5219408bd4b7c785f09d73f5899b1495b5a",
+      "original_git_blob_sha1": "a45e2aca4545ed2b4ab3f4fc28c06702e26347f3",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/night_followup_v1/warmup_scoring_run_v1/INVESTMENT_SCREEN.json"
+    },
+    "evidence/amp_h5/root_cause_diagnostic_v1/SUMMARY.json": {
+      "sha256": "8b0c43b384ce72c01442b362e30b2ce3d91884b6b0c18fbaa6122fc688255125",
+      "bytes": 562,
+      "original_sha256": "cf49199786214524d6824606a20e29d351f24924682d78b572479599d94a843d",
+      "original_git_blob_sha1": "f4b3dc4d83aca554e5d659625f0229fdce1fc6b7",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/root_cause_diagnostic_v1/SUMMARY.json"
+    },
+    "evidence/amp_h5/runs/formal_v1/terminal_lstm/training/MONITORS.json": {
+      "sha256": "c3f8a2f9a049aea2cecd96d1654ae47f9426964abc9d9489ad6377f329349f87",
+      "bytes": 14119,
+      "original_sha256": "e520a3dd2c2fe7a50ed8bd0fce94c3f15b50c6f2c9d83a97a3229a8c6066a7c6",
+      "original_git_blob_sha1": "6fdc1f07b3326b61322d797a912d577afb59ca96",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/runs/formal_v1/terminal_lstm/training/MONITORS.json"
+    },
+    "evidence/amp_h5/runs/formal_v2/categorical_ce/ddpm_training_summary.json": {
+      "sha256": "2e6ea1c6eda3337fb6491c7977ba39c44c806f08c595c7353dea7b3e7b4d6b72",
+      "bytes": 48,
+      "original_sha256": "74755fd716e27fd37f4cb13334689df3cff80f17c75d4d7d2bc0dc9e083c09d9",
+      "original_git_blob_sha1": "8841b55508689343d1eb82ea649a9030eee654db",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/runs/formal_v2/categorical_ce/ddpm_training_summary.json"
+    },
+    "evidence/amp_h5/runs/formal_v2/categorical_ce/vae_initialization.json": {
+      "sha256": "fb1ec272b751ade1dcb021e85569e933f70c45433e204e2c9d3ddadc07f42dcd",
+      "bytes": 170,
+      "original_sha256": "8ea13f7d4d425c37d53a1f2dfce797f56b900b489bf3ed07a8a97fa3e1ac094c",
+      "original_git_blob_sha1": "37d48f2f5cae5d954d46a5f4416cfecc1a48cae7",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/runs/formal_v2/categorical_ce/vae_initialization.json"
+    },
+    "evidence/amp_h5/runs/formal_v2/categorical_ce/vae_train.jsonl": {
+      "sha256": "e89b1f8c12d9a129f1ac2649803cc4f1930b0089724affbe73a41bce4a387dac",
+      "bytes": 286571,
+      "original_sha256": "d88e9fff8e1aad92071eb12440d8c0604857c41b6725b6d3c4c2dbfa7d89ceae",
+      "original_git_blob_sha1": "1bb32ab772df9a4d80e68714a5a4ae12ae283578",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/runs/formal_v2/categorical_ce/vae_train.jsonl"
+    },
+    "evidence/amp_h5/runs/formal_v2/raw_onehot_mse/ddpm_training_summary.json": {
+      "sha256": "2e6ea1c6eda3337fb6491c7977ba39c44c806f08c595c7353dea7b3e7b4d6b72",
+      "bytes": 48,
+      "original_sha256": "66061f9a61e9601da7574cd90e11979ebb93153db08878e287522ba05244df9e",
+      "original_git_blob_sha1": "2b89cd23bf804531a104e87b77cb5447c6bf2412",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/runs/formal_v2/raw_onehot_mse/ddpm_training_summary.json"
+    },
+    "evidence/amp_h5/runs/formal_v2/raw_onehot_mse/vae_initialization.json": {
+      "sha256": "fb1ec272b751ade1dcb021e85569e933f70c45433e204e2c9d3ddadc07f42dcd",
+      "bytes": 170,
+      "original_sha256": "8ea13f7d4d425c37d53a1f2dfce797f56b900b489bf3ed07a8a97fa3e1ac094c",
+      "original_git_blob_sha1": "37d48f2f5cae5d954d46a5f4416cfecc1a48cae7",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/runs/formal_v2/raw_onehot_mse/vae_initialization.json"
+    },
+    "evidence/amp_h5/runs/formal_v2/raw_onehot_mse/vae_train.jsonl": {
+      "sha256": "e89b1f8c12d9a129f1ac2649803cc4f1930b0089724affbe73a41bce4a387dac",
+      "bytes": 286571,
+      "original_sha256": "a2f6f73722bbefe2b56a3edf82d809da0f7f6ae9b58d8c1f8f32b38b34b4cff6",
+      "original_git_blob_sha1": "e46704b3a5c424368738240852f214c15ad957d8",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/evidence/amp_h5/runs/formal_v2/raw_onehot_mse/vae_train.jsonl"
+    },
+    "manuscripts/EB_addendum/AMP_H5_EB_context_addendum_metrics.csv": {
+      "sha256": "7cb949fac1b814dd308c5b13ccb4c5040abea066f9da5f3e20cf71b408a33c40",
+      "bytes": 6006,
+      "original_sha256": "7cb949fac1b814dd308c5b13ccb4c5040abea066f9da5f3e20cf71b408a33c40",
+      "original_git_blob_sha1": "00ba8b586f9618ce365e9ef938fa976946e3a724",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/manuscripts/EB_addendum/AMP_H5_EB_context_addendum_metrics.csv"
+    },
+    "manuscripts/review_candidate/evidence/ar_latent_v3_summary.json": {
+      "sha256": "607f197a2f36f9a634dbb34aeab1689bc2a6584d9f43a812b1a7947bd441f797",
+      "bytes": 978,
+      "original_sha256": "5292afb125c31c85c5734f1bc5bd6cd528b0f535a6bb4916cdfa40157394300a",
+      "original_git_blob_sha1": "0c1e40252ae11e46bc85b985b4a46aa788833e66",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/manuscripts/review_candidate/evidence/ar_latent_v3_summary.json"
+    },
+    "manuscripts/review_candidate/evidence/censored_likelihood_v1_summary.json": {
+      "sha256": "927b3cab75eb9a495be26c8be418ee469ff8528494560f4c04c7b859227a7e49",
+      "bytes": 4146,
+      "original_sha256": "d38f2ceef44b5c80f066bb8fa703a0e29362f96e438251a6914adec9f63472b9",
+      "original_git_blob_sha1": "36e42fde242c66f4fa5b0f96cfcc2698972c3526",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/manuscripts/review_candidate/evidence/censored_likelihood_v1_summary.json"
+    },
+    "manuscripts/review_candidate/evidence/dev_reconstruction_CE.json": {
+      "sha256": "bb6419f8254cb6ee87981b7bdc647231fc21cbe42649ee01417e5c4de02a73a4",
+      "bytes": 7790,
+      "original_sha256": "71de8f2b36ad08ebd813d16f094a5e66bbb415fa500d172c8691d23627ee3160",
+      "original_git_blob_sha1": "8aa87f67421a84692f92ced836ccad94f446701c",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/manuscripts/review_candidate/evidence/dev_reconstruction_CE.json"
+    },
+    "manuscripts/review_candidate/evidence/dev_reconstruction_MSE.json": {
+      "sha256": "73cd28c573e192ca1a7a16ae649d64f04288cd7b9ffd171dcc5e8a1e11068331",
+      "bytes": 7751,
+      "original_sha256": "e3f7fa29f9236445c9294bd69d5dad2a1e75647362f9a01b47bccb2fa7496315",
+      "original_git_blob_sha1": "0aa1963f689ac73f56652c3ac7bd4c810b04a5d4",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/manuscripts/review_candidate/evidence/dev_reconstruction_MSE.json"
+    },
+    "manuscripts/review_candidate/evidence/dev_reconstruction_scalar.json": {
+      "sha256": "2fd7a27e95e3a86fd5a56d04a3ab5048568878b15e09ae11a6a4ff83ee3b63b4",
+      "bytes": 7767,
+      "original_sha256": "f0e024d7ca9330202243a4359161d71b53e42ec58a179a7dc185c1fa0b09fa61",
+      "original_git_blob_sha1": "145d833571b68f9eeb12926b3f5e951e67e7f171",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/manuscripts/review_candidate/evidence/dev_reconstruction_scalar.json"
+    },
+    "manuscripts/review_candidate/evidence/direct_z_impl_v1_summary.json": {
+      "sha256": "d00c34be974c34154cae7d603646a8329ea8ac3731c0bca609f622535b4d8c33",
+      "bytes": 827,
+      "original_sha256": "c1a1c0236d0d6ed8f380e45e132db4b35697c6daa508483e40c1df5f0eff96ed",
+      "original_git_blob_sha1": "1987f4e8ee07f3166ff436db471057c986443b05",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/manuscripts/review_candidate/evidence/direct_z_impl_v1_summary.json"
+    },
+    "manuscripts/review_candidate/evidence/generation_all_distances.csv": {
+      "sha256": "359e4e0e0066c1050737494020c7f59a2f7e445f47bfbb27c4cec42999875f88",
+      "bytes": 6892,
+      "original_sha256": "359e4e0e0066c1050737494020c7f59a2f7e445f47bfbb27c4cec42999875f88",
+      "original_git_blob_sha1": "b19839bfcd4f099c92c48cc85c4987cd48fc8807",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/manuscripts/review_candidate/evidence/generation_all_distances.csv"
+    },
+    "manuscripts/review_candidate/evidence/generation_summary.json": {
+      "sha256": "be9f4cf371038f6d288cb1b8a9743be6830f88394f36a2b21ccea9afd04a0beb",
+      "bytes": 9190,
+      "original_sha256": "53a490b437b730914c4b815e733972919f4fe76842f6c8a4b505dbea9195e0ce",
+      "original_git_blob_sha1": "0d5f70f06878aa5a598eacddd7e9df73ee39d1ef",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/manuscripts/review_candidate/evidence/generation_summary.json"
+    },
+    "manuscripts/review_candidate/evidence/native_baseline_v1_summary.json": {
+      "sha256": "d004b7b6e5b740cb9364d092b122c552939a15160fd1b0ed978ffd89017a1828",
+      "bytes": 3269,
+      "original_sha256": "f11a098bd47067464866dd8a6a9ffe54ec6c08d1ecf8fbe1d96cb693ed352657",
+      "original_git_blob_sha1": "25ac738bafe4ed718ff88b32f61b081af141c0c1",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/manuscripts/review_candidate/evidence/native_baseline_v1_summary.json"
+    },
+    "manuscripts/review_candidate/evidence/reconstruction_summary.json": {
+      "sha256": "657f66c29e87585b367a232c5e142939f9459c6485c05191da795b90e2385c6a",
+      "bytes": 10766,
+      "original_sha256": "8b8abe6483bf4af805793f6a6d1b9932ab67292cb47700edd935da3c4e228630",
+      "original_git_blob_sha1": "35685aa1d299d5f789d2b3fcb68072030dab5fec",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/manuscripts/review_candidate/evidence/reconstruction_summary.json"
+    },
+    "manuscripts/review_candidate/evidence/runs_formal_v1_terminal_lstm_config.json": {
+      "sha256": "4d56f3a04836d36c053ccbd7524cab41cd317fbd9bc8a715ae3b620553d88f2c",
+      "bytes": 670,
+      "original_sha256": "4e30c3dd010ae43e247912a131f49d620bdefcdf34585f2eb28c935bc01800ec",
+      "original_git_blob_sha1": "8ff9aed7a9c235f6167c5522ff238e2016e20988",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/manuscripts/review_candidate/evidence/runs_formal_v1_terminal_lstm_config.json"
+    },
+    "manuscripts/review_candidate/evidence/runs_formal_v2_raw_onehot_mse_config.json": {
+      "sha256": "01347a5964d7265ba5c8bc835c320c04828e1ad91594178ebc250e2024c3f4d5",
+      "bytes": 1658,
+      "original_sha256": "861d530bce7529826ed481697083a4efee016cce24878d85dced240b28d9d004",
+      "original_git_blob_sha1": "76849bbf0543dcf06cc66751b7883f53e56fa46c",
+      "transformation": "Only fields required by offline arithmetic scripts retained; local absolute paths and operational instructions removed. Source field values not changed.",
+      "source_url": "https://github.com/wanghongsheng01/amp-claude-handoff-20261013/blob/f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b/manuscripts/review_candidate/evidence/runs_formal_v2_raw_onehot_mse_config.json"
+    }
+  }
+}

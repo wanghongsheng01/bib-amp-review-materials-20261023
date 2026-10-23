@@ -1,0 +1,552 @@
+{
+  "upstream": "https://github.com/3DHumanRehab/AMP/tree/e7486fb714cbf5c663cc01052e42fb63d4ba3a40",
+  "historical_manifest_sha256": "019f4d1a6c6fd882c71849ae3c2920556020cee043ea084b31def1a89e980f48",
+  "files": [
+    {
+      "relative_path": "AMP_VAEflow/configs/datasets/flow_vae.yaml",
+      "corrected_sha256": "6d9115beb1532ed140aac46d0c2549a22665058a8540b4d8a0dd194ae0a3ec7e",
+      "source_sha256": "6d9115beb1532ed140aac46d0c2549a22665058a8540b4d8a0dd194ae0a3ec7e",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/configs/egs_bases/flow_vae/base.yaml",
+      "corrected_sha256": "e634b49f7d2065bc5d658c524e77da10f442f128ccf4257b04942e5600d13cf9",
+      "source_sha256": "e634b49f7d2065bc5d658c524e77da10f442f128ccf4257b04942e5600d13cf9",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/configs/egs_bases/flow_vae/flow_vae.yaml",
+      "corrected_sha256": "4510267a58bc3698a7fc61043adef3a4f65fb701287d68160a1f97cbbdf179ea",
+      "source_sha256": "4510267a58bc3698a7fc61043adef3a4f65fb701287d68160a1f97cbbdf179ea",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/configs/train_vae.yaml",
+      "corrected_sha256": "b9ef1d24c50482674127b191494b314b68a7a24e15814dc61d248413471fb489",
+      "source_sha256": "b9ef1d24c50482674127b191494b314b68a7a24e15814dc61d248413471fb489",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/datasets/concract.py",
+      "corrected_sha256": "d6578f6431c8ddd98b9cca702a7062283f7b3a4525ca2557345ae6c95775604a",
+      "source_sha256": "d6578f6431c8ddd98b9cca702a7062283f7b3a4525ca2557345ae6c95775604a",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/datasets/create_datasets.sh",
+      "corrected_sha256": "60b0678ce2df99060c58757e2953252658b02cc1f7d97fc163de469bd22d5605",
+      "source_sha256": "60b0678ce2df99060c58757e2953252658b02cc1f7d97fc163de469bd22d5605",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/datasets/dataprocess.py",
+      "corrected_sha256": "76927c81d2b56ab0db1410e3272dffbf82dfb43bb28c28a3336bb4bb5d4791fd",
+      "source_sha256": "76927c81d2b56ab0db1410e3272dffbf82dfb43bb28c28a3336bb4bb5d4791fd",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/datasets/dataprocess2.py",
+      "corrected_sha256": "6fc068c8062f5ebae8281fe594b303411c163b5f25f81ffbcacff44ce4707727",
+      "source_sha256": "6fc068c8062f5ebae8281fe594b303411c163b5f25f81ffbcacff44ce4707727",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/datasets/datasets_for_diff.csv",
+      "corrected_sha256": "c6a12b27f933bbac4f27cda8b7aca917a3861cc2f83d9f07030666f00b40ee20",
+      "source_sha256": "c6a12b27f933bbac4f27cda8b7aca917a3861cc2f83d9f07030666f00b40ee20",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/datasets/datasets_vae_train.csv",
+      "corrected_sha256": "40d16c4e202ad9f5ced3678246bf7d61930d4b7df0431f2b773bf365ee33eda4",
+      "source_sha256": "40d16c4e202ad9f5ced3678246bf7d61930d4b7df0431f2b773bf365ee33eda4",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/datasets/datasets_vae_val.csv",
+      "corrected_sha256": "6e34125c51e779aa8c12ecea5631bd9a79173a45d8ff3f2f3e12af9658cd2188",
+      "source_sha256": "6e34125c51e779aa8c12ecea5631bd9a79173a45d8ff3f2f3e12af9658cd2188",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/datasets/del.py",
+      "corrected_sha256": "d8470faad7d6d50af6264dce6481f6b079d4def9663e16921920c09135ae7bbd",
+      "source_sha256": "d8470faad7d6d50af6264dce6481f6b079d4def9663e16921920c09135ae7bbd",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/datasets/useing_rdkit.py",
+      "corrected_sha256": "947b2c44f0ce4cc31b19ce997ce4c800559941a175f4f5803da4f733de8c12cc",
+      "source_sha256": "947b2c44f0ce4cc31b19ce997ce4c800559941a175f4f5803da4f733de8c12cc",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/Beam.py",
+      "corrected_sha256": "61998bcb6320f742eabb821fe6b9e2ad89aa1dbaa95406614d3506b3913bd01d",
+      "source_sha256": "61998bcb6320f742eabb821fe6b9e2ad89aa1dbaa95406614d3506b3913bd01d",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/__pycache__/Beam.cpython-38.pyc",
+      "corrected_sha256": "82034ef623e89256ea9560a7f81b5dbfbc067d789ee90a0a8ee2d8d17d86221e",
+      "source_sha256": "82034ef623e89256ea9560a7f81b5dbfbc067d789ee90a0a8ee2d8d17d86221e",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/__pycache__/attention_model.cpython-38.pyc",
+      "corrected_sha256": "3c3519372fc634d4ff64f425c217ec87942f0242f3e85728d096f885c44fffa0",
+      "source_sha256": "3c3519372fc634d4ff64f425c217ec87942f0242f3e85728d096f885c44fffa0",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/__pycache__/diff.cpython-38.pyc",
+      "corrected_sha256": "827f820e5784bccbc544c662dc4a17c5c6d4d1884536a5bf71033445e494a1a0",
+      "source_sha256": "827f820e5784bccbc544c662dc4a17c5c6d4d1884536a5bf71033445e494a1a0",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/__pycache__/flow_base.cpython-38.pyc",
+      "corrected_sha256": "ec909ebd5e5d1e27548584561e03477dcd1188a3fda0488668643bcaaf73a326",
+      "source_sha256": "ec909ebd5e5d1e27548584561e03477dcd1188a3fda0488668643bcaaf73a326",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/__pycache__/transformer_base.cpython-38.pyc",
+      "corrected_sha256": "8b694914f375b850db1d943799d2d0db82ba893855168fe3c651c04c0128c960",
+      "source_sha256": "8b694914f375b850db1d943799d2d0db82ba893855168fe3c651c04c0128c960",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/__pycache__/vae.cpython-38.pyc",
+      "corrected_sha256": "100f91e514f07a4358568963ad4cc01756219d9c5b46040148092bc584bc627b",
+      "source_sha256": "100f91e514f07a4358568963ad4cc01756219d9c5b46040148092bc584bc627b",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/attention_model.py",
+      "corrected_sha256": "87b160a350037bf5bbf0bb4daff50ec5b57cd8f1eab39911ee7352d961a42382",
+      "source_sha256": "87b160a350037bf5bbf0bb4daff50ec5b57cd8f1eab39911ee7352d961a42382",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/cnn_models.py",
+      "corrected_sha256": "7ef8fc82fa89e655788def7da2dadb81fb1e19b1c44b3e8c7c8ed89edf2dcda7",
+      "source_sha256": "7ef8fc82fa89e655788def7da2dadb81fb1e19b1c44b3e8c7c8ed89edf2dcda7",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/diff.py",
+      "corrected_sha256": "b3712fc77b4800b8d9391a46bdb23299d0a6a7dbcb1bd8a9fad15757c0d90c13",
+      "source_sha256": "b3712fc77b4800b8d9391a46bdb23299d0a6a7dbcb1bd8a9fad15757c0d90c13",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/flow_base.py",
+      "corrected_sha256": "eee115d640d9b172d661e09a19ab28308263c65d900e4eeab501d23b68687f45",
+      "source_sha256": "92c2f3c2260671d7b59c671e6fdd2c3ca13708bbabaf85cf56ba8aad4ae08140",
+      "changed": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/multi_length_disc.py",
+      "corrected_sha256": "90b14ce695f5c007af41cbfc5fce8de4671a599e005710c0173cb96d7c5e84f1",
+      "source_sha256": "90b14ce695f5c007af41cbfc5fce8de4671a599e005710c0173cb96d7c5e84f1",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/transformer_base.py",
+      "corrected_sha256": "3e37748c26dcfe1c1819e445a718b93648e8ccd5cb53656b4d29ab39d366548d",
+      "source_sha256": "3e37748c26dcfe1c1819e445a718b93648e8ccd5cb53656b4d29ab39d366548d",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/transformer_models.py",
+      "corrected_sha256": "a5edd1a7d6f621b0860902d2a2f0a026ef6658969f8d280fd42df3d71fc8e3a4",
+      "source_sha256": "a5edd1a7d6f621b0860902d2a2f0a026ef6658969f8d280fd42df3d71fc8e3a4",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/utils.py",
+      "corrected_sha256": "31fdb3644b071dac7786d11f60c3965c19f7b117e8a3bd04a8d7e20df69ea978",
+      "source_sha256": "31fdb3644b071dac7786d11f60c3965c19f7b117e8a3bd04a8d7e20df69ea978",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/vae.py",
+      "corrected_sha256": "161f9766330119e10ea75d5ceccd54bb1c7a671c8b77f4ad313e76df2a993e09",
+      "source_sha256": "a6bf7137ee0cd4d68ecc6b15ae2cdb7cac372c7abf2d955a09dd0e275981b8ca",
+      "changed": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/__pycache__/train VAE+flow.cpython-38.pyc",
+      "corrected_sha256": "d62337a96430b4e8d916cf9dd605de2c3c6835e93c380ea64398bbf6a38b2fb2",
+      "source_sha256": "d62337a96430b4e8d916cf9dd605de2c3c6835e93c380ea64398bbf6a38b2fb2",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/__pycache__/train_VAE+flow.cpython-38.pyc",
+      "corrected_sha256": "66458e99185cb402c30c7f64dca0a9c977e93f469e3c537e6cb93d734d897816",
+      "source_sha256": "66458e99185cb402c30c7f64dca0a9c977e93f469e3c537e6cb93d734d897816",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/__pycache__/train_diffusion.cpython-38.pyc",
+      "corrected_sha256": "b6824db65bfbfa626002be6f73deae2679472c5e72d15ddc2fa7a54a00a290da",
+      "source_sha256": "b6824db65bfbfa626002be6f73deae2679472c5e72d15ddc2fa7a54a00a290da",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/dataset_loader/dataset_utils/AMP_dataset.py",
+      "corrected_sha256": "42b14d4a4df6bfbde26fb91123ba976022ca625f3776a0b235f1874651d557f1",
+      "source_sha256": "42b14d4a4df6bfbde26fb91123ba976022ca625f3776a0b235f1874651d557f1",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/dataset_loader/dataset_utils/__pycache__/csv_dataset.cpython-38.pyc",
+      "corrected_sha256": "c3c3d3039abad6b21eeda3574492fb25e2bfca12a55048062785d2f7d75f5699",
+      "source_sha256": "c3c3d3039abad6b21eeda3574492fb25e2bfca12a55048062785d2f7d75f5699",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/dataset_loader/dataset_utils/amp_input_contract.py",
+      "corrected_sha256": "e716513472b05e28735663790ab23af1e4e8dfe4b24724cf178c0c9132bd80b0",
+      "source_sha256": null,
+      "changed": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/dataset_loader/dataset_utils/csv_dataset.py",
+      "corrected_sha256": "2c6ff082a309750f88d110dd21e8b3529dc4f1951f387b3c214c4fcbf49643f3",
+      "source_sha256": "0a9e04641c9934a60e5f8bcabf467255ecc66429c161a3b10576bd9c7aed88c1",
+      "changed": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/dataset_loader/dataset_utils/euler2quaterion.py",
+      "corrected_sha256": "f9e1a1073c96fdee4c94dcf3505202e0f7b901b0ebbab18e35101fde8a9d7e45",
+      "source_sha256": "f9e1a1073c96fdee4c94dcf3505202e0f7b901b0ebbab18e35101fde8a9d7e45",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/dataset_loader/dataset_utils/test_dataset.csv",
+      "corrected_sha256": "dfdcd11c37c2241dd00ae8f21e3d2755ee0704ff608c924ee72a63882b128dec",
+      "source_sha256": "dfdcd11c37c2241dd00ae8f21e3d2755ee0704ff608c924ee72a63882b128dec",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/run.py",
+      "corrected_sha256": "900911c966d8e0a2dec351d11a23f779f426fb118f0988b6773be12d0a4e5279",
+      "source_sha256": "900911c966d8e0a2dec351d11a23f779f426fb118f0988b6773be12d0a4e5279",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/train_QSAR.py",
+      "corrected_sha256": "89629a82bf05d0978c89df9fbbf5930390b1873ddcc15688159fd9c75fe9f022",
+      "source_sha256": "89629a82bf05d0978c89df9fbbf5930390b1873ddcc15688159fd9c75fe9f022",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/train_VAE+flow.py",
+      "corrected_sha256": "03e7a30527243cb516b00e1291b69f3fd72b9d2751b2da5e9ee3946854751fe6",
+      "source_sha256": "03e7a30527243cb516b00e1291b69f3fd72b9d2751b2da5e9ee3946854751fe6",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/train_diffusion.py",
+      "corrected_sha256": "541c7737bfa90f4c96cea652a23c441b74b5e66a3f7e9f1284f4239cc50ee9f8",
+      "source_sha256": "541c7737bfa90f4c96cea652a23c441b74b5e66a3f7e9f1284f4239cc50ee9f8",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/useing_rdkit.py",
+      "corrected_sha256": "850a25e789902364f106c3de20624b574d5f1267abb6b01dad3d2cedeee23269",
+      "source_sha256": "850a25e789902364f106c3de20624b574d5f1267abb6b01dad3d2cedeee23269",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/__init__.py",
+      "corrected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/__pycache__/__init__.cpython-312.pyc",
+      "corrected_sha256": "d5e3d06aa0c9010266ff582ba4e856e51c22ef0a8eeb260edf9bc11954818e01",
+      "source_sha256": "d5e3d06aa0c9010266ff582ba4e856e51c22ef0a8eeb260edf9bc11954818e01",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/__pycache__/__init__.cpython-38.pyc",
+      "corrected_sha256": "579ae3ec7c3783c704f5b237d05e63c63bb37c209e0f4b4bf96c4bf48c76b031",
+      "source_sha256": "579ae3ec7c3783c704f5b237d05e63c63bb37c209e0f4b4bf96c4bf48c76b031",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/base_task.cpython-38.pyc",
+      "corrected_sha256": "0f3de3f345f99aadc013c882933d728f7c6250d18ee43c780a907ee43dce32ea",
+      "source_sha256": "0f3de3f345f99aadc013c882933d728f7c6250d18ee43c780a907ee43dce32ea",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/ckpt_utils.cpython-38.pyc",
+      "corrected_sha256": "b5edbc33e7a175dc4fa94e4f7f555872d8a67ce9d2cdc0a69f60b9e116383cdc",
+      "source_sha256": "b5edbc33e7a175dc4fa94e4f7f555872d8a67ce9d2cdc0a69f60b9e116383cdc",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/dataset_utils.cpython-38.pyc",
+      "corrected_sha256": "bc6e480755d2021687d2daa2ef084f14b02a70a9adcf991ef88713845b874ef3",
+      "source_sha256": "bc6e480755d2021687d2daa2ef084f14b02a70a9adcf991ef88713845b874ef3",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/ddp_utils.cpython-38.pyc",
+      "corrected_sha256": "efb0ed6e570cc672415cc9bed09f55f319f30d6074277f12344a8bec8f9033ca",
+      "source_sha256": "efb0ed6e570cc672415cc9bed09f55f319f30d6074277f12344a8bec8f9033ca",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/hparams.cpython-312.pyc",
+      "corrected_sha256": "0228c386bf931cae68851323dce1b5bb01916c7e56f89a4407df6f6415c0d2ef",
+      "source_sha256": "0228c386bf931cae68851323dce1b5bb01916c7e56f89a4407df6f6415c0d2ef",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/hparams.cpython-38.pyc",
+      "corrected_sha256": "f62d6628a3600aac97310d0e82be3b4c7742f227ebc2c7e55cc4be0ea07bb0b0",
+      "source_sha256": "f62d6628a3600aac97310d0e82be3b4c7742f227ebc2c7e55cc4be0ea07bb0b0",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/indexed_datasets.cpython-38.pyc",
+      "corrected_sha256": "549903b85661ff7226fcd8a5b75adf47fbc23f07f7be29b1d451dbcc2a9a295c",
+      "source_sha256": "549903b85661ff7226fcd8a5b75adf47fbc23f07f7be29b1d451dbcc2a9a295c",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/meters.cpython-38.pyc",
+      "corrected_sha256": "5ca166e4c1d20d2bf72274fa3f55729d262d726b9d891fb6e6537c84d5b29321",
+      "source_sha256": "5ca166e4c1d20d2bf72274fa3f55729d262d726b9d891fb6e6537c84d5b29321",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/os_utils.cpython-38.pyc",
+      "corrected_sha256": "d1654f38bc8db475ffc6a86fbfd52a8e128f19b807fdd31ca5107388cb2dac73",
+      "source_sha256": "d1654f38bc8db475ffc6a86fbfd52a8e128f19b807fdd31ca5107388cb2dac73",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/tensor_utils.cpython-38.pyc",
+      "corrected_sha256": "a0a697e6826ab0eefb1e40f5b948e3272e584e7959ee8c2840f6884504f9f6eb",
+      "source_sha256": "a0a697e6826ab0eefb1e40f5b948e3272e584e7959ee8c2840f6884504f9f6eb",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/trainer.cpython-38.pyc",
+      "corrected_sha256": "eb82b47e34f6f888e0f8a7c21472edd821238f1ac4e03ce1cf473db9a47d5a47",
+      "source_sha256": "eb82b47e34f6f888e0f8a7c21472edd821238f1ac4e03ce1cf473db9a47d5a47",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/base_task.py",
+      "corrected_sha256": "903ea010d5e44c8c467bf452ee23e6df141908ee394c2818b6b38be127615183",
+      "source_sha256": "903ea010d5e44c8c467bf452ee23e6df141908ee394c2818b6b38be127615183",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/ckpt_utils.py",
+      "corrected_sha256": "f85c04dec78e39ef1f75a7c8ed5567d9b4beb7239b20af585d2e4a10f386ab1a",
+      "source_sha256": "f85c04dec78e39ef1f75a7c8ed5567d9b4beb7239b20af585d2e4a10f386ab1a",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/crop_head.py",
+      "corrected_sha256": "5c549584e89afc51f9f6c0a9f5961f1979c3ddfe71ba9a6271ed2dde63f0f65b",
+      "source_sha256": "5c549584e89afc51f9f6c0a9f5961f1979c3ddfe71ba9a6271ed2dde63f0f65b",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/dataset_utils.py",
+      "corrected_sha256": "9c0470e506335816c9b7e1817d5282639a5a5f4784d4635ea29797beb505cbb3",
+      "source_sha256": "9c0470e506335816c9b7e1817d5282639a5a5f4784d4635ea29797beb505cbb3",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/ddp_utils.py",
+      "corrected_sha256": "cc9f0bf3dd57867114dc7a5c793966a2588304081098a064bae373cffe7af6c6",
+      "source_sha256": "cc9f0bf3dd57867114dc7a5c793966a2588304081098a064bae373cffe7af6c6",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/euler2rot.py",
+      "corrected_sha256": "4882234cc59b334411227690bd526e4aec0c88bcc6b9304b97a49864e477ebee",
+      "source_sha256": "4882234cc59b334411227690bd526e4aec0c88bcc6b9304b97a49864e477ebee",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/face_alignment_utils.py",
+      "corrected_sha256": "34b74787f6a0901a68d99c8e55016b563a9b50b01fcbefc9e784c13648f68dec",
+      "source_sha256": "34b74787f6a0901a68d99c8e55016b563a9b50b01fcbefc9e784c13648f68dec",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/hparams.py",
+      "corrected_sha256": "10fd6a6049a90235328df98a495467cb40f9a674a31239ed1cab131f9e7f81d7",
+      "source_sha256": "10fd6a6049a90235328df98a495467cb40f9a674a31239ed1cab131f9e7f81d7",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/image_utils.py",
+      "corrected_sha256": "253bc49a7ad0b8e2662c23a9122ca248ddea1e106fbdb725abc3dc92ce64f47f",
+      "source_sha256": "253bc49a7ad0b8e2662c23a9122ca248ddea1e106fbdb725abc3dc92ce64f47f",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/indexed_datasets.py",
+      "corrected_sha256": "a29593713161133ffc9ec82d5b3f05f072cd233922b13a9cf81d8bd64c807acf",
+      "source_sha256": "a29593713161133ffc9ec82d5b3f05f072cd233922b13a9cf81d8bd64c807acf",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/meters.py",
+      "corrected_sha256": "e51962e055dc2b91458996c6a69f709e9b583350497e24ea31257f65a1f001e9",
+      "source_sha256": "e51962e055dc2b91458996c6a69f709e9b583350497e24ea31257f65a1f001e9",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/multiprocess_utils.py",
+      "corrected_sha256": "20534fe8aba9c051945a1c4e0545e03426d335c9ca24fa1ab311ab1d36f55e83",
+      "source_sha256": "20534fe8aba9c051945a1c4e0545e03426d335c9ca24fa1ab311ab1d36f55e83",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/os_utils.py",
+      "corrected_sha256": "1f5974fd2d0909529ae7a8eae79e84b8d4580ab15ca124234da46eea0d4e82cc",
+      "source_sha256": "1f5974fd2d0909529ae7a8eae79e84b8d4580ab15ca124234da46eea0d4e82cc",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/pitch_utils.py",
+      "corrected_sha256": "eeb3cd2b9510ea72068478d8f0e328071da5681ef3f3ffda8011c6014199277c",
+      "source_sha256": "eeb3cd2b9510ea72068478d8f0e328071da5681ef3f3ffda8011c6014199277c",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/tensor_utils.py",
+      "corrected_sha256": "830e43a90b72f11aec94232dd60129d83713acb737462a17dac2f9c6452d0b8e",
+      "source_sha256": "830e43a90b72f11aec94232dd60129d83713acb737462a17dac2f9c6452d0b8e",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/trainer.py",
+      "corrected_sha256": "bb8cfc512d1024bfbd6890994db9da65ba22c4d043d084b4df07793cb667d631",
+      "source_sha256": "bb8cfc512d1024bfbd6890994db9da65ba22c4d043d084b4df07793cb667d631",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/nn/__pycache__/grad.cpython-38.pyc",
+      "corrected_sha256": "ef678bbd8533fd103969e1abbaf9cdd4d481799f40e2375b4fcd83f00690cdc7",
+      "source_sha256": "ef678bbd8533fd103969e1abbaf9cdd4d481799f40e2375b4fcd83f00690cdc7",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/nn/__pycache__/model_utils.cpython-38.pyc",
+      "corrected_sha256": "3c81154861977671c33ffaef0913328943004a394ce20831430890c07373a72d",
+      "source_sha256": "3c81154861977671c33ffaef0913328943004a394ce20831430890c07373a72d",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/nn/__pycache__/schedulers.cpython-38.pyc",
+      "corrected_sha256": "7f5be61f352d3196eeaeceab819486ba10150b9707a55e8df32f8653c43a153c",
+      "source_sha256": "7f5be61f352d3196eeaeceab819486ba10150b9707a55e8df32f8653c43a153c",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/nn/grad.py",
+      "corrected_sha256": "42c5d1217281e4ec3bdb9f0df0650c28b61ec5b1b8f06d7293c0dd89dea4c05c",
+      "source_sha256": "42c5d1217281e4ec3bdb9f0df0650c28b61ec5b1b8f06d7293c0dd89dea4c05c",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/nn/model_utils.py",
+      "corrected_sha256": "a47019ae9fb3413ee4290a1d80ae923ccdf45cfe2e7496b1a6d5417269ff1f7b",
+      "source_sha256": "a47019ae9fb3413ee4290a1d80ae923ccdf45cfe2e7496b1a6d5417269ff1f7b",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/nn/schedulers.py",
+      "corrected_sha256": "b03086160b520a696845b6421235be049eda02402f4b56d01573359531dbc25a",
+      "source_sha256": "b03086160b520a696845b6421235be049eda02402f4b56d01573359531dbc25a",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/nn/seq_utils.py",
+      "corrected_sha256": "672174bd3b5ab96a883c5d714e9a47be36fa519f678a9d28caaec0bfe226a062",
+      "source_sha256": "672174bd3b5ab96a883c5d714e9a47be36fa519f678a9d28caaec0bfe226a062",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/visualization/draw_3d_landmark.py",
+      "corrected_sha256": "81ec9d2b19d7414a76a0793908a85bc7bcecddb5de527ddbed9450cc74875f7d",
+      "source_sha256": "81ec9d2b19d7414a76a0793908a85bc7bcecddb5de527ddbed9450cc74875f7d",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/visualization/ffmpeg_utils.py",
+      "corrected_sha256": "aa59febfb0c69f9dcd3064e4e3eb1554aacaf7e84a721c338b0ac4e79ec74101",
+      "source_sha256": "aa59febfb0c69f9dcd3064e4e3eb1554aacaf7e84a721c338b0ac4e79ec74101",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/visualization/lm_visualizer.py",
+      "corrected_sha256": "526cb3582e178e22ec6727fb7c0169d4b77a3e8e4072db9e97fb7d7d9719459b",
+      "source_sha256": "526cb3582e178e22ec6727fb7c0169d4b77a3e8e4072db9e97fb7d7d9719459b",
+      "changed": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/visualization/t-sne.py",
+      "corrected_sha256": "0b0384cc5d3d89a82ff9f93df655547da92e98c6b3d16076b8a8bd54ba0de6ab",
+      "source_sha256": "0b0384cc5d3d89a82ff9f93df655547da92e98c6b3d16076b8a8bd54ba0de6ab",
+      "changed": false
+    },
+    {
+      "relative_path": "README.md",
+      "corrected_sha256": "606ebd9762450d4c98586500a625b136402050b0a2650f64b6ae0978dca353f1",
+      "source_sha256": "606ebd9762450d4c98586500a625b136402050b0a2650f64b6ae0978dca353f1",
+      "changed": false
+    },
+    {
+      "relative_path": "amp_env.yml",
+      "corrected_sha256": "2d10aa8886d266a5c3765ecb70fadbaa031e07cffb6bcb7d6cfaf6607ffa5f5b",
+      "source_sha256": "2d10aa8886d266a5c3765ecb70fadbaa031e07cffb6bcb7d6cfaf6607ffa5f5b",
+      "changed": false
+    },
+    {
+      "relative_path": "diffusion.py",
+      "corrected_sha256": "076fb913ac53a706b2640db14acaa2f76ab54d38cd19ea84d9d49780e80631da",
+      "source_sha256": "3b584082f24b9fe9d9761594b94e9b547a1dc5c1b65c84cacb09839087f082e3",
+      "changed": true
+    },
+    {
+      "relative_path": "img.png",
+      "corrected_sha256": "1e6a36e362463eb00f2b3471d4dc5bc5b520c36d876775a69685f523e43494e8",
+      "source_sha256": "1e6a36e362463eb00f2b3471d4dc5bc5b520c36d876775a69685f523e43494e8",
+      "changed": false
+    },
+    {
+      "relative_path": "requirements.txt",
+      "corrected_sha256": "3e27292a09b19de1923f099bff80b4aea6ce23e2202e739dc0a4d31d364b9f97",
+      "source_sha256": "3e27292a09b19de1923f099bff80b4aea6ce23e2202e739dc0a4d31d364b9f97",
+      "changed": false
+    },
+    {
+      "relative_path": "run.py",
+      "corrected_sha256": "5d86b4efec95c07022dc85413b0ea83a38519a5acdd626cf491d215016da4c18",
+      "source_sha256": "5d86b4efec95c07022dc85413b0ea83a38519a5acdd626cf491d215016da4c18",
+      "changed": false
+    },
+    {
+      "relative_path": "train_vae_flow.sh",
+      "corrected_sha256": "ad8bcc9e61f43860aa9f60cd999be8f0016b6be69293ba6b6669f2efa690b537",
+      "source_sha256": "ad8bcc9e61f43860aa9f60cd999be8f0016b6be69293ba6b6669f2efa690b537",
+      "changed": false
+    }
+  ]
+}

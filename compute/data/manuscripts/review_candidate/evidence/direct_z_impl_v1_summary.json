@@ -1,0 +1,27 @@
+{
+  "screen_status": "FAIL_MECHANISM_SCREEN",
+  "training": {
+    "R": {
+      "checkpoint_selection": "final1000_only",
+      "completed_updates": 1000,
+      "elapsed_seconds": 550.6503029158339,
+      "failure": null,
+      "final_state_sha256": "a14731fccec0668039505820e3c6a7eb47c3604b19a5b05e5a08661fc05e57aa",
+      "logged_complete_steps": 1000,
+      "no_retry": true,
+      "parameters": 18611970,
+      "status": "COMPLETE"
+    },
+    "Z": {
+      "checkpoint_selection": "final1000_only",
+      "completed_updates": 1000,
+      "elapsed_seconds": 546.4136138749309,
+      "failure": null,
+      "final_state_sha256": "60a977ace1d24efc3d9d58fd84535566d1765c41f74af7800d92f2c5b4fad5b0",
+      "logged_complete_steps": 1000,
+      "no_retry": true,
+      "parameters": 18611329,
+      "status": "COMPLETE"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "arm": "categorical_ce",
+      "role": "VAE final state_dict",
+      "relative_release_path": "weights/categorical_ce/vae_state.pt",
+      "bytes": 6800314,
+      "sha256": "e86071d360cbea884b2f9536c3a9b2a1bc6545a88a7b3ea07f5b629284e40475"
+    },
+    {
+      "arm": "categorical_ce",
+      "role": "DDPM final EMA state_dict",
+      "relative_release_path": "weights/categorical_ce/ddpm_ema_state.pt",
+      "bytes": 74515981,
+      "sha256": "e2bcd87466180892bd2bca3f8725dbe462dd3d230006d3c31c090cf5b66688d1"
+    },
+    {
+      "arm": "raw_onehot_mse",
+      "role": "VAE final state_dict",
+      "relative_release_path": "weights/raw_onehot_mse/vae_state.pt",
+      "bytes": 6800314,
+      "sha256": "13a36ca7f0fe8fdf70000bce17df2079baa549a2ad2cae9e538a73aecaf635e8"
+    },
+    {
+      "arm": "raw_onehot_mse",
+      "role": "DDPM final EMA state_dict",
+      "relative_release_path": "weights/raw_onehot_mse/ddpm_ema_state.pt",
+      "bytes": 74515981,
+      "sha256": "5e5eb332dcc9edc0c2b5550f2feb794b9f491f1374b064c9cec1c905e23bdbdd"
+    },
+    {
+      "arm": "scalar_legacy",
+      "role": "VAE final state_dict",
+      "relative_release_path": "weights/scalar_legacy/vae_state.pt",
+      "bytes": 6798970,
+      "sha256": "829bbdd75987d3436c6df158cb2a1376053775007b78ce4f0cdcf7c2a56fea7d"
+    },
+    {
+      "arm": "scalar_legacy",
+      "role": "DDPM final EMA state_dict",
+      "relative_release_path": "weights/scalar_legacy/ddpm_ema_state.pt",
+      "bytes": 74515981,
+      "sha256": "f78f9f6c622885a7227e9b646718f8142097104b3be14e8c8e2250e7fd1f7604"
+    },
+    {
+      "arm": "terminal_lstm",
+      "role": "AR final checkpoint (code saver includes model and optimizer state)",
+      "relative_release_path": "weights/terminal_lstm/final.pt",
+      "bytes": 769620,
+      "sha256": "0b01c4beb3469ce6d7edb183480140f6f7b8def88bc4a8efa77a7c48d98c756c"
+    }
+  ],
+  "no_checkpoint_deserialization_performed": true
+}

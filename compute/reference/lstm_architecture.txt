@@ -1,0 +1,46 @@
+Source: evidence/amp_h5/implementation/ar_pipeline.py
+Source commit: f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b
+Static excerpt only; not executed by this package.
+
+65:     inputs[:, 0] = BOS
+66:     mask = torch.zeros_like(targets, dtype=torch.bool)
+67:     lengths = []
+68:     for row, sequence in enumerate(sequences):
+69:         if not isinstance(sequence, str) or not set(sequence) <= set(ALPHABET):
+70:             raise ValueError("noncanonical sequence")
+71:         if not (0 if allow_empty else 1) <= len(sequence) <= MAX_LENGTH:
+72:             raise ValueError("sequence length outside contract")
+73:         lengths.append(len(sequence))
+74:         if sequence:
+75:             targets[row, :len(sequence)] = torch.tensor([ALPHABET.index(a) for a in sequence])
+76:         mask[row, :min(len(sequence) + 1, MAX_LENGTH)] = True
+77:     inputs[:, 1:] = targets[:, :-1]
+78:     return {"inputs": inputs, "targets": targets, "mask": mask,
+79:             "labels": labels, "lengths_for_accounting_only": torch.tensor(lengths)}
+80: 
+81: 
+82: class TerminalLSTM(nn.Module):
+83:     def __init__(self, config=ARConfig()):
+84:         super().__init__()
+85:         config.validate()
+86:         self.config = config
+87:         self.token_embedding = nn.Embedding(22, config.token_embedding_dim)
+88:         self.terminal_embedding = nn.Embedding(2, config.terminal_embedding_dim)
+89:         self.lstm = nn.LSTM(config.token_embedding_dim + config.terminal_embedding_dim,
+90:                            config.hidden_dim, num_layers=2, batch_first=True, dropout=0.0)
+91:         self.output = nn.Linear(config.hidden_dim, 21)
+92:         if sum(p.numel() for p in self.parameters()) != config.parameter_count():
+93:             raise AssertionError("parameter accounting mismatch")
+94: 
+95:     def forward(self, inputs, labels, hidden=None):
+96:         if inputs.ndim != 2 or inputs.dtype != torch.long:
+97:             raise ValueError("inputs must be batch by time long tokens")
+98:         if not bool(torch.all((inputs >= 0) & (inputs <= BOS))):
+99:             raise ValueError("input token outside vocabulary")
+100:         check_labels(labels, inputs.shape[0])
+101:         terminal = self.terminal_embedding(labels).unsqueeze(1).expand(-1, inputs.shape[1], -1)
+102:         embedded = torch.cat((self.token_embedding(inputs), terminal), dim=-1)
+103:         states, hidden = self.lstm(embedded, hidden)
+104:         return self.output(states), hidden
+105: 
+106: 

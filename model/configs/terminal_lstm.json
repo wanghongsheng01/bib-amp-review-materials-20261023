@@ -1,0 +1,18 @@
+{
+  "purpose": "formal_pilot",
+  "train": "data/train_dev/train_cohort.csv",
+  "train_sha256": "a232401fb46bb9419cf8d690f21476447b853862fd23622e81247b88add0b660",
+  "initialization_seed": 222,
+  "shuffle_seed": 222,
+  "updates": 1000,
+  "training_seconds_cap": 2940,
+  "generation_seconds_cap": 1800,
+  "sampling_seeds": {
+    "FREE": 422,
+    "AMD": 423
+  },
+  "implementation_sha256": "1d86971866f40ade1b59d1eb7652be94eb0934d15651136e4edb933dc90831ee",
+  "entry_sha256": "c3cb73cfce6753af982a71c6e4eec6ede7deaa914ea9ffc12e1412b8d6c26807",
+  "dev": "data/train_dev/dev_cohort.csv",
+  "dev_sha256": "65fdc7d402240235698d30aa769de3ea45c577cbcb28931970571ee808098ec1"
+}

@@ -1,0 +1,248 @@
+{
+  "included_source_text_files": 60,
+  "excluded_files": 31,
+  "excluded_by_category": {
+    "format-example CSV": 3,
+    "legacy bytecode": 26,
+    "reserved test CSV": 1,
+    "image": 1
+  },
+  "excluded": [
+    {
+      "relative_path": "AMP_VAEflow/datasets/datasets_for_diff.csv",
+      "category": "format-example CSV",
+      "original_recorded_sha256": "c6a12b27f933bbac4f27cda8b7aca917a3861cc2f83d9f07030666f00b40ee20",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/datasets/datasets_vae_train.csv",
+      "category": "format-example CSV",
+      "original_recorded_sha256": "40d16c4e202ad9f5ced3678246bf7d61930d4b7df0431f2b773bf365ee33eda4",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/datasets/datasets_vae_val.csv",
+      "category": "format-example CSV",
+      "original_recorded_sha256": "6e34125c51e779aa8c12ecea5631bd9a79173a45d8ff3f2f3e12af9658cd2188",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/__pycache__/Beam.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "82034ef623e89256ea9560a7f81b5dbfbc067d789ee90a0a8ee2d8d17d86221e",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/__pycache__/attention_model.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "3c3519372fc634d4ff64f425c217ec87942f0242f3e85728d096f885c44fffa0",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/__pycache__/diff.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "827f820e5784bccbc544c662dc4a17c5c6d4d1884536a5bf71033445e494a1a0",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/__pycache__/flow_base.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "ec909ebd5e5d1e27548584561e03477dcd1188a3fda0488668643bcaaf73a326",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/__pycache__/transformer_base.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "8b694914f375b850db1d943799d2d0db82ba893855168fe3c651c04c0128c960",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/modules/__pycache__/vae.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "100f91e514f07a4358568963ad4cc01756219d9c5b46040148092bc584bc627b",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/__pycache__/train VAE+flow.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "d62337a96430b4e8d916cf9dd605de2c3c6835e93c380ea64398bbf6a38b2fb2",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/__pycache__/train_VAE+flow.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "66458e99185cb402c30c7f64dca0a9c977e93f469e3c537e6cb93d734d897816",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/__pycache__/train_diffusion.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "b6824db65bfbfa626002be6f73deae2679472c5e72d15ddc2fa7a54a00a290da",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/dataset_loader/dataset_utils/__pycache__/csv_dataset.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "c3c3d3039abad6b21eeda3574492fb25e2bfca12a55048062785d2f7d75f5699",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/tasks/dataset_loader/dataset_utils/test_dataset.csv",
+      "category": "reserved test CSV",
+      "original_recorded_sha256": "dfdcd11c37c2241dd00ae8f21e3d2755ee0704ff608c924ee72a63882b128dec",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": false
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/__pycache__/__init__.cpython-312.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "d5e3d06aa0c9010266ff582ba4e856e51c22ef0a8eeb260edf9bc11954818e01",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/__pycache__/__init__.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "579ae3ec7c3783c704f5b237d05e63c63bb37c209e0f4b4bf96c4bf48c76b031",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/base_task.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "0f3de3f345f99aadc013c882933d728f7c6250d18ee43c780a907ee43dce32ea",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/ckpt_utils.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "b5edbc33e7a175dc4fa94e4f7f555872d8a67ce9d2cdc0a69f60b9e116383cdc",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/dataset_utils.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "bc6e480755d2021687d2daa2ef084f14b02a70a9adcf991ef88713845b874ef3",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/ddp_utils.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "efb0ed6e570cc672415cc9bed09f55f319f30d6074277f12344a8bec8f9033ca",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/hparams.cpython-312.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "0228c386bf931cae68851323dce1b5bb01916c7e56f89a4407df6f6415c0d2ef",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/hparams.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "f62d6628a3600aac97310d0e82be3b4c7742f227ebc2c7e55cc4be0ea07bb0b0",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/indexed_datasets.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "549903b85661ff7226fcd8a5b75adf47fbc23f07f7be29b1d451dbcc2a9a295c",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/meters.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "5ca166e4c1d20d2bf72274fa3f55729d262d726b9d891fb6e6537c84d5b29321",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/os_utils.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "d1654f38bc8db475ffc6a86fbfd52a8e128f19b807fdd31ca5107388cb2dac73",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/tensor_utils.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "a0a697e6826ab0eefb1e40f5b948e3272e584e7959ee8c2840f6884504f9f6eb",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/commons/__pycache__/trainer.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "eb82b47e34f6f888e0f8a7c21472edd821238f1ac4e03ce1cf473db9a47d5a47",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/nn/__pycache__/grad.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "ef678bbd8533fd103969e1abbaf9cdd4d481799f40e2375b4fcd83f00690cdc7",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/nn/__pycache__/model_utils.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "3c81154861977671c33ffaef0913328943004a394ce20831430890c07373a72d",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "AMP_VAEflow/utils/nn/__pycache__/schedulers.cpython-38.pyc",
+      "category": "legacy bytecode",
+      "original_recorded_sha256": "7f5be61f352d3196eeaeceab819486ba10150b9707a55e8df32f8653c43a153c",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    },
+    {
+      "relative_path": "img.png",
+      "category": "image",
+      "original_recorded_sha256": "1e6a36e362463eb00f2b3471d4dc5bc5b520c36d876775a69685f523e43494e8",
+      "included_in_reviewer_repository": false,
+      "original_file_opened_this_task": true
+    }
+  ],
+  "upstream_patch_base_checks": [
+    {
+      "path": "AMP_VAEflow/modules/flow_base.py",
+      "fixed_upstream_sha_matches_original": true
+    },
+    {
+      "path": "AMP_VAEflow/modules/vae.py",
+      "fixed_upstream_sha_matches_original": true
+    },
+    {
+      "path": "AMP_VAEflow/tasks/dataset_loader/dataset_utils/csv_dataset.py",
+      "fixed_upstream_sha_matches_original": true
+    },
+    {
+      "path": "diffusion.py",
+      "fixed_upstream_sha_matches_original": true
+    }
+  ],
+  "included_source_bytes_unchanged": true
+}

@@ -1,0 +1,9 @@
+{
+  "torch": "2.2.2",
+  "numpy": "1.26.4",
+  "python": "3.12.13 (main, Mar  3 2026, 12:39:30) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "threads": 1,
+  "interop_threads": 1,
+  "device": "cpu",
+  "source_manifest_sha256": "019f4d1a6c6fd882c71849ae3c2920556020cee043ea084b31def1a89e980f48"
+}

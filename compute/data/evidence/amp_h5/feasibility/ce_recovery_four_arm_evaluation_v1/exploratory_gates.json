@@ -1,0 +1,153 @@
+{
+  "all_generation_requests_completed": true,
+  "both_exploratory_screens_pass": false,
+  "generation_ce_vs_terminal_ar": {
+    "checks": {
+      "AMD": {
+        "aa_entropy_train_gap_not_larger": {
+          "left": 0.5628404258673214,
+          "operator": "le",
+          "pass": false,
+          "right": 0.2423471525789873
+        },
+        "any_terminal_train_copies_not_higher": {
+          "left": 0,
+          "operator": "le",
+          "pass": true,
+          "right": 0
+        },
+        "ar_all_requests_valid1": {
+          "left": 16,
+          "operator": "eq",
+          "pass": true,
+          "right": 16
+        },
+        "ce_all_requests_valid1": {
+          "left": 16,
+          "operator": "eq",
+          "pass": true,
+          "right": 16
+        },
+        "development_mmd2_strictly_lower": {
+          "left": 0.007709821687840033,
+          "operator": "lt",
+          "pass": false,
+          "right": 0.007361941924628023
+        },
+        "dipeptide_entropy_train_gap_not_larger": {
+          "left": 1.1944294087053766,
+          "operator": "le",
+          "pass": false,
+          "right": 0.9979346104615594
+        },
+        "same_terminal_train_copies_not_higher": {
+          "left": 0,
+          "operator": "le",
+          "pass": true,
+          "right": 0
+        },
+        "valid5_count_not_lower": {
+          "left": 15,
+          "operator": "ge",
+          "pass": false,
+          "right": 16
+        },
+        "valid_unique_count_not_lower": {
+          "left": 16,
+          "operator": "ge",
+          "pass": true,
+          "right": 16
+        }
+      },
+      "FREE": {
+        "aa_entropy_train_gap_not_larger": {
+          "left": 0.6667418133772367,
+          "operator": "le",
+          "pass": false,
+          "right": 0.15753585763459155
+        },
+        "any_terminal_train_copies_not_higher": {
+          "left": 0,
+          "operator": "le",
+          "pass": true,
+          "right": 0
+        },
+        "ar_all_requests_valid1": {
+          "left": 16,
+          "operator": "eq",
+          "pass": true,
+          "right": 16
+        },
+        "ce_all_requests_valid1": {
+          "left": 16,
+          "operator": "eq",
+          "pass": true,
+          "right": 16
+        },
+        "development_mmd2_strictly_lower": {
+          "left": 0.01732780337937688,
+          "operator": "lt",
+          "pass": false,
+          "right": 0.011567464907748784
+        },
+        "dipeptide_entropy_train_gap_not_larger": {
+          "left": 1.6513668509043402,
+          "operator": "le",
+          "pass": false,
+          "right": 0.8011723205057821
+        },
+        "same_terminal_train_copies_not_higher": {
+          "left": 0,
+          "operator": "le",
+          "pass": true,
+          "right": 0
+        },
+        "valid5_count_not_lower": {
+          "left": 14,
+          "operator": "ge",
+          "pass": false,
+          "right": 16
+        },
+        "valid_unique_count_not_lower": {
+          "left": 16,
+          "operator": "ge",
+          "pass": true,
+          "right": 16
+        }
+      }
+    },
+    "pass": false,
+    "status": "EVALUATED"
+  },
+  "reconstruction_ce_vs_matched_mse": {
+    "checks": {
+      "length_mae": {
+        "left": 0.0,
+        "operator": "le",
+        "pass": true,
+        "right": 5.560975609756097
+      },
+      "rendered_nonpad_macro": {
+        "left": 0.427601056550582,
+        "operator": "gt",
+        "pass": true,
+        "right": 0.03567725031507728
+      },
+      "rendered_nonpad_micro": {
+        "left": 0.7089871611982882,
+        "operator": "gt",
+        "pass": true,
+        "right": 0.12553495007132667
+      },
+      "whole_rendered_exact_count": {
+        "left": 3,
+        "operator": "ge",
+        "pass": true,
+        "right": 0
+      }
+    },
+    "pass": true,
+    "status": "EVALUATED"
+  },
+  "scope": "predeclared exploratory development screen; never a significance/activity/novelty/publication gate"
+}

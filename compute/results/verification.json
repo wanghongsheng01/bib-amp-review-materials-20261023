@@ -1,0 +1,1027 @@
+{
+  "checked_utc": "2026-10-23T03:42:31.288607+00:00",
+  "scope": "Independent arithmetic aggregation of saved train/development summaries and per-row outcome counts; not rerunning training or inference; no test access",
+  "source_repository": "wanghongsheng01/amp-claude-handoff-20261013",
+  "source_commit": "f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b",
+  "checks": [
+    {
+      "check": "CE21_DDPM train per-aa micro",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CE21_DDPM train macro from per-aa aggregates",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "MSE21_DDPM train per-aa micro",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "MSE21_DDPM train macro from per-aa aggregates",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "scalar_DDPM train per-aa micro",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "scalar_DDPM train macro from per-aa aggregates",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CE21_DDPM development per-aa micro",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CE21_DDPM development macro from per-aa aggregates",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "MSE21_DDPM development per-aa micro",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "MSE21_DDPM development macro from per-aa aggregates",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "scalar_DDPM development per-aa micro",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "scalar_DDPM development macro from per-aa aggregates",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CE21_DDPM dev rows aggregate rows",
+      "pass": true,
+      "details": {
+        "recomputed": 41,
+        "source_summary": 41
+      }
+    },
+    {
+      "check": "CE21_DDPM dev rows aggregate target_residues",
+      "pass": true,
+      "details": {
+        "recomputed": 701,
+        "source_summary": 701
+      }
+    },
+    {
+      "check": "CE21_DDPM dev rows aggregate rendered_aligned_correct",
+      "pass": true,
+      "details": {
+        "recomputed": 497,
+        "source_summary": 497
+      }
+    },
+    {
+      "check": "CE21_DDPM dev rows aggregate length_absolute_error_sum",
+      "pass": true,
+      "details": {
+        "recomputed": 0,
+        "source_summary": 0
+      }
+    },
+    {
+      "check": "CE21_DDPM dev rows aggregate whole_rendered_exact_count",
+      "pass": true,
+      "details": {
+        "recomputed": 3,
+        "source_summary": 3
+      }
+    },
+    {
+      "check": "CE21_DDPM dev rows aggregate length_exact_count",
+      "pass": true,
+      "details": {
+        "recomputed": 41,
+        "source_summary": 41
+      }
+    },
+    {
+      "check": "CE21_DDPM dev unique row keys",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CE21_DDPM dev terminal counts",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "MSE21_DDPM dev rows aggregate rows",
+      "pass": true,
+      "details": {
+        "recomputed": 41,
+        "source_summary": 41
+      }
+    },
+    {
+      "check": "MSE21_DDPM dev rows aggregate target_residues",
+      "pass": true,
+      "details": {
+        "recomputed": 701,
+        "source_summary": 701
+      }
+    },
+    {
+      "check": "MSE21_DDPM dev rows aggregate rendered_aligned_correct",
+      "pass": true,
+      "details": {
+        "recomputed": 88,
+        "source_summary": 88
+      }
+    },
+    {
+      "check": "MSE21_DDPM dev rows aggregate length_absolute_error_sum",
+      "pass": true,
+      "details": {
+        "recomputed": 228,
+        "source_summary": 228
+      }
+    },
+    {
+      "check": "MSE21_DDPM dev rows aggregate whole_rendered_exact_count",
+      "pass": true,
+      "details": {
+        "recomputed": 0,
+        "source_summary": 0
+      }
+    },
+    {
+      "check": "MSE21_DDPM dev rows aggregate length_exact_count",
+      "pass": true,
+      "details": {
+        "recomputed": 0,
+        "source_summary": 0
+      }
+    },
+    {
+      "check": "MSE21_DDPM dev unique row keys",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "MSE21_DDPM dev terminal counts",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "scalar_DDPM dev rows aggregate rows",
+      "pass": true,
+      "details": {
+        "recomputed": 41,
+        "source_summary": 41
+      }
+    },
+    {
+      "check": "scalar_DDPM dev rows aggregate target_residues",
+      "pass": true,
+      "details": {
+        "recomputed": 701,
+        "source_summary": 701
+      }
+    },
+    {
+      "check": "scalar_DDPM dev rows aggregate rendered_aligned_correct",
+      "pass": true,
+      "details": {
+        "recomputed": 111,
+        "source_summary": 111
+      }
+    },
+    {
+      "check": "scalar_DDPM dev rows aggregate length_absolute_error_sum",
+      "pass": true,
+      "details": {
+        "recomputed": 55,
+        "source_summary": 55
+      }
+    },
+    {
+      "check": "scalar_DDPM dev rows aggregate whole_rendered_exact_count",
+      "pass": true,
+      "details": {
+        "recomputed": 0,
+        "source_summary": 0
+      }
+    },
+    {
+      "check": "scalar_DDPM dev rows aggregate length_exact_count",
+      "pass": true,
+      "details": {
+        "recomputed": 0,
+        "source_summary": 0
+      }
+    },
+    {
+      "check": "scalar_DDPM dev unique row keys",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "scalar_DDPM dev terminal counts",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "v2 Table1 rounded micro values",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "v2 difference 58.35 percentage points",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CE eight zero-recall classes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "complete 96-distance unique records",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'AMD', 'train', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'AMD', 'train', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'AMD', 'train', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'AMD', 'train', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'AMD', 'train', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'AMD', 'train', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'AMD', 'development', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'AMD', 'development', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'AMD', 'development', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'AMD', 'development', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'AMD', 'development', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'AMD', 'development', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'FREE', 'train', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'FREE', 'train', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'FREE', 'train', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'FREE', 'train', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'FREE', 'train', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'FREE', 'train', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'FREE', 'development', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'FREE', 'development', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'FREE', 'development', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'FREE', 'development', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'FREE', 'development', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('CE21_DDPM', 'FREE', 'development', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'AMD', 'train', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'AMD', 'train', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'AMD', 'train', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'AMD', 'train', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'AMD', 'train', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'AMD', 'train', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'AMD', 'development', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'AMD', 'development', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'AMD', 'development', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'AMD', 'development', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'AMD', 'development', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'AMD', 'development', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'FREE', 'train', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'FREE', 'train', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'FREE', 'train', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'FREE', 'train', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'FREE', 'train', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'FREE', 'train', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'FREE', 'development', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'FREE', 'development', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'FREE', 'development', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'FREE', 'development', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'FREE', 'development', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('MSE21_DDPM', 'FREE', 'development', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'AMD', 'train', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'AMD', 'train', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'AMD', 'train', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'AMD', 'train', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'AMD', 'train', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'AMD', 'train', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'AMD', 'development', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'AMD', 'development', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'AMD', 'development', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'AMD', 'development', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'AMD', 'development', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'AMD', 'development', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'FREE', 'train', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'FREE', 'train', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'FREE', 'train', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'FREE', 'train', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'FREE', 'train', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'FREE', 'train', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'FREE', 'development', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'FREE', 'development', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'FREE', 'development', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'FREE', 'development', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'FREE', 'development', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('scalar_DDPM', 'FREE', 'development', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'AMD', 'train', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'AMD', 'train', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'AMD', 'train', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'AMD', 'train', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'AMD', 'train', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'AMD', 'train', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'AMD', 'development', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'AMD', 'development', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'AMD', 'development', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'AMD', 'development', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'AMD', 'development', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'AMD', 'development', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'FREE', 'train', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'FREE', 'train', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'FREE', 'train', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'FREE', 'train', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'FREE', 'train', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'FREE', 'train', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'FREE', 'development', 'aa_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'FREE', 'development', 'aa_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'FREE', 'development', 'dipeptide_jensen_shannon_bits')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'FREE', 'development', 'dipeptide_l1_distance')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'FREE', 'development', 'length_ks_statistic_no_pvalue')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CSV/JSON ('terminal_LSTM', 'FREE', 'development', 'mmd2_linear_biased_fixed_features')",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CE improves all 24 distances over MSE",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CE improves all 24 distances over scalar",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "LSTM closer than CE on all 24 distances",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "128 main requests, 16 per group",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all 128 canonical length 1-48",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "no exact training sequence copies",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "scalar lower entropy gap than CE FREE pooled_aa_entropy_bits_absolute_gap_to_train",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "scalar lower entropy gap than CE FREE pooled_dipeptide_entropy_bits_absolute_gap_to_train",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "scalar lower entropy gap than CE AMD pooled_aa_entropy_bits_absolute_gap_to_train",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "scalar lower entropy gap than CE AMD pooled_dipeptide_entropy_bits_absolute_gap_to_train",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "native folds 17",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "native CNN updates 1700",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CNN primary MAE worse than mean uM_native",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "CNN primary MAE worse than mean ug_ml_native",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "mass ridge direction flips with weighting",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "tail worse than endpoint uM_native group_peptide_MAE",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "tail worse than endpoint uM_native peptide_MAE",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "tail worse than endpoint uM_native row_MAE",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "tail worse than endpoint uM_native group_peptide_RMSE",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "tail worse than endpoint uM_native peptide_RMSE",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "tail worse than endpoint uM_native row_RMSE",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "tail worse than endpoint ug_ml_native group_peptide_MAE",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "tail worse than endpoint ug_ml_native peptide_MAE",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "tail worse than endpoint ug_ml_native row_MAE",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "tail worse than endpoint ug_ml_native group_peptide_RMSE",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "tail worse than endpoint ug_ml_native peptide_RMSE",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "tail worse than endpoint ug_ml_native row_RMSE",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "censored 34 point-validation folds",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "censored 588 point predictions",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "censored main difference mass",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "censored main difference molar",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "variance decomposition identity uM_native",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "variance decomposition identity ug_ml_native",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "EB 384 requests",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "EB sequence NLL partial",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "EB sequence NLL pooled",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "EB sequence NLL separate",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "EB sequence NLL ar_cv",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "EB sequence NLL ar_historical",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "ARlatent information gate PASS generation FAIL",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "ARlatent A_S8",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "ARlatent B_S8",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "ARlatent A_mismatch_S8",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "direct-z completed1000 each",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "direct-z mechanism FAIL",
+      "pass": true,
+      "details": null
+    }
+  ],
+  "pass_count": 181,
+  "fail_count": 0,
+  "source_files": {
+    "manuscripts/review_candidate/evidence/reconstruction_summary.json": {
+      "bytes": 10766,
+      "sha256": "657f66c29e87585b367a232c5e142939f9459c6485c05191da795b90e2385c6a"
+    },
+    "manuscripts/review_candidate/evidence/dev_reconstruction_CE.json": {
+      "bytes": 7790,
+      "sha256": "bb6419f8254cb6ee87981b7bdc647231fc21cbe42649ee01417e5c4de02a73a4"
+    },
+    "manuscripts/review_candidate/evidence/dev_reconstruction_MSE.json": {
+      "bytes": 7751,
+      "sha256": "73cd28c573e192ca1a7a16ae649d64f04288cd7b9ffd171dcc5e8a1e11068331"
+    },
+    "manuscripts/review_candidate/evidence/dev_reconstruction_scalar.json": {
+      "bytes": 7767,
+      "sha256": "2fd7a27e95e3a86fd5a56d04a3ab5048568878b15e09ae11a6a4ff83ee3b63b4"
+    },
+    "manuscripts/review_candidate/evidence/generation_summary.json": {
+      "bytes": 9190,
+      "sha256": "be9f4cf371038f6d288cb1b8a9743be6830f88394f36a2b21ccea9afd04a0beb"
+    },
+    "manuscripts/review_candidate/evidence/generation_all_distances.csv": {
+      "bytes": 6892,
+      "sha256": "359e4e0e0066c1050737494020c7f59a2f7e445f47bfbb27c4cec42999875f88"
+    },
+    "manuscripts/review_candidate/evidence/native_baseline_v1_summary.json": {
+      "bytes": 3269,
+      "sha256": "d004b7b6e5b740cb9364d092b122c552939a15160fd1b0ed978ffd89017a1828"
+    },
+    "manuscripts/review_candidate/evidence/censored_likelihood_v1_summary.json": {
+      "bytes": 4146,
+      "sha256": "927b3cab75eb9a495be26c8be418ee469ff8528494560f4c04c7b859227a7e49"
+    },
+    "evidence/amp_h5/root_cause_diagnostic_v1/SUMMARY.json": {
+      "bytes": 562,
+      "sha256": "8b0c43b384ce72c01442b362e30b2ce3d91884b6b0c18fbaa6122fc688255125"
+    },
+    "manuscripts/EB_addendum/AMP_H5_EB_context_addendum_metrics.csv": {
+      "bytes": 6006,
+      "sha256": "7cb949fac1b814dd308c5b13ccb4c5040abea066f9da5f3e20cf71b408a33c40"
+    },
+    "manuscripts/review_candidate/evidence/ar_latent_v3_summary.json": {
+      "bytes": 978,
+      "sha256": "607f197a2f36f9a634dbb34aeab1689bc2a6584d9f43a812b1a7947bd441f797"
+    },
+    "manuscripts/review_candidate/evidence/direct_z_impl_v1_summary.json": {
+      "bytes": 827,
+      "sha256": "d00c34be974c34154cae7d603646a8329ea8ac3731c0bca609f622535b4d8c33"
+    },
+    "manuscripts/review_candidate/evidence/runs_formal_v2_raw_onehot_mse_config.json": {
+      "bytes": 1658,
+      "sha256": "01347a5964d7265ba5c8bc835c320c04828e1ad91594178ebc250e2024c3f4d5"
+    },
+    "manuscripts/review_candidate/evidence/runs_formal_v1_terminal_lstm_config.json": {
+      "bytes": 670,
+      "sha256": "4d56f3a04836d36c053ccbd7524cab41cd317fbd9bc8a715ae3b620553d88f2c"
+    }
+  }
+}

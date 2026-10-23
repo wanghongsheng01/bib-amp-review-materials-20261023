@@ -1,0 +1,18 @@
+{
+  "dev": "[historical-local-path-removed]",
+  "dev_sha256": "65fdc7d402240235698d30aa769de3ea45c577cbcb28931970571ee808098ec1",
+  "entry_sha256": "c3cb73cfce6753af982a71c6e4eec6ede7deaa914ea9ffc12e1412b8d6c26807",
+  "generation_seconds_cap": 1800,
+  "implementation_sha256": "1d86971866f40ade1b59d1eb7652be94eb0934d15651136e4edb933dc90831ee",
+  "initialization_seed": 222,
+  "purpose": "formal_pilot",
+  "sampling_seeds": {
+    "AMD": 423,
+    "FREE": 422
+  },
+  "shuffle_seed": 222,
+  "train": "[historical-local-path-removed]",
+  "train_sha256": "a232401fb46bb9419cf8d690f21476447b853862fd23622e81247b88add0b660",
+  "training_seconds_cap": 2940,
+  "updates": 1000
+}

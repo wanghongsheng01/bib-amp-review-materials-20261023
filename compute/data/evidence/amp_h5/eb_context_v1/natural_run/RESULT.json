@@ -1,0 +1,28 @@
+{
+  "attempts": 384,
+  "failure_reasons": [
+    "grouped_train_cv: partial does not improve balanced sequence NLL over pooled",
+    "grouped_train_cv: partial worsens FREE sequence NLL versus pooled",
+    "grouped_train_cv: partial worsens AMD sequence NLL versus pooled",
+    "grouped_train_cv: partial worsens AMD sequence NLL versus separate",
+    "grouped_train_cv: partial does not improve balanced sequence NLL over ar_cv",
+    "grouped_train_cv: partial worsens FREE sequence NLL versus ar_cv",
+    "grouped_train_cv: partial worsens AMD sequence NLL versus ar_cv",
+    "development: partial does not improve balanced sequence NLL over pooled",
+    "development: partial worsens AMD sequence NLL versus pooled",
+    "development: partial does not improve balanced sequence NLL over separate",
+    "development: partial worsens FREE sequence NLL versus separate",
+    "development: partial worsens AMD sequence NLL versus separate",
+    "development: partial does not improve balanced sequence NLL over ar_cv",
+    "development: partial worsens FREE sequence NLL versus ar_cv",
+    "development: partial worsens AMD sequence NLL versus ar_cv",
+    "generation: partial AMD short_below5 exceeds pooled",
+    "generation: partial FREE short_below5 exceeds ar_cv",
+    "generation: partial FREE cap48 exceeds ar_cv",
+    "generation: partial AMD short_below5 exceeds ar_cv",
+    "generation: partial FREE short_below5 exceeds ar_historical",
+    "generation: partial FREE cap48 exceeds ar_historical",
+    "generation: partial AMD short_below5 exceeds ar_historical"
+  ],
+  "status": "NOT_SUPPORTED"
+}

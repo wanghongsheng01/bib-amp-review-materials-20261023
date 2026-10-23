@@ -1,0 +1,13 @@
+unit,metric,tail_minus_endpoint
+uM_native,group_peptide_MAE,0.13738081166468485
+uM_native,peptide_MAE,0.16033527451861168
+uM_native,row_MAE,0.19531880543212726
+uM_native,group_peptide_RMSE,0.1785458773612566
+uM_native,peptide_RMSE,0.17209000770834715
+uM_native,row_RMSE,0.21254874624719844
+ug_ml_native,group_peptide_MAE,0.023094137843725826
+ug_ml_native,peptide_MAE,0.0046106033071871
+ug_ml_native,row_MAE,0.016668713632733145
+ug_ml_native,group_peptide_RMSE,0.045676423047012804
+ug_ml_native,peptide_RMSE,0.015618056059752639
+ug_ml_native,row_RMSE,0.03666972257930756

@@ -1,0 +1,75 @@
+{
+  "repository": "wanghongsheng01/amp-claude-handoff-20261013",
+  "commit": "f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b",
+  "implementation": [
+    {
+      "path": "model/implementation/vae_pipeline_formal_v2.py",
+      "sha256": "e97d2a766774461793cba1860455e4cb4c8d689656b60becc326a9f11297ca9b",
+      "source_path": "evidence/amp_h5/implementation/vae_pipeline_formal_v2.py",
+      "transformation": "none"
+    },
+    {
+      "path": "model/implementation/ar_pipeline.py",
+      "sha256": "1d86971866f40ade1b59d1eb7652be94eb0934d15651136e4edb933dc90831ee",
+      "source_path": "evidence/amp_h5/implementation/ar_pipeline.py",
+      "transformation": "none"
+    },
+    {
+      "path": "model/implementation/ar_entry.py",
+      "sha256": "c3cb73cfce6753af982a71c6e4eec6ede7deaa914ea9ffc12e1412b8d6c26807",
+      "source_path": "evidence/amp_h5/implementation/ar_entry.py",
+      "transformation": "none"
+    },
+    {
+      "path": "model/implementation/frozen_metrics_v1.py",
+      "sha256": "f65eec16391d98a382d415e7b879f99555a33b33398f8be704661d1c7c027480",
+      "source_path": "evidence/amp_h5/implementation/frozen_metrics_v1.py",
+      "transformation": "none"
+    },
+    {
+      "path": "model/implementation/evaluate_h5.py",
+      "sha256": "b894a7c56cd5c59c5fb77c046baa3c9873ae390d244082dd1f09998459e85417",
+      "source_path": "evidence/amp_h5/implementation/evaluate_h5.py",
+      "transformation": "none"
+    },
+    {
+      "path": "model/implementation/ce_checkpoint_recovery_v1.py",
+      "sha256": "4eb9bd3fa480fef6cc23b87925dea8e6b2ce771be0290e84d635c6e86ff0bc6c",
+      "source_path": "evidence/amp_h5/implementation/ce_checkpoint_recovery_v1.py",
+      "transformation": "none"
+    }
+  ],
+  "configs": [
+    {
+      "path": "model/configs/categorical_ce.json",
+      "original_source_path": "evidence/amp_h5/runs/formal_v2/categorical_ce/config.json",
+      "original_sha256": "d44631a12bffc0ac85eecc2ca6d361419a03e4bf6cbfc2479092bd53b52be467",
+      "sha256": "3644c9054e74f35609c017c47518d38dfafa7de5fc47d0df8c62a8f193b5c5aa",
+      "transformation": "Only source/data paths changed to repository-relative paths; all numerical settings and implementation hashes retained."
+    },
+    {
+      "path": "model/configs/raw_onehot_mse.json",
+      "original_source_path": "evidence/amp_h5/runs/formal_v2/raw_onehot_mse/config.json",
+      "original_sha256": "861d530bce7529826ed481697083a4efee016cce24878d85dced240b28d9d004",
+      "sha256": "ace418f6fa469c49310f13e785692f39f8cd660c6462015d953ce46329620cfd",
+      "transformation": "Only source/data paths changed to repository-relative paths; all numerical settings and implementation hashes retained."
+    },
+    {
+      "path": "model/configs/scalar_legacy.json",
+      "original_source_path": "evidence/amp_h5/runs/formal_v2/scalar_legacy/config.json",
+      "original_sha256": "3de741fc97dfb2d61965cc88609dd7026c831c5458641362d1ae3c06081286c0",
+      "sha256": "bc30ab07b1a21b20c2ee270a461be7c3cd500084d622072cc38b7b0763ad474a",
+      "transformation": "Only source/data paths changed to repository-relative paths; all numerical settings and implementation hashes retained."
+    },
+    {
+      "path": "model/configs/terminal_lstm.json",
+      "original_source_path": "evidence/amp_h5/runs/formal_v1/terminal_lstm/config.json",
+      "original_sha256": "4e30c3dd010ae43e247912a131f49d620bdefcdf34585f2eb28c935bc01800ec",
+      "sha256": "9d02da984d134c2e7957d731659e414ac8979e26ce6e45bd612b73307be2c17d",
+      "transformation": "Only source/data paths changed to repository-relative paths; all numerical settings and implementation hashes retained."
+    }
+  ],
+  "corrected_source_files": 60,
+  "source_syntax_checked": 51,
+  "training_or_inference_rerun": false
+}

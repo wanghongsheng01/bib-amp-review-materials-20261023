@@ -1,0 +1,31 @@
+Source: evidence/amp_h5/ar_latent_v3/runner.py
+Source commit: f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b
+Static excerpt only; not executed by this package.
+
+60:     completed=0;attempted=0;failure=None;zrecords=[]
+61:     initial_rng=generator.get_state().clone()
+62:     torch.save({'model':model.state_dict(),'optimizer':optimizer.state_dict(),'updates':0,
+63:         'train_rng_state':initial_rng,'state_sha256':state_digest(model)},armout/'initial.pt')
+64:     with (armout/'steps.jsonl').open('x') as stream:
+65:         try:
+66:             model.train()
+67:             for step,ids in enumerate(data['batches'],1):
+68:                 rt.check()
+69:                 if time.monotonic()>=inner_deadline: raise BudgetExpired('training inner120')
+70:                 attempted=step
+71:                 rng_before=digest(generator.get_state()) if arm!='C' else None
+72:                 if arm!='C':
+73:                     zbank=mu+sigma*torch.randn((279,16,48),generator=generator,dtype=torch.float32)
+74:                     assert bool(torch.isfinite(zbank).all()),'nonfinite train zbank'
+75:                     zdigest=digest(zbank)
+76:                     if arm=='B': assert zdigest==expected_z[step-1], 'A/B sampled bank mismatch'
+77:                     zrecords.append(zdigest)
+78:                     z=extend_z(zbank[data['maps'][step-1]][ids] if arm=='B' else zbank[ids])
+79:                 else: z=None;zdigest=None
+80:                 optimizer.zero_grad(set_to_none=True)
+81:                 rt.forward('training_forward')
+82:                 logits,_=model(batch['inputs'][ids],batch['labels'][ids],z)
+83:                 assert bool(torch.isfinite(logits).all()),'nonfinite training logits'
+84:                 parts,_=loss_parts(logits,batch['targets'][ids],batch['mask'][ids])
+85:                 parts['loss'].backward()
+86:                 grad=torch.nn.utils.clip_grad_norm_(model.parameters(),1.,error_if_nonfinite=True)

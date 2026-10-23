@@ -1,0 +1,5 @@
+base_config:
+  - ./base.yaml
+
+# VAE related
+task_cls: tasks.train_VAE_flow_Task

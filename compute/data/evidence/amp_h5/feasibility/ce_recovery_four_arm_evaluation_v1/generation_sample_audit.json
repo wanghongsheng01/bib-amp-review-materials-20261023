@@ -1,0 +1,770 @@
+[
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_000",
+    "sequence": "LLFKVAALKAIRKVFWGK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_001",
+    "sequence": "AFKGGKVTRLG",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_002",
+    "sequence": "RVLVKKWFRARVRRTLKKWGWWKRWFKTVL",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_003",
+    "sequence": "GTFSWWLKKKKRKRVSVSTTFTKWRK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_004",
+    "sequence": "LLLTRLLLLRK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_005",
+    "sequence": "ALASVFRRVVKL",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_006",
+    "sequence": "RRRGWRVFRRIWRK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_007",
+    "sequence": "AKVRKKAKFKKRTTKWWFKKKF",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_008",
+    "sequence": "LGTWKWWKKFPFVSSLWL",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_009",
+    "sequence": "KWWRRIK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_010",
+    "sequence": "LFLKKLLFWKKLWKRFKR",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_011",
+    "sequence": "GLLKRKVASKRKKTRVKKK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_012",
+    "sequence": "RILSLARWKLWKKL",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_013",
+    "sequence": "LWFK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_014",
+    "sequence": "KVRVKAWKALLKPWLGKWK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_AMD_015",
+    "sequence": "KFKKKKFKKLKWVSFFRWVLR",
+    "terminal": "AMD"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_000",
+    "sequence": "VARVVRKSTRTTVKEVASGRLLLK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_001",
+    "sequence": "PWLKWKWVKKL",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_002",
+    "sequence": "LVKRVSVSFKSVARRVLS",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_003",
+    "sequence": "KRKLLKLLLFKLPWWRATIKAVRLKWRFR",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_004",
+    "sequence": "KRRRRITVAKWKGFTKPLVKGLRSTTKK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_005",
+    "sequence": "FLIAAVKL",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_006",
+    "sequence": "GFIWRLLKKSF",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_007",
+    "sequence": "RKVKPKWGLLFKWKFKNR",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_008",
+    "sequence": "IKLFKWFFKKWWKVSFKSK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_009",
+    "sequence": "SGIFRSGNKRKKAAFVKRGLFRRVTKLKKKKWWKKKWKKKKVLLLLKW",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_010",
+    "sequence": "LFVLLL",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_011",
+    "sequence": "RFRKFLLWKAKFRRL",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_012",
+    "sequence": "LALKKKKWFKRRFFAVL",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_013",
+    "sequence": "AFKTALTRAAWRALKLKK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_014",
+    "sequence": "AG",
+    "terminal": "FREE"
+  },
+  {
+    "method": "CE21_DDPM",
+    "sample_id": "CE21_DDPM_FREE_015",
+    "sequence": "LL",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_000",
+    "sequence": "KLKLIIIRGKLLAKKKR",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_001",
+    "sequence": "KKRKKRKKKLR",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_002",
+    "sequence": "KLRKKKLRRRKK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_003",
+    "sequence": "LKKL",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_004",
+    "sequence": "K",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_005",
+    "sequence": "KLKGKLLK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_006",
+    "sequence": "KKKK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_007",
+    "sequence": "KKARKKKRLRRRKK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_008",
+    "sequence": "KLLKRKKKKRKKKRR",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_009",
+    "sequence": "KKLKKKLRIAGKL",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_010",
+    "sequence": "RLRKLKKK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_011",
+    "sequence": "RK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_012",
+    "sequence": "KIGRGGRKRRRK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_013",
+    "sequence": "KLRL",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_014",
+    "sequence": "RRKK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_AMD_015",
+    "sequence": "KKLKRKRLKKL",
+    "terminal": "AMD"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_000",
+    "sequence": "GKKGGRKK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_001",
+    "sequence": "KKLKKLKRKRRKKKKRKGRKK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_002",
+    "sequence": "KKRLLLKKKL",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_003",
+    "sequence": "GRKLKRKKKKLKKARRKKKRRR",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_004",
+    "sequence": "KRKKK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_005",
+    "sequence": "IGIGIGRK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_006",
+    "sequence": "GGKKLKKKVKKRRLKAK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_007",
+    "sequence": "KKKKIKLALK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_008",
+    "sequence": "KKKKLLLARKARK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_009",
+    "sequence": "KKKKLRKRLRK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_010",
+    "sequence": "ILRRRK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_011",
+    "sequence": "KKLRRRLKKKRLKK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_012",
+    "sequence": "GGLIKRRIKIKK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_013",
+    "sequence": "RKKRRKKKKKARRKKRKK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_014",
+    "sequence": "GRLKKL",
+    "terminal": "FREE"
+  },
+  {
+    "method": "MSE21_DDPM",
+    "sample_id": "MSE21_DDPM_FREE_015",
+    "sequence": "KKKLRKKRK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_000",
+    "sequence": "MMSFLIHKMMMIIPSPISWWWY",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_001",
+    "sequence": "HKEMLDNLAMGILLGHDGFITWY",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_002",
+    "sequence": "CKHQFGRIRECDLPWY",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_003",
+    "sequence": "NGKEIGFKIDMKPMTPFTTTVVVYVV",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_004",
+    "sequence": "FTWSWYTTYPTTTSWVYV",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_005",
+    "sequence": "QIQHLGAKHLLPFMTY",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_006",
+    "sequence": "RNEAILEDGQDLQIKKPPIFLPYWYVVV",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_007",
+    "sequence": "GRLQMKTKTMMIKFMKWWVYTYTYWPFFTWWYYVYYYWWWPSPFMHHI",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_008",
+    "sequence": "FTFPFSSIQMMFMQTV",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_009",
+    "sequence": "LPSFDKCKEKLQMWVV",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_010",
+    "sequence": "WSYSTSYVWTPWWSTYYY",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_011",
+    "sequence": "RGQILHIFMFFKMFSWTTSWTYYY",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_012",
+    "sequence": "LMLDKKNDQKHDLKPSSWYVVYYV",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_013",
+    "sequence": "SPTWYFWTTWPTKTTVYVVVVVV",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_014",
+    "sequence": "HIGLMLLLIFCCIIKHLMKKMLLSWVYWWYVVV",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_AMD_015",
+    "sequence": "GPQKLGPMFKEFPGMFQKTY",
+    "terminal": "AMD"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_000",
+    "sequence": "DNNCDNDHCHQIMHMFINDDMTPYYVVYYTPWWWMYYVWYWTPTSWTW",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_001",
+    "sequence": "PSWTTHMPSSSSTLPPMKFTY",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_002",
+    "sequence": "RQGQLLNEIDFPCHKKWPYYVV",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_003",
+    "sequence": "NHDKIHLGEFHLMKMEHMPLQIISMPFFPSYVVVVVVVVYV",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_004",
+    "sequence": "GNGDGHKFFPLHGELGPMMKLPHEMLNCLFFIKQIMTYVV",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_005",
+    "sequence": "KFPWSTYVYVYVSWSFPPMTYVVVVVV",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_006",
+    "sequence": "IFLKEMHMCIFKFFSMYV",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_007",
+    "sequence": "IPFLSHKFSWTWYSSFKNSP",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_008",
+    "sequence": "SWWWVVVYMWYTYWWTHISFSTWYV",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_009",
+    "sequence": "DFGMHIQILFMKFLISEMPQIKIKILPLIMIPFLIFWFFMMSSYYVVW",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_010",
+    "sequence": "FTTTWVVVVVVVSWTTSYYVWYVVV",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_011",
+    "sequence": "HSKQPPPKKPPSFKMMGFFGFSMSPFFWYYV",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_012",
+    "sequence": "FMMLMDMPFHLLTPWTV",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_013",
+    "sequence": "GHSTGKIEKQGQIEMGLLFIPMFSFTMYV",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_014",
+    "sequence": "KPFSSTPWSWWWYYY",
+    "terminal": "FREE"
+  },
+  {
+    "method": "scalar_DDPM",
+    "sample_id": "scalar_DDPM_FREE_015",
+    "sequence": "SPSFSSFSYYWWYYYTYPWFWTVVV",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_000",
+    "sequence": "KAFKKIGLFAAIKKVAML",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_001",
+    "sequence": "KGVVKIGLGLKK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_002",
+    "sequence": "RRRIRWGRI",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_003",
+    "sequence": "KIAHIIAGALQKLL",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_004",
+    "sequence": "FALRGLGSLLKKF",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_005",
+    "sequence": "RKRWKVRRWVNR",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_006",
+    "sequence": "KLWKLSKLGKLGLKKLL",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_007",
+    "sequence": "RWWIRRWR",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_008",
+    "sequence": "FLFNAIGAKALVAHSLK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_009",
+    "sequence": "FFRKRRIRIKLGR",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_010",
+    "sequence": "WISLWILRVLRY",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_011",
+    "sequence": "FRIRRPIRTIYY",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_012",
+    "sequence": "GLKWLRKLKRKFMKSK",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_013",
+    "sequence": "KFLLSKIVKIKALL",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_014",
+    "sequence": "SLGNKFLKLKALVSKS",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_AMD_015",
+    "sequence": "FLSVLSSLLPSVALGKNLKM",
+    "terminal": "AMD"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_000",
+    "sequence": "MKWRWFKARLLK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_001",
+    "sequence": "KLKFKIMKMIGKEKNFGKEIISGRHGTSPIFETTRDAIIQEVLGQQKT",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_002",
+    "sequence": "GRVRKQIPRDIPKKRQPPPPPPYLPRPG",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_003",
+    "sequence": "GRRKKNILRKKKLKKF",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_004",
+    "sequence": "VLTNSLLSKLKAKVALK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_005",
+    "sequence": "FFKRNLLSLKKGL",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_006",
+    "sequence": "RPKLPLPRYPRPRPRI",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_007",
+    "sequence": "RWRLRKFKRF",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_008",
+    "sequence": "RSLRVRRISRFRNR",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_009",
+    "sequence": "REPPNGIRPGVVPLRIPRDN",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_010",
+    "sequence": "KKLKSIDEIFKGKVFHEKKLIGGARIITDLE",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_011",
+    "sequence": "RRRSRRRFGKFFKKLLKNLSKLPLIVRLS",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_012",
+    "sequence": "VRNKPFRYYRYPGRGILYRWC",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_013",
+    "sequence": "FLPLIQSLIKSSASSK",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_014",
+    "sequence": "LKKFQLGLLKKLNKKLV",
+    "terminal": "FREE"
+  },
+  {
+    "method": "terminal_LSTM",
+    "sample_id": "terminal_LSTM_FREE_015",
+    "sequence": "IAYILLQTLKLQSDTLNRKLGGSINLASG",
+    "terminal": "FREE"
+  }
+]

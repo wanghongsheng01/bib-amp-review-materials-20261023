@@ -1,0 +1,162 @@
+{
+  "evidence_levels": {
+    "checkpoint_audit": "INCOMPLETE: original weights_only=True rejection of __builtin__.getattr is retained. No checkpoint/pickle/NPZ reads, unsafe fallback or allowlist in the safe metric closure.",
+    "engineering": "PASS_ENGINEERING: independent synthetic full path and throughput checks",
+    "natural_execution": "Independent postflight passed input/output hashes, exact96-slot denominator, counts and actual phase budgets",
+    "scientific_metrics": "PASS: non-author independently recalculated the saved96 sequences using only exact-bound JSON/CSV and textual frozen definitions. All8086 scalar checks agree within abs1e-12+rel1e-10; max error6.106226635438361e-16."
+  },
+  "runner_reported_comparisons": {
+    "C": [
+      {
+        "checks": {
+          "JS_strict": false,
+          "MMD_strict_and_at_least_10percent": false,
+          "copy_train_n": true,
+          "duplicates_rate": true,
+          "legal5_48_rate": false,
+          "length_mean_difference_absolute": false
+        },
+        "pass": false,
+        "terminal": "FREE"
+      },
+      {
+        "checks": {
+          "JS_strict": false,
+          "MMD_strict_and_at_least_10percent": false,
+          "copy_train_n": true,
+          "duplicates_rate": true,
+          "legal5_48_rate": false,
+          "length_mean_difference_absolute": false
+        },
+        "pass": false,
+        "terminal": "AMD"
+      }
+    ],
+    "R": [
+      {
+        "checks": {
+          "JS_strict": false,
+          "MMD_strict_and_at_least_10percent": false,
+          "copy_train_n": true,
+          "duplicates_rate": true,
+          "legal5_48_rate": true,
+          "length_mean_difference_absolute": true
+        },
+        "pass": false,
+        "terminal": "FREE"
+      },
+      {
+        "checks": {
+          "JS_strict": false,
+          "MMD_strict_and_at_least_10percent": false,
+          "copy_train_n": true,
+          "duplicates_rate": true,
+          "legal5_48_rate": true,
+          "length_mean_difference_absolute": true
+        },
+        "pass": false,
+        "terminal": "AMD"
+      }
+    ]
+  },
+  "runner_reported_metrics": [
+    {
+      "arm": "R",
+      "cap_nonEOS_n": 0,
+      "completed": 16,
+      "copy_train_n": 0,
+      "dipeptide_JS_bits": 0.5440251595244825,
+      "duplicates_n": 0,
+      "empty_n": 0,
+      "legal5_48_n": 15,
+      "length_gap_abs": 6.208333333333332,
+      "length_mean": 12.125,
+      "mmd2": 0.016628172958638363,
+      "requests": 16,
+      "terminal": "FREE",
+      "valid_nonempty": 16
+    },
+    {
+      "arm": "R",
+      "cap_nonEOS_n": 0,
+      "completed": 16,
+      "copy_train_n": 0,
+      "dipeptide_JS_bits": 0.5628390067729815,
+      "duplicates_n": 0,
+      "empty_n": 0,
+      "legal5_48_n": 14,
+      "length_gap_abs": 4.817934782608695,
+      "length_mean": 11.3125,
+      "mmd2": 0.01919529212667752,
+      "requests": 16,
+      "terminal": "AMD",
+      "valid_nonempty": 16
+    },
+    {
+      "arm": "Z",
+      "cap_nonEOS_n": 0,
+      "completed": 16,
+      "copy_train_n": 0,
+      "dipeptide_JS_bits": 0.5491330442052956,
+      "duplicates_n": 0,
+      "empty_n": 0,
+      "legal5_48_n": 15,
+      "length_gap_abs": 5.333333333333332,
+      "length_mean": 13.0,
+      "mmd2": 0.018201714671272046,
+      "requests": 16,
+      "terminal": "FREE",
+      "valid_nonempty": 16
+    },
+    {
+      "arm": "Z",
+      "cap_nonEOS_n": 0,
+      "completed": 16,
+      "copy_train_n": 0,
+      "dipeptide_JS_bits": 0.5956576049912348,
+      "duplicates_n": 0,
+      "empty_n": 0,
+      "legal5_48_n": 15,
+      "length_gap_abs": 4.755434782608695,
+      "length_mean": 11.375,
+      "mmd2": 0.022469459359352878,
+      "requests": 16,
+      "terminal": "AMD",
+      "valid_nonempty": 16
+    },
+    {
+      "arm": "C",
+      "cap_nonEOS_n": 0,
+      "completed": 16,
+      "copy_train_n": 0,
+      "dipeptide_JS_bits": 0.3249306132706418,
+      "duplicates_n": 0,
+      "empty_n": 0,
+      "legal5_48_n": 16,
+      "length_gap_abs": 0.8541666666666679,
+      "length_mean": 19.1875,
+      "mmd2": 0.00640753336151295,
+      "requests": 16,
+      "terminal": "FREE",
+      "valid_nonempty": 16
+    },
+    {
+      "arm": "C",
+      "cap_nonEOS_n": 0,
+      "completed": 16,
+      "copy_train_n": 0,
+      "dipeptide_JS_bits": 0.4442582818958851,
+      "duplicates_n": 0,
+      "empty_n": 0,
+      "legal5_48_n": 16,
+      "length_gap_abs": 2.0679347826086953,
+      "length_mean": 14.0625,
+      "mmd2": 0.014968824722600813,
+      "requests": 16,
+      "terminal": "AMD",
+      "valid_nonempty": 16
+    }
+  ],
+  "runner_scientific_outcome": "FAIL_MECHANISM_SCREEN",
+  "runner_value_screen": "NOT_INTERPRETED"
+}

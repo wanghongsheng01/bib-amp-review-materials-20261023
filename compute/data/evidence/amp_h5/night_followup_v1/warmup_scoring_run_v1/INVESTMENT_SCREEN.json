@@ -1,0 +1,7 @@
+{
+  "M_minus_S8": 0.06875301037653318,
+  "M_sequence_equal_accuracy": 0.6578523604648727,
+  "S8_sequence_equal_accuracy": 0.5890993500883396,
+  "crosses_investment_threshold": true,
+  "threshold": 0.05
+}

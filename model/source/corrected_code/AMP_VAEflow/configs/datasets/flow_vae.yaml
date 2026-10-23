@@ -1,0 +1,3 @@
+base_config:
+  - egs/egs_bases/flow_vae/flow_vae.yaml
+task_cls: tasks.train VAE+flow.train_VAE_flow_Task

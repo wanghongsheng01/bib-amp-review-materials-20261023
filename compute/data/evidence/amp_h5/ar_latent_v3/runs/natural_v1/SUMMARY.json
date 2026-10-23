@@ -1,0 +1,39 @@
+{
+  "generation_gate": "FAIL",
+  "information_gate": {
+    "A_S8": 0.6908023670646612,
+    "A_minus_B": 0.5988445669822859,
+    "A_minus_C_descriptive_capacity_unmatched": 0.570366364459777,
+    "A_minus_mismatch": 0.5932697008973863,
+    "A_mismatch_S8": 0.09753266616727502,
+    "B_S8": 0.09195780008237533,
+    "C": 0.12043600260488427,
+    "exact_rational": {
+      "A": {
+        "denominator": 4708617513600,
+        "numerator": 3252724123997
+      },
+      "A_minus_B": {
+        "denominator": 1569539171200,
+        "numerator": 939910005339
+      },
+      "A_minus_mismatch": {
+        "denominator": 14125852540800,
+        "numerator": 8380440311801
+      },
+      "A_mismatch": {
+        "denominator": 1412585254080,
+        "numerator": 137773206019
+      },
+      "B": {
+        "denominator": 33632982240,
+        "numerator": 3092815057
+      },
+      "threshold": {
+        "denominator": 20,
+        "numerator": 1
+      }
+    },
+    "status": "PASS"
+  }
+}

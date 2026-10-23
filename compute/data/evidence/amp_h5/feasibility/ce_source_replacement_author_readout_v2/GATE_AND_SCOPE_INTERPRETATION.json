@@ -1,0 +1,6 @@
+{
+  "legacy_gate_artifact_interpretation": "NOT_APPLICABLE_SOURCE_DIAGNOSTIC",
+  "new_winner_gate": null,
+  "ranking": "B/C/D diagnostic references; D uses additional reference-g information and is excluded from c-only ranking",
+  "reason": "Frozen CLI default gate operands are original CE/MSE/AR method IDs, absent here. Raw false values are not a diagnostic failure or win/loss gate."
+}

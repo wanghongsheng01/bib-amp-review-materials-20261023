@@ -1,0 +1,44 @@
+{
+  "source_commit": "f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b",
+  "retrieved_utc": "2026-10-23T03:42:31.476724+00:00",
+  "source_files": {
+    "evidence/amp_h5/feasibility/ce_source_replacement_evaluation_v2/generation_metrics.json": {
+      "sha256": "25bc7002cdd9ab2ca5c0e3fa2f95edc5b8a3d64a77987af4efa27296f4e05c76",
+      "bytes": 9611
+    },
+    "evidence/amp_h5/feasibility/ce_source_replacement_author_readout_v2/GATE_AND_SCOPE_INTERPRETATION.json": {
+      "sha256": "58297e7d05349f641f39ca79ca29e074e70aef7bd009775a28fd306fa46c924a",
+      "bytes": 390
+    },
+    "evidence/amp_h5/night_followup_v1/warmup_paired_guard_run_v1/PAIRED_RESOURCE_GUARD.json": {
+      "sha256": "cbb041e60b0f22436c71dd813145f469433a3b0ec4909946340eddbd20ffa0ec",
+      "bytes": 1689
+    },
+    "evidence/amp_h5/night_followup_v1/warmup_scoring_run_v1/INVESTMENT_SCREEN.json": {
+      "sha256": "696da9391e36ca0aa20f1a0e678315a972f9ff998fb3cb22f1d64f61858f5af0",
+      "bytes": 204
+    },
+    "evidence/amp_h5/ar_latent_v3/runs/natural_v1/SUMMARY.json": {
+      "sha256": "607f197a2f36f9a634dbb34aeab1689bc2a6584d9f43a812b1a7947bd441f797",
+      "bytes": 978
+    },
+    "evidence/amp_h5/direct_z_impl_v1/DELIVERY_DIRECT_Z_v3.json": {
+      "sha256": "07c2bf310ac3a3af56074dad0e7e89c3e502b3b02f90e306789d0825492fec7f",
+      "bytes": 4671
+    },
+    "evidence/amp_h5/eb_context_v1/natural_run/RESULT.json": {
+      "sha256": "3368187a52b9046a8aa2ec0071305ef2aed6f99fbd6f10b9aed37c204fa3da6c",
+      "bytes": 1605
+    },
+    "evidence/amp_h5/eb_context_v1/natural_run/GENERATIONS.json": {
+      "sha256": "e9fa175c382ec2658fb36463da6f9fc0e39f8ad2326de3c9ea2378a029afef7c",
+      "bytes": 63707
+    },
+    "evidence/amp_h5/feasibility/ce_recovery_four_arm_evaluation_v1/exploratory_gates.json": {
+      "sha256": "d7ebb411ecb89f2f3eaa101779a94f7758d935c415c0a536e08cb7a5863102fc",
+      "bytes": 3974
+    }
+  },
+  "EB_saved_ledger_length": 384,
+  "note": "Descriptive extraction; source scripts not executed; generation-gate nonapplicability retained."
+}

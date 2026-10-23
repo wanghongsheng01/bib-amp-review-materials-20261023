@@ -1,0 +1,66 @@
+{
+  "exact_values": {
+    "baseline": {
+      "M": {
+        "denominator": 10766655900,
+        "numerator": 7782097033,
+        "value": 0.7227961128580324
+      },
+      "M_length_MAE": {
+        "denominator": 1,
+        "numerator": 0,
+        "value": 0.0
+      },
+      "M_minus_S8": {
+        "denominator": 7062926270400,
+        "numerator": 435643512761,
+        "value": 0.06168031437433197
+      },
+      "S8": {
+        "denominator": 181100673600,
+        "numerator": 119728516433,
+        "value": 0.6611157984837004
+      },
+      "S8_supported_AA_macro": {
+        "denominator": 212859392054400,
+        "numerator": 80728129338071,
+        "value": 0.37925566055097765
+      }
+    },
+    "candidate": {
+      "M": {
+        "denominator": 196192396400,
+        "numerator": 129065631077,
+        "value": 0.6578523604648727
+      },
+      "M_length_MAE": {
+        "denominator": 41,
+        "numerator": 2,
+        "value": 0.04878048780487805
+      },
+      "M_minus_S8": {
+        "denominator": 2825170508160,
+        "numerator": 194238977263,
+        "value": 0.06875301037653318
+      },
+      "S8": {
+        "denominator": 2017978934400,
+        "numerator": 1188790078747,
+        "value": 0.5890993500883396
+      },
+      "S8_supported_AA_macro": {
+        "denominator": 28381252273920,
+        "numerator": 8821298524301,
+        "value": 0.3108142811727528
+      }
+    }
+  },
+  "guards": {
+    "M_length_MAE_no_greater_than_baseline_zero": false,
+    "M_sequence_equal_nondecrease": false,
+    "S8_sequence_equal_gain_at_least_1_over_20": false,
+    "S8_supported_AA_macro_nondecrease": false
+  },
+  "resource_success": false,
+  "status": "EVALUABLE"
+}
