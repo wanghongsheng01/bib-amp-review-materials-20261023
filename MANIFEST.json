@@ -10,8 +10,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 956,
-      "sha256": "550c172d2dcaea2fc92dacb0cc4f5555528044a964337f0c5f67bec8fa9b346c"
+      "bytes": 1344,
+      "sha256": "c77cd5bfa31e432f271e6b0346d61fc7349381a90cdd3dcbbbd10b2fff7c052e"
     },
     {
       "path": "COPYRIGHT_AND_USE.md",
@@ -20,13 +20,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 6547,
-      "sha256": "1a5f7c40427d42b0563c69f6c2b84c304f37d30eda1500f70af658d861890c6c"
+      "bytes": 6984,
+      "sha256": "b821a3f65360fdc4c75a84c102df2364eedf0ac7a6e345d2df3abaf40313a55b"
     },
     {
       "path": "VERSION.json",
-      "bytes": 1887,
-      "sha256": "693ac15d49b913cddf3c0cd9615fb341bd562270e62845032d2380b8989fb530"
+      "bytes": 2015,
+      "sha256": "954a4ebf7ac8a073ca7366f4770d48a45d5a3ccd8f17d9c787a88d5107d54e84"
     },
     {
       "path": "compute/README.md",
@@ -505,13 +505,13 @@
     },
     {
       "path": "manuscript/cover_letter.pdf",
-      "bytes": 81573,
-      "sha256": "f02fc2cef5f4b7eb148d63d2906c46f09393beeac61a852b940adf813eb954a1"
+      "bytes": 82290,
+      "sha256": "bb5b5cf89896f791709779bf1a33206747a42190a37fa12164aaaf9119c353b2"
     },
     {
       "path": "manuscript/cover_letter.tex",
-      "bytes": 4089,
-      "sha256": "cb85a7c5c70fb0add9dcfd3100bb506a9208166924cc47e9d9ba6292e4486ac5"
+      "bytes": 4228,
+      "sha256": "20d8317419b9e952473199e0785d601340bc62f814f5a01fcfb0329899511112"
     },
     {
       "path": "manuscript/figure_source/README.md",
@@ -585,13 +585,13 @@
     },
     {
       "path": "manuscript/main.pdf",
-      "bytes": 522099,
-      "sha256": "2182b950890a9401d6aebe3df1599bac24efb19c27fe8ffccb44532c78150809"
+      "bytes": 523854,
+      "sha256": "8c3faeff7816e64dfe076048e1b5c03385ac5bd71fcc5abef0077b0698725369"
     },
     {
       "path": "manuscript/main.tex",
-      "bytes": 48828,
-      "sha256": "313e410d48fcd7d44f86d0b0dc5ba93e3f476d0258a9e6c1b228c48e3e1a6ad6"
+      "bytes": 49487,
+      "sha256": "14337f89b0929f61eff7793561793567572fc57c4a51073997f5858cb5393d82"
     },
     {
       "path": "manuscript/oup-authoring-template.cls",
@@ -1070,8 +1070,8 @@
     },
     {
       "path": "supplement/main.tex",
-      "bytes": 27131,
-      "sha256": "f5a9dee4c0da93c9c06da2737ba671b2513fdb23d87316fc41533ebd65657781"
+      "bytes": 27244,
+      "sha256": "21cf15b78bab36a66b33f321558dc80590fd8a1ce4ce4814ca21c5507796720c"
     },
     {
       "path": "supplement/source/AMPGen_publisher_facts.json",
@@ -1085,8 +1085,8 @@
     },
     {
       "path": "supplement/supplement.pdf",
-      "bytes": 302181,
-      "sha256": "dc487ce88cf8800fa64942d6cfd4929e5b4e687696f887bd4ca698118f51cb5d"
+      "bytes": 303124,
+      "sha256": "73414660fcaccb0f41aa03d3b7b7d61d390ec8361614a714a0f5a99446554fcf"
     },
     {
       "path": "supplement/table-provenance.json",

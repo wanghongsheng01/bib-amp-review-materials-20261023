@@ -31,6 +31,7 @@
 
 \graphicspath{{figures/}}
 
+\hypersetup{pdfauthor={Hongsheng Wang, Zihan Zeng, Fei Wu, Feng Lin and Xingxu Huang}}
 \begin{document}
 
 \journaltitle{Briefings in Bioinformatics}
@@ -46,12 +47,16 @@
 \title[Reconstruction and generation in AMP design]{Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design}
 
 \author[1,2,$\ast$]{Hongsheng Wang\ORCID{0009-0009-8214-5150}}
+\author[3]{Zihan Zeng}
 \author[1]{Fei Wu\ORCID{0000-0003-2139-8807}}
-\author[3]{Feng Lin\ORCID{0000-0002-1199-5870}}
+\author[4]{Feng Lin\ORCID{0000-0002-1199-5870}}
+\author[5]{Xingxu Huang\ORCID{0000-0001-8934-1247}}
 
 \address[1]{\orgdiv{College of Computer Science and Technology}, \orgname{Zhejiang University}, \orgaddress{\street{866 Yuhangtang Road, Xihu District}, \postcode{310058}, \state{Zhejiang}, \country{China}}}
 \address[2]{\orgdiv{Artificial Intelligence Department}, \orgname{Loctek Ergonomic Technology Corp.}, \orgaddress{\street{Loctek Building, 436 Xueshi Road, Shounan Subdistrict, Yinzhou District}, \postcode{315100}, \state{Zhejiang}, \country{China}}}
-\address[3]{\orgname{Fuyao University of Science and Technology}, \orgaddress{\street{No. 104 Zhihui Avenue, Fuzhou High-tech Industrial Development Zone}, \postcode{350109}, \state{Fujian}, \country{China}}}
+\address[3]{\orgdiv{Polytechnic Institute}, \orgname{Zhejiang University}, \orgaddress{Hangzhou, \postcode{310015}, \country{China}}}
+\address[4]{\orgname{Fuyao University of Science and Technology}, \orgaddress{\street{No. 104 Zhihui Avenue, Fuzhou High-tech Industrial Development Zone}, \postcode{350109}, \state{Fujian}, \country{China}}}
+\address[5]{\orgdiv{Laboratory of Pancreatic Disease}, \orgname{The First Affiliated Hospital, Zhejiang University School of Medicine}, \orgaddress{Hangzhou, \postcode{310058}, \country{China}}}
 \corresp[$\ast$]{Correspondence: Hongsheng Wang. \href{mailto:wanghongsheng@zju.edu.cn}{wanghongsheng@zju.edu.cn}}
 
 \abstract{Antimicrobial peptide design combines sequence reconstruction, de novo generation and experimental activity assessment, but each endpoint answers a different evaluation question. We present an endpoint-specific evaluation protocol that integrates a controlled reconstruction-objective comparison with sequence-distribution analysis and a separate antibacterial assay panel. Using 279 training and 41 development sequences, we compare categorical (CE21) and squared-error (MSE21) objectives under matched architecture, initialization, batches and decoding. CE21 increases development residue micro accuracy from 12.55\% to 70.90\% and improves six distributional distances across both terminal conditions and both reference sets. A terminal-conditioned LSTM has the lowest values on all 24 specified distance comparisons, demonstrating the additional information obtained from direct generation evaluation. In a separate panel of 27 experimentally tested peptides, six inhibit \textit{Staphylococcus aureus} ATCC 29213 at MICs $\leq$31.25 \textmu{}g/mL, and seven have MICs $<$200 \textmu{}g/mL against at least one of four reference strains. These activity counts are consistent across the original MIC summary and a replicate-based sensitivity analysis. The protocol connects each conclusion to its measured endpoint and provides a practical basis for interpreting reconstruction gains, sampled-sequence properties and antibacterial activity in peptide-design studies.}
@@ -235,9 +240,13 @@ Categorical reconstruction improved residue recovery and six generation distance
 
 \textbf{Hongsheng Wang:} Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Data Curation, Writing -- Original Draft, Visualization.
 
+\textbf{Zihan Zeng:} Z.H.Z. led wetlab experiments.
+
 \textbf{Fei Wu:} Conceptualization (academic supervision), Writing -- Review \& Editing, Supervision, Project administration, Funding acquisition.
 
 \textbf{Feng Lin:} Resources; Conceptualization (industrial scenario and requirements); Writing -- Review \& Editing; Supervision (industrial supervisor).
+
+F.L. and X.X.H. conceived of the study and supervised its performance.
 
 Fei Wu is the guarantor of the work.
 
@@ -246,14 +255,14 @@ Fei Wu is the guarantor of the work.
 Hongsheng Wang's affiliation with Loctek Ergonomic Technology Corp. and the institutional collaborations are disclosed in the author list. The authors report no competing interests beyond these disclosed collaborations.
 
 \section*{Relationship to prior work}
-Hongsheng Wang and Feng Lin are also authors of AMPGen \cite{ref9}. The present work evaluates reconstruction and generation endpoints and reports a separate experimental peptide panel. AMPGen is cited as methodological context for staged candidate generation and biological assessment.
+Hongsheng Wang, Zihan Zeng, Feng Lin and Xingxu Huang are also authors of AMPGen \cite{ref9}. The present work evaluates reconstruction and generation endpoints and reports a separate experimental peptide panel. AMPGen is cited as methodological context for staged candidate generation and biological assessment.
 
 \section*{Ethics statement}
 
 No human participants, human tissue or animal subjects were involved in this work. All bacterial work used the standard reference strains described in Materials and methods.
 
 \section*{Data and code availability}
-The versioned data and code are archived at Zenodo (\url{https://doi.org/10.5281/zenodo.23586233}) \cite{refData}, with a browsable version at \url{https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v6-2026-10-24}. The repository includes model implementations, configurations, checkpoints, saved computational outputs, peptide sequences, OD$_{600}$ measurements, paired MIC estimates and supplementary tables. Offline analysis scripts reproduce the reported summaries. Supplementary Methods identify source versions and explain the computational and assay calculations.
+The versioned data and code are archived at Zenodo (\url{https://doi.org/10.5281/zenodo.23610740}) \cite{refData}, with a browsable version at \url{https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v7-2026-10-24}. The repository includes model implementations, configurations, checkpoints, saved computational outputs, peptide sequences, OD$_{600}$ measurements, paired MIC estimates and supplementary tables. Offline analysis scripts reproduce the reported summaries. Supplementary Methods identify source versions and explain the computational and assay calculations.
 
 \section*{Acknowledgements and use of generative AI tools}
 
@@ -325,7 +334,7 @@ Supplementary Methods and Tables S1--S6 provide reconstruction and generation me
 \bibitem{ref61} Ma T, Liu Y, Yu B, et al. DRAMP 4.0: an open-access data repository dedicated to the clinical translation of antimicrobial peptides. \textit{Nucleic Acids Res} 2025;53:D403--D410. doi:10.1093/nar/gkae1046.
 \bibitem{ref67} Haney EF, Straus SK, Hancock REW. Reassessing the host defense peptide landscape. \textit{Front Chem} 2019;7:43. doi:10.3389/fchem.2019.00043. PMID: 30778385. PMCID: PMC6369191.
 \bibitem{ref70} Timmons PB, Hewage CM. HAPPENN is a novel tool for hemolytic activity prediction for therapeutic peptides which employs neural networks. \textit{Sci Rep} 2020;10:10869. doi:10.1038/s41598-020-67701-3. PMID: 32616760. PMCID: PMC7331684.
-\bibitem{refData} Wang H, Wu F, Lin F. Data and code for Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design [data set and software]. Version v6-2026-10-24. Zenodo, 24 October 2026. \url{https://doi.org/10.5281/zenodo.23586233}.
+\bibitem{refData} Wang H, Zeng Z, Wu F, Lin F, Huang X. Data and code for Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design [data set and software]. Version v7-2026-10-24. Zenodo, 24 October 2026. \url{https://doi.org/10.5281/zenodo.23610740}.
 \end{thebibliography}
 
 \end{document}

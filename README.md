@@ -1,10 +1,12 @@
 # AMP study materials
 
-Release: **v6-2026-10-24**. Article: **Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design**.
+Release: **v7-2026-10-24**. Article: **Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design**.
 
-Public version: [v6-2026-10-24](https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v6-2026-10-24). This version applies the 24 October 2026 author-guideline audit, clarifies sequence-equal residue metrics and latent controls, makes figure and table legends self-contained, and includes 48 verified academic references plus one formal data/software citation. Scientific data, model code and checkpoints are unchanged from v4. Earlier version tags remain available.
+Public version: [v7-2026-10-24](https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v7-2026-10-24). This version adds Zihan Zeng as the second author, with the affiliation Polytechnic Institute, Zhejiang University, Hangzhou, 310015, China, and the contribution “Z.H.Z. led wetlab experiments.” It also adds Xingxu Huang as the fifth author, affiliated with Laboratory of Pancreatic Disease, The First Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, 310058, China, and records the contribution “F.L. and X.X.H. conceived of the study and supervised its performance.” It retains the v6 author-guideline revisions and 48 verified academic references plus one formal data/software citation. Scientific data, model code and checkpoints are unchanged from v4. Earlier version tags remain available.
 
-The data, code and supplementary materials for this version are archived as **Data and code for Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design** at Zenodo: [doi:10.5281/zenodo.23586233](https://doi.org/10.5281/zenodo.23586233). The archive contains the frozen reproducibility materials; manuscript and cover-letter files are provided in this repository.
+Authors: **Hongsheng Wang, Zihan Zeng, Fei Wu, Feng Lin and Xingxu Huang**.
+
+The data, code and supplementary materials for this version are archived as **Data and code for Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design** at Zenodo: [doi:10.5281/zenodo.23610740](https://doi.org/10.5281/zenodo.23610740). The archive contains the frozen reproducibility materials; manuscript and cover-letter files are provided in this repository.
 
 [Article PDF](manuscript/main.pdf) · [Supplement PDF](supplement/supplement.pdf) · [Editable Table 1](manuscript/Table_1_editable.docx) · [Complete supplementary CSV tables](supplement/tables/)
 

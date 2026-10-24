@@ -1,5 +1,5 @@
 {
-  "version": "v6-2026-10-24",
+  "version": "v7-2026-10-24",
   "article_title": "Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design",
   "article_type": "Problem solving protocol",
   "source_commits": {
@@ -7,19 +7,27 @@
     "handoff": "f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b"
   },
   "document_sha256": {
-    "manuscript/main.tex": "313e410d48fcd7d44f86d0b0dc5ba93e3f476d0258a9e6c1b228c48e3e1a6ad6",
-    "manuscript/main.pdf": "2182b950890a9401d6aebe3df1599bac24efb19c27fe8ffccb44532c78150809",
-    "manuscript/cover_letter.pdf": "f02fc2cef5f4b7eb148d63d2906c46f09393beeac61a852b940adf813eb954a1",
-    "supplement/main.tex": "f5a9dee4c0da93c9c06da2737ba671b2513fdb23d87316fc41533ebd65657781",
-    "supplement/supplement.pdf": "dc487ce88cf8800fa64942d6cfd4929e5b4e687696f887bd4ca698118f51cb5d",
-    "manuscript/cover_letter.tex": "cb85a7c5c70fb0add9dcfd3100bb506a9208166924cc47e9d9ba6292e4486ac5"
+    "manuscript/main.tex": "14337f89b0929f61eff7793561793567572fc57c4a51073997f5858cb5393d82",
+    "manuscript/main.pdf": "8c3faeff7816e64dfe076048e1b5c03385ac5bd71fcc5abef0077b0698725369",
+    "manuscript/cover_letter.pdf": "bb5b5cf89896f791709779bf1a33206747a42190a37fa12164aaaf9119c353b2",
+    "supplement/main.tex": "21cf15b78bab36a66b33f321558dc80590fd8a1ce4ce4814ca21c5507796720c",
+    "supplement/supplement.pdf": "73414660fcaccb0f41aa03d3b7b7d61d390ec8361614a714a0f5a99446554fcf",
+    "manuscript/cover_letter.tex": "20d8317419b9e952473199e0785d601340bc62f814f5a01fcfb0329899511112"
   },
   "verification_scope": "Offline recomputation from saved outputs; training and checkpoint deserialization were not rerun. Original reported MIC and retrospective algorithmic endpoints are retained in parallel.",
-  "public_version_url": "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v6-2026-10-24",
-  "release_change_scope": "Independent author-guideline and scientific-source review: correct sequence-equal residue accuracy terminology and latent scoring counts; define descriptor fields and source; improve standalone captions and table notes; align declarations; add data/software citation. Original scientific data and weights unchanged.",
+  "public_version_url": "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v7-2026-10-24",
+  "release_change_scope": "Authorship update: add Zihan Zeng as second author and Xingxu Huang as fifth author; update their affiliations, declared contributions, citation metadata and related-publication disclosure. Scientific results, figures, tables, data and model weights are unchanged from v6.",
   "main_references": 49,
   "supplement_references": 3,
-  "archive_doi": "10.5281/zenodo.23586233",
-  "archive_record_url": "https://zenodo.org/records/23586233",
-  "archive_file_sha256": "07439904756e743986532ac8c10ff83ddd14f7fabcd0c93cfff10af641c8deb9"
+  "archive_doi": "10.5281/zenodo.23610740",
+  "archive_record_url": "https://zenodo.org/records/23610740",
+  "authors": [
+    "Hongsheng Wang",
+    "Zihan Zeng",
+    "Fei Wu",
+    "Feng Lin",
+    "Xingxu Huang"
+  ],
+  "archive_file_sha256": "aaf44fa8aac04d1998d73625673250c30a5991c84ecbb8f87b40eba7055f7a97",
+  "archive_file_name": "BIB_AMP_v7_data_code_2026-10-24.zip"
 }
