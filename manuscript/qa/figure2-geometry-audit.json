@@ -1,0 +1,186 @@
+[
+  {
+    "figure": "fig2_latent_controls",
+    "width_pt": 510.0,
+    "height_pt": 236.0,
+    "minimum_explicit_font_pt": 9.4,
+    "out_of_canvas_text": [],
+    "text_overlaps": [],
+    "texts": [
+      {
+        "text": "Latent condition",
+        "size_pt": 10.3,
+        "bbox_pt": [
+          8.0,
+          214.0,
+          103.625,
+          224.0
+        ]
+      },
+      {
+        "text": "Score",
+        "size_pt": 10.3,
+        "bbox_pt": [
+          467.25,
+          214.0,
+          500.0,
+          224.0
+        ]
+      },
+      {
+        "text": "Matched latents (A)",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          8.0,
+          178.5,
+          100.375,
+          187.5
+        ]
+      },
+      {
+        "text": "0.6908",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          467.25,
+          178.5,
+          500.0,
+          187.5
+        ]
+      },
+      {
+        "text": "Mismatched latents (A_mismatch)",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          8.0,
+          143.5,
+          167.625,
+          152.5
+        ]
+      },
+      {
+        "text": "0.0975",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          467.125,
+          143.5,
+          500.0,
+          152.5
+        ]
+      },
+      {
+        "text": "Permuted-pair control (B)",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          8.0,
+          108.5,
+          127.0,
+          117.5
+        ]
+      },
+      {
+        "text": "0.0920",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          467.25,
+          108.5,
+          500.0,
+          117.5
+        ]
+      },
+      {
+        "text": "No-latent comparator (C)",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          8.0,
+          65.5,
+          126.125,
+          74.5
+        ]
+      },
+      {
+        "text": "Capacity unmatched; one decode",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          8.0,
+          50.5,
+          165.875,
+          59.5
+        ]
+      },
+      {
+        "text": "0.1204",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          467.375,
+          59.5,
+          500.0,
+          68.5
+        ]
+      },
+      {
+        "text": "0",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          247.0,
+          16.5,
+          253.0,
+          25.5
+        ]
+      },
+      {
+        "text": "0.2",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          296.062,
+          16.5,
+          310.938,
+          25.5
+        ]
+      },
+      {
+        "text": "0.4",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          349.562,
+          16.5,
+          364.438,
+          25.5
+        ]
+      },
+      {
+        "text": "0.6",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          403.0,
+          16.5,
+          418.0,
+          25.5
+        ]
+      },
+      {
+        "text": "0.8",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          456.562,
+          16.5,
+          471.438,
+          25.5
+        ]
+      },
+      {
+        "text": "Equal-sequence residue accuracy",
+        "size_pt": 9.4,
+        "bbox_pt": [
+          278.438,
+          3.5,
+          435.562,
+          12.5
+        ]
+      }
+    ],
+    "sha256": {
+      "pdf": "a1c1d96a30405d8360884a4948a2865303f5aa6b5734f33b4bf6b0219c28a58f",
+      "svg": "c6c346ff835a8cf6c731d32109b179cac79d608fd8a7bf837842004aca86154f"
+    }
+  }
+]

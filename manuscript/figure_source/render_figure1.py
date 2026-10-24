@@ -143,8 +143,8 @@ def figure1():
             y=154-j*27
             text(ax,x-5,y,name,ha="right")
             width=118*value/xmax
-            bar(ax,x,y,width,15,color)
-            text(ax,x+width+3,y,f"{value:.2f}" if i==0 else f"{value:.4f}")
+            ax.plot(x+width,y,marker="o",markersize=6,color=color,linestyle="None")
+            text(ax,x+width+5,y,f"{value:.2f}" if i==0 else f"{value:.4f}")
         axis(ax,x,48,118,xmax,ticks,ticklabels)
         text(ax,left+83,21,xlabel,ha="center")
         text(ax,left+83,8,"Higher is better" if i==0 else "Lower is closer",ha="center")

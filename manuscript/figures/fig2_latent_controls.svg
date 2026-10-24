@@ -28,74 +28,109 @@ z
 " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
-   <g id="patch_2">
-    <path d="M 250 61.5 
-L 434.789633 61.5 
-L 434.789633 44.5 
-L 250 44.5 
-z
-" clip-path="url(#p8ed6b46838)" style="fill: #25648a; stroke: #25648a; stroke-width: 0.6; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 250 96.5 
-L 276.089988 96.5 
-L 276.089988 79.5 
-L 250 79.5 
-z
-" clip-path="url(#p8ed6b46838)" style="fill: #b88426; stroke: #b88426; stroke-width: 0.6; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 250 131.5 
-L 274.598712 131.5 
-L 274.598712 114.5 
-L 250 114.5 
-z
-" clip-path="url(#p8ed6b46838)" style="fill: #ad5c47; stroke: #ad5c47; stroke-width: 0.6; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 250 180.5 
-L 282.216631 180.5 
-L 282.216631 163.5 
-L 250 163.5 
-z
-" clip-path="url(#p8ed6b46838)" style="fill: #777777; stroke: #777777; stroke-width: 0.6; stroke-linejoin: miter"/>
-   </g>
    <g id="line2d_1">
     <path d="M 8 31 
 L 502 31 
 " clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #222222; stroke-width: 0.8"/>
    </g>
    <g id="line2d_2">
+    <defs>
+     <path id="mc368e3a108" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #25648a"/>
+    </defs>
+    <g clip-path="url(#p8ed6b46838)">
+     <use xlink:href="#mc368e3a108" x="434.789633" y="53" style="fill: #25648a; stroke: #25648a"/>
+    </g>
+   </g>
+   <g id="line2d_3">
+    <defs>
+     <path id="md66013c2ca" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #b88426"/>
+    </defs>
+    <g clip-path="url(#p8ed6b46838)">
+     <use xlink:href="#md66013c2ca" x="276.089988" y="88" style="fill: #b88426; stroke: #b88426"/>
+    </g>
+   </g>
+   <g id="line2d_4">
+    <defs>
+     <path id="mcf32ab0fb7" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #ad5c47"/>
+    </defs>
+    <g clip-path="url(#p8ed6b46838)">
+     <use xlink:href="#mcf32ab0fb7" x="274.598712" y="123" style="fill: #ad5c47; stroke: #ad5c47"/>
+    </g>
+   </g>
+   <g id="line2d_5">
+    <defs>
+     <path id="mc68b34805d" d="M -0 4.242641 
+L 4.242641 0 
+L 0 -4.242641 
+L -4.242641 -0 
+z
+" style="stroke: #777777; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#p8ed6b46838)">
+     <use xlink:href="#mc68b34805d" x="282.216631" y="172" style="fill: #777777; stroke: #777777; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="line2d_6">
     <path d="M 8 148 
 L 502 148 
 " clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #c7cbcf; stroke-width: 0.65"/>
    </g>
-   <g id="line2d_3">
+   <g id="line2d_7">
     <path d="M 250 204 
 L 464 204 
 " clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #222222; stroke-width: 0.65"/>
    </g>
-   <g id="line2d_4">
+   <g id="line2d_8">
     <path d="M 250 204 
 L 250 207 
 " clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #222222; stroke-width: 0.65"/>
    </g>
-   <g id="line2d_5">
+   <g id="line2d_9">
     <path d="M 303.5 204 
 L 303.5 207 
 " clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #222222; stroke-width: 0.65"/>
    </g>
-   <g id="line2d_6">
+   <g id="line2d_10">
     <path d="M 357 204 
 L 357 207 
 " clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #222222; stroke-width: 0.65"/>
    </g>
-   <g id="line2d_7">
+   <g id="line2d_11">
     <path d="M 410.5 204 
 L 410.5 207 
 " clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #222222; stroke-width: 0.65"/>
    </g>
-   <g id="line2d_8">
+   <g id="line2d_12">
     <path d="M 464 204 
 L 464 207 
 " clip-path="url(#p8ed6b46838)" style="fill: none; stroke: #222222; stroke-width: 0.65"/>
@@ -125,10 +160,10 @@ L 464 207
     <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: end" x="500" y="125.593812" transform="rotate(-0 500 125.593812)">0.0920</text>
    </g>
    <g id="text_9">
-    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="8" y="168.593813" transform="rotate(-0 8 168.593813)">Additional comparator (C)</text>
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="8" y="168.593813" transform="rotate(-0 8 168.593813)">No-latent comparator (C)</text>
    </g>
    <g id="text_10">
-    <text style="fill: #777777; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="8" y="183.593813" transform="rotate(-0 8 183.593813)">Capacity unmatched</text>
+    <text style="fill: #777777; font: 9.4px 'DejaVu Sans'; text-anchor: start" x="8" y="183.593813" transform="rotate(-0 8 183.593813)">Capacity unmatched; one decode</text>
    </g>
    <g id="text_11">
     <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: end" x="500" y="174.593813" transform="rotate(-0 500 174.593813)">0.1204</text>
@@ -149,7 +184,7 @@ L 464 207
     <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: middle" x="464" y="217.593813" transform="rotate(-0 464 217.593813)">0.8</text>
    </g>
    <g id="text_17">
-    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: middle" x="357" y="230.593813" transform="rotate(-0 357 230.593813)">Reconstruction score (higher is better)</text>
+    <text style="fill: #222222; font: 9.4px 'DejaVu Sans'; text-anchor: middle" x="357" y="230.593813" transform="rotate(-0 357 230.593813)">Equal-sequence residue accuracy</text>
    </g>
   </g>
  </g>

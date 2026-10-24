@@ -1,0 +1,11 @@
+{
+  "source_sha256": "28ed69da4e22fc8c8debd412143c26d21a93d20e9b61a0eedfc729101da472b3",
+  "plotted_values": {
+    "A_S8": 0.6908023670646612,
+    "A_mismatch_S8": 0.09753266616727502,
+    "B_S8": 0.09195780008237533,
+    "C": 0.12043600260488427
+  },
+  "exact_rational_check": "PASS for A, mismatch and B; C copied from supplied summary",
+  "error_bars": "not inferred from single fitted runs"
+}

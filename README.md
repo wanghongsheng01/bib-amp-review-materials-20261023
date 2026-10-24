@@ -1,8 +1,10 @@
 # AMP study materials
 
-Release: **v5-2026-10-23**. Article: **Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design**.
+Release: **v6-2026-10-24**. Article: **Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design**.
 
-Public version: [v5-2026-10-23](https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v5-2026-10-23). This version refines the evaluation questions and metric scope, displays the four latent reconstruction controls, and expands the verified bibliography to 48 references. Scientific data, model code and checkpoints are unchanged from v4. Earlier version tags remain available.
+Public version: [v6-2026-10-24](https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v6-2026-10-24). This version applies the 24 October 2026 author-guideline audit, clarifies sequence-equal residue metrics and latent controls, makes figure and table legends self-contained, and includes 48 verified academic references plus one formal data/software citation. Scientific data, model code and checkpoints are unchanged from v4. Earlier version tags remain available.
+
+The data, code and supplementary materials for this version are archived as **Data and code for Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design** at Zenodo: [doi:10.5281/zenodo.23586233](https://doi.org/10.5281/zenodo.23586233). The archive contains the frozen reproducibility materials; manuscript and cover-letter files are provided in this repository.
 
 [Article PDF](manuscript/main.pdf) · [Supplement PDF](supplement/supplement.pdf) · [Editable Table 1](manuscript/Table_1_editable.docx) · [Complete supplementary CSV tables](supplement/tables/)
 
@@ -46,6 +48,6 @@ The early implementation is pinned to [3DHumanRehab/AMP, e7486fb](https://github
 
 ## Editable documents and figures
 
-The article uses the included OUP LaTeX class. Compile `manuscript/main.tex` and `manuscript/cover_letter.tex` with pdfLaTeX from the `manuscript/` directory, twice for cross-references. Compile the supplement as described in [supplement/README.md](supplement/README.md). Figure data inputs, dependencies and deterministic plotting commands are described in [manuscript/figure_source/README.md](manuscript/figure_source/README.md). Figure 2 displays all four latent reconstruction conditions, with the capacity-unmatched comparator labelled. Figure 4 uses the mathematical MIC inequality; Figures 1 and 3 retain their verified numerical content. All figures have editable sources and final-size previews were checked after compilation.
+The article uses the included OUP LaTeX class. Compile `manuscript/main.tex` and `manuscript/cover_letter.tex` with pdfLaTeX from the `manuscript/` directory, twice for cross-references. Compile the supplement as described in [supplement/README.md](supplement/README.md). Figure data inputs, dependencies and deterministic plotting commands are described in [manuscript/figure_source/README.md](manuscript/figure_source/README.md). Figures 1 and 2 use point marks for compact quantitative comparisons. Figure 2 distinguishes three eight-draw latent scores from the capacity-unmatched, no-latent comparator's one-decode score. Figure 4 uses the mathematical MIC inequality; Figures 1 and 3 retain their verified numerical content. All figures have editable sources and final-size previews were checked after compilation.
 
-The [reference-source ledger](manuscript/references_verified.csv) lists all 48 cited works, their primary records and their citation locations.
+The [reference-source ledger](manuscript/references_verified.csv) lists the 48 cited academic works, their primary records and their citation locations.

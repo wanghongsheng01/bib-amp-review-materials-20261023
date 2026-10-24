@@ -141,18 +141,18 @@ def figure2():
     text(ax,500,219,"Score",10.3,"bold",ha="right")
     line(ax,8,205,502,205,INK,.8)
     labels = ["Matched latents (A)", "Mismatched latents (A_mismatch)",
-              "Permuted-pair control (B)", "Additional comparator (C)"]
+              "Permuted-pair control (B)", "No-latent comparator (C)"]
     positions = [183,148,113,64]
     colors = [BLUE, OCHRE, RUST, GRAY]
     for i,(label,y,v,color) in enumerate(zip(labels,positions,scores,colors)):
         text(ax,8,y+(6 if i==3 else 0),label)
         if i==3:
-            text(ax,8,y-9,"Capacity unmatched",color=GRAY)
-        bar(ax,250,y,214*v/0.8,17,color)
+            text(ax,8,y-9,"Capacity unmatched; one decode",color=GRAY)
+        ax.plot(250+214*v/0.8,y,marker="o" if i<3 else "D",markersize=6,color=color,linestyle="None")
         text(ax,500,y,f"{v:.4f}",ha="right")
     line(ax,8,88,502,88)
     axis(ax,250,32,214,.8,[0,.2,.4,.6,.8],["0","0.2","0.4","0.6","0.8"])
-    text(ax,357,8,"Reconstruction score (higher is better)",ha="center")
+    text(ax,357,8,"Equal-sequence residue accuracy",ha="center")
     save(fig,ax,"fig2_latent_controls")
     (QA / "figure2-data-receipt.json").write_text(json.dumps({
         "source_sha256":hashlib.sha256(source.read_bytes()).hexdigest(),

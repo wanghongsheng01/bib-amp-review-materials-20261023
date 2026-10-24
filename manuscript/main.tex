@@ -122,7 +122,7 @@ We retained the original MIC summary and performed a replicate-based sensitivity
 \begin{figure*}[!t]
 \centering
 \includegraphics[width=\textwidth]{figures/fig1_reconstruction_vs_generation.pdf}
-\caption{Reconstruction and generation under the fixed development protocol. \textbf{(A)} Development residue micro accuracy for the three reconstruction paths. \textbf{(B, C)} Development fixed-feature MMD$^{2}$ for the four generators in free and amidated terminal conditions; lower values indicate closer feature means. CE21 improves on MSE21, while the LSTM is closest on this generation metric. The scalar pipeline is not a matched single-component control. Results use one fitted seed, 701 reconstruction residues and 16 generation requests per method--terminal group; no uncertainty interval is inferred. Full numerical results are provided in Tables S1--S2.}\par\smallskip{\small\textbf{Alt text:} Three panels compare reconstruction accuracy and development MMD squared. CE21 reaches 70.90\% reconstruction accuracy versus 12.55\% for MSE21. LSTM has the lowest generation MMD squared in both terminal conditions.}
+\caption{Reconstruction and generation under the fixed development protocol. \textbf{(A)} Development residue micro accuracy for the three reconstruction paths. \textbf{(B, C)} Development fixed-feature MMD$^{2}$ for the four generators in free and amidated terminal conditions; lower values indicate closer feature means. CE21 improves on MSE21, while the LSTM is closest on this generation metric. The scalar pipeline is not a matched single-component control. Results use one fitted seed, 701 reconstruction residues and 16 generation requests per method--terminal group; no uncertainty interval is inferred. CE21 denotes the 21-category cross-entropy objective; MSE21, the 21-category mean-squared-error objective; LSTM, long short-term memory; MMD$^2$, squared maximum mean discrepancy; pp, percentage points. Full numerical results are provided in Tables S1--S2.}\par\smallskip{\small\textbf{Alt text:} Three panels compare reconstruction accuracy and development MMD squared. CE21 reaches 70.90\% reconstruction accuracy versus 12.55\% for MSE21. LSTM has the lowest generation MMD squared in both terminal conditions.}
 \end{figure*}
 
 \section{Results}
@@ -132,18 +132,24 @@ We retained the original MIC summary and performed a replicate-based sensitivity
 CE21 reconstructed 497 of 701 development residues (70.90\%), compared with 88 (12.55\%) for MSE21 and 111 (15.83\%) for the scalar pipeline (\textbf{Table 1}). The CE21--MSE21 difference was 58.35 percentage points under matched architecture, initialization, schedule and decoder. CE21 recovered the correct length for all 41 sequences and reproduced three complete sequences. Its amino-acid macro recall was 42.76\%; per-residue coverage is reported in Table S1.
 
 \begin{table*}[t]
-\caption{Development reconstruction from the posterior mean. Counts and errors use 701 target residues or 41 sequences. The autoregressive model has no corresponding reconstruction task.}
+\caption{Development reconstruction from the posterior mean. Counts and errors use 701 target residues or 41 sequences. The autoregressive model has no corresponding reconstruction task. Model and metric definitions are given in notes a--c.}
 \label{tab:reconstruction}
 \centering
 \begin{tabular}{lrrrrr}
 \toprule
-Model & Correct & Micro (\%) & Macro (\%) & Length MAE & Exact \\
+Model\textsuperscript{a} & Correct\textsuperscript{b} & Micro (\%)\textsuperscript{b} & Macro (\%)\textsuperscript{b} & Length MAE\textsuperscript{c} & Exact\textsuperscript{c} \\
 \midrule
 CE21 & 497/701 & 70.90 & 42.76 & 0.000 & 3/41 \\
 MSE21 & 88/701 & 12.55 & 3.57 & 5.561 & 0/41 \\
 Scalar & 111/701 & 15.83 & 8.05 & 1.341 & 0/41 \\
 \bottomrule
 \end{tabular}
+\par\smallskip
+\begin{minipage}{0.96\textwidth}\footnotesize
+\textsuperscript{a}CE21: 21-category cross-entropy; MSE21: 21-category mean-squared error; scalar: residue-number regression pipeline.
+\textsuperscript{b}Correct: aligned correct target residues out of 701; micro: percentage over those residues; macro: mean recall across target-supported amino-acid classes.
+\textsuperscript{c}Length MAE: mean absolute length error in residues over 41 sequences; exact: whole-sequence matches out of 41. Source: Table S1 and the accompanying reconstruction records.
+\end{minipage}
 \end{table*}
 
 \subsection{Direct generation evaluation distinguishes the models}
@@ -165,7 +171,7 @@ Training-posterior substitution did not improve development MMD, coordinate perm
 \begin{figure*}[!t]
 \centering
 \includegraphics[width=\textwidth]{figures/fig2_latent_controls.pdf}
-\caption{Latent-conditioned reconstruction under explicit controls. Matched latents, mismatched latents and a control trained with permuted latent--sequence pairing yield eight-draw reconstruction scores of 0.690802, 0.097533 and 0.091958, respectively. The additional comparator C scores 0.120436; its capacity is unmatched, so that contrast is descriptive. These measurements show recoverable encoded sequence information. The same route did not satisfy its six generation-distance comparisons; the figure does not depict a generation improvement. No seed-based uncertainty interval is inferred. Complete definitions and all seven exploratory analyses are provided in Table S4.}\par\smallskip{\small\textbf{Alt text:} Four horizontal bars show a reconstruction score of 0.690802 for matched latents and scores from 0.091958 to 0.120436 for the three controls; the fourth comparator has unmatched capacity.}
+\caption{Latent-conditioned reconstruction under explicit controls. Each score first averages positional residue accuracy equally over the 41 development sequences. Matched latents (A), mismatched latents and the control trained with permuted latent--sequence pairing (B) additionally average over eight posterior draws (S8), giving 0.690802, 0.097533 and 0.091958, respectively. The no-latent autoregressive comparator C scores 0.120436 from one plain reconstruction decode, not S8; its 62,501 parameters differ from the 66,597 in A and B, so this contrast is descriptive. These are residue-reconstruction scores, not whole-sequence exact-match fractions. The latent route did not satisfy its six generation-distance comparisons. No seed-based uncertainty interval is inferred. Table S4 and Supplementary Methods define the metrics and controls.}\par\smallskip{\small\textbf{Alt text:} Four points show sequence-equally weighted residue reconstruction accuracy. Three eight-draw scores are 0.690802 for matched latents, 0.097533 for mismatched latents and 0.091958 for permuted-pair training. The separate no-latent, capacity-unmatched comparator scores 0.120436 from one decode.}
 \end{figure*}
 
 \subsection{Source-group validation of activity regression}
@@ -181,13 +187,13 @@ Both the six-peptide \textit{S. aureus} count at $\leq$31.25 \textmu{}g/mL and t
 \begin{figure*}[!t]
 \centering
 \includegraphics[width=\textwidth]{figures/fig3_mic_checked.pdf}
-\caption{Antibacterial activity of 27 tested peptides, with original and replicate-based MIC estimates. \textbf{(A)} Numeric MIC counts and counts strictly below 32 \textmu{}g/mL for each strain, with both representations shown. \textbf{(B)} \textit{S. aureus} distributions: the reported summary contains six values at or below 31.25, five at or above 250 \textmu{}g/mL and 16 N values; the algorithm contains six, four and 16, respectively, plus one value at 125 \textmu{}g/mL. N combines majority-no-endpoint and no-consensus states only for historical comparison. Six peptides have \textit{S. aureus} MICs $\leq$31.25 \textmu{}g/mL under both representations; complete paired values are in Table S5.}\par\smallskip{\small\textbf{Alt text:} Filled and outlined bars compare reported and algorithm endpoints by strain. The \textit{S. aureus} distribution changes from five values at or above 250 to four, with one value at 125; its count below 200 changes from six to seven.}
+\caption{Antibacterial activity of 27 tested peptides, with original and replicate-based MIC estimates. \textbf{(A)} Numeric MIC counts and counts strictly below 32 \textmu{}g/mL for each strain, with both representations shown. \textbf{(B)} \textit{S. aureus} distributions: the reported summary contains six values at or below 31.25, five at or above 250 \textmu{}g/mL and 16 N values; the algorithm contains six, four and 16, respectively, plus one value at 125 \textmu{}g/mL. N combines majority-no-endpoint and no-consensus states only for historical comparison. Six peptides have \textit{S. aureus} MICs $\leq$31.25 \textmu{}g/mL under both representations; MIC denotes minimum inhibitory concentration. The strains are \textit{Escherichia coli} ATCC 25922, \textit{Pseudomonas aeruginosa} ATCC 27853, \textit{Staphylococcus aureus} ATCC 29213 and \textit{Enterococcus faecalis} ATCC 29212. Complete paired values are in Table S5.}\par\smallskip{\small\textbf{Alt text:} Filled and outlined bars compare reported and algorithm endpoints by strain. The \textit{S. aureus} distribution changes from five values at or above 250 to four, with one value at 125; its count below 200 changes from six to seven.}
 \end{figure*}
 
 \begin{figure*}[!t]
 \centering
 \includegraphics[width=\textwidth]{figures/fig4_evidence_checked.pdf}
-\caption{Endpoint-specific evaluation of antimicrobial peptide design. The three rows map the input and measurement to the corresponding result: reconstruction of known sequences, direct evaluation of sampled sequences and antibacterial assessment of a separate experimental panel. Within-row arrows indicate evaluation steps; the experimental panel is not a downstream output of the CE21--MSE21 comparison. Reconstruction uses 701 residues from 41 development sequences; generation uses 16 requests per method and terminal condition; activity uses 27 tested peptides.}\par\smallskip{\small\textbf{Alt text:} Three parallel rows connect reconstruction inputs to residue recovery, generated sequences to distributional distances, and a 27-peptide assay panel to strain-specific MIC results.}
+\caption{Endpoint-specific evaluation of antimicrobial peptide design. The three rows map the input and measurement to the corresponding result: reconstruction of known sequences, direct evaluation of sampled sequences and antibacterial assessment of a separate experimental panel. Within-row arrows indicate evaluation steps; the experimental panel is not a downstream output of the CE21--MSE21 comparison. Reconstruction uses 701 residues from 41 development sequences; generation uses 16 requests per method and terminal condition; activity uses 27 tested peptides. CE21 and MSE21 denote the 21-category cross-entropy and mean-squared-error objectives; LSTM denotes long short-term memory; MIC denotes minimum inhibitory concentration; OD600 denotes optical density at 600 nm; \textit{S. aureus} is \textit{Staphylococcus aureus}.}\par\smallskip{\small\textbf{Alt text:} Three parallel rows connect reconstruction inputs to residue recovery, generated sequences to distributional distances, and a 27-peptide assay panel to strain-specific MIC results.}
 \end{figure*}
 
 \section{Discussion}
@@ -225,10 +231,6 @@ Antibacterial MICs characterize inhibition under the tested panel; haemolysis, c
 Categorical reconstruction improved residue recovery and six generation distances over a matched squared-error control, while direct generation evaluation identified the recurrent comparator as lowest on the six specified distances to the reference groups. In a separate 27-peptide panel, six peptides had \textit{S. aureus} MICs $\leq$31.25 \textmu{}g/mL and seven inhibited at least one tested strain below 200 \textmu{}g/mL. Evaluating reconstruction, generation and antibacterial activity with their own explicit endpoints provides an interpretable basis for advancing antimicrobial peptide design.
 
 \FloatBarrier
-\section*{Funding}
-
-This work was supported by Zhejiang University. No other funding supported this work.
-
 \section*{Author contributions}
 
 \textbf{Hongsheng Wang:} Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Data Curation, Writing -- Original Draft, Visualization.
@@ -251,11 +253,15 @@ Hongsheng Wang and Feng Lin are also authors of AMPGen \cite{ref9}. The present 
 No human participants, human tissue or animal subjects were involved in this work. All bacterial work used the standard reference strains described in Materials and methods.
 
 \section*{Data and code availability}
-The versioned data and code are available at \url{https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v5-2026-10-23}. The repository includes model implementations, configurations, checkpoints, saved computational outputs, peptide sequences, OD$_{600}$ measurements, paired MIC estimates and supplementary tables. Offline analysis scripts reproduce the reported summaries. Supplementary Methods identify source versions and explain the computational and assay calculations.
+The versioned data and code are archived at Zenodo (\url{https://doi.org/10.5281/zenodo.23586233}) \cite{refData}, with a browsable version at \url{https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v6-2026-10-24}. The repository includes model implementations, configurations, checkpoints, saved computational outputs, peptide sequences, OD$_{600}$ measurements, paired MIC estimates and supplementary tables. Offline analysis scripts reproduce the reported summaries. Supplementary Methods identify source versions and explain the computational and assay calculations.
 
 \section*{Acknowledgements and use of generative AI tools}
 
-The authors wrote the manuscript. OpenAI Codex assisted with source and reference checking, code inspection, independent recalculation of saved outputs, deterministic plotting code, factual corrections and language editing of the author-written text. No new laboratory measurements or generative images were created. Human authors retain responsibility for the scientific content. Supplementary Methods record the assistance used in this revision.
+The authors wrote the manuscript. OpenAI Codex assisted with source and reference checking, code inspection, independent recalculation of saved outputs, deterministic plotting code, factual corrections and language editing of the author-written text. No new laboratory measurements or generative images were created. Human authors retain responsibility for the scientific content. Claude assisted with historical coding and computational checks. Supplementary Methods record these tasks and their validation artifacts.
+
+\section*{Funding}
+
+This work was supported by Zhejiang University. No other funding supported this work.
 
 \section*{Supplementary material}
 Supplementary Methods and Tables S1--S6 provide reconstruction and generation metrics, activity-regression analyses, latent analyses, complete peptide-level MIC data and context for staged biological evaluation. Source data and executable calculation scripts accompany the tables.
@@ -319,6 +325,7 @@ Supplementary Methods and Tables S1--S6 provide reconstruction and generation me
 \bibitem{ref61} Ma T, Liu Y, Yu B, et al. DRAMP 4.0: an open-access data repository dedicated to the clinical translation of antimicrobial peptides. \textit{Nucleic Acids Res} 2025;53:D403--D410. doi:10.1093/nar/gkae1046.
 \bibitem{ref67} Haney EF, Straus SK, Hancock REW. Reassessing the host defense peptide landscape. \textit{Front Chem} 2019;7:43. doi:10.3389/fchem.2019.00043. PMID: 30778385. PMCID: PMC6369191.
 \bibitem{ref70} Timmons PB, Hewage CM. HAPPENN is a novel tool for hemolytic activity prediction for therapeutic peptides which employs neural networks. \textit{Sci Rep} 2020;10:10869. doi:10.1038/s41598-020-67701-3. PMID: 32616760. PMCID: PMC7331684.
+\bibitem{refData} Wang H, Wu F, Lin F. Data and code for Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design [data set and software]. Version v6-2026-10-24. Zenodo, 24 October 2026. \url{https://doi.org/10.5281/zenodo.23586233}.
 \end{thebibliography}
 
 \end{document}

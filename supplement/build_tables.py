@@ -168,8 +168,8 @@ assert len(routes)==len(short)==7
 s4=table('Table S4a','Scientific endpoints of seven follow-up analyses. Source diagnostics, reconstruction analyses and generation comparisons have distinct evaluation criteria.', ['Route','Evaluated component','Observed result'],[[esc(c) for c in r] for r in short],r'p{.21\linewidth}p{.23\linewidth}p{.47\linewidth}')
 guard_labels={
  'M_length_MAE_no_greater_than_baseline_zero':'Posterior-mean length MAE no greater than baseline',
- 'M_sequence_equal_nondecrease':'Posterior-mean exact-match fraction does not decrease',
- 'S8_sequence_equal_gain_at_least_1_over_20':'Eight-draw exact-match fraction improves by at least 0.05',
+ 'M_sequence_equal_nondecrease':'Posterior-mean sequence-equal residue accuracy does not decrease',
+ 'S8_sequence_equal_gain_at_least_1_over_20':'Eight-draw sequence-equal residue accuracy improves by at least 0.05',
  'S8_supported_AA_macro_nondecrease':'Eight-draw supported-residue macro recall does not decrease',
 }
 rs=[[esc(guard_labels[x['guard']]), 'Met' if x['pass']=='True' else 'Not met'] for x in csvread(T/'Table_S4c_warmup_guards.csv') if x['guard'] in guard_labels]

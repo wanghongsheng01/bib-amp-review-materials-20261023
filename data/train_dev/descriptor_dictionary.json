@@ -1,0 +1,30 @@
+{
+  "source_file": "source/molecular_representation.py",
+  "source_sha256": "4d0d6abb6cb7c49efe69a387270dbd44e49e6749c8515ce2d844ccdc4a717dd4",
+  "source_binding": "CE_RMS_RECONSTRUCTION_CONTRACT_v2; warmup_scoring_candidate_v2/SCORING_CONTRACT.json at H5 source commit f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b",
+  "verification": "Read-only source SHA256 validation and source-definition extraction; descriptor values were not recomputed in this revision.",
+  "residue_order": [
+    "MolWt",
+    "MolLogP",
+    "TPSA"
+  ],
+  "global_order": [
+    "RingCount",
+    "NumAromaticRings",
+    "NumSaturatedRings",
+    "FractionCSP3",
+    "HallKierAlpha",
+    "LabuteASA",
+    "MaxPartialCharge",
+    "MinPartialCharge",
+    "TPSA"
+  ],
+  "value_units": "Native named RDKit Descriptors function outputs; no manual unit conversion in this source.",
+  "residue_construction": "Isolated canonical L residue with FREE terminus; outputs rounded to two decimal places; same lookup for FREE and AMD peptide classes.",
+  "global_construction": "Full peptide from Chem.MolFromSequence(sequence, sanitize=True, flavor=0); FREE preserves the free C terminus, AMD substitutes terminal OXT oxygen with nitrogen and verifies terminal amide hydrogens, element counts, exact-mass delta and chirality. Global outputs retain finite float precision.",
+  "terminal_class": {
+    "FREE": 0,
+    "AMD": 1
+  },
+  "numerical_input_policy": "Original four input CSVs are unchanged; model feature standardization is separately recorded in model/scalers."
+}

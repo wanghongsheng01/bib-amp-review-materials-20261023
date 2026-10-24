@@ -5,3 +5,5 @@ The four Python files separately render Figures 1–4 in `../figures/` and creat
 Run one renderer at a time from any directory, for example `python3 manuscript/figure_source/render_figure3.py`. Image regeneration may change file metadata without changing numeric content.
 
 Figure 2 reads `supplement/tables/Table_S4e_AR_information.csv` and cross-checks it against the packaged latent-AR summary; it writes `fig2_latent_controls.pdf` and `.svg`. It shows reconstruction scores, not generation improvements. Set `FIGURE2_QA_DIR` or `FIGURE4_QA_DIR` to keep local previews outside the release directory.
+
+Version v6 uses deterministic point marks for Figures 1 and 2. The Figure 2 first three scores are eight-draw equal-sequence residue accuracies (S8); comparator C is one plain decode without latent input and has unmatched capacity. All plotted numerical values are preserved. No generative image tool was used.

@@ -1,10 +1,11 @@
 cff-version: 1.2.0
 message: "Please cite these versioned research materials when using the accompanying data and code."
 type: dataset
-title: "Research materials for Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design"
-version: "v5-2026-10-23"
-date-released: 2026-10-23
-url: "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v5-2026-10-23"
+title: "Data and code for Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design"
+version: "v6-2026-10-24"
+date-released: 2026-10-24
+doi: "10.5281/zenodo.23586233"
+url: "https://zenodo.org/records/23586233"
 repository-code: "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023"
 authors:
   - family-names: "Wang"

@@ -1,5 +1,5 @@
 {
-  "version": "v5-2026-10-23",
+  "version": "v6-2026-10-24",
   "article_title": "Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design",
   "article_type": "Problem solving protocol",
   "source_commits": {
@@ -7,16 +7,19 @@
     "handoff": "f1b748d21386e1d1683a0b6e92cbcf9a208a4d2b"
   },
   "document_sha256": {
-    "manuscript/main.tex": "87418c68f87a40233ea02296eef30fdc4e44d50acf81e781c874bee51f793595",
-    "manuscript/main.pdf": "65e336bcf0921953d1494ed00c07ba542304074c5a6d4c9fa04690356afa0168",
-    "manuscript/cover_letter.pdf": "c40c7a1605b1afff413eac51ee16123b35831a1f6985acb05562e9ff2ab7942d",
-    "supplement/main.tex": "7ecd8ec489d96a51f02fd2449e9002b117350afc6842651fb8b8d103f8cf506e",
-    "supplement/supplement.pdf": "d05f3ebca0922d0a7483751d29968855f4fe9534eb82965ac68b5755ca3634b5",
-    "manuscript/cover_letter.tex": "e933403c275a9fe63ae094c89154f0966a729a9d44a339f028956841b16d30ab"
+    "manuscript/main.tex": "313e410d48fcd7d44f86d0b0dc5ba93e3f476d0258a9e6c1b228c48e3e1a6ad6",
+    "manuscript/main.pdf": "2182b950890a9401d6aebe3df1599bac24efb19c27fe8ffccb44532c78150809",
+    "manuscript/cover_letter.pdf": "f02fc2cef5f4b7eb148d63d2906c46f09393beeac61a852b940adf813eb954a1",
+    "supplement/main.tex": "f5a9dee4c0da93c9c06da2737ba671b2513fdb23d87316fc41533ebd65657781",
+    "supplement/supplement.pdf": "dc487ce88cf8800fa64942d6cfd4929e5b4e687696f887bd4ca698118f51cb5d",
+    "manuscript/cover_letter.tex": "cb85a7c5c70fb0add9dcfd3100bb506a9208166924cc47e9d9ba6292e4486ac5"
   },
   "verification_scope": "Offline recomputation from saved outputs; training and checkpoint deserialization were not rerun. Original reported MIC and retrospective algorithmic endpoints are retained in parallel.",
-  "public_version_url": "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v5-2026-10-23",
-  "release_change_scope": "Scientific editorial revision following independent review, 48 verified main references, numerical latent-control Figure 2, Figure 4 inequality and float placement; computational/assay data and model weights unchanged.",
-  "main_references": 48,
-  "supplement_references": 3
+  "public_version_url": "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v6-2026-10-24",
+  "release_change_scope": "Independent author-guideline and scientific-source review: correct sequence-equal residue accuracy terminology and latent scoring counts; define descriptor fields and source; improve standalone captions and table notes; align declarations; add data/software citation. Original scientific data and weights unchanged.",
+  "main_references": 49,
+  "supplement_references": 3,
+  "archive_doi": "10.5281/zenodo.23586233",
+  "archive_record_url": "https://zenodo.org/records/23586233",
+  "archive_file_sha256": "07439904756e743986532ac8c10ff83ddd14f7fabcd0c93cfff10af641c8deb9"
 }
