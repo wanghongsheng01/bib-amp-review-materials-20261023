@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="666.41375pt" height="244.368pt" viewBox="0 0 666.41375 244.368" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-26T10:32:27.728525</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 244.368 
+L 666.41375 244.368 
+L 666.41375 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 49.924225 73.7622 
+L 225.108325 73.7622 
+Q 229.795525 73.7622 229.795525 69.5286 
+L 229.795525 29.8386 
+Q 229.795525 25.605 225.108325 25.605 
+L 49.924225 25.605 
+Q 45.237025 25.605 45.237025 29.8386 
+L 45.237025 69.5286 
+Q 45.237025 73.7622 49.924225 73.7622 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #eef4f8; stroke: #25648a; stroke-width: 1.05; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 232.678393 49.6836 
+Q 235.071844 49.6836 236.123655 49.6836 
+" clip-path="url(#p0fb409f369)" style="fill: none; stroke: #25648a; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 231.723655 47.4836 
+L 236.123655 49.6836 
+L 231.723655 51.8836 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #25648a; stroke: #25648a; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 245.028925 73.7622 
+L 420.213025 73.7622 
+Q 424.900225 73.7622 424.900225 69.5286 
+L 424.900225 29.8386 
+Q 424.900225 25.605 420.213025 25.605 
+L 245.028925 25.605 
+Q 240.341725 25.605 240.341725 29.8386 
+L 240.341725 69.5286 
+Q 240.341725 73.7622 245.028925 73.7622 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #eef4f8; stroke: #25648a; stroke-width: 1.05; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 427.783093 49.6836 
+Q 430.176544 49.6836 431.228355 49.6836 
+" clip-path="url(#p0fb409f369)" style="fill: none; stroke: #25648a; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 426.828355 47.4836 
+L 431.228355 49.6836 
+L 426.828355 51.8836 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #25648a; stroke: #25648a; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 440.133625 73.7622 
+L 615.317725 73.7622 
+Q 620.004925 73.7622 620.004925 69.5286 
+L 620.004925 29.8386 
+Q 620.004925 25.605 615.317725 25.605 
+L 440.133625 25.605 
+Q 435.446425 25.605 435.446425 29.8386 
+L 435.446425 69.5286 
+Q 435.446425 73.7622 440.133625 73.7622 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #eef4f8; stroke: #25648a; stroke-width: 1.05; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 49.924225 147.8502 
+L 225.108325 147.8502 
+Q 229.795525 147.8502 229.795525 143.6166 
+L 229.795525 103.9266 
+Q 229.795525 99.693 225.108325 99.693 
+L 49.924225 99.693 
+Q 45.237025 99.693 45.237025 103.9266 
+L 45.237025 143.6166 
+Q 45.237025 147.8502 49.924225 147.8502 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #edf6f5; stroke: #2a8c82; stroke-width: 1.05; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 232.678393 123.7716 
+Q 235.071844 123.7716 236.123655 123.7716 
+" clip-path="url(#p0fb409f369)" style="fill: none; stroke: #2a8c82; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 231.723655 121.5716 
+L 236.123655 123.7716 
+L 231.723655 125.9716 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #2a8c82; stroke: #2a8c82; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 245.028925 147.8502 
+L 420.213025 147.8502 
+Q 424.900225 147.8502 424.900225 143.6166 
+L 424.900225 103.9266 
+Q 424.900225 99.693 420.213025 99.693 
+L 245.028925 99.693 
+Q 240.341725 99.693 240.341725 103.9266 
+L 240.341725 143.6166 
+Q 240.341725 147.8502 245.028925 147.8502 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #edf6f5; stroke: #2a8c82; stroke-width: 1.05; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 427.783093 123.7716 
+Q 430.176544 123.7716 431.228355 123.7716 
+" clip-path="url(#p0fb409f369)" style="fill: none; stroke: #2a8c82; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 426.828355 121.5716 
+L 431.228355 123.7716 
+L 426.828355 125.9716 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #2a8c82; stroke: #2a8c82; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 440.133625 147.8502 
+L 615.317725 147.8502 
+Q 620.004925 147.8502 620.004925 143.6166 
+L 620.004925 103.9266 
+Q 620.004925 99.693 615.317725 99.693 
+L 440.133625 99.693 
+Q 435.446425 99.693 435.446425 103.9266 
+L 435.446425 143.6166 
+Q 435.446425 147.8502 440.133625 147.8502 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #edf6f5; stroke: #2a8c82; stroke-width: 1.05; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 49.924225 221.9382 
+L 225.108325 221.9382 
+Q 229.795525 221.9382 229.795525 217.7046 
+L 229.795525 178.0146 
+Q 229.795525 173.781 225.108325 173.781 
+L 49.924225 173.781 
+Q 45.237025 173.781 45.237025 178.0146 
+L 45.237025 217.7046 
+Q 45.237025 221.9382 49.924225 221.9382 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #fbf6ec; stroke: #b88426; stroke-width: 1.05; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 232.678393 197.8596 
+Q 235.071844 197.8596 236.123655 197.8596 
+" clip-path="url(#p0fb409f369)" style="fill: none; stroke: #b88426; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 231.723655 195.6596 
+L 236.123655 197.8596 
+L 231.723655 200.0596 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #b88426; stroke: #b88426; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 245.028925 221.9382 
+L 420.213025 221.9382 
+Q 424.900225 221.9382 424.900225 217.7046 
+L 424.900225 178.0146 
+Q 424.900225 173.781 420.213025 173.781 
+L 245.028925 173.781 
+Q 240.341725 173.781 240.341725 178.0146 
+L 240.341725 217.7046 
+Q 240.341725 221.9382 245.028925 221.9382 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #fbf6ec; stroke: #b88426; stroke-width: 1.05; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 427.783093 197.8596 
+Q 430.176544 197.8596 431.228355 197.8596 
+" clip-path="url(#p0fb409f369)" style="fill: none; stroke: #b88426; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 426.828355 195.6596 
+L 431.228355 197.8596 
+L 426.828355 200.0596 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #b88426; stroke: #b88426; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 440.133625 221.9382 
+L 615.317725 221.9382 
+Q 620.004925 221.9382 620.004925 217.7046 
+L 620.004925 178.0146 
+Q 620.004925 173.781 615.317725 173.781 
+L 440.133625 173.781 
+Q 435.446425 173.781 435.446425 178.0146 
+L 435.446425 217.7046 
+Q 435.446425 221.9382 440.133625 221.9382 
+z
+" clip-path="url(#p0fb409f369)" style="fill: #fbf6ec; stroke: #b88426; stroke-width: 1.05; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #25648a; font: 700 8.8px 'DejaVu Sans'; text-anchor: start" x="47.287675" y="20.266325" transform="rotate(-0 47.287675 20.266325)">Endpoint 1 · Sequence Reconstruction (Primary + Ablations)</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #1f2328; font: 700 7.8px 'DejaVu Sans'; text-anchor: start" x="53.146675" y="41.321981" transform="rotate(-0 53.146675 41.321981)">Inputs &amp; Partition</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(53.146675 50.12573)">Sequence + RDKit descriptors</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(53.146675 58.420823)">≤70% NW homology splits</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(53.146675 66.715916)">Pilot (279/41) + DBAASP (3,120/223/222)</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #1f2328; font: 700 7.8px 'DejaVu Sans'; text-anchor: start" x="248.251375" y="41.321981" transform="rotate(-0 248.251375 41.321981)">Controlled Comparison</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(248.251375 50.12573)">Matched VAE architecture &amp; decoder</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(248.251375 58.477335)">CE21 vs MSE21 across KL-β (0.01–1.0),</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(248.251375 66.772428)">loss scaling (21×) &amp; padding masking</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #1f2328; font: 700 7.8px 'DejaVu Sans'; text-anchor: start" x="443.356075" y="41.321981" transform="rotate(-0 443.356075 41.321981)">Verified Outcome</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(443.356075 50.12573)">Untouched test: CE21 96.1% micro,</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(443.356075 58.420823)">88.1% macro; MSE21 tuned 94.2%/84.1%</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(443.356075 66.715916)">Rare-AA imbalance: ρ = 0.80</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #2a8c82; font: 700 8.8px 'DejaVu Sans'; text-anchor: start" x="47.287675" y="94.354325" transform="rotate(-0 47.287675 94.354325)">Endpoint 2 · De Novo Generation (Primary + Statistical &amp; Higher-Order Gates)</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #1f2328; font: 700 7.8px 'DejaVu Sans'; text-anchor: start" x="53.146675" y="115.409981" transform="rotate(-0 53.146675 115.409981)">Inputs &amp; Comparators</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(53.146675 124.21373)">Terminal state only (FREE / AMD)</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(53.146675 132.508823)">Unigram, Bigram, Trigram, LSTM (63k/1.3M),</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(53.146675 140.803916)">Transformer-LM (1.8M), GRU-VAE, VAE-DDPM</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #1f2328; font: 700 7.8px 'DejaVu Sans'; text-anchor: start" x="248.251375" y="115.409981" transform="rotate(-0 248.251375 115.409981)">Multi-Seed &amp; Orthogonal Gates</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(248.251375 124.21373)">3–5 seeds × 128–256 seqs/terminal, 95% CI</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(248.251375 132.508823)">Low-order (MMD², d_eff=1.54) + 3-mer JS</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(248.251375 140.994432)">+ α-helical μ_H W₁ + ≥70% NW memorization</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: #1f2328; font: 700 7.8px 'DejaVu Sans'; text-anchor: start" x="443.356075" y="115.409981" transform="rotate(-0 443.356075 115.409981)">Verified Outcome</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(443.356075 124.21373)">AR models beat tuned 96%-recon VAEs</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(443.356075 132.508823)">by ~20× on FREE MMD² &amp; beat Unigram</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(443.356075 140.803916)">on 3-mer JS &amp; μ_H (p ≤ 0.028)</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #b88426; font: 700 8.8px 'DejaVu Sans'; text-anchor: start" x="47.287675" y="168.442325" transform="rotate(-0 47.287675 168.442325)">Endpoint 3 · Experimental Antibacterial Activity (Separate Provenance-Explicit Case Study)</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #1f2328; font: 700 7.8px 'DejaVu Sans'; text-anchor: start" x="53.146675" y="189.497981" transform="rotate(-0 53.146675 189.497981)">Provenance &amp; Funnel</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(53.146675 198.30173)">Prior multimodal VAE-DDPM (0% AMPGen</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(53.146675 206.596823)">overlap); 1,000 → RDKit charge&gt;0, AMP&gt;0.9,</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(53.146675 214.891916)">II 10–40, ≤70% id → 30 ordered → 27 assayed</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: #1f2328; font: 700 7.8px 'DejaVu Sans'; text-anchor: start" x="248.251375" y="189.497981" transform="rotate(-0 248.251375 189.497981)">Assay &amp; Sensitivity Audit</text>
+   </g>
+   <g id="text_19">
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(248.251375 198.30173)">MHB broth microdilution, 1% DMSO, 5×10⁵</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(248.251375 206.596823)">CFU/mL, 37 °C 16–20 h, 4 ATCC strains × 3</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(248.251375 214.891916)">reps; original MIC + 6-rule OD₆₀₀ audit</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: #1f2328; font: 700 7.8px 'DejaVu Sans'; text-anchor: start" x="443.356075" y="189.497981" transform="rotate(-0 443.356075 189.497981)">Verified Outcome</text>
+   </g>
+   <g id="text_21">
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(443.356075 198.30173)">S. aureus ≤31.25 µg/mL (3.1–12.9 µM):</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(443.356075 206.596823)">6/27 invariant across 5 rules (105/108 cells);</text>
+    <text style="fill: #1f2328; font: 6.85px 'DejaVu Sans'" transform="translate(443.356075 214.891916)">haemolysis/cytotoxicity remain unmeasured</text>
+   </g>
+   <g id="text_22">
+    <text style="fill: #70757a; font: italic 7px 'DejaVu Sans'; text-anchor: middle" x="333.206875" y="235.035419" transform="rotate(-0 333.206875 235.035419)">Note: Horizontal arrows connect inputs to outputs within each endpoint. Endpoint 3 is an independent historical panel, not a head-to-head wet-lab assay of CE21 vs MSE21 vs AR outputs.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0fb409f369">
+   <rect x="40.256875" y="5.76" width="585.9" height="232.848"/>
+  </clipPath>
+ </defs>
+</svg>

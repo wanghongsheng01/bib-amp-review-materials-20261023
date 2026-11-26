@@ -1,5 +1,27 @@
 # AMP study materials
 
+Release: **v8-revision-2026-11-26** (Major Revision, *Briefings in Bioinformatics* `BIB-26-2683`).
+Article: **Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design**.
+Authors: **Hongsheng Wang, Zihan Zeng, Fei Wu, Feng Lin and Xingxu Huang**.
+
+> **Major Revision Update (`v8-revision-2026-11-26`):** Adds the frozen 11-fold larger, strictly homology-isolated DBAASP benchmark (`revision_r1/data/dbaasp_expanded/`, 3,565 peptides: 3,120 train / 223 val / 222 untouched independent test; 0 cross-split pairs >=70% global NW identity), all multi-seed computational suites & ablations (`scripts/`, `revision_r1/results/`: KL-beta, 21x MSE scaling, padding masking, statistical baselines, capacity-matched LSTM/Transformer-LM, non-diffusion GRU-VAEs, frozen v7 256x5 replays, PCA metric-redundancy audit, 6-rule OD600 sensitivity and AMPGen 0/27 overlap audit), and compiled revised manuscripts/supplement/editable tables (`revision_r1/manuscript/`). All initial-submission `v7-2026-10-24` files and hashes remain intact; run `python3 verify_r1.py` to verify both `v7` (2,630 + 4,802 checks) and all `v8` revision digests offline.
+
+- **Revised Manuscript (Highlighted PDF):** [revision_r1/manuscript/main_highlighted.pdf](revision_r1/manuscript/main_highlighted.pdf)
+- **Revised Manuscript (Clean PDF):** [revision_r1/manuscript/main_clean.pdf](revision_r1/manuscript/main_clean.pdf)
+- **Revised Supplement (Highlighted PDF):** [revision_r1/manuscript/supplement_revised.pdf](revision_r1/manuscript/supplement_revised.pdf)
+- **Editable Main Tables 1-4 (DOCX):** [revision_r1/manuscript/Tables_1_to_4_editable.docx](revision_r1/manuscript/Tables_1_to_4_editable.docx)
+- **Initial-submission Zenodo Archive (v7):** [doi:10.5281/zenodo.23610740](https://doi.org/10.5281/zenodo.23610740)
+
+### Reproduce Major Revision Verification (v7 + v8)
+
+```bash
+python3 verify_r1.py
+```
+
+---
+
+## Initial Submission Release Notes (`v7-2026-10-24`, preserved verbatim below)
+
 Release: **v7-2026-10-24**. Article: **Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design**.
 
 Public version: [v7-2026-10-24](https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v7-2026-10-24). This version adds Zihan Zeng as the second author, with the affiliation Polytechnic Institute, Zhejiang University, Hangzhou, 310015, China, and the contribution “Z.H.Z. led wetlab experiments.” It also adds Xingxu Huang as the fifth author, affiliated with Laboratory of Pancreatic Disease, The First Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, 310058, China, and records the contribution “F.L. and X.X.H. conceived of the study and supervised its performance.” It retains the v6 author-guideline revisions and 48 verified academic references plus one formal data/software citation. Scientific data, model code and checkpoints are unchanged from v4. Earlier version tags remain available.

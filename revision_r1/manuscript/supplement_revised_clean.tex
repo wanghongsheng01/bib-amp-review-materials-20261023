@@ -1,0 +1,172 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,booktabs,array,longtable,graphicx,textcomp,xcolor,caption,float,placeins}
+\usepackage[margin=22mm]{geometry}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem,fancyhdr}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}\fussy
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{Supplementary material (Revised)}\fancyhead[R]{Wang et al.}\fancyfoot[C]{S\thepage}
+\setlength{\headheight}{14pt}
+\renewcommand{\thesection}{S\arabic{section}}
+\newcommand{\ug}{\ensuremath{\mu\mathrm{g}/\mathrm{mL}}}
+\newcommand{\rev}[1]{#1}
+\pdfstringdefDisableCommands{\def\rev#1{#1}}
+
+\title{Supplementary material (Revised)\\[5pt]\large Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design}
+\author{Hongsheng Wang, Zihan Zeng, Fei Wu, Feng Lin and Xingxu Huang}
+\date{November 2026 (Major Revision, BIB-26-2683)}
+\hypersetup{pdfauthor={Hongsheng Wang, Zihan Zeng, Fei Wu, Feng Lin and Xingxu Huang}}
+\begin{document}
+\maketitle\thispagestyle{fancy}
+Supplementary Methods describe the model architectures, molecular descriptors, homology-isolated benchmarking protocol, orthogonal evaluation metrics and confirmed broth microdilution assays. Tables S1--S6 retain all verified initial-submission computational and assay records; \rev{Sections S7--S10 and Tables S7--S10 document the newly constructed 3,565-peptide expanded DBAASP benchmark, multi-seed statistical and capacity-matched comparisons with 95\% confidence intervals, KL-$\beta$/MSE-scaling/padding ablations, frozen v7 large-sample replays ($256\times 5$), metric-redundancy PCA audit, and the confirmed MHB broth microdilution protocol with six-rule OD$_{600}$ sensitivity analysis.}
+
+\section*{Supplementary Methods}
+\subsection*{Network architectures}
+The VAE--diffusion encoder embeds 21 input symbols (20 canonical L-amino acids and padding) into 100 channels over 48 positions, conditioned on three per-residue RDKit descriptors (MolWt, MolLogP, TPSA) and nine full-peptide global descriptors (RingCount, NumAromaticRings, NumSaturatedRings, FractionCSP3, HallKierAlpha, LabuteASA, MaxPartialCharge, MinPartialCharge, TPSA), producing $16\times 48$ posterior means and log standard deviations (1,681,549 parameters) coupled to a four-layer residual-coupling prior transform and an 18,612,994-parameter 2D U-Net conditional denoiser. \rev{For the revised multi-seed benchmark, we additionally implemented: (i) \textbf{LSTM-small} (2 layers, hidden width 64, token embedding 32, terminal embedding 8; 62,501 parameters), (ii) \textbf{LSTM-matched} (2 layers, hidden width 320, token embedding 64, terminal embedding 16, dropout 0.15; 1,344,501 parameters), (iii) \textbf{Transformer-LM} (4 pre-norm causal encoder layers, $d_{\mathrm{model}}=192$, 4 heads, FFN 768, dropout 0.15; 1,797,717 parameters), (iv) \textbf{SeqGRUVAE} (2-layer bidirectional GRU encoder + 2-layer GRU decoder, hidden width 224, latent dim 64, $\beta=0.1$; 1,992,549 parameters) trained identically under CE21 versus MSE21, and (v) three closed-form statistical baselines (\textbf{Unigram}, \textbf{Bigram Markov} with Laplace $\alpha=0.5$, and \textbf{Trigram Markov} with bigram backoff when trigram context count $<3$).}
+
+\subsection*{Confirmed broth microdilution protocol and retrospective OD$_{600}$ audit}
+\rev{All 27 candidate peptides were evaluated against \textit{E. coli} ATCC 25922, \textit{P. aeruginosa} ATCC 27853, \textit{S. aureus} ATCC 29213 and \textit{E. faecalis} ATCC 29212 using the identical broth microdilution protocol published by our laboratory in AMPGen \cite{ref9}. Peptides were dissolved in 1\% DMSO and serially diluted two-fold across columns 1--10 of sterile 96-well plates in Mueller--Hinton Broth (MHB; final concentrations 1000 down to 1.953125 \ug, 50 \textmu{}L/well), with column 11 as bacterial growth control and column 12 as sterile MHB blank. Overnight MHB cultures (37~$^\circ$C with shaking) were diluted to $1.0\times 10^6$ CFU/mL in MHB; 50 \textmu{}L bacterial suspension was added to columns 1--11 (final inoculum $5.0\times 10^5$ CFU/mL, final volume 100 \textmu{}L/well). Plates were incubated at 37~$^\circ$C for 16--20 h in triplicate (3,240 peptide OD$_{600}$ readings). Alongside the original MIC summary, replicate-consensus endpoints ($\geq$2/3 agreeing) were audited across six thresholds: fixed OD$_{600}<0.08, 0.10, 0.12, 0.15$ and blank-normalized growth $(\mathrm{OD}_{600}-\mathrm{blank})/(\mathrm{control}-\mathrm{blank})<10\%$ and $<20\%$.}
+
+\section{Original Pilot Reconstruction Records (Table S1)}
+\input{table_S1.tex}
+
+\section{Original Pilot Generation Comparisons (Table S2)}
+\input{table_S2.tex}
+
+\section{Exploratory Activity-Regression Experiments (Table S3)}
+The convolutional predictor in Table S3 adapts the cached QMAP implementation \cite{ref13} associated with the Witten and Witten regression architecture \cite{ref12} under leakage-controlled source-group validation.
+\input{table_S3.tex}
+
+\section{Exploratory Latent-Space Follow-up Routes (Table S4)}
+\input{table_S4.tex}
+
+\section{Peptide Characterization, Provenance Funnel and Antibacterial Measurements (Table S5)}
+\rev{The 27 assayed peptides originated from a 1,000-candidate screen of our earlier multimodal VAE--diffusion model (commit \texttt{e7486fb}) filtered by RDKit net charge $>0$ at pH 7.4, AMP Scanner v2 $>0.9$, instability index 10--40 and $\leq$70\% training similarity, followed by deduplication, replacement of two synthesis-difficult sequences, ordering of 30 peptides across three functional groups (8/8/14) and successful synthesis of 27 peptides (7/8/12). Programmatic verification confirmed 0/27 sequence overlap with AMPGen \cite{ref9} and max 58.3\% global Needleman--Wunsch identity against all 3,492 unique expanded DBAASP sequences.}
+\input{table_S5.tex}
+
+\section{AMPGen Staged Experimental Design Context (Table S6)}
+\input{table_S6.tex}
+
+\FloatBarrier
+\section{\rev{Expanded Homology-Isolated DBAASP Benchmark Provenance (Table S7)}}
+\rev{On 25 November 2026, 4,399 unique monomer antibacterial peptide records (Gram-positive and Gram-negative targets) were fetched from the official DBAASP REST API (snapshot SHA-256: \texttt{b960b9df9590cf0b752f65e8661779c4110c973d7823a2f84d1e800f0ca39fc5}). Filtering removed 602 non-canonical, 128 N-terminally modified, 81 $>48$-aa and 3 non-FREE/AMD records, retaining 3,565 eligible (sequence, terminal) entries (3,492 unique sequences; 0 RDKit failures) grouped into 1,106 connected components at $\geq$70\% global NW identity. All 59 components matching a pilot sequence and 56 pilot-homolog records were isolated into training, leaving zero cross-split pairs $\geq$70\% identity.}
+
+\begin{table}[H]
+\centering\footnotesize
+\caption*{\rev{\textbf{Table S7.} Split counts, residue totals, connected components and SHA-256 digests of the expanded DBAASP benchmark.}}
+\begin{tabular}{lrrrrrl}
+\toprule
+Split & Total & FREE & AMD & Residues & Components & Cohort SHA-256 (prefix) \\
+\midrule
+Train & 3,120 & 1,727 & 1,393 & 61,166 & 883 & \texttt{958f3cfe85e1c98c} \\
+Validation & 223 & 146 & 77 & 4,497 & 116 & \texttt{15a3a7b08a15c854} \\
+Independent Test & 222 & 135 & 87 & 5,083 & 107 & \texttt{bac921db02d71187} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\FloatBarrier
+\section{\rev{Multi-Seed Generation, v7 Large-Sample Replay and Metric Redundancy (Table S8)}}
+\rev{Table S8a reports full 5-seed mean $\pm$ SD (95\% CI) results for the frozen v7 checkpoints replayed at $256\times 5$ samples per terminal condition (including $<$5 aa filtering sensitivity). Table S8b reports the complete Spearman correlation matrix and PCA variance spectrum across 160 model--seed--terminal evaluations (PC1 = 78.72\%, PC2 = 16.58\%, PC1+PC2 = 95.31\%, $d_{\mathrm{eff}}=1.542$).}
+
+\begin{table}[H]
+\centering\footnotesize\setlength{\tabcolsep}{4.2pt}
+\caption*{\rev{\textbf{Table S8a.} Frozen v7 checkpoint replay at $256\times 5$ samples per terminal condition (1,280 sequences/terminal; mean $\pm$ SD, 95\% CI).}}
+\begin{tabular}{llrrrrrr}
+\toprule
+Frozen v7 Model & Term & MMD$^2$ (1--48) & 95\% CI & MMD$^2$ (5--48) & Tri JS & NN id & $<$5aa (\%) \\
+\midrule
+terminal\_LSTM & FREE & 0.00455$\pm$0.00035 & [0.00411, 0.00500] & 0.00455 & 0.7155 & 0.445 & 0.0\% \\
+terminal\_LSTM & AMD & 0.00483$\pm$0.00053 & [0.00418, 0.00549] & 0.00481 & 0.6748 & 0.512 & 0.1\% \\
+CE21\_DDPM & FREE & 0.02256$\pm$0.00200 & [0.02007, 0.02505] & 0.02504 & 0.7379 & 0.404 & 5.7\% \\
+CE21\_DDPM & AMD & 0.01072$\pm$0.00141 & [0.00896, 0.01247] & 0.01167 & 0.6889 & 0.433 & 6.7\% \\
+MSE21\_DDPM & FREE & 0.05431$\pm$0.00307 & [0.05050, 0.05812] & 0.04882 & 0.7828 & 0.417 & 12.7\% \\
+MSE21\_DDPM & AMD & 0.04115$\pm$0.00387 & [0.03634, 0.04595] & 0.03623 & 0.6998 & 0.445 & 14.5\% \\
+scalar\_DDPM & FREE & 0.05516$\pm$0.00310 & [0.05131, 0.05901] & 0.05658 & 0.9239 & 0.259 & 1.2\% \\
+scalar\_DDPM & AMD & 0.05025$\pm$0.00425 & [0.04497, 0.05553] & 0.05140 & 0.9106 & 0.268 & 1.3\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\footnotesize
+\caption*{\rev{\textbf{Table S8b.} Spearman rank-correlation matrix across the six low-order metrics ($n=160$ model--seed--terminal runs).}}
+\begin{tabular}{lrrrrrr}
+\toprule
+Metric & MMD$^2$ & AA JS & AA $L_1$ & Pair JS & Pair $L_1$ & Length KS \\
+\midrule
+MMD$^2$ & 1.000 & 0.891 & 0.906 & 0.583 & 0.659 & 0.342 \\
+AA JS & 0.891 & 1.000 & 0.986 & 0.768 & 0.838 & 0.263 \\
+AA $L_1$ & 0.906 & 0.986 & 1.000 & 0.737 & 0.808 & 0.284 \\
+Pair JS & 0.583 & 0.768 & 0.737 & 1.000 & 0.971 & 0.011 \\
+Pair $L_1$ & 0.659 & 0.838 & 0.808 & 0.971 & 1.000 & 0.031 \\
+Length KS & 0.342 & 0.263 & 0.284 & 0.011 & 0.031 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\FloatBarrier
+\section{\rev{Paired Statistical Tests Across Seeds (Table S9)}}
+\rev{Table S9 summarizes two-sided paired $t$-tests and exact sign-flip permutation $p$-values across matched random seeds (five seeds for Suite 1 statistical/autoregressive/GRU-VAE contrasts; three seeds for Suite 2 KL-$\beta$, loss-scale and padding ablations).}
+
+\begin{table}[H]
+\centering\footnotesize
+\caption*{\rev{\textbf{Table S9.} Two-sided paired $t$-tests and exact sign-flip permutation $p$-values across matched seeds (5 seeds for Suite 1; 3 seeds for Suite 2).}}
+\begin{tabular}{llrrr}
+\toprule
+Comparison & Endpoint / Cohort & Mean Diff (A$-$B) & Paired $t$ & $p$ ($t$ / perm) \\
+\midrule
+LSTM-small vs Unigram & Expanded FREE Tri JS & $-0.02515$ & $-3.81$ & 0.0189 / 0.0625 \\
+LSTM-matched vs Unigram & Expanded FREE Tri JS & $-0.03002$ & $-3.80$ & 0.0191 / 0.0625 \\
+Transformer-LM vs Unigram & Expanded FREE Tri JS & $-0.03032$ & $-3.36$ & 0.0282 / 0.0625 \\
+LSTM-small vs Unigram & Expanded FREE $W_1(\mu_H)$ & $-0.04825$ & $-5.33$ & 0.0060 / 0.0625 \\
+LSTM-small vs GRU-VAE CE21 & Expanded FREE MMD$^2$ & $-0.03489$ & $-4.56$ & 0.0104 / 0.0625 \\
+GRU-VAE CE21 vs MSE21 & Pilot FREE MMD$^2$ & $-0.05104$ & $-13.57$ & 0.0002 / 0.0625 \\
+CE21 vs MSE21 ($\beta=0.01$) & Pilot micro accuracy (\%) & $+9.225$ & $6.26$ & 0.0246 / --- \\
+CE21 vs MSE21 tuned ($\beta=0.01$) & Pilot macro recall (\%) & $+7.222$ & $8.51$ & 0.0135 / --- \\
+CE21 pad-masked vs unmasked & Pilot oracle micro (\%) & $+34.094$ & $4.41$ & 0.0478 / --- \\
+CE21 vs MSE21 tuned ($\beta=0.1$) & Expanded test micro (\%) & $+1.803$ & $4.09$ & 0.0549 / --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\FloatBarrier
+\section{\rev{Strain-Wise OD$_{600}$ Control Baselines and Reproducibility Instructions (Table S10)}}
+\rev{Table S10 reports strain-specific sterile blank and untreated bacterial growth-control OD$_{600}$ distributions across all 3,240 peptide wells (810 wells per strain), demonstrating why OD$_{600}<0.10$ sits below every strain's minimum growth control while OD$_{600}<0.15$ fails on \textit{E. faecalis}.}
+
+\begin{table}[H]
+\centering\footnotesize\setlength{\tabcolsep}{4.0pt}
+\caption*{\rev{\textbf{Table S10.} Strain-wise sterile blank and untreated bacterial growth-control OD$_{600}$ statistics ($n=810$ peptide wells per strain).}}
+\begin{tabular}{lrrrrr}
+\toprule
+Strain & \shortstack[r]{Blank Median\\(IQR)} & \shortstack[r]{Neg. Ctrl Median\\(IQR)} & \shortstack[r]{Neg. Ctrl\\Min} & \shortstack[r]{OD 0.10\\\% Growth} & \shortstack[r]{OD 0.10\\\% Inhib.} \\
+\midrule
+\textit{E. coli} ATCC 25922 & 0.0435 (0.0432--0.0439) & 0.2663 (0.2322--0.2934) & 0.1608 & 25.4\% & 74.6\% \\
+\textit{P. aeruginosa} ATCC 27853 & 0.0424 (0.0422--0.0430) & 0.4942 (0.4780--0.5151) & 0.3749 & 12.7\% & 87.3\% \\
+\textit{S. aureus} ATCC 29213 & 0.0404 (0.0400--0.0409) & 0.2230 (0.2134--0.2382) & 0.2012 & 32.6\% & 67.4\% \\
+\textit{E. faecalis} ATCC 29212 & 0.0425 (0.0420--0.0430) & 0.1297 (0.1258--0.1351) & 0.1084 & 65.9\% & 34.1\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{Consolidated Reproducibility Instructions}
+All initial-submission offline checks execute via {\small\texttt{python3 verify\_all.py}} (2,630 computational + 4,802 supplementary checks) from the Zenodo/GitHub archive (\url{https://doi.org/10.5281/zenodo.23610740}). \rev{All revision analyses reproduce end-to-end from the accompanying scripts:}
+\begin{enumerate}[leftmargin=1.8em,itemsep=2pt]\raggedright
+\item \rev{{\small\texttt{scripts/build\_dbaasp\_expanded.py}} rebuilds and verifies the 3,565-peptide homology-partitioned benchmark and split hashes;}
+\item \rev{{\small\texttt{scripts/exp\_statistical\_and\_ar\_models.py}} runs Suite 1 (80 multi-seed models, 4 frozen v7 large-sample replays and metric-correlation PCA);}
+\item \rev{{\small\texttt{scripts/exp\_vae\_ddpm\_ablations.py}} runs Suite 2 (45 KL-$\beta$, MSE-scaling, padding-mask and expanded independent-test VAE--DDPM runs);}
+\item \rev{{\small\texttt{scripts/audit\_wetlab\_and\_ampgen.py}} executes the 6-rule OD$_{600}$ sensitivity audit and physicochemical/molar-MIC profiling; and}
+\item \rev{{\small\texttt{scripts/render\_revision\_figures.py}} deterministically regenerates Figures 1--5 from {\small\texttt{master\_summary.json}}.}
+\end{enumerate}
+
+\begingroup\raggedright\begin{thebibliography}{9}
+\bibitem{ref13} Lavertu A, Corbeil J, Germain P. QMAP: a benchmark for standardized evaluation of antimicrobial peptide MIC and hemolytic activity regression. \textit{Sci Rep} 2026;16:25387.
+\bibitem{ref12} Witten J, Witten Z. Deep learning regression model for antimicrobial peptide design. \textit{bioRxiv} 2019;692681.
+\bibitem{ref9} Jin S, Zeng Z, Xiong X, et al. AMPGen: an evolutionary information-reserved and diffusion-driven generative model for de novo design of antimicrobial peptides. \textit{Commun Biol} 2025;8:839. doi:10.1038/s42003-025-08282-7.
+\end{thebibliography}\endgroup
+
+\end{document}

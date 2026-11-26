@@ -1,5 +1,5 @@
 {
-  "version": "v7-2026-10-24",
+  "version": "v8-revision-2026-11-26",
   "article_title": "Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design",
   "article_type": "Problem solving protocol",
   "source_commits": {
@@ -15,9 +15,9 @@
     "manuscript/cover_letter.tex": "20d8317419b9e952473199e0785d601340bc62f814f5a01fcfb0329899511112"
   },
   "verification_scope": "Offline recomputation from saved outputs; training and checkpoint deserialization were not rerun. Original reported MIC and retrospective algorithmic endpoints are retained in parallel.",
-  "public_version_url": "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v7-2026-10-24",
-  "release_change_scope": "Authorship update: add Zihan Zeng as second author and Xingxu Huang as fifth author; update their affiliations, declared contributions, citation metadata and related-publication disclosure. Scientific results, figures, tables, data and model weights are unchanged from v6.",
-  "main_references": 49,
+  "public_version_url": "https://github.com/wanghongsheng01/bib-amp-review-materials-20261023/tree/v8-revision-2026-11-26",
+  "release_change_scope": "Major Revision (BIB-26-2683): adds 3,565-peptide homology-isolated expanded DBAASP benchmark (3,120 train / 223 val / 222 untouched independent test), multi-seed statistical baselines, capacity-matched autoregressive comparators, non-diffusion GRU-VAEs, KL-beta/MSE-scaling/padding ablations, frozen v7 256x5 replays, PCA metric redundancy audit, confirmed MHB wet-lab protocol & 6-rule OD600 sensitivity audit, AMPGen 0/27 overlap verification, and revised manuscripts/figures/tables while preserving all v7 artifacts intact.",
+  "main_references": 54,
   "supplement_references": 3,
   "archive_doi": "10.5281/zenodo.23610740",
   "archive_record_url": "https://zenodo.org/records/23610740",
@@ -29,5 +29,19 @@
     "Xingxu Huang"
   ],
   "archive_file_sha256": "aaf44fa8aac04d1998d73625673250c30a5991c84ecbb8f87b40eba7055f7a97",
-  "archive_file_name": "BIB_AMP_v7_data_code_2026-10-24.zip"
+  "archive_file_name": "BIB_AMP_v7_data_code_2026-10-24.zip",
+  "previous_version": "v7-2026-10-24",
+  "r1_document_sha256": {
+    "revision_r1/manuscript/main_highlighted.tex": "fad74f7c8a0ad752f54f3bb35f72640271bb69e49bb4f4013b2cfda34a35aa01",
+    "revision_r1/manuscript/main_highlighted.pdf": "834e1ca0247c2bdcf7e028a767287895ee43e9d3ccf7715a1579bc8ede82c91b",
+    "revision_r1/manuscript/main_clean.tex": "bd3a6f265976d9bb880293ac59a6b626893cd90f0e17b35dc836c808c22bb6a2",
+    "revision_r1/manuscript/main_clean.pdf": "3aa0cd929e68a2a00206e91ce990ceed0635aecf82ed910f0c7a5214846e7587",
+    "revision_r1/manuscript/supplement_revised.tex": "a4df6dd450e34c12ad5257c7a0ad84f3b97cc63688253d639a0544249144d4ee",
+    "revision_r1/manuscript/supplement_revised.pdf": "8450793834790e183b2f9a409c5146802fdb8189364c3bc8184934b4acf967c2",
+    "revision_r1/manuscript/supplement_revised_clean.tex": "e4c09f1fbe8ff9ea96d36c24f4c758d1e0aafbc328f4d46b5625259ecbed57ad",
+    "revision_r1/manuscript/supplement_revised_clean.pdf": "9b3bf052ed7807c53b29396055f7aa65ca1a93e9c1316543f68dec9eaf4bdf55",
+    "revision_r1/manuscript/cover_letter_revision.tex": "05903ce5f59660ef82f9911cf201c767cb350abe973898b768234dc026204c6a",
+    "revision_r1/manuscript/cover_letter_revision.pdf": "ab77b47947d77a87e0d73769766419f2abe3d38b548c5425600a35c5e5f70ce1",
+    "revision_r1/manuscript/Tables_1_to_4_editable.docx": "0fc298f63a65d874875f6c62b87d754eabaf2a7734ad5c9e6491add275b6ab23"
+  }
 }

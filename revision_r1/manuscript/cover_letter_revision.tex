@@ -1,0 +1,41 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=18mm]{geometry}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{textcomp,url,microtype,enumitem}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{empty}
+\hypersetup{pdfauthor={Hongsheng Wang, Zihan Zeng, Fei Wu, Feng Lin and Xingxu Huang}}
+\begin{document}
+26 November 2026\par
+Prof. Quan Zou (Editor in Chief) and Dr. Zhenxia Chen (Deputy Editor)\par
+\textit{Briefings in Bioinformatics}\par
+Manuscript ID: BIB-26-2683 (Major Revision)\par
+Article type: Problem solving protocol\par
+Title: \textit{Separating reconstruction, generation and antibacterial activity in antimicrobial peptide design}\par
+Authors: Hongsheng Wang, Zihan Zeng, Fei Wu, Feng Lin and Xingxu Huang
+
+Dear Prof. Zou and Dr. Chen,
+
+We thank you and the three reviewers for the constructive, thorough evaluation of our manuscript (BIB-26-2683). We are pleased to submit our substantially strengthened Major Revision, addressing every major and minor concern raised by all three reviewers through new multi-seed computational experiments on an 11-fold larger, strictly homology-isolated independent test benchmark, complete wet-lab protocol confirmation, expanded sequence-quality and memorization audits, streamlined prose and explicit overlap disclosure.
+
+Key additions in this revision include:
+\begin{itemize}[leftmargin=1.4em,itemsep=2pt,topsep=3pt]
+\item \textbf{Expanded homology-isolated benchmark with untouched independent test set:} Alongside our original 279/41 pilot cohort, we built and froze a 3,565-peptide DBAASP benchmark (3,120 training, 223 validation, 222 untouched independent test peptides; 5,083 test residues) partitioned by $\geq$70\% global Needleman--Wunsch connected components with zero cross-split or pilot homology $\geq$70\%.
+\item \textbf{Multi-seed validation, large-sample generation and statistical testing:} All core experiments now span 3--5 independent seeds with 128--256 generated sequences per terminal condition, 95\% confidence intervals and paired significance tests, alongside $256\times 5$ large-sample replays of all four frozen initial-submission checkpoints.
+\item \textbf{KL-$\beta$, 21-fold MSE scaling, padding ablation and capacity-matched comparators:} We directly tested KL weights $\beta\in\{0.01,0.1,1.0\}$, 21-fold MSE loss rescaling with tuned learning rate ($2\times 10^{-3}$) and padding masking, and added three closed-form statistical baselines (Unigram, Bigram and Trigram Markov), capacity-matched autoregressive generators (LSTM-matched 1.34M, Transformer-LM 1.80M) and matched non-diffusion GRU-VAEs (1.99M). Notably, tuning lifts independent-test reconstruction to 96.05\% (CE21) and 94.24\% (tuned MSE21), yet both VAE--diffusion models still trail capacity-matched autoregressive generators by $\sim$20-fold on FREE MMD$^2$---strengthening our central conclusion.
+\item \textbf{Metric redundancy, amphipathicity and near-duplicate memorization audits:} PCA auditing shows the six low-order metrics span 1.54 effective dimensions (PC1+PC2 = 95.3\%), while tripeptide JS, $\alpha$-helical hydrophobic moment ($\mu_H$) and $\geq$70\% nearest-neighbor alignment identity separate neural generators from Unigram sampling ($p\leq 0.028$) and reveal up to 34.1\% hidden near-homolog collapse despite 0\% exact copies.
+\item \textbf{Confirmed broth microdilution protocol, 1,000$\rightarrow$30$\rightarrow$27 provenance funnel and AMPGen overlap matrix:} We now document the complete confirmed MHB broth microdilution protocol (1\% DMSO, $5\times 10^5$ CFU/mL, 37~$^\circ$C, 16--20 h), justify the OD$_{600}<0.10$ cutoff via a six-rule sensitivity audit (confirming 6/27 \textit{S. aureus} hit invariance across five rules and 3.09--12.87 \textmu{}M potency), explicitly emphasize the absence of haemolysis/cytotoxicity measurements, and tabulate zero candidate sequence overlap (0/27) with AMPGen.
+\item \textbf{Requested references and editorial compliance:} We integrated both requested references (PMID: 34730875; PMID: 33848577) plus three verified peptide-analysis citations, highlighted all manuscript changes in blue, included alternative text under every figure legend, and pasted our complete point-by-point response directly into the ScholarOne response text box.
+\end{itemize}
+
+Sincerely,\par
+\textbf{Hongsheng Wang}\par
+Corresponding author\par
+College of Computer Science and Technology, Zhejiang University\par
+\href{mailto:wanghongsheng@zju.edu.cn}{wanghongsheng@zju.edu.cn}
+\end{document}
